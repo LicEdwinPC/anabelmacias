@@ -1,0 +1,7639 @@
+%!PS-AdobeFont-1.0: TwCenMT-Regular Digitized data copyright The Monotype Corporation 1991-1997. All rights reserved. Twentieth Century!" is a trademark of The Monotype Corporation which may be registered in certain jurisdictions.
+%%CreationDate: Mon May 28 09:50:26 2018
+% Converted from TrueType font 'TwCenMT.ttf' by ttf2pt1 program
+%
+%%EndComments
+12 dict begin
+/FontInfo 9 dict dup begin
+/version (Version 1.02) readonly def
+/Notice (Digitized data copyright The Monotype Corporation 1991-1997. All rights reserved. Twentieth Century!" is a trademark of The Monotype Corporation which may be registered in certain jurisdictions.) readonly def
+/FullName (Tw Cen MT) readonly def
+/FamilyName (Tw Cen MT) readonly def
+/Weight (Regular) readonly def
+/ItalicAngle 0.000000 def
+/isFixedPitch false def
+/UnderlinePosition -74 def
+/UnderlineThickness 59 def
+end readonly def
+/FontName /TwCenMT-Regular def
+/PaintType 0 def
+/StrokeWidth 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] def
+/FontBBox {-183 -278 1053 917} readonly def
+/Encoding 256 array
+dup 0 /.notdef put
+dup 1 /.notdef put
+dup 2 /.notdef put
+dup 3 /.notdef put
+dup 4 /.notdef put
+dup 5 /.notdef put
+dup 6 /.notdef put
+dup 7 /.notdef put
+dup 8 /.notdef put
+dup 9 /.notdef put
+dup 10 /.notdef put
+dup 11 /.notdef put
+dup 12 /.notdef put
+dup 13 /.notdef put
+dup 14 /.notdef put
+dup 15 /.notdef put
+dup 16 /.notdef put
+dup 17 /.notdef put
+dup 18 /.notdef put
+dup 19 /.notdef put
+dup 20 /.notdef put
+dup 21 /.notdef put
+dup 22 /.notdef put
+dup 23 /.notdef put
+dup 24 /.notdef put
+dup 25 /.notdef put
+dup 26 /.notdef put
+dup 27 /.notdef put
+dup 28 /.notdef put
+dup 29 /.notdef put
+dup 30 /.notdef put
+dup 31 /.notdef put
+dup 32 /space put
+dup 33 /exclam put
+dup 34 /quotedbl put
+dup 35 /numbersign put
+dup 36 /dollar put
+dup 37 /percent put
+dup 38 /ampersand put
+dup 39 /quotesingle put
+dup 40 /parenleft put
+dup 41 /parenright put
+dup 42 /asterisk put
+dup 43 /plus put
+dup 44 /comma put
+dup 45 /hyphen put
+dup 46 /period put
+dup 47 /slash put
+dup 48 /zero put
+dup 49 /one put
+dup 50 /two put
+dup 51 /three put
+dup 52 /four put
+dup 53 /five put
+dup 54 /six put
+dup 55 /seven put
+dup 56 /eight put
+dup 57 /nine put
+dup 58 /colon put
+dup 59 /semicolon put
+dup 60 /less put
+dup 61 /equal put
+dup 62 /greater put
+dup 63 /question put
+dup 64 /at put
+dup 65 /A put
+dup 66 /B put
+dup 67 /C put
+dup 68 /D put
+dup 69 /E put
+dup 70 /F put
+dup 71 /G put
+dup 72 /H put
+dup 73 /I put
+dup 74 /J put
+dup 75 /K put
+dup 76 /L put
+dup 77 /M put
+dup 78 /N put
+dup 79 /O put
+dup 80 /P put
+dup 81 /Q put
+dup 82 /R put
+dup 83 /S put
+dup 84 /T put
+dup 85 /U put
+dup 86 /V put
+dup 87 /W put
+dup 88 /X put
+dup 89 /Y put
+dup 90 /Z put
+dup 91 /bracketleft put
+dup 92 /backslash put
+dup 93 /bracketright put
+dup 94 /asciicircum put
+dup 95 /underscore put
+dup 96 /grave put
+dup 97 /a put
+dup 98 /b put
+dup 99 /c put
+dup 100 /d put
+dup 101 /e put
+dup 102 /f put
+dup 103 /g put
+dup 104 /h put
+dup 105 /i put
+dup 106 /j put
+dup 107 /k put
+dup 108 /l put
+dup 109 /m put
+dup 110 /n put
+dup 111 /o put
+dup 112 /p put
+dup 113 /q put
+dup 114 /r put
+dup 115 /s put
+dup 116 /t put
+dup 117 /u put
+dup 118 /v put
+dup 119 /w put
+dup 120 /x put
+dup 121 /y put
+dup 122 /z put
+dup 123 /braceleft put
+dup 124 /bar put
+dup 125 /braceright put
+dup 126 /asciitilde put
+dup 127 /.notdef put
+dup 128 /.notdef put
+dup 129 /.notdef put
+dup 130 /quotesinglbase put
+dup 131 /florin put
+dup 132 /quotedblbase put
+dup 133 /ellipsis put
+dup 134 /dagger put
+dup 135 /daggerdbl put
+dup 136 /circumflex put
+dup 137 /perthousand put
+dup 138 /Scaron put
+dup 139 /guilsinglleft put
+dup 140 /OE put
+dup 141 /.notdef put
+dup 142 /.notdef put
+dup 143 /.notdef put
+dup 144 /.notdef put
+dup 145 /quoteleft put
+dup 146 /quoteright put
+dup 147 /quotedblleft put
+dup 148 /quotedblright put
+dup 149 /bullet put
+dup 150 /endash put
+dup 151 /emdash put
+dup 152 /tilde put
+dup 153 /trademark put
+dup 154 /scaron put
+dup 155 /guilsinglright put
+dup 156 /oe put
+dup 157 /.notdef put
+dup 158 /.notdef put
+dup 159 /Ydieresis put
+dup 160 /uni00A0 put
+dup 161 /exclamdown put
+dup 162 /cent put
+dup 163 /sterling put
+dup 164 /currency put
+dup 165 /yen put
+dup 166 /brokenbar put
+dup 167 /section put
+dup 168 /dieresis put
+dup 169 /copyright put
+dup 170 /ordfeminine put
+dup 171 /guillemotleft put
+dup 172 /logicalnot put
+dup 173 /uni00AD put
+dup 174 /registered put
+dup 175 /uni00AF put
+dup 176 /degree put
+dup 177 /plusminus put
+dup 178 /twosuperior put
+dup 179 /threesuperior put
+dup 180 /acute put
+dup 181 /uni00B5 put
+dup 182 /paragraph put
+dup 183 /uni00B7 put
+dup 184 /cedilla put
+dup 185 /onesuperior put
+dup 186 /ordmasculine put
+dup 187 /guillemotright put
+dup 188 /onequarter put
+dup 189 /onehalf put
+dup 190 /threequarters put
+dup 191 /questiondown put
+dup 192 /Agrave put
+dup 193 /Aacute put
+dup 194 /Acircumflex put
+dup 195 /Atilde put
+dup 196 /Adieresis put
+dup 197 /Aring put
+dup 198 /AE put
+dup 199 /Ccedilla put
+dup 200 /Egrave put
+dup 201 /Eacute put
+dup 202 /Ecircumflex put
+dup 203 /Edieresis put
+dup 204 /Igrave put
+dup 205 /Iacute put
+dup 206 /Icircumflex put
+dup 207 /Idieresis put
+dup 208 /Eth put
+dup 209 /Ntilde put
+dup 210 /Ograve put
+dup 211 /Oacute put
+dup 212 /Ocircumflex put
+dup 213 /Otilde put
+dup 214 /Odieresis put
+dup 215 /multiply put
+dup 216 /Oslash put
+dup 217 /Ugrave put
+dup 218 /Uacute put
+dup 219 /Ucircumflex put
+dup 220 /Udieresis put
+dup 221 /Yacute put
+dup 222 /Thorn put
+dup 223 /germandbls put
+dup 224 /agrave put
+dup 225 /aacute put
+dup 226 /acircumflex put
+dup 227 /atilde put
+dup 228 /adieresis put
+dup 229 /aring put
+dup 230 /ae put
+dup 231 /ccedilla put
+dup 232 /egrave put
+dup 233 /eacute put
+dup 234 /ecircumflex put
+dup 235 /edieresis put
+dup 236 /igrave put
+dup 237 /iacute put
+dup 238 /icircumflex put
+dup 239 /idieresis put
+dup 240 /eth put
+dup 241 /ntilde put
+dup 242 /ograve put
+dup 243 /oacute put
+dup 244 /ocircumflex put
+dup 245 /otilde put
+dup 246 /odieresis put
+dup 247 /divide put
+dup 248 /oslash put
+dup 249 /ugrave put
+dup 250 /uacute put
+dup 251 /ucircumflex put
+dup 252 /udieresis put
+dup 253 /yacute put
+dup 254 /thorn put
+dup 255 /ydieresis put
+readonly def
+currentdict end
+currentfile eexec
+dup /Private 16 dict dup begin
+/RD{string currentfile exch readstring pop}executeonly def
+/ND{noaccess def}executeonly def
+/NP{noaccess put}executeonly def
+/ForceBold false def
+/BlueValues [ -21 0 613 634 640 651 808 820 403 415 706 729 568 589 ] def
+/OtherBlues [ -210 -189 -44 -24 ] def
+/StdHW [ 21 ] def
+/StdVW [ 85 ] def
+/StemSnapH [ 21 54 62 65 73 78 81 84 87 90 104 137 ] def
+/StemSnapV [ 36 45 56 62 66 69 75 78 82 85 90 104 ] def
+/MinFeature {16 16} def
+/password 5839 def
+/Subrs 5 array
+dup 0 {
+	3 0 callothersubr pop pop setcurrentpoint return
+	} NP
+dup 1 {
+	0 1 callothersubr return
+	} NP
+dup 2 {
+	0 2 callothersubr return
+	} NP
+dup 3 {
+	return
+	} NP
+dup 4 {
+	1 3 callothersubr pop callsubr return
+	} NP
+ND
+2 index /CharStrings 297 dict dup begin
+/.notdef { 
+0 1000 hsbw
+0 63 hstem
+688 62 hstem
+125 63 vstem
+813 62 vstem
+125 0 rmoveto
+750 0 rlineto
+0 750 rlineto
+-750 0 rlineto
+0 -750 rlineto
+closepath
+63 63 rmoveto
+0 625 rlineto
+625 0 rlineto
+0 -625 rlineto
+-625 0 rlineto
+closepath
+endchar } ND
+/.null { 
+0 0 hsbw
+endchar } ND
+/CR { 
+0 276 hsbw
+endchar } ND
+/space { 
+0 276 hsbw
+endchar } ND
+/exclam { 
+0 219 hsbw
+-9 106 hstem
+154 468 hstem
+66 82 vstem
+66 622 rmoveto
+0 -468 rlineto
+82 0 rlineto
+0 468 rlineto
+-82 0 rlineto
+closepath
+-10 -578 rmoveto
+0 -30 23 -23 30 0 rrcurveto
+29 0 24 23 0 30 rrcurveto
+0 28 -24 25 -29 0 rrcurveto
+-30 0 -23 -25 0 -28 rrcurveto
+closepath
+endchar } ND
+/quotedbl { 
+0 355 hsbw
+462 254 hstem
+46 101 vstem
+209 100 vstem
+71 462 rmoveto
+53 0 rlineto
+23 137 rlineto
+0 117 rlineto
+-101 0 rlineto
+0 -117 rlineto
+25 -137 rlineto
+closepath
+161 0 rmoveto
+53 0 rlineto
+24 137 rlineto
+0 117 rlineto
+-100 0 rlineto
+0 -117 rlineto
+23 -137 rlineto
+closepath
+endchar } ND
+/numbersign { 
+0 668 hsbw
+174 60 hstem
+415 60 hstem
+44 218 vstem
+456 168 vstem
+44 475 rmoveto
+0 -60 rlineto
+147 0 rlineto
+-38 -181 rlineto
+-109 0 rlineto
+0 -60 rlineto
+96 0 rlineto
+-41 -196 rlineto
+60 0 rlineto
+41 196 rlineto
+207 0 rlineto
+-42 -196 rlineto
+60 0 rlineto
+41 196 rlineto
+158 0 rlineto
+0 60 rlineto
+-146 0 rlineto
+37 181 rlineto
+109 0 rlineto
+0 60 rlineto
+-97 0 rlineto
+42 197 rlineto
+-60 0 rlineto
+-41 -197 rlineto
+-206 0 rlineto
+42 197 rlineto
+-59 0 rlineto
+-42 -197 rlineto
+-159 0 rlineto
+closepath
+206 -60 rmoveto
+206 0 rlineto
+-37 -180 rlineto
+-207 0 rlineto
+38 180 rlineto
+closepath
+endchar } ND
+/dollar { 
+0 552 hsbw
+-114 185 hstem
+282 99 hstem
+553 165 hstem
+103 88 vstem
+261 44 vstem
+400 90 vstem
+261 718 rmoveto
+0 -75 rlineto
+-98 -18 -60 -64 0 -77 rrcurveto
+0 -81 52 -61 106 -40 rrcurveto
+0 -227 rlineto
+-52 10 -27 25 -29 64 rrcurveto
+-88 -23 rlineto
+41 -99 53 -52 102 -19 rrcurveto
+0 -95 rlineto
+44 0 rlineto
+0 95 rlineto
+117 11 68 80 0 94 rrcurveto
+0 68 -33 83 -152 64 rrcurveto
+0 172 rlineto
+40 -3 34 -19 26 -34 rrcurveto
+69 55 rlineto
+-35 48 -56 31 -78 12 rrcurveto
+0 75 rlineto
+-44 0 rlineto
+closepath
+0 -317 rmoveto
+-47 20 -23 27 0 35 rrcurveto
+0 32 26 26 44 10 rrcurveto
+0 -150 rlineto
+closepath
+44 -119 rmoveto
+63 -29 32 -38 0 -48 rrcurveto
+0 -52 -34 -36 -61 -8 rrcurveto
+0 211 rlineto
+closepath
+endchar } ND
+/percent { 
+0 833 hsbw
+-44 63 hstem
+244 64 hstem
+577 65 hstem
+29 66 vstem
+169 65 vstem
+240 68 vstem
+528 65 vstem
+606 64 vstem
+737 66 vstem
+29 464 rmoveto
+0 -108 53 -67 87 0 rrcurveto
+85 0 54 66 0 108 rrcurveto
+0 112 -53 67 -86 0 rrcurveto
+-86 0 -54 -69 0 -109 rrcurveto
+closepath
+211 5 rmoveto
+0 -80 -22 -36 -50 0 rrcurveto
+-47 0 -26 39 0 71 rrcurveto
+0 76 25 38 51 0 rrcurveto
+46 0 23 -36 0 -72 rrcurveto
+closepath
+366 173 rmoveto
+-437 -686 rlineto
+65 0 rlineto
+436 686 rlineto
+-64 0 rlineto
+closepath
+-78 -521 rmoveto
+0 -102 54 -63 83 0 rrcurveto
+88 0 50 65 0 115 rrcurveto
+0 104 -54 68 -81 0 rrcurveto
+-90 0 -50 -67 0 -120 rrcurveto
+closepath
+209 9 rmoveto
+0 -74 -24 -37 -48 0 rrcurveto
+-52 0 -20 36 0 84 rrcurveto
+0 70 24 35 50 0 rrcurveto
+46 0 24 -38 0 -76 rrcurveto
+closepath
+endchar } ND
+/ampersand { 
+0 667 hsbw
+-22 81 hstem
+563 81 hstem
+121 83 vstem
+353 80 vstem
+530 111 vstem
+324 337 rmoveto
+72 48 37 53 0 59 rrcurveto
+0 81 -68 66 -84 0 rrcurveto
+-98 0 -62 -72 0 -72 rrcurveto
+0 -29 29 -56 37 -51 rrcurveto
+3 -3 3 -4 3 -5 rrcurveto
+-134 -91 -22 -30 0 -73 rrcurveto
+0 -98 96 -82 115 0 rrcurveto
+66 0 69 33 70 68 rrcurveto
+74 -78 rlineto
+111 0 rlineto
+-131 138 rlineto
+74 83 rlineto
+-60 54 rlineto
+-70 -77 rlineto
+-130 138 rlineto
+closepath
+-57 59 rmoveto
+-42 44 -21 35 0 26 rrcurveto
+0 36 31 26 43 0 rrcurveto
+46 0 29 -26 0 -40 rrcurveto
+0 -35 -29 -28 -57 -38 rrcurveto
+closepath
+133 -257 rmoveto
+-59 -55 -38 -25 -52 0 rrcurveto
+-68 0 -56 45 0 55 rrcurveto
+0 37 16 26 111 72 rrcurveto
+146 -155 rlineto
+closepath
+endchar } ND
+/quotesingle { 
+0 191 hsbw
+462 254 hstem
+45 101 vstem
+68 462 rmoveto
+54 0 rlineto
+24 134 rlineto
+0 120 rlineto
+-101 0 rlineto
+0 -120 rlineto
+23 -134 rlineto
+closepath
+endchar } ND
+/parenleft { 
+0 271 hsbw
+-190 20 hstem
+622 20 hstem
+53 75 vstem
+153 642 rmoveto
+-78 -150 -22 -118 0 -153 rrcurveto
+0 -146 33 -137 67 -128 rrcurveto
+64 36 rlineto
+-68 143 -21 96 0 158 rrcurveto
+0 137 21 92 72 139 rrcurveto
+-68 31 rlineto
+closepath
+endchar } ND
+/parenright { 
+0 271 hsbw
+-193 20 hstem
+622 20 hstem
+138 76 vstem
+43 611 rmoveto
+73 -132 22 -103 0 -146 rrcurveto
+0 -131 -9 -71 -81 -185 rrcurveto
+67 -36 rlineto
+66 134 33 137 0 144 rrcurveto
+0 162 -35 140 -69 118 rrcurveto
+-67 -31 rlineto
+closepath
+endchar } ND
+/asterisk { 
+0 438 hsbw
+465 56 hstem
+206 23 vstem
+229 528 rmoveto
+1 17 7 24 7 22 rrcurveto
+8 22 6 22 0 10 rrcurveto
+0 25 -17 17 -24 0 rrcurveto
+-23 0 -17 -18 0 -24 rrcurveto
+0 -10 6 -22 8 -21 rrcurveto
+8 -21 6 -25 1 -17 rrcurveto
+-13 -8 rlineto
+-18 13 -17 16 -16 18 rrcurveto
+-24 28 -10 15 -28 0 rrcurveto
+-22 0 -16 -20 0 -22 rrcurveto
+0 -35 29 -9 43 -6 rrcurveto
+28 -5 22 -6 18 -8 rrcurveto
+0 -15 rlineto
+-16 -9 -23 -7 -28 -4 rrcurveto
+-50 -7 -23 -19 0 -27 rrcurveto
+0 -22 18 -18 22 0 rrcurveto
+17 0 19 17 19 19 rrcurveto
+18 22 21 22 17 13 rrcurveto
+13 -7 rlineto
+0 -16 -7 -24 -7 -23 rrcurveto
+-8 -23 -7 -22 0 -10 rrcurveto
+0 -26 17 -18 24 0 rrcurveto
+24 0 16 18 0 27 rrcurveto
+0 11 -6 20 -8 23 rrcurveto
+-7 21 -7 25 -1 17 rrcurveto
+14 7 rlineto
+12 -6 18 -16 25 -30 rrcurveto
+22 -26 19 -14 16 0 rrcurveto
+22 0 19 17 0 23 rrcurveto
+0 35 -27 8 -42 6 rrcurveto
+-27 4 -23 7 -23 11 rrcurveto
+0 16 rlineto
+17 8 24 7 28 5 rrcurveto
+44 5 29 6 0 38 rrcurveto
+0 22 -18 18 -22 0 rrcurveto
+-27 0 -14 -16 -22 -27 rrcurveto
+-15 -19 -16 -15 -18 -12 rrcurveto
+-15 8 rlineto
+closepath
+endchar } ND
+/plus { 
+0 667 hsbw
+291 298 hstem
+300 64 vstem
+67 355 rmoveto
+0 -64 rlineto
+233 0 rlineto
+0 -232 rlineto
+64 0 rlineto
+0 232 rlineto
+235 0 rlineto
+0 64 rlineto
+-235 0 rlineto
+0 234 rlineto
+-64 0 rlineto
+0 -234 rlineto
+-233 0 rlineto
+closepath
+endchar } ND
+/comma { 
+0 219 hsbw
+99 123 rmoveto
+-86 -261 rlineto
+76 -30 rlineto
+115 250 rlineto
+-105 41 rlineto
+closepath
+endchar } ND
+/hyphen { 
+0 333 hsbw
+160 83 hstem
+53 227 vstem
+53 243 rmoveto
+0 -83 rlineto
+227 0 rlineto
+0 83 rlineto
+-227 0 rlineto
+closepath
+endchar } ND
+/period { 
+0 219 hsbw
+-9 132 hstem
+42 132 vstem
+42 57 rmoveto
+0 -38 30 -28 36 0 rrcurveto
+36 0 30 30 0 36 rrcurveto
+0 36 -30 30 -36 0 rrcurveto
+-36 0 -30 -30 0 -36 rrcurveto
+closepath
+endchar } ND
+/slash { 
+0 500 hsbw
+705 20 hstem
+26 58 vstem
+433 56 vstem
+433 725 rmoveto
+-407 -945 rlineto
+58 0 rlineto
+405 945 rlineto
+-56 0 rlineto
+closepath
+endchar } ND
+/zero { 
+0 552 hsbw
+-21 90 hstem
+554 89 hstem
+41 87 vstem
+421 89 vstem
+279 643 rmoveto
+-5 0 rlineto
+-128 0 -105 -124 0 -212 rrcurveto
+0 -191 99 -137 135 0 rrcurveto
+129 0 106 130 0 203 rrcurveto
+0 196 -95 135 -136 0 rrcurveto
+closepath
+142 -330 rmoveto
+0 -146 -60 -98 -84 0 rrcurveto
+-88 0 -61 95 0 146 rrcurveto
+0 146 60 98 87 0 rrcurveto
+84 0 62 -101 0 -140 rrcurveto
+closepath
+endchar } ND
+/one { 
+0 552 hsbw
+0 20 hstem
+538 82 hstem
+236 84 vstem
+158 620 rmoveto
+-28 -82 rlineto
+106 0 rlineto
+0 -538 rlineto
+84 0 rlineto
+0 620 rlineto
+-162 0 rlineto
+closepath
+endchar } ND
+/two { 
+0 552 hsbw
+0 83 hstem
+559 84 hstem
+406 82 vstem
+241 83 rmoveto
+177 189 rlineto
+52 54 18 43 0 58 rrcurveto
+0 117 -94 99 -109 0 rrcurveto
+-108 0 -90 -72 -16 -122 rrcurveto
+82 0 rlineto
+14 74 57 36 56 0 rrcurveto
+68 0 58 -63 0 -73 rrcurveto
+0 -32 -12 -28 -24 -26 rrcurveto
+-317 -337 rlineto
+425 0 rlineto
+0 83 rlineto
+-237 0 rlineto
+closepath
+endchar } ND
+/three { 
+0 552 hsbw
+-20 75 hstem
+289 77 hstem
+568 75 hstem
+78 91 vstem
+256 118 vstem
+396 88 vstem
+169 482 rmoveto
+20 60 30 26 55 0 rrcurveto
+57 0 47 -47 0 -57 rrcurveto
+0 -58 -46 -39 -76 -1 rrcurveto
+0 -77 rlineto
+100 -2 40 -61 0 -61 rrcurveto
+0 -59 -55 -51 -64 0 rrcurveto
+-63 0 -41 32 -20 65 rrcurveto
+-93 0 rlineto
+25 -119 87 -53 110 0 rrcurveto
+109 0 93 89 0 104 rrcurveto
+0 66 -37 52 -73 38 rrcurveto
+62 32 32 47 0 62 rrcurveto
+0 98 -86 75 -114 0 rrcurveto
+-100 0 -78 -56 -12 -105 rrcurveto
+91 0 rlineto
+closepath
+endchar } ND
+/four { 
+0 552 hsbw
+0 195 hstem
+621 20 hstem
+361 76 vstem
+437 641 rmoveto
+-425 -519 rlineto
+349 0 rlineto
+0 -122 rlineto
+76 0 rlineto
+0 122 rlineto
+60 0 rlineto
+0 73 rlineto
+-60 0 rlineto
+0 446 rlineto
+closepath
+-78 -198 rmoveto
+2 -248 rlineto
+-200 0 rlineto
+198 248 rlineto
+closepath
+endchar } ND
+/five { 
+0 552 hsbw
+-20 89 hstem
+348 75 hstem
+539 84 hstem
+387 89 vstem
+197 623 rmoveto
+-86 -331 rlineto
+45 38 31 18 51 0 rrcurveto
+84 0 65 -61 0 -78 rrcurveto
+0 -82 -62 -58 -85 0 rrcurveto
+-52 0 -44 23 -37 47 rrcurveto
+-76 -48 rlineto
+52 -74 68 -37 86 0 rrcurveto
+133 0 106 99 0 126 rrcurveto
+0 117 -95 101 -109 0 rrcurveto
+-14 0 rlineto
+-6 -1 -11 -1 -12 -1 rrcurveto
+33 119 rlineto
+215 0 rlineto
+0 84 rlineto
+-280 0 rlineto
+closepath
+endchar } ND
+/six { 
+0 552 hsbw
+-21 90 hstem
+345 69 hstem
+48 88 vstem
+412 89 vstem
+312 656 rmoveto
+-222 -321 rlineto
+-28 -41 -14 -44 0 -47 rrcurveto
+0 -124 102 -100 126 0 rrcurveto
+125 0 100 102 0 128 rrcurveto
+0 108 -103 97 -116 0 rrcurveto
+-42 0 rlineto
+137 197 rlineto
+-65 45 rlineto
+closepath
+100 -450 rmoveto
+0 -76 -61 -61 -76 0 rrcurveto
+-78 0 -61 59 0 78 rrcurveto
+0 74 64 65 75 0 rrcurveto
+74 0 63 -63 0 -76 rrcurveto
+closepath
+endchar } ND
+/seven { 
+0 552 hsbw
+-30 20 hstem
+542 82 hstem
+26 513 vstem
+26 624 rmoveto
+0 -82 rlineto
+362 0 rlineto
+-352 -529 rlineto
+65 -43 rlineto
+438 654 rlineto
+-513 0 rlineto
+closepath
+endchar } ND
+/eight { 
+0 552 hsbw
+-20 74 hstem
+283 74 hstem
+569 74 hstem
+61 89 vstem
+381 89 vstem
+395 322 rmoveto
+50 41 25 48 0 56 rrcurveto
+0 94 -91 82 -105 0 rrcurveto
+-106 0 -90 -82 0 -96 rrcurveto
+0 -59 22 -40 52 -44 rrcurveto
+-61 -41 -30 -52 0 -62 rrcurveto
+0 -104 95 -83 120 0 rrcurveto
+118 0 96 84 0 103 rrcurveto
+0 58 -31 59 -64 38 rrcurveto
+closepath
+-14 141 rmoveto
+0 -59 -49 -47 -58 0 rrcurveto
+-59 0 -48 47 0 59 rrcurveto
+0 58 48 48 59 0 rrcurveto
+58 0 49 -48 0 -58 rrcurveto
+closepath
+20 -294 rmoveto
+0 -64 -54 -51 -68 0 rrcurveto
+-74 0 -55 49 0 64 rrcurveto
+0 65 52 51 70 0 rrcurveto
+70 0 59 -52 0 -62 rrcurveto
+closepath
+endchar } ND
+/nine { 
+0 552 hsbw
+-32 311 hstem
+556 89 hstem
+50 87 vstem
+414 88 vstem
+240 -32 rmoveto
+216 315 rlineto
+30 44 16 47 0 48 rrcurveto
+0 118 -105 105 -120 0 rrcurveto
+-122 0 -105 -103 0 -117 rrcurveto
+0 -123 94 -93 123 0 rrcurveto
+10 0 14 1 20 3 rrcurveto
+-137 -199 rlineto
+66 -46 rlineto
+closepath
+174 448 rmoveto
+0 -78 -59 -59 -73 0 rrcurveto
+-80 0 -65 60 0 75 rrcurveto
+0 81 60 61 80 0 rrcurveto
+74 0 63 -63 0 -77 rrcurveto
+closepath
+endchar } ND
+/colon { 
+0 219 hsbw
+-8 133 hstem
+207 132 hstem
+42 132 vstem
+42 273 rmoveto
+0 -36 30 -30 36 0 rrcurveto
+37 0 29 30 0 36 rrcurveto
+0 36 -30 30 -36 0 rrcurveto
+-36 0 -30 -29 0 -37 rrcurveto
+closepath
+0 -215 rmoveto
+0 -36 30 -30 36 0 rrcurveto
+36 0 30 30 0 36 rrcurveto
+0 36 -30 31 -36 0 rrcurveto
+-36 0 -30 -30 0 -37 rrcurveto
+closepath
+endchar } ND
+/semicolon { 
+0 271 hsbw
+208 133 hstem
+92 132 vstem
+92 275 rmoveto
+0 -38 28 -29 38 0 rrcurveto
+37 0 29 29 0 38 rrcurveto
+0 36 -29 30 -37 0 rrcurveto
+-36 0 -30 -30 0 -36 rrcurveto
+closepath
+32 -150 rmoveto
+-89 -260 rlineto
+75 -32 rlineto
+119 250 rlineto
+-105 42 rlineto
+closepath
+endchar } ND
+/less { 
+0 667 hsbw
+72 504 hstem
+69 86 vstem
+598 72 rmoveto
+0 69 rlineto
+-443 183 rlineto
+443 182 rlineto
+0 70 rlineto
+-529 -223 rlineto
+0 -58 rlineto
+529 -223 rlineto
+closepath
+endchar } ND
+/equal { 
+0 667 hsbw
+179 64 hstem
+407 65 hstem
+68 531 vstem
+68 472 rmoveto
+0 -65 rlineto
+531 0 rlineto
+0 65 rlineto
+-531 0 rlineto
+closepath
+0 -229 rmoveto
+0 -64 rlineto
+531 0 rlineto
+0 64 rlineto
+-531 0 rlineto
+closepath
+endchar } ND
+/greater { 
+0 667 hsbw
+72 504 hstem
+512 86 vstem
+68 576 rmoveto
+0 -70 rlineto
+444 -183 rlineto
+-444 -182 rlineto
+0 -69 rlineto
+530 223 rlineto
+0 57 rlineto
+-530 224 rlineto
+closepath
+endchar } ND
+/question { 
+0 385 hsbw
+-9 106 hstem
+144 82 hstem
+563 80 hstem
+50 78 149 97 267 78 vstem3
+248 290 rmoveto
+-13 -43 -23 -21 -33 0 rrcurveto
+-31 0 -20 15 0 22 rrcurveto
+0 22 19 16 54 26 rrcurveto
+130 62 18 52 0 58 rrcurveto
+0 81 -71 63 -92 0 rrcurveto
+-86 0 -64 -56 -12 -120 rrcurveto
+80 0 rlineto
+7 64 29 32 52 0 rrcurveto
+41 0 34 -32 0 -36 rrcurveto
+0 -41 -38 -27 -54 -25 rrcurveto
+-83 -38 -42 -34 0 -68 rrcurveto
+0 -70 53 -48 75 0 rrcurveto
+73 0 62 50 18 96 rrcurveto
+-83 0 rlineto
+closepath
+-109 -246 rmoveto
+0 -30 24 -23 30 0 rrcurveto
+29 0 24 23 0 30 rrcurveto
+0 28 -24 25 -29 0 rrcurveto
+-30 0 -24 -24 0 -29 rrcurveto
+closepath
+endchar } ND
+/at { 
+0 1015 hsbw
+-210 72 hstem
+-2 81 hstem
+457 72 hstem
+658 71 hstem
+57 72 vstem
+243 90 vstem
+660 88 vstem
+885 73 vstem
+893 9 rmoveto
+-47 -76 -129 -71 -165 0 rrcurveto
+-267 0 -156 139 0 236 rrcurveto
+0 241 172 180 234 0 rrcurveto
+201 0 149 -132 0 -176 rrcurveto
+0 -118 -117 -153 -70 0 rrcurveto
+-19 0 -16 14 0 18 rrcurveto
+0 6 2 14 5 22 rrcurveto
+78 362 rlineto
+-88 0 rlineto
+-16 -76 rlineto
+-38 60 -50 30 -60 0 rrcurveto
+-138 0 -115 -171 0 -138 rrcurveto
+0 -128 76 -93 103 0 rrcurveto
+50 0 50 27 48 54 rrcurveto
+4 -58 23 -24 70 0 rrcurveto
+138 0 153 162 0 196 rrcurveto
+0 192 -161 181 -257 0 rrcurveto
+-287 0 -196 -237 0 -263 rrcurveto
+0 -272 186 -167 307 0 rrcurveto
+226 0 150 109 55 110 rrcurveto
+-88 0 rlineto
+closepath
+-392 448 rmoveto
+69 0 46 -56 0 -86 rrcurveto
+0 -105 -84 -139 -91 0 rrcurveto
+-64 0 -44 57 0 84 rrcurveto
+0 125 84 120 84 0 rrcurveto
+closepath
+endchar } ND
+/A { 
+0 604 hsbw
+0 20 hstem
+159 487 hstem
+6 88 vstem
+502 89 vstem
+297 646 rmoveto
+-291 -646 rlineto
+88 0 rlineto
+71 159 rlineto
+264 0 rlineto
+73 -159 rlineto
+89 0 rlineto
+-294 646 rlineto
+closepath
+0 -195 rmoveto
+100 -221 rlineto
+-200 0 rlineto
+100 221 rlineto
+closepath
+endchar } ND
+/B { 
+0 500 hsbw
+0 76 hstem
+289 74 hstem
+548 74 hstem
+77 84 vstem
+358 88 vstem
+77 622 rmoveto
+0 -622 rlineto
+102 0 rlineto
+162 0 105 72 0 107 rrcurveto
+0 77 -47 54 -94 32 rrcurveto
+60 35 31 44 0 52 rrcurveto
+0 86 -91 63 -129 0 rrcurveto
+-99 0 rlineto
+closepath
+84 -74 rmoveto
+21 0 rlineto
+76 0 48 -35 0 -52 rrcurveto
+0 -60 -52 -37 -93 -1 rrcurveto
+0 185 rlineto
+closepath
+0 -259 rmoveto
+29 0 rlineto
+104 0 64 -42 0 -64 rrcurveto
+0 -50 -44 -57 -146 0 rrcurveto
+-7 0 rlineto
+0 213 rlineto
+closepath
+endchar } ND
+/C { 
+0 604 hsbw
+-21 90 hstem
+554 88 hstem
+35 91 vstem
+568 601 rmoveto
+-66 27 -63 14 -60 0 rrcurveto
+-190 0 -154 -148 0 -181 rrcurveto
+0 -184 156 -150 194 0 rrcurveto
+65 0 61 15 57 30 rrcurveto
+0 97 rlineto
+-62 -35 -59 -17 -55 0 rrcurveto
+-152 0 -114 104 0 139 rrcurveto
+0 136 111 106 146 0 rrcurveto
+56 0 61 -17 68 -32 rrcurveto
+0 96 rlineto
+closepath
+endchar } ND
+/D { 
+0 604 hsbw
+0 84 hstem
+539 83 hstem
+66 85 vstem
+483 88 vstem
+66 622 rmoveto
+0 -622 rlineto
+152 0 rlineto
+229 0 124 147 0 164 rrcurveto
+0 162 -116 149 -238 0 rrcurveto
+-151 0 rlineto
+closepath
+85 -83 rmoveto
+43 0 rlineto
+171 0 118 -83 0 -145 rrcurveto
+0 -158 -129 -69 -198 0 rrcurveto
+-5 0 rlineto
+0 455 rlineto
+closepath
+endchar } ND
+/E { 
+0 438 hsbw
+0 84 hstem
+298 84 hstem
+537 85 hstem
+58 84 vstem
+58 622 rmoveto
+0 -622 rlineto
+345 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 214 rlineto
+261 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 155 rlineto
+261 0 rlineto
+0 85 rlineto
+-345 0 rlineto
+closepath
+endchar } ND
+/F { 
+0 438 hsbw
+0 382 hstem
+537 85 hstem
+58 84 vstem
+58 622 rmoveto
+0 -622 rlineto
+85 0 rlineto
+0 298 rlineto
+260 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 155 rlineto
+261 0 rlineto
+0 85 rlineto
+-345 0 rlineto
+closepath
+endchar } ND
+/G { 
+0 771 hsbw
+-21 89 hstem
+230 85 hstem
+554 88 hstem
+38 90 vstem
+627 97 vstem
+666 523 rmoveto
+-96 92 -86 27 -110 0 rrcurveto
+-187 0 -149 -148 0 -182 rrcurveto
+0 -174 138 -159 215 0 rrcurveto
+203 0 130 112 0 224 rrcurveto
+-265 0 rlineto
+0 -85 rlineto
+168 0 rlineto
+-32 -108 -78 -54 -124 0 rrcurveto
+-166 0 -99 117 0 123 rrcurveto
+0 141 108 105 147 0 rrcurveto
+83 0 73 -31 64 -62 rrcurveto
+63 62 rlineto
+closepath
+endchar } ND
+/H { 
+0 604 hsbw
+0 383 hstem
+602 20 hstem
+68 85 vstem
+450 84 vstem
+68 622 rmoveto
+0 -622 rlineto
+85 0 rlineto
+0 299 rlineto
+297 0 rlineto
+0 -299 rlineto
+84 0 rlineto
+0 622 rlineto
+-84 0 rlineto
+0 -239 rlineto
+-297 0 rlineto
+0 239 rlineto
+-85 0 rlineto
+closepath
+endchar } ND
+/I { 
+0 219 hsbw
+0 20 hstem
+602 20 hstem
+64 84 vstem
+64 622 rmoveto
+0 -622 rlineto
+84 0 rlineto
+0 622 rlineto
+-84 0 rlineto
+closepath
+endchar } ND
+/J { 
+0 385 hsbw
+-21 83 hstem
+601 20 hstem
+210 85 vstem
+210 621 rmoveto
+0 -469 rlineto
+0 -60 -23 -30 -44 0 rrcurveto
+-18 0 -22 4 -27 10 rrcurveto
+-42 -69 rlineto
+34 -18 36 -10 36 0 rrcurveto
+103 0 52 62 0 124 rrcurveto
+0 456 rlineto
+-85 0 rlineto
+closepath
+endchar } ND
+/K { 
+0 552 hsbw
+0 369 hstem
+602 20 hstem
+65 85 vstem
+426 108 vstem
+65 622 rmoveto
+0 -622 rlineto
+85 0 rlineto
+0 303 rlineto
+276 -303 rlineto
+108 0 rlineto
+-302 333 rlineto
+300 289 rlineto
+-119 0 rlineto
+-263 -253 rlineto
+0 253 rlineto
+-85 0 rlineto
+closepath
+endchar } ND
+/L { 
+0 385 hsbw
+0 84 hstem
+602 20 hstem
+77 84 vstem
+77 622 rmoveto
+0 -622 rlineto
+287 0 rlineto
+0 84 rlineto
+-203 0 rlineto
+0 538 rlineto
+-84 0 rlineto
+closepath
+endchar } ND
+/M { 
+0 771 hsbw
+-24 20 hstem
+0 20 hstem
+628 20 hstem
+20 83 vstem
+665 83 vstem
+578 648 rmoveto
+-193 -464 rlineto
+-195 464 rlineto
+-170 -648 rlineto
+83 0 rlineto
+104 399 rlineto
+178 -423 rlineto
+177 420 rlineto
+103 -396 rlineto
+83 0 rlineto
+-170 648 rlineto
+closepath
+endchar } ND
+/N { 
+0 667 hsbw
+-29 20 hstem
+0 20 hstem
+602 20 hstem
+627 20 hstem
+60 85 vstem
+520 85 vstem
+60 647 rmoveto
+0 -647 rlineto
+85 0 rlineto
+0 442 rlineto
+460 -471 rlineto
+0 651 rlineto
+-85 0 rlineto
+0 -448 rlineto
+-460 473 rlineto
+closepath
+endchar } ND
+/O { 
+0 771 hsbw
+-21 89 hstem
+555 87 hstem
+39 89 vstem
+635 90 vstem
+39 315 rmoveto
+0 -187 152 -149 191 0 rrcurveto
+192 0 151 148 0 188 rrcurveto
+0 177 -155 150 -185 0 rrcurveto
+-191 0 -155 -147 0 -180 rrcurveto
+closepath
+596 -4 rmoveto
+0 -132 -113 -111 -134 0 rrcurveto
+-146 0 -114 107 0 136 rrcurveto
+0 134 112 110 138 0 rrcurveto
+144 0 113 -107 0 -137 rrcurveto
+closepath
+endchar } ND
+/P { 
+0 500 hsbw
+0 330 hstem
+548 74 hstem
+85 84 vstem
+357 89 vstem
+85 622 rmoveto
+0 -622 rlineto
+84 0 rlineto
+0 256 rlineto
+186 -3 91 83 0 107 rrcurveto
+0 105 -95 74 -141 0 rrcurveto
+-125 0 rlineto
+closepath
+84 -74 rmoveto
+157 0 31 -50 0 -57 rrcurveto
+0 -78 -60 -32 -128 -1 rrcurveto
+0 218 rlineto
+closepath
+endchar } ND
+/Q { 
+0 771 hsbw
+-38 15 hstem
+-21 89 hstem
+555 87 hstem
+38 90 vstem
+349 111 vstem
+635 90 vstem
+617 68 rmoveto
+72 66 36 83 0 101 rrcurveto
+0 177 -156 147 -186 0 rrcurveto
+-191 0 -154 -147 0 -180 rrcurveto
+0 -187 152 -149 191 0 rrcurveto
+52 0 56 14 60 27 rrcurveto
+55 -58 rlineto
+111 0 rlineto
+-98 106 rlineto
+closepath
+-131 21 rmoveto
+-38 -14 -33 -7 -30 0 rrcurveto
+-144 0 -113 107 0 136 rrcurveto
+0 136 111 108 139 0 rrcurveto
+145 0 112 -106 0 -137 rrcurveto
+0 -70 -27 -59 -52 -50 rrcurveto
+-96 102 rlineto
+-111 0 rlineto
+137 -146 rlineto
+closepath
+endchar } ND
+/R { 
+0 500 hsbw
+0 330 hstem
+547 75 hstem
+78 85 vstem
+351 89 vstem
+78 622 rmoveto
+0 -622 rlineto
+85 0 rlineto
+0 256 rlineto
+19 0 rlineto
+173 -256 rlineto
+97 0 rlineto
+-181 266 rlineto
+116 26 53 68 0 84 rrcurveto
+0 104 -94 74 -133 0 rrcurveto
+-135 0 rlineto
+closepath
+85 -75 rmoveto
+107 0 81 -17 0 -91 rrcurveto
+0 -76 -63 -36 -125 3 rrcurveto
+0 217 rlineto
+closepath
+endchar } ND
+/S { 
+0 500 hsbw
+-21 90 hstem
+554 88 hstem
+71 88 vstem
+372 88 vstem
+445 553 rmoveto
+-47 60 -75 29 -68 0 rrcurveto
+-103 0 -81 -72 0 -89 rrcurveto
+0 -93 64 -48 104 -42 rrcurveto
+79 -32 54 -40 0 -59 rrcurveto
+0 -56 -46 -42 -62 0 rrcurveto
+-64 0 -48 35 -30 70 rrcurveto
+-85 -24 rlineto
+42 -115 84 -56 104 0 rrcurveto
+106 0 87 83 0 104 rrcurveto
+0 105 -73 62 -118 49 rrcurveto
+-63 26 -47 22 0 50 rrcurveto
+0 44 41 30 62 0 rrcurveto
+56 0 22 -19 36 -37 rrcurveto
+69 55 rlineto
+closepath
+endchar } ND
+/T { 
+0 438 hsbw
+0 20 hstem
+537 85 hstem
+175 84 vstem
+27 622 rmoveto
+0 -85 rlineto
+148 0 rlineto
+0 -537 rlineto
+84 0 rlineto
+0 537 rlineto
+148 0 rlineto
+0 85 rlineto
+-380 0 rlineto
+closepath
+endchar } ND
+/U { 
+0 604 hsbw
+-21 82 hstem
+601 20 hstem
+62 85 vstem
+460 85 vstem
+62 621 rmoveto
+0 -368 rlineto
+0 -180 96 -94 148 0 rrcurveto
+145 0 94 99 0 152 rrcurveto
+0 391 rlineto
+-85 0 rlineto
+0 -397 rlineto
+0 -104 -59 -59 -98 0 rrcurveto
+-99 0 -57 64 0 114 rrcurveto
+0 382 rlineto
+-85 0 rlineto
+closepath
+endchar } ND
+/V { 
+0 604 hsbw
+-21 20 hstem
+601 20 hstem
+13 90 vstem
+494 91 vstem
+13 621 rmoveto
+284 -642 rlineto
+288 642 rlineto
+-91 0 rlineto
+-196 -440 rlineto
+-195 440 rlineto
+-90 0 rlineto
+closepath
+endchar } ND
+/W { 
+0 1000 hsbw
+-19 206 hstem
+601 20 hstem
+626 20 hstem
+23 88 vstem
+887 88 vstem
+499 646 rmoveto
+-199 -463 rlineto
+-189 438 rlineto
+-88 0 rlineto
+276 -640 rlineto
+200 460 rlineto
+200 -460 rlineto
+276 640 rlineto
+-88 0 rlineto
+-188 -434 rlineto
+-200 459 rlineto
+closepath
+endchar } ND
+/X { 
+0 552 hsbw
+0 20 239 144 602 20 hstem3
+41 94 231 90 417 94 vstem3
+41 622 rmoveto
+185 -304 rlineto
+-192 -318 rlineto
+95 0 rlineto
+145 239 rlineto
+143 -239 rlineto
+94 0 rlineto
+-190 318 rlineto
+185 304 rlineto
+-95 0 rlineto
+-137 -227 rlineto
+-139 227 rlineto
+-94 0 rlineto
+closepath
+endchar } ND
+/Y { 
+0 552 hsbw
+0 372 hstem
+602 20 hstem
+28 94 232 84 426 94 vstem3
+28 622 rmoveto
+203 -338 rlineto
+0 -284 rlineto
+85 0 rlineto
+0 285 rlineto
+204 337 rlineto
+-94 0 rlineto
+-151 -250 rlineto
+-153 250 rlineto
+-94 0 rlineto
+closepath
+endchar } ND
+/Z { 
+0 500 hsbw
+0 84 hstem
+537 85 hstem
+47 420 vstem
+47 622 rmoveto
+0 -85 rlineto
+280 0 rlineto
+-295 -537 rlineto
+429 0 rlineto
+0 84 rlineto
+-291 0 rlineto
+297 538 rlineto
+-420 0 rlineto
+closepath
+endchar } ND
+/bracketleft { 
+0 271 hsbw
+-158 61 hstem
+571 61 hstem
+65 68 vstem
+65 632 rmoveto
+0 -790 rlineto
+180 0 rlineto
+0 61 rlineto
+-112 0 rlineto
+0 668 rlineto
+112 0 rlineto
+0 61 rlineto
+-180 0 rlineto
+closepath
+endchar } ND
+/backslash { 
+0 500 hsbw
+704 20 hstem
+33 55 vstem
+439 55 vstem
+33 724 rmoveto
+406 -944 rlineto
+55 0 rlineto
+-406 944 rlineto
+-55 0 rlineto
+closepath
+endchar } ND
+/bracketright { 
+0 271 hsbw
+-158 61 hstem
+571 61 hstem
+129 68 vstem
+16 632 rmoveto
+0 -61 rlineto
+113 0 rlineto
+0 -668 rlineto
+-111 0 rlineto
+0 -61 rlineto
+179 0 rlineto
+0 790 rlineto
+-181 0 rlineto
+closepath
+endchar } ND
+/asciicircum { 
+0 469 hsbw
+629 99 hstem
+26 91 200 70 354 89 vstem3
+116 337 rmoveto
+118 292 rlineto
+120 -292 rlineto
+89 0 rlineto
+-173 391 rlineto
+-71 0 rlineto
+-173 -391 rlineto
+90 0 rlineto
+closepath
+endchar } ND
+/underscore { 
+0 500 hsbw
+-124 50 hstem
+-7 514 vstem
+-7 -124 rmoveto
+514 0 rlineto
+0 50 rlineto
+-514 0 rlineto
+0 -50 rlineto
+closepath
+endchar } ND
+/grave { 
+0 333 hsbw
+477 136 hstem
+156 71 vstem
+227 477 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/a { 
+0 552 hsbw
+-11 77 hstem
+334 80 hstem
+50 89 vstem
+407 74 vstem
+396 403 rmoveto
+0 -82 rlineto
+-31 54 -61 39 -64 0 rrcurveto
+-102 0 -88 -98 0 -113 rrcurveto
+0 -119 86 -95 106 0 rrcurveto
+61 0 51 30 42 61 rrcurveto
+0 -80 rlineto
+85 0 rlineto
+0 403 rlineto
+-85 0 rlineto
+closepath
+11 -203 rmoveto
+0 -72 -61 -62 -73 0 rrcurveto
+-75 0 -59 61 0 76 rrcurveto
+0 70 62 61 72 0 rrcurveto
+73 0 61 -61 0 -73 rrcurveto
+closepath
+endchar } ND
+/b { 
+0 552 hsbw
+-11 80 hstem
+85 238 hstem
+337 77 hstem
+614 20 hstem
+70 73 vstem
+412 90 vstem
+70 634 rmoveto
+0 -634 rlineto
+84 0 rlineto
+0 85 rlineto
+33 -59 63 -37 64 0 rrcurveto
+100 0 88 99 0 115 rrcurveto
+0 114 -89 97 -104 0 rrcurveto
+-68 0 -51 -31 -36 -60 rrcurveto
+0 311 rlineto
+-84 0 rlineto
+closepath
+342 -431 rmoveto
+0 -74 -61 -60 -70 0 rrcurveto
+-78 0 -60 58 0 76 rrcurveto
+0 72 62 62 72 0 rrcurveto
+74 0 61 -61 0 -73 rrcurveto
+closepath
+endchar } ND
+/c { 
+0 385 hsbw
+-11 85 hstem
+331 83 hstem
+24 82 vstem
+359 123 rmoveto
+-47 -33 -42 -16 -36 0 rrcurveto
+-72 0 -56 58 0 75 rrcurveto
+0 66 61 58 71 0 rrcurveto
+38 0 40 -14 43 -27 rrcurveto
+0 95 rlineto
+-40 19 -39 10 -37 0 rrcurveto
+-126 0 -93 -92 0 -125 rrcurveto
+0 -111 97 -97 112 0 rrcurveto
+40 0 42 12 44 25 rrcurveto
+0 97 rlineto
+closepath
+endchar } ND
+/d { 
+0 552 hsbw
+-11 79 hstem
+336 78 hstem
+614 20 hstem
+47 88 vstem
+404 74 vstem
+394 634 rmoveto
+0 -315 rlineto
+-32 56 -58 39 -64 0 rrcurveto
+-106 0 -87 -95 0 -116 rrcurveto
+0 -118 85 -96 106 0 rrcurveto
+64 0 53 31 40 64 rrcurveto
+0 -84 rlineto
+83 0 rlineto
+0 634 rlineto
+-84 0 rlineto
+closepath
+10 -432 rmoveto
+0 -75 -60 -59 -76 0 rrcurveto
+-71 0 -62 62 0 72 rrcurveto
+0 74 59 60 76 0 rrcurveto
+73 0 61 -62 0 -72 rrcurveto
+closepath
+endchar } ND
+/e { 
+0 500 hsbw
+-11 77 hstem
+185 68 hstem
+336 78 hstem
+38 77 vstem
+459 185 rmoveto
+1 136 -95 93 -116 0 rrcurveto
+-118 0 -93 -97 0 -114 rrcurveto
+0 -122 91 -92 120 0 rrcurveto
+78 0 62 30 47 60 rrcurveto
+-62 47 rlineto
+-33 -40 -40 -20 -48 0 rrcurveto
+-63 0 -61 36 -14 83 rrcurveto
+344 0 rlineto
+closepath
+-335 68 rmoveto
+25 55 42 28 58 0 rrcurveto
+53 0 40 -28 28 -55 rrcurveto
+-246 0 rlineto
+closepath
+endchar } ND
+/f { 
+0 333 hsbw
+0 20 hstem
+325 78 hstem
+567 82 hstem
+103 85 vstem
+300 628 rmoveto
+-26 14 -22 7 -19 0 rrcurveto
+-79 0 -51 -59 0 -92 rrcurveto
+0 -95 rlineto
+-74 0 rlineto
+0 -78 rlineto
+74 0 rlineto
+0 -325 rlineto
+85 0 rlineto
+0 325 rlineto
+112 0 rlineto
+0 78 rlineto
+-112 0 rlineto
+0 101 rlineto
+0 40 17 23 31 0 rrcurveto
+18 0 21 -9 25 -16 rrcurveto
+0 86 rlineto
+closepath
+endchar } ND
+/g { 
+0 552 hsbw
+-189 74 hstem
+-11 78 hstem
+335 79 hstem
+45 88 vstem
+404 71 vstem
+392 403 rmoveto
+0 -85 rlineto
+-40 64 -52 32 -66 0 rrcurveto
+-103 0 -86 -95 0 -116 rrcurveto
+0 -116 89 -98 103 0 rrcurveto
+62 0 52 29 41 60 rrcurveto
+0 -76 rlineto
+0 -64 -51 -53 -64 0 rrcurveto
+-47 0 -37 22 -26 43 rrcurveto
+-88 0 rlineto
+33 -93 76 -46 86 0 rrcurveto
+110 0 91 92 0 113 rrcurveto
+0 387 rlineto
+-83 0 rlineto
+closepath
+12 -201 rmoveto
+0 -75 -62 -60 -74 0 rrcurveto
+-74 0 -61 62 0 75 rrcurveto
+0 69 63 62 71 0 rrcurveto
+77 0 60 -57 0 -76 rrcurveto
+closepath
+endchar } ND
+/h { 
+0 438 hsbw
+0 337 hstem
+341 73 hstem
+614 20 hstem
+38 85 vstem
+304 85 vstem
+38 634 rmoveto
+0 -634 rlineto
+85 0 rlineto
+0 222 rlineto
+0 65 49 54 62 0 rrcurveto
+42 0 28 -34 0 -50 rrcurveto
+0 -257 rlineto
+85 0 rlineto
+0 281 rlineto
+0 72 -58 61 -68 0 rrcurveto
+-59 0 -35 -24 -46 -53 rrcurveto
+0 297 rlineto
+-85 0 rlineto
+closepath
+endchar } ND
+/i { 
+0 219 hsbw
+0 20 hstem
+383 20 hstem
+470 130 hstem
+65 84 vstem
+41 535 rmoveto
+0 -36 30 -29 36 0 rrcurveto
+34 0 31 29 0 36 rrcurveto
+0 36 -31 29 -34 0 rrcurveto
+-36 0 -30 -29 0 -36 rrcurveto
+closepath
+24 -132 rmoveto
+0 -403 rlineto
+84 0 rlineto
+0 403 rlineto
+-84 0 rlineto
+closepath
+endchar } ND
+/j { 
+0 219 hsbw
+-189 20 hstem
+383 20 hstem
+468 132 hstem
+66 85 vstem
+42 534 rmoveto
+0 -36 30 -30 36 0 rrcurveto
+36 0 30 30 0 36 rrcurveto
+0 36 -30 30 -36 0 rrcurveto
+-36 0 -30 -30 0 -36 rrcurveto
+closepath
+24 -131 rmoveto
+0 -592 rlineto
+85 0 rlineto
+0 592 rlineto
+-85 0 rlineto
+closepath
+endchar } ND
+/k { 
+0 438 hsbw
+0 226 hstem
+383 20 hstem
+614 20 hstem
+52 84 vstem
+310 105 vstem
+52 634 rmoveto
+0 -634 rlineto
+84 0 rlineto
+0 213 rlineto
+174 -213 rlineto
+105 0 rlineto
+-176 217 rlineto
+174 186 rlineto
+-110 0 rlineto
+-167 -177 rlineto
+0 408 rlineto
+-84 0 rlineto
+closepath
+endchar } ND
+/l { 
+0 219 hsbw
+0 20 hstem
+614 20 hstem
+69 85 vstem
+69 634 rmoveto
+0 -634 rlineto
+85 0 rlineto
+0 634 rlineto
+-85 0 rlineto
+closepath
+endchar } ND
+/m { 
+0 667 hsbw
+0 330 hstem
+339 75 hstem
+49 84 290 84 531 84 vstem3
+49 0 rmoveto
+84 0 rlineto
+0 227 rlineto
+0 62 41 50 51 0 rrcurveto
+43 0 22 -27 0 -52 rrcurveto
+0 -260 rlineto
+85 0 rlineto
+0 219 rlineto
+0 68 39 51 51 0 rrcurveto
+44 0 22 -23 0 -44 rrcurveto
+0 -271 rlineto
+84 0 rlineto
+0 293 rlineto
+0 65 -53 56 -64 0 rrcurveto
+-52 0 -36 -26 -42 -58 rrcurveto
+-24 58 -31 26 -61 0 rrcurveto
+-47 0 -32 -23 -40 -50 rrcurveto
+0 62 rlineto
+-84 0 rlineto
+0 -403 rlineto
+closepath
+endchar } ND
+/n { 
+0 438 hsbw
+0 336 hstem
+342 72 hstem
+41 83 vstem
+304 85 vstem
+41 0 rmoveto
+84 0 rlineto
+0 219 rlineto
+0 68 48 55 56 0 rrcurveto
+44 0 31 -32 0 -44 rrcurveto
+0 -266 rlineto
+85 0 rlineto
+0 291 rlineto
+0 68 -59 55 -73 0 rrcurveto
+-50 0 -34 -25 -49 -53 rrcurveto
+0 67 rlineto
+-83 0 rlineto
+0 -403 rlineto
+closepath
+endchar } ND
+/o { 
+0 500 hsbw
+-11 84 hstem
+330 84 hstem
+34 83 vstem
+384 82 vstem
+34 203 rmoveto
+0 -115 102 -99 119 0 rrcurveto
+110 0 101 100 0 114 rrcurveto
+0 113 -101 98 -116 0 rrcurveto
+-112 0 -103 -101 0 -110 rrcurveto
+closepath
+350 0 rmoveto
+0 -70 -62 -60 -70 0 rrcurveto
+-72 0 -63 59 0 68 rrcurveto
+0 70 61 60 74 0 rrcurveto
+72 0 60 -59 0 -68 rrcurveto
+closepath
+endchar } ND
+/p { 
+0 552 hsbw
+-189 20 hstem
+-11 78 hstem
+336 78 hstem
+68 72 vstem
+410 89 vstem
+152 403 rmoveto
+-84 0 rlineto
+0 -592 rlineto
+85 0 rlineto
+0 269 rlineto
+36 -59 58 -32 60 0 rrcurveto
+104 0 88 98 0 116 rrcurveto
+0 116 -87 95 -104 0 rrcurveto
+-64 0 -52 -31 -40 -61 rrcurveto
+0 81 rlineto
+closepath
+258 -200 rmoveto
+0 -75 -62 -61 -74 0 rrcurveto
+-72 0 -62 62 0 74 rrcurveto
+0 72 62 61 74 0 rrcurveto
+72 0 62 -63 0 -70 rrcurveto
+closepath
+endchar } ND
+/q { 
+0 552 hsbw
+-189 20 hstem
+-11 78 hstem
+335 79 hstem
+47 89 vstem
+405 73 vstem
+394 320 rmoveto
+-31 56 -63 38 -61 0 rrcurveto
+-103 0 -89 -99 0 -114 rrcurveto
+0 -115 89 -97 104 0 rrcurveto
+60 0 52 30 42 60 rrcurveto
+0 -268 rlineto
+84 0 rlineto
+0 592 rlineto
+-84 0 rlineto
+0 -83 rlineto
+closepath
+11 -117 rmoveto
+0 -76 -60 -60 -74 0 rrcurveto
+-74 0 -61 61 0 72 rrcurveto
+0 73 60 62 71 0 rrcurveto
+76 0 62 -60 0 -72 rrcurveto
+closepath
+endchar } ND
+/r { 
+0 333 hsbw
+0 320 hstem
+328 86 hstem
+68 83 vstem
+151 403 rmoveto
+-83 0 rlineto
+0 -403 rlineto
+85 0 rlineto
+0 223 rlineto
+0 60 43 45 58 0 rrcurveto
+5 0 11 -2 16 -3 rrcurveto
+26 85 rlineto
+-16 4 -11 2 -8 0 rrcurveto
+-59 0 -30 -28 -37 -66 rrcurveto
+0 83 rlineto
+closepath
+endchar } ND
+/s { 
+0 333 hsbw
+-11 77 hstem
+337 77 hstem
+39 76 vstem
+231 73 vstem
+300 355 rmoveto
+-48 39 -42 20 -38 0 rrcurveto
+-76 0 -57 -51 0 -66 rrcurveto
+0 -69 46 -24 76 -30 rrcurveto
+46 -18 24 -20 0 -22 rrcurveto
+0 -26 -32 -22 -34 0 rrcurveto
+-26 0 -24 11 -23 23 rrcurveto
+-67 -32 rlineto
+36 -53 47 -26 57 0 rrcurveto
+74 0 65 58 0 68 rrcurveto
+0 67 -47 34 -76 29 rrcurveto
+-45 17 -21 18 0 19 rrcurveto
+0 25 17 13 35 0 rrcurveto
+29 0 17 -11 30 -21 rrcurveto
+57 50 rlineto
+closepath
+endchar } ND
+/t { 
+0 271 hsbw
+0 20 hstem
+383 20 hstem
+405 -1 hstem
+84 85 vstem
+84 520 rmoveto
+0 -116 rlineto
+-67 0 rlineto
+0 -79 rlineto
+67 0 rlineto
+0 -325 rlineto
+85 0 rlineto
+0 325 rlineto
+84 0 rlineto
+0 78 rlineto
+-84 0 rlineto
+0 117 rlineto
+-85 0 rlineto
+closepath
+endchar } ND
+/u { 
+0 438 hsbw
+-11 82 hstem
+383 20 hstem
+42 85 vstem
+308 84 vstem
+42 403 rmoveto
+0 -238 rlineto
+0 -106 71 -70 104 0 rrcurveto
+101 0 74 71 0 102 rrcurveto
+0 241 rlineto
+-84 0 rlineto
+0 -227 rlineto
+0 -66 -35 -39 -54 0 rrcurveto
+-62 0 -30 35 0 70 rrcurveto
+0 227 rlineto
+-85 0 rlineto
+closepath
+endchar } ND
+/v { 
+0 438 hsbw
+-15 20 hstem
+383 20 hstem
+15 89 vstem
+331 90 vstem
+15 403 rmoveto
+203 -418 rlineto
+203 418 rlineto
+-90 0 rlineto
+-112 -233 rlineto
+-115 233 rlineto
+-89 0 rlineto
+closepath
+endchar } ND
+/w { 
+0 667 hsbw
+-11 20 hstem
+383 20 hstem
+27 74 vstem
+564 74 vstem
+332 420 rmoveto
+-112 -264 rlineto
+-119 247 rlineto
+-74 0 rlineto
+197 -411 rlineto
+108 253 rlineto
+108 -256 rlineto
+198 414 rlineto
+-74 0 rlineto
+-119 -250 rlineto
+-113 267 rlineto
+closepath
+endchar } ND
+/x { 
+0 500 hsbw
+0 20 hstem
+383 20 hstem
+29 100 199 100 369 100 vstem3
+57 403 rmoveto
+142 -182 rlineto
+-170 -221 rlineto
+100 0 rlineto
+120 154 rlineto
+119 -154 rlineto
+101 0 rlineto
+-169 221 rlineto
+140 182 rlineto
+-102 0 rlineto
+-88 -115 rlineto
+-90 115 rlineto
+-103 0 rlineto
+closepath
+endchar } ND
+/y { 
+0 500 hsbw
+-189 20 hstem
+383 20 hstem
+101 89 vstem
+374 88 vstem
+31 403 rmoveto
+203 -304 rlineto
+-133 -288 rlineto
+89 0 rlineto
+272 592 rlineto
+-88 0 rlineto
+-101 -219 rlineto
+-146 219 rlineto
+-96 0 rlineto
+closepath
+endchar } ND
+/z { 
+0 438 hsbw
+0 74 hstem
+329 74 hstem
+25 381 vstem
+25 403 rmoveto
+0 -74 rlineto
+240 0 rlineto
+-245 -329 rlineto
+384 0 rlineto
+0 74 rlineto
+-241 0 rlineto
+243 329 rlineto
+-381 0 rlineto
+closepath
+endchar } ND
+/braceleft { 
+0 334 hsbw
+-232 76 197 80 630 76 hstem3
+28 82 vstem
+129 83 vstem
+28 197 rmoveto
+91 0 10 -80 0 -133 rrcurveto
+0 -165 5 -51 150 0 rrcurveto
+27 0 rlineto
+0 76 rlineto
+-15 0 rlineto
+-72 0 -12 19 0 82 rrcurveto
+0 71 rlineto
+0 137 -29 54 -73 30 rrcurveto
+77 32 25 53 0 135 rrcurveto
+0 72 rlineto
+0 84 13 17 71 0 rrcurveto
+15 0 rlineto
+0 76 rlineto
+-27 0 rlineto
+-150 0 -5 -52 0 -164 rrcurveto
+0 -135 -5 -78 -96 0 rrcurveto
+0 -80 rlineto
+closepath
+endchar } ND
+/bar { 
+0 527 hsbw
+-135 20 hstem
+676 20 hstem
+231 65 vstem
+231 696 rmoveto
+0 -831 rlineto
+65 0 rlineto
+0 831 rlineto
+-65 0 rlineto
+closepath
+endchar } ND
+/braceright { 
+0 334 hsbw
+-232 76 197 80 630 76 hstem3
+122 82 vstem
+224 82 vstem
+306 277 rmoveto
+-96 0 -6 79 0 134 rrcurveto
+0 164 -7 52 -147 0 rrcurveto
+-27 0 rlineto
+0 -76 rlineto
+15 0 rlineto
+70 0 14 -17 0 -84 rrcurveto
+0 -72 rlineto
+0 -122 16 -60 86 -38 rrcurveto
+-74 -30 -28 -54 0 -137 rrcurveto
+0 -71 rlineto
+0 -84 -14 -17 -70 0 rrcurveto
+-15 0 rlineto
+0 -76 rlineto
+27 0 rlineto
+149 0 5 52 0 163 rrcurveto
+0 135 8 79 94 0 rrcurveto
+0 80 rlineto
+closepath
+endchar } ND
+/asciitilde { 
+0 656 hsbw
+342 71 hstem
+64 528 vstem
+592 413 rmoveto
+-52 -46 -47 -23 -42 0 rrcurveto
+-22 0 -30 9 -42 20 rrcurveto
+-64 30 -36 20 -50 0 rrcurveto
+-44 0 -48 -21 -51 -40 rrcurveto
+0 -70 rlineto
+53 44 47 23 42 0 rrcurveto
+22 0 31 -10 39 -19 rrcurveto
+67 -32 29 -18 59 0 rrcurveto
+43 0 46 20 50 42 rrcurveto
+0 71 rlineto
+closepath
+endchar } ND
+/Adieresis { 
+0 604 hsbw
+0 20 hstem
+159 487 hstem
+691 103 hstem
+6 88 vstem
+152 103 vstem
+350 103 vstem
+502 89 vstem
+297 646 rmoveto
+-291 -646 rlineto
+88 0 rlineto
+71 159 rlineto
+264 0 rlineto
+73 -159 rlineto
+89 0 rlineto
+-294 646 rlineto
+closepath
+0 -195 rmoveto
+100 -221 rlineto
+-200 0 rlineto
+100 221 rlineto
+closepath
+-145 292 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+28 0 24 22 0 30 rrcurveto
+0 28 -24 23 -28 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/Aring { 
+0 604 hsbw
+0 20 hstem
+159 487 hstem
+662 37 hstem
+805 36 hstem
+6 88 vstem
+215 37 vstem
+356 35 vstem
+502 89 vstem
+297 646 rmoveto
+-291 -646 rlineto
+88 0 rlineto
+71 159 rlineto
+264 0 rlineto
+73 -159 rlineto
+89 0 rlineto
+-294 646 rlineto
+closepath
+0 -195 rmoveto
+100 -221 rlineto
+-200 0 rlineto
+100 221 rlineto
+closepath
+6 211 rmoveto
+48 0 40 40 0 50 rrcurveto
+0 49 -40 40 -48 0 rrcurveto
+-48 0 -40 -41 0 -46 rrcurveto
+0 -51 38 -41 50 0 rrcurveto
+closepath
+1 143 rmoveto
+29 0 23 -24 0 -29 rrcurveto
+0 -30 -24 -23 -28 0 rrcurveto
+-30 0 -22 23 0 31 rrcurveto
+0 28 24 24 28 0 rrcurveto
+closepath
+endchar } ND
+/Ccedilla { 
+0 604 hsbw
+-206 63 hstem
+-21 90 hstem
+554 88 hstem
+35 91 vstem
+318 81 vstem
+241 -75 rmoveto
+8 0 rlineto
+46 0 23 -11 0 -22 rrcurveto
+0 -24 -29 -11 -58 0 rrcurveto
+-38 0 rlineto
+-5 -57 rlineto
+25 -4 22 -2 19 0 rrcurveto
+88 0 57 37 0 56 rrcurveto
+0 38 -31 28 -52 6 rrcurveto
+8 25 rlineto
+22 -3 20 -2 19 0 rrcurveto
+65 0 61 15 57 30 rrcurveto
+0 97 rlineto
+-62 -35 -59 -17 -55 0 rrcurveto
+-152 0 -114 104 0 139 rrcurveto
+0 136 111 106 146 0 rrcurveto
+56 0 61 -17 68 -32 rrcurveto
+0 96 rlineto
+-66 27 -63 14 -60 0 rrcurveto
+-190 0 -154 -148 0 -181 rrcurveto
+0 -139 87 -124 142 -50 rrcurveto
+-23 -75 rlineto
+closepath
+endchar } ND
+/Eacute { 
+0 438 hsbw
+0 84 hstem
+298 84 hstem
+537 85 hstem
+684 136 hstem
+58 84 vstem
+162 72 vstem
+58 622 rmoveto
+0 -622 rlineto
+345 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 214 rlineto
+261 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 155 rlineto
+261 0 rlineto
+0 85 rlineto
+-345 0 rlineto
+closepath
+104 62 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Ntilde { 
+0 667 hsbw
+-29 20 hstem
+0 20 hstem
+602 20 hstem
+627 20 hstem
+697 111 hstem
+60 85 vstem
+170 65 vstem
+433 64 vstem
+520 85 vstem
+60 647 rmoveto
+0 -647 rlineto
+85 0 rlineto
+0 442 rlineto
+460 -471 rlineto
+0 651 rlineto
+-85 0 rlineto
+0 -448 rlineto
+-460 473 rlineto
+closepath
+175 49 rmoveto
+0 4 rlineto
+0 25 14 17 23 0 rrcurveto
+12 0 19 -7 26 -15 rrcurveto
+26 -15 25 -8 22 0 rrcurveto
+57 0 35 39 3 72 rrcurveto
+-64 0 rlineto
+-4 -30 -9 -12 -22 0 rrcurveto
+-11 0 -25 10 -25 11 rrcurveto
+-25 11 -27 9 -15 0 rrcurveto
+-58 0 -42 -44 0 -61 rrcurveto
+0 -6 rlineto
+65 0 rlineto
+closepath
+endchar } ND
+/Odieresis { 
+0 771 hsbw
+-21 89 hstem
+555 87 hstem
+691 103 hstem
+39 89 vstem
+235 103 vstem
+433 103 vstem
+635 90 vstem
+39 315 rmoveto
+0 -187 152 -149 191 0 rrcurveto
+192 0 151 148 0 188 rrcurveto
+0 177 -155 150 -185 0 rrcurveto
+-191 0 -155 -147 0 -180 rrcurveto
+closepath
+596 -4 rmoveto
+0 -132 -113 -111 -134 0 rrcurveto
+-146 0 -114 107 0 136 rrcurveto
+0 134 112 110 138 0 rrcurveto
+144 0 113 -107 0 -137 rrcurveto
+closepath
+-400 432 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+28 0 24 22 0 30 rrcurveto
+0 28 -24 23 -28 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/Udieresis { 
+0 604 hsbw
+-21 82 hstem
+601 20 hstem
+691 103 hstem
+62 85 vstem
+152 103 vstem
+350 103 vstem
+460 85 vstem
+62 621 rmoveto
+0 -368 rlineto
+0 -180 96 -94 148 0 rrcurveto
+145 0 94 99 0 152 rrcurveto
+0 391 rlineto
+-85 0 rlineto
+0 -397 rlineto
+0 -104 -59 -59 -98 0 rrcurveto
+-99 0 -57 64 0 114 rrcurveto
+0 382 rlineto
+-85 0 rlineto
+closepath
+90 122 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+28 0 24 22 0 30 rrcurveto
+0 28 -24 23 -28 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/aacute { 
+0 552 hsbw
+-11 77 hstem
+334 80 hstem
+477 136 hstem
+50 89 vstem
+219 73 vstem
+407 74 vstem
+396 403 rmoveto
+0 -82 rlineto
+-31 54 -61 39 -64 0 rrcurveto
+-102 0 -88 -98 0 -113 rrcurveto
+0 -119 86 -95 106 0 rrcurveto
+61 0 51 30 42 61 rrcurveto
+0 -80 rlineto
+85 0 rlineto
+0 403 rlineto
+-85 0 rlineto
+closepath
+11 -203 rmoveto
+0 -72 -61 -62 -73 0 rrcurveto
+-75 0 -59 61 0 76 rrcurveto
+0 70 62 61 72 0 rrcurveto
+73 0 61 -61 0 -73 rrcurveto
+closepath
+-188 277 rmoveto
+73 0 rlineto
+107 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/agrave { 
+0 552 hsbw
+-11 77 hstem
+334 80 hstem
+477 136 hstem
+50 89 vstem
+266 71 vstem
+407 74 vstem
+396 403 rmoveto
+0 -82 rlineto
+-31 54 -61 39 -64 0 rrcurveto
+-102 0 -88 -98 0 -113 rrcurveto
+0 -119 86 -95 106 0 rrcurveto
+61 0 51 30 42 61 rrcurveto
+0 -80 rlineto
+85 0 rlineto
+0 403 rlineto
+-85 0 rlineto
+closepath
+11 -203 rmoveto
+0 -72 -61 -62 -73 0 rrcurveto
+-75 0 -59 61 0 76 rrcurveto
+0 70 62 61 72 0 rrcurveto
+73 0 61 -61 0 -73 rrcurveto
+closepath
+-70 277 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/acircumflex { 
+0 552 hsbw
+-11 77 hstem
+334 80 hstem
+560 53 hstem
+50 89 vstem
+228 93 vstem
+407 74 vstem
+396 403 rmoveto
+0 -82 rlineto
+-31 54 -61 39 -64 0 rrcurveto
+-102 0 -88 -98 0 -113 rrcurveto
+0 -119 86 -95 106 0 rrcurveto
+61 0 51 30 42 61 rrcurveto
+0 -80 rlineto
+85 0 rlineto
+0 403 rlineto
+-85 0 rlineto
+closepath
+11 -203 rmoveto
+0 -72 -61 -62 -73 0 rrcurveto
+-75 0 -59 61 0 76 rrcurveto
+0 70 62 61 72 0 rrcurveto
+73 0 61 -61 0 -73 rrcurveto
+closepath
+-129 360 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/adieresis { 
+0 552 hsbw
+-11 77 hstem
+334 80 hstem
+484 103 hstem
+50 89 vstem
+407 74 vstem
+396 403 rmoveto
+0 -82 rlineto
+-31 54 -61 39 -64 0 rrcurveto
+-102 0 -88 -98 0 -113 rrcurveto
+0 -119 86 -95 106 0 rrcurveto
+61 0 51 30 42 61 rrcurveto
+0 -80 rlineto
+85 0 rlineto
+0 403 rlineto
+-85 0 rlineto
+closepath
+11 -203 rmoveto
+0 -72 -61 -62 -73 0 rrcurveto
+-75 0 -59 61 0 76 rrcurveto
+0 70 62 61 72 0 rrcurveto
+73 0 61 -61 0 -73 rrcurveto
+closepath
+-281 336 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+28 0 24 22 0 30 rrcurveto
+0 28 -24 23 -28 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/atilde { 
+0 552 hsbw
+-11 77 hstem
+334 80 hstem
+535 65 hstem
+113 65 vstem
+407 74 vstem
+396 403 rmoveto
+0 -82 rlineto
+-31 54 -61 39 -64 0 rrcurveto
+-102 0 -88 -98 0 -113 rrcurveto
+0 -119 86 -95 106 0 rrcurveto
+61 0 51 30 42 61 rrcurveto
+0 -80 rlineto
+85 0 rlineto
+0 403 rlineto
+-85 0 rlineto
+closepath
+11 -203 rmoveto
+0 -72 -61 -62 -73 0 rrcurveto
+-75 0 -59 61 0 76 rrcurveto
+0 70 62 61 72 0 rrcurveto
+73 0 61 -61 0 -73 rrcurveto
+closepath
+-229 289 rmoveto
+0 4 rlineto
+0 25 14 17 23 0 rrcurveto
+11 0 19 -7 27 -15 rrcurveto
+26 -15 25 -8 22 0 rrcurveto
+57 0 35 39 3 72 rrcurveto
+-64 0 rlineto
+-4 -30 -9 -12 -22 0 rrcurveto
+-11 0 -25 10 -25 11 rrcurveto
+-25 11 -27 9 -15 0 rrcurveto
+-59 0 -41 -44 0 -61 rrcurveto
+0 -6 rlineto
+65 0 rlineto
+closepath
+endchar } ND
+/aring { 
+0 552 hsbw
+-11 77 hstem
+334 80 hstem
+455 37 hstem
+598 36 hstem
+50 89 vstem
+189 37 vstem
+330 35 vstem
+407 74 vstem
+396 403 rmoveto
+0 -82 rlineto
+-31 54 -61 39 -64 0 rrcurveto
+-102 0 -88 -98 0 -113 rrcurveto
+0 -119 86 -95 106 0 rrcurveto
+61 0 51 30 42 61 rrcurveto
+0 -80 rlineto
+85 0 rlineto
+0 403 rlineto
+-85 0 rlineto
+closepath
+11 -203 rmoveto
+0 -72 -61 -62 -73 0 rrcurveto
+-75 0 -59 61 0 76 rrcurveto
+0 70 62 61 72 0 rrcurveto
+73 0 61 -61 0 -73 rrcurveto
+closepath
+-130 255 rmoveto
+48 0 40 40 0 50 rrcurveto
+0 49 -40 40 -48 0 rrcurveto
+-48 0 -40 -41 0 -46 rrcurveto
+0 -51 38 -41 50 0 rrcurveto
+closepath
+1 143 rmoveto
+29 0 23 -24 0 -29 rrcurveto
+0 -30 -24 -23 -28 0 rrcurveto
+-30 0 -22 23 0 31 rrcurveto
+0 28 24 24 28 0 rrcurveto
+closepath
+endchar } ND
+/ccedilla { 
+0 385 hsbw
+-206 63 hstem
+-11 85 hstem
+331 83 hstem
+24 82 vstem
+208 81 vstem
+131 -75 rmoveto
+8 0 rlineto
+46 0 23 -11 0 -22 rrcurveto
+0 -24 -29 -11 -58 0 rrcurveto
+-38 0 rlineto
+-5 -57 rlineto
+24 -4 22 -2 20 0 rrcurveto
+88 0 57 37 0 56 rrcurveto
+0 38 -30 28 -53 6 rrcurveto
+9 30 rlineto
+18 0 rlineto
+40 0 42 12 44 25 rrcurveto
+0 97 rlineto
+-47 -33 -42 -16 -36 0 rrcurveto
+-72 0 -56 58 0 75 rrcurveto
+0 66 61 58 71 0 rrcurveto
+38 0 40 -14 43 -27 rrcurveto
+0 95 rlineto
+-40 19 -39 10 -37 0 rrcurveto
+-126 0 -93 -92 0 -125 rrcurveto
+0 -80 51 -78 80 -34 rrcurveto
+-24 -80 rlineto
+closepath
+endchar } ND
+/eacute { 
+0 500 hsbw
+-11 77 hstem
+185 68 hstem
+336 78 hstem
+477 136 hstem
+38 77 vstem
+193 72 vstem
+459 185 rmoveto
+1 136 -95 93 -116 0 rrcurveto
+-118 0 -93 -97 0 -114 rrcurveto
+0 -122 91 -92 120 0 rrcurveto
+78 0 62 30 47 60 rrcurveto
+-62 47 rlineto
+-33 -40 -40 -20 -48 0 rrcurveto
+-63 0 -61 36 -14 83 rrcurveto
+344 0 rlineto
+closepath
+-335 68 rmoveto
+25 55 42 28 58 0 rrcurveto
+53 0 40 -28 28 -55 rrcurveto
+-246 0 rlineto
+closepath
+69 224 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/egrave { 
+0 500 hsbw
+-11 77 hstem
+185 68 hstem
+336 78 hstem
+477 136 hstem
+38 77 vstem
+240 71 vstem
+459 185 rmoveto
+1 136 -95 93 -116 0 rrcurveto
+-118 0 -93 -97 0 -114 rrcurveto
+0 -122 91 -92 120 0 rrcurveto
+78 0 62 30 47 60 rrcurveto
+-62 47 rlineto
+-33 -40 -40 -20 -48 0 rrcurveto
+-63 0 -61 36 -14 83 rrcurveto
+344 0 rlineto
+closepath
+-335 68 rmoveto
+25 55 42 28 58 0 rrcurveto
+53 0 40 -28 28 -55 rrcurveto
+-246 0 rlineto
+closepath
+187 224 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/ecircumflex { 
+0 500 hsbw
+-11 77 hstem
+185 68 hstem
+336 78 hstem
+560 53 hstem
+38 77 vstem
+202 93 vstem
+305 100 vstem
+459 185 rmoveto
+1 136 -95 93 -116 0 rrcurveto
+-118 0 -93 -97 0 -114 rrcurveto
+0 -122 91 -92 120 0 rrcurveto
+78 0 62 30 47 60 rrcurveto
+-62 47 rlineto
+-33 -40 -40 -20 -48 0 rrcurveto
+-63 0 -61 36 -14 83 rrcurveto
+344 0 rlineto
+closepath
+-335 68 rmoveto
+25 55 42 28 58 0 rrcurveto
+53 0 40 -28 28 -55 rrcurveto
+-246 0 rlineto
+closepath
+128 307 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/edieresis { 
+0 500 hsbw
+-11 77 hstem
+185 68 hstem
+336 78 hstem
+484 103 hstem
+38 77 vstem
+298 103 vstem
+459 185 rmoveto
+1 136 -95 93 -116 0 rrcurveto
+-118 0 -93 -97 0 -114 rrcurveto
+0 -122 91 -92 120 0 rrcurveto
+78 0 62 30 47 60 rrcurveto
+-62 47 rlineto
+-33 -40 -40 -20 -48 0 rrcurveto
+-63 0 -61 36 -14 83 rrcurveto
+344 0 rlineto
+closepath
+-335 68 rmoveto
+25 55 42 28 58 0 rrcurveto
+53 0 40 -28 28 -55 rrcurveto
+-246 0 rlineto
+closepath
+-24 283 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+29 0 23 22 0 30 rrcurveto
+0 28 -23 23 -29 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/iacute { 
+0 219 hsbw
+0 20 hstem
+383 20 hstem
+477 136 hstem
+65 84 vstem
+65 403 rmoveto
+0 -403 rlineto
+84 0 rlineto
+0 403 rlineto
+-84 0 rlineto
+closepath
+-13 74 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/igrave { 
+0 219 hsbw
+0 20 hstem
+383 20 hstem
+477 136 hstem
+65 84 vstem
+65 403 rmoveto
+0 -403 rlineto
+84 0 rlineto
+0 403 rlineto
+-84 0 rlineto
+closepath
+105 74 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/icircumflex { 
+0 219 hsbw
+0 20 hstem
+383 20 hstem
+560 53 hstem
+-45 100 70 79 164 100 vstem3
+65 403 rmoveto
+0 -403 rlineto
+84 0 rlineto
+0 403 rlineto
+-84 0 rlineto
+closepath
+46 157 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/idieresis { 
+0 219 hsbw
+0 20 hstem
+383 20 hstem
+484 103 hstem
+-41 103 70 79 157 103 vstem3
+65 403 rmoveto
+0 -403 rlineto
+84 0 rlineto
+0 403 rlineto
+-84 0 rlineto
+closepath
+-106 133 rmoveto
+0 -30 23 -22 29 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-29 0 -23 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+28 0 24 22 0 30 rrcurveto
+0 28 -24 23 -28 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/ntilde { 
+0 438 hsbw
+0 336 hstem
+342 72 hstem
+535 65 hstem
+56 65 vstem
+304 85 vstem
+41 0 rmoveto
+84 0 rlineto
+0 219 rlineto
+0 68 48 55 56 0 rrcurveto
+44 0 31 -32 0 -44 rrcurveto
+0 -266 rlineto
+85 0 rlineto
+0 291 rlineto
+0 68 -59 55 -73 0 rrcurveto
+-50 0 -34 -25 -49 -53 rrcurveto
+0 67 rlineto
+-83 0 rlineto
+0 -403 rlineto
+closepath
+80 489 rmoveto
+0 4 rlineto
+0 25 15 17 22 0 rrcurveto
+12 0 19 -7 26 -15 rrcurveto
+26 -15 25 -8 22 0 rrcurveto
+57 0 35 39 3 72 rrcurveto
+-64 0 rlineto
+-4 -30 -9 -12 -22 0 rrcurveto
+-10 0 -24 9 -26 12 rrcurveto
+-25 10 -28 10 -15 0 rrcurveto
+-58 0 -42 -44 0 -61 rrcurveto
+0 -6 rlineto
+65 0 rlineto
+closepath
+endchar } ND
+/oacute { 
+0 500 hsbw
+-11 84 hstem
+330 84 hstem
+477 136 hstem
+34 83 vstem
+193 72 vstem
+384 82 vstem
+34 203 rmoveto
+0 -115 102 -99 119 0 rrcurveto
+110 0 101 100 0 114 rrcurveto
+0 113 -101 98 -116 0 rrcurveto
+-112 0 -103 -101 0 -110 rrcurveto
+closepath
+350 0 rmoveto
+0 -70 -62 -60 -70 0 rrcurveto
+-72 0 -63 59 0 68 rrcurveto
+0 70 61 60 74 0 rrcurveto
+72 0 60 -59 0 -68 rrcurveto
+closepath
+-191 274 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/ograve { 
+0 500 hsbw
+-11 84 hstem
+330 84 hstem
+477 136 hstem
+34 83 vstem
+240 71 vstem
+384 82 vstem
+34 203 rmoveto
+0 -115 102 -99 119 0 rrcurveto
+110 0 101 100 0 114 rrcurveto
+0 113 -101 98 -116 0 rrcurveto
+-112 0 -103 -101 0 -110 rrcurveto
+closepath
+350 0 rmoveto
+0 -70 -62 -60 -70 0 rrcurveto
+-72 0 -63 59 0 68 rrcurveto
+0 70 61 60 74 0 rrcurveto
+72 0 60 -59 0 -68 rrcurveto
+closepath
+-73 274 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/ocircumflex { 
+0 500 hsbw
+-11 84 hstem
+330 84 hstem
+560 53 hstem
+34 84 206 89 384 82 vstem3
+34 203 rmoveto
+0 -115 102 -99 119 0 rrcurveto
+110 0 101 100 0 114 rrcurveto
+0 113 -101 98 -116 0 rrcurveto
+-112 0 -103 -101 0 -110 rrcurveto
+closepath
+350 0 rmoveto
+0 -70 -62 -60 -70 0 rrcurveto
+-72 0 -63 59 0 68 rrcurveto
+0 70 61 60 74 0 rrcurveto
+72 0 60 -59 0 -68 rrcurveto
+closepath
+-132 357 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/odieresis { 
+0 500 hsbw
+-11 84 hstem
+330 84 hstem
+484 103 hstem
+34 83 vstem
+384 82 vstem
+34 203 rmoveto
+0 -115 102 -99 119 0 rrcurveto
+110 0 101 100 0 114 rrcurveto
+0 113 -101 98 -116 0 rrcurveto
+-112 0 -103 -101 0 -110 rrcurveto
+closepath
+350 0 rmoveto
+0 -70 -62 -60 -70 0 rrcurveto
+-72 0 -63 59 0 68 rrcurveto
+0 70 61 60 74 0 rrcurveto
+72 0 60 -59 0 -68 rrcurveto
+closepath
+-284 333 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+29 0 23 22 0 30 rrcurveto
+0 28 -23 23 -29 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/otilde { 
+0 500 hsbw
+-11 84 hstem
+330 84 hstem
+535 65 hstem
+87 65 vstem
+384 82 vstem
+34 203 rmoveto
+0 -115 102 -99 119 0 rrcurveto
+110 0 101 100 0 114 rrcurveto
+0 113 -101 98 -116 0 rrcurveto
+-112 0 -103 -101 0 -110 rrcurveto
+closepath
+350 0 rmoveto
+0 -70 -62 -60 -70 0 rrcurveto
+-72 0 -63 59 0 68 rrcurveto
+0 70 61 60 74 0 rrcurveto
+72 0 60 -59 0 -68 rrcurveto
+closepath
+-232 286 rmoveto
+0 4 rlineto
+0 25 14 17 23 0 rrcurveto
+12 0 19 -7 26 -15 rrcurveto
+26 -15 25 -8 22 0 rrcurveto
+57 0 35 39 3 72 rrcurveto
+-64 0 rlineto
+-4 -30 -9 -12 -22 0 rrcurveto
+-11 0 -25 10 -25 11 rrcurveto
+-25 11 -27 9 -15 0 rrcurveto
+-58 0 -42 -44 0 -61 rrcurveto
+0 -6 rlineto
+65 0 rlineto
+closepath
+endchar } ND
+/uacute { 
+0 438 hsbw
+-11 82 hstem
+383 20 hstem
+477 136 hstem
+42 85 vstem
+162 72 vstem
+308 84 vstem
+42 403 rmoveto
+0 -238 rlineto
+0 -106 71 -70 104 0 rrcurveto
+101 0 74 71 0 102 rrcurveto
+0 241 rlineto
+-84 0 rlineto
+0 -227 rlineto
+0 -66 -35 -39 -54 0 rrcurveto
+-62 0 -30 35 0 70 rrcurveto
+0 227 rlineto
+-85 0 rlineto
+closepath
+120 74 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/ugrave { 
+0 438 hsbw
+-11 82 hstem
+383 20 hstem
+477 136 hstem
+42 85 vstem
+209 71 vstem
+308 84 vstem
+42 403 rmoveto
+0 -238 rlineto
+0 -106 71 -70 104 0 rrcurveto
+101 0 74 71 0 102 rrcurveto
+0 241 rlineto
+-84 0 rlineto
+0 -227 rlineto
+0 -66 -35 -39 -54 0 rrcurveto
+-62 0 -30 35 0 70 rrcurveto
+0 227 rlineto
+-85 0 rlineto
+closepath
+238 74 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/ucircumflex { 
+0 438 hsbw
+-11 82 hstem
+383 20 hstem
+560 53 hstem
+41 86 171 92 308 84 vstem3
+42 403 rmoveto
+0 -238 rlineto
+0 -106 71 -70 104 0 rrcurveto
+101 0 74 71 0 102 rrcurveto
+0 241 rlineto
+-84 0 rlineto
+0 -227 rlineto
+0 -66 -35 -39 -54 0 rrcurveto
+-62 0 -30 35 0 70 rrcurveto
+0 227 rlineto
+-85 0 rlineto
+closepath
+179 157 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/udieresis { 
+0 438 hsbw
+-11 82 hstem
+383 20 hstem
+484 103 hstem
+42 85 vstem
+308 84 vstem
+42 403 rmoveto
+0 -238 rlineto
+0 -106 71 -70 104 0 rrcurveto
+101 0 74 71 0 102 rrcurveto
+0 241 rlineto
+-84 0 rlineto
+0 -227 rlineto
+0 -66 -35 -39 -54 0 rrcurveto
+-62 0 -30 35 0 70 rrcurveto
+0 227 rlineto
+-85 0 rlineto
+closepath
+27 133 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+28 0 24 22 0 30 rrcurveto
+0 28 -24 23 -28 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/dagger { 
+0 438 hsbw
+364 287 hstem
+200 34 vstem
+233 -185 rmoveto
+1 111 6 100 13 86 rrcurveto
+4 27 2 24 0 22 rrcurveto
+0 30 -6 35 -6 33 rrcurveto
+-7 32 -6 30 0 19 rrcurveto
+19 0 22 -6 22 -6 rrcurveto
+21 -6 21 -6 13 0 rrcurveto
+24 0 19 17 0 23 rrcurveto
+0 24 -19 17 -26 0 rrcurveto
+-13 0 -22 -5 -22 -6 rrcurveto
+-22 -6 -23 -6 -16 0 rrcurveto
+1 37 7 42 7 36 rrcurveto
+8 36 6 31 0 11 rrcurveto
+0 37 -17 23 -25 0 rrcurveto
+-27 0 -17 -22 0 -37 rrcurveto
+0 -15 5 -32 7 -35 rrcurveto
+7 -36 6 -41 1 -35 rrcurveto
+-24 0 -23 6 -19 6 rrcurveto
+-19 6 -18 5 -12 0 rrcurveto
+-31 0 -15 -14 0 -27 rrcurveto
+0 -24 17 -17 24 0 rrcurveto
+14 0 22 6 22 7 rrcurveto
+22 6 23 6 16 0 rrcurveto
+0 -23 -5 -31 -7 -31 rrcurveto
+-7 -32 -6 -34 0 -29 rrcurveto
+0 -25 3 -32 5 -40 rrcurveto
+11 -87 6 -89 1 -96 rrcurveto
+32 0 rlineto
+closepath
+endchar } ND
+/degree { 
+0 400 hsbw
+457 53 hstem
+675 53 hstem
+65 53 vstem
+282 53 vstem
+200 457 rmoveto
+74 0 61 61 0 75 rrcurveto
+0 74 -61 61 -74 0 rrcurveto
+-75 0 -60 -62 0 -73 rrcurveto
+0 -75 60 -61 75 0 rrcurveto
+closepath
+0 218 rmoveto
+45 0 37 -37 0 -45 rrcurveto
+0 -46 -37 -37 -45 0 rrcurveto
+-44 0 -38 37 0 46 rrcurveto
+0 45 36 37 46 0 rrcurveto
+closepath
+endchar } ND
+/cent { 
+0 438 hsbw
+-9 90 hstem
+325 89 hstem
+564 20 hstem
+38 90 vstem
+253 143 vstem
+344 584 rmoveto
+-60 -170 rlineto
+-24 0 rlineto
+-124 0 -98 -95 0 -120 rrcurveto
+0 -58 16 -55 91 -64 rrcurveto
+-72 -203 rlineto
+44 0 rlineto
+66 185 rlineto
+31 -8 27 -5 22 0 rrcurveto
+43 0 44 11 45 23 rrcurveto
+0 101 rlineto
+-49 -30 -46 -15 -43 0 rrcurveto
+-12 0 -15 2 -17 4 rrcurveto
+82 235 rlineto
+34 -9 33 -19 34 -28 rrcurveto
+0 107 rlineto
+-23 16 -23 11 -24 7 rrcurveto
+61 177 rlineto
+-43 0 rlineto
+closepath
+-169 -478 rmoveto
+-34 30 -13 20 0 42 rrcurveto
+0 66 50 57 75 4 rrcurveto
+-78 -219 rlineto
+closepath
+endchar } ND
+/sterling { 
+0 552 hsbw
+-20 83 hstem
+102 61 hstem
+296 70 hstem
+571 74 hstem
+37 47 vstem
+206 79 vstem
+451 76 vstem
+476 482 rmoveto
+-8 102 -66 61 -82 0 rrcurveto
+-80 0 -80 -60 0 -118 rrcurveto
+0 -22 4 -33 8 -46 rrcurveto
+-121 0 rlineto
+0 -70 rlineto
+135 0 rlineto
+13 -40 7 -36 0 -32 rrcurveto
+0 -14 -2 -14 -3 -15 rrcurveto
+-30 12 -24 6 -17 0 rrcurveto
+-52 0 -41 -41 0 -52 rrcurveto
+0 -50 36 -38 46 0 rrcurveto
+36 0 35 22 34 45 rrcurveto
+97 -60 21 -9 42 0 rrcurveto
+85 0 58 62 0 120 rrcurveto
+-76 0 rlineto
+0 -10 rlineto
+0 -56 -25 -33 -38 0 rrcurveto
+-24 0 -24 11 -80 47 rrcurveto
+16 45 9 42 0 38 rrcurveto
+0 14 -2 17 -4 18 rrcurveto
+114 0 rlineto
+0 71 rlineto
+-130 0 rlineto
+-14 60 -7 40 0 22 rrcurveto
+0 50 27 33 44 0 rrcurveto
+44 0 24 -30 5 -59 rrcurveto
+90 0 rlineto
+closepath
+-297 -402 rmoveto
+-22 -31 -20 -15 -19 0 rrcurveto
+-19 0 -15 15 0 19 rrcurveto
+0 20 14 14 22 0 rrcurveto
+16 0 19 -8 24 -14 rrcurveto
+closepath
+endchar } ND
+/section { 
+0 438 hsbw
+-189 75 hstem
+571 74 hstem
+34 74 vstem
+325 73 vstem
+384 507 rmoveto
+-18 92 -70 46 -78 0 rrcurveto
+-92 0 -69 -57 0 -73 rrcurveto
+0 -50 29 -44 59 -37 rrcurveto
+-74 -35 -37 -50 0 -66 rrcurveto
+0 -88 60 -55 83 -46 rrcurveto
+67 -37 48 -19 0 -49 rrcurveto
+0 -30 -31 -23 -41 0 rrcurveto
+-46 0 -23 19 -17 44 rrcurveto
+-84 0 rlineto
+17 -88 65 -50 92 0 rrcurveto
+82 0 71 60 0 68 rrcurveto
+0 51 -30 44 -58 39 rrcurveto
+72 36 37 49 0 63 rrcurveto
+0 88 -59 60 -85 46 rrcurveto
+-66 36 -46 19 0 46 rrcurveto
+0 33 28 22 43 0 rrcurveto
+45 0 29 -22 12 -42 rrcurveto
+85 0 rlineto
+closepath
+-185 -379 rmoveto
+-64 38 -27 27 0 48 rrcurveto
+0 47 30 37 61 26 rrcurveto
+112 -67 14 -28 0 -36 rrcurveto
+0 -52 -31 -38 -60 -23 rrcurveto
+-35 21 rlineto
+closepath
+endchar } ND
+/bullet { 
+0 350 hsbw
+227 247 hstem
+51 248 vstem
+175 227 rmoveto
+68 0 56 55 0 68 rrcurveto
+0 68 -56 56 -68 0 rrcurveto
+-68 0 -56 -56 0 -68 rrcurveto
+0 -68 56 -55 68 0 rrcurveto
+closepath
+endchar } ND
+/paragraph { 
+0 538 hsbw
+-199 20 hstem
+631 85 hstem
+196 80 vstem
+385 83 vstem
+196 -199 rmoveto
+80 0 rlineto
+0 830 rlineto
+109 0 rlineto
+0 -830 rlineto
+83 0 rlineto
+0 830 rlineto
+70 0 rlineto
+0 85 rlineto
+-309 0 rlineto
+-137 0 -94 -80 0 -123 rrcurveto
+0 -116 72 -78 126 -8 rrcurveto
+0 -510 rlineto
+closepath
+endchar } ND
+/germandbls { 
+0 552 hsbw
+-10 74 hstem
+293 72 hstem
+562 80 hstem
+77 84 vstem
+254 94 vstem
+401 81 vstem
+77 1 rmoveto
+84 0 rlineto
+0 433 rlineto
+0 74 55 54 70 0 rrcurveto
+65 0 50 -44 0 -57 rrcurveto
+0 -54 -44 -42 -56 0 rrcurveto
+-47 0 rlineto
+0 -72 rlineto
+42 0 rlineto
+65 0 59 -55 0 -61 rrcurveto
+0 -67 -44 -46 -62 0 rrcurveto
+-33 0 -31 8 -30 18 rrcurveto
+0 -74 rlineto
+31 -17 34 -9 36 0 rrcurveto
+114 0 67 60 0 103 rrcurveto
+0 98 -52 59 -102 18 rrcurveto
+0 2 rlineto
+89 25 45 47 0 70 rrcurveto
+0 98 -83 72 -118 0 rrcurveto
+-124 0 -80 -90 0 -137 rrcurveto
+0 -414 rlineto
+closepath
+endchar } ND
+/registered { 
+0 738 hsbw
+-9 61 hstem
+324 55 hstem
+498 54 hstem
+667 61 hstem
+0 61 vstem
+207 64 vstem
+445 68 vstem
+676 61 vstem
+0 360 rmoveto
+0 -203 166 -166 203 0 rrcurveto
+202 0 166 166 0 203 rrcurveto
+0 202 -166 166 -202 0 rrcurveto
+-203 0 -166 -166 0 -202 rrcurveto
+closepath
+676 0 rmoveto
+0 -170 -139 -138 -168 0 rrcurveto
+-170 0 -138 138 0 170 rrcurveto
+0 168 138 139 170 0 rrcurveto
+168 0 139 -139 0 -168 rrcurveto
+closepath
+-469 -204 rmoveto
+64 0 rlineto
+0 168 rlineto
+38 0 rlineto
+54 0 18 -26 46 -80 rrcurveto
+35 -62 rlineto
+78 0 rlineto
+-48 77 rlineto
+-37 58 -31 33 -24 8 rrcurveto
+0 2 rlineto
+69 5 44 46 0 63 rrcurveto
+0 75 -68 29 -102 0 rrcurveto
+-136 0 rlineto
+0 -396 rlineto
+closepath
+64 223 rmoveto
+0 119 rlineto
+73 0 rlineto
+73 0 28 -15 0 -44 rrcurveto
+0 -42 -30 -18 -66 0 rrcurveto
+-78 0 rlineto
+closepath
+endchar } ND
+/copyright { 
+0 738 hsbw
+-9 61 hstem
+148 58 hstem
+512 54 hstem
+667 61 hstem
+0 61 vstem
+176 66 vstem
+676 61 vstem
+0 360 rmoveto
+0 -203 166 -166 203 0 rrcurveto
+202 0 166 166 0 203 rrcurveto
+0 202 -166 166 -202 0 rrcurveto
+-203 0 -166 -166 0 -202 rrcurveto
+closepath
+676 0 rmoveto
+0 -170 -139 -138 -168 0 rrcurveto
+-170 0 -138 138 0 170 rrcurveto
+0 168 138 139 170 0 rrcurveto
+168 0 139 -139 0 -168 rrcurveto
+closepath
+-189 -60 rmoveto
+-16 -59 -46 -35 -56 0 rrcurveto
+-79 0 -48 56 0 94 rrcurveto
+0 93 50 63 75 0 rrcurveto
+56 0 38 -25 20 -50 rrcurveto
+58 14 rlineto
+-22 74 -59 41 -85 0 rrcurveto
+-119 0 -78 -80 0 -121 rrcurveto
+0 -135 74 -82 120 0 rrcurveto
+86 0 69 50 22 84 rrcurveto
+-60 18 rlineto
+closepath
+endchar } ND
+/trademark { 
+0 1000 hsbw
+318 80 hstem
+657 59 hstem
+239 66 vstem
+480 61 648 55 810 61 vstem3
+239 318 rmoveto
+66 0 rlineto
+0 339 rlineto
+130 0 rlineto
+0 59 rlineto
+-325 0 rlineto
+0 -59 rlineto
+129 0 rlineto
+0 -339 rlineto
+closepath
+241 0 rmoveto
+61 0 rlineto
+0 339 rlineto
+2 0 rlineto
+105 -339 rlineto
+60 0 rlineto
+100 334 rlineto
+2 0 rlineto
+0 -334 rlineto
+61 0 rlineto
+0 398 rlineto
+-96 0 rlineto
+-96 -318 rlineto
+-2 0 rlineto
+-99 318 rlineto
+-98 0 rlineto
+0 -398 rlineto
+closepath
+endchar } ND
+/acute { 
+0 333 hsbw
+477 136 hstem
+109 72 vstem
+109 477 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/dieresis { 
+0 333 hsbw
+484 103 hstem
+16 103 vstem
+214 103 vstem
+16 536 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+29 0 23 22 0 30 rrcurveto
+0 28 -23 23 -29 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/notequal { 
+0 667 hsbw
+179 64 hstem
+407 206 hstem
+339 260 vstem
+599 179 rmoveto
+0 64 rlineto
+-286 0 rlineto
+92 164 rlineto
+194 0 rlineto
+0 65 rlineto
+-158 0 rlineto
+63 113 rlineto
+-49 28 rlineto
+-78 -141 rlineto
+-309 0 rlineto
+0 -65 rlineto
+271 0 rlineto
+-89 -164 rlineto
+-182 0 rlineto
+0 -64 rlineto
+145 0 rlineto
+-62 -112 rlineto
+49 -27 rlineto
+78 139 rlineto
+321 0 rlineto
+closepath
+endchar } ND
+/AE { 
+0 771 hsbw
+0 84 hstem
+194 70 hstem
+298 84 hstem
+538 84 hstem
+11 94 vstem
+404 84 vstem
+359 622 rmoveto
+-348 -622 rlineto
+94 0 rlineto
+108 194 rlineto
+191 0 rlineto
+0 -194 rlineto
+338 0 rlineto
+0 84 rlineto
+-254 0 rlineto
+0 214 rlineto
+255 0 rlineto
+0 84 rlineto
+-255 0 rlineto
+0 156 rlineto
+255 0 rlineto
+0 84 rlineto
+-384 0 rlineto
+closepath
+43 -85 rmoveto
+2 -273 rlineto
+-152 0 rlineto
+150 273 rlineto
+closepath
+endchar } ND
+/Oslash { 
+0 771 hsbw
+-20 89 hstem
+554 90 hstem
+50 89 vstem
+638 89 vstem
+671 694 rmoveto
+-86 -101 rlineto
+-66 36 -44 15 -72 0 rrcurveto
+-199 0 -154 -152 0 -190 rrcurveto
+0 -79 26 -82 63 -64 rrcurveto
+-89 -103 rlineto
+53 -50 rlineto
+93 106 rlineto
+62 -36 42 -14 78 0 rrcurveto
+196 0 153 150 0 192 rrcurveto
+0 81 -21 65 -65 76 rrcurveto
+86 100 rlineto
+-56 50 rlineto
+closepath
+-472 -548 rmoveto
+-42 54 -18 31 0 76 rrcurveto
+0 136 117 111 143 0 rrcurveto
+42 0 41 -11 41 -21 rrcurveto
+-324 -376 rlineto
+closepath
+383 329 rmoveto
+40 -58 16 -33 0 -61 rrcurveto
+0 -143 -114 -111 -148 0 rrcurveto
+-42 0 -40 10 -39 21 rrcurveto
+327 375 rlineto
+closepath
+endchar } ND
+/infinity { 
+0 713 hsbw
+182 72 hstem
+293 119 hstem
+423 72 hstem
+74 69 vstem
+291 87 vstem
+569 71 vstem
+333 412 rmoveto
+-40 53 -55 30 -46 0 rrcurveto
+-66 0 -52 -54 0 -88 rrcurveto
+0 -90 52 -54 66 0 rrcurveto
+46 0 55 29 40 55 rrcurveto
+48 -79 47 -32 62 0 rrcurveto
+86 0 64 64 0 107 rrcurveto
+0 105 -64 65 -86 0 rrcurveto
+-62 0 -47 -33 -48 -78 rrcurveto
+closepath
+45 -58 rmoveto
+53 82 28 15 34 0 rrcurveto
+42 0 34 -36 0 -61 rrcurveto
+0 -56 -28 -44 -49 0 rrcurveto
+-54 0 -16 33 -44 67 rrcurveto
+closepath
+-87 0 rmoveto
+-31 -40 -22 -29 -40 0 rrcurveto
+-31 0 -24 26 0 44 rrcurveto
+0 42 24 26 31 0 rrcurveto
+29 0 31 -23 33 -46 rrcurveto
+closepath
+endchar } ND
+/plusminus { 
+0 667 hsbw
+-22 64 hstem
+373 64 hstem
+301 64 vstem
+68 437 rmoveto
+0 -64 rlineto
+233 0 rlineto
+0 -233 rlineto
+64 0 rlineto
+0 233 rlineto
+234 0 rlineto
+0 64 rlineto
+-234 0 rlineto
+0 234 rlineto
+-64 0 rlineto
+0 -234 rlineto
+-233 0 rlineto
+closepath
+0 -395 rmoveto
+0 -64 rlineto
+531 0 rlineto
+0 64 rlineto
+-531 0 rlineto
+closepath
+endchar } ND
+/lessequal { 
+0 667 hsbw
+-22 64 hstem
+72 504 hstem
+69 86 vstem
+598 72 rmoveto
+0 69 rlineto
+-443 183 rlineto
+443 182 rlineto
+0 70 rlineto
+-529 -223 rlineto
+0 -58 rlineto
+529 -223 rlineto
+closepath
+-530 -30 rmoveto
+0 -64 rlineto
+531 0 rlineto
+0 64 rlineto
+-531 0 rlineto
+closepath
+endchar } ND
+/greaterequal { 
+0 667 hsbw
+-22 64 hstem
+72 504 hstem
+512 86 vstem
+68 576 rmoveto
+0 -70 rlineto
+444 -183 rlineto
+-444 -182 rlineto
+0 -69 rlineto
+530 223 rlineto
+0 57 rlineto
+-530 224 rlineto
+closepath
+0 -534 rmoveto
+0 -64 rlineto
+531 0 rlineto
+0 64 rlineto
+-531 0 rlineto
+closepath
+endchar } ND
+/yen { 
+0 552 hsbw
+0 370 hstem
+467 154 hstem
+52 172 242 80 341 170 vstem3
+189 525 rmoveto
+-59 96 rlineto
+-94 0 rlineto
+58 -96 rlineto
+-41 0 rlineto
+0 -58 rlineto
+77 0 rlineto
+77 -126 rlineto
+-154 0 rlineto
+0 -58 rlineto
+189 0 rlineto
+0 -283 rlineto
+81 0 rlineto
+0 283 rlineto
+188 0 rlineto
+0 58 rlineto
+-153 0 rlineto
+77 126 rlineto
+76 0 rlineto
+0 58 rlineto
+-41 0 rlineto
+58 96 rlineto
+-94 0 rlineto
+-58 -96 rlineto
+-187 0 rlineto
+closepath
+152 -58 rmoveto
+-58 -97 rlineto
+-59 97 rlineto
+117 0 rlineto
+closepath
+endchar } ND
+/uni00B5 { 
+0 556 hsbw
+-199 20 hstem
+-12 79 hstem
+68 87 vstem
+409 78 vstem
+487 518 rmoveto
+-86 0 rlineto
+0 -254 rlineto
+0 -124 -34 -73 -94 0 rrcurveto
+-91 0 -27 80 0 119 rrcurveto
+0 252 rlineto
+-87 0 rlineto
+0 -717 rlineto
+87 0 rlineto
+0 251 rlineto
+2 0 rlineto
+33 -46 31 -18 56 0 rrcurveto
+65 0 33 21 32 52 rrcurveto
+2 0 rlineto
+0 -61 rlineto
+78 0 rlineto
+0 518 rlineto
+closepath
+endchar } ND
+/partialdiff { 
+0 494 hsbw
+-12 67 hstem
+666 62 hstem
+25 88 vstem
+417 56 vstem
+206 556 rmoveto
+30 81 41 29 40 0 rrcurveto
+88 0 9 -102 3 -113 rrcurveto
+-238 -5 -154 -94 0 -195 rrcurveto
+0 -107 61 -62 90 0 rrcurveto
+182 0 115 241 0 223 rrcurveto
+0 147 -28 129 -129 0 rrcurveto
+-62 0 -69 -41 -45 -102 rrcurveto
+66 -29 rlineto
+closepath
+209 -167 rmoveto
+-20 -192 -75 -142 -124 0 rrcurveto
+-44 0 -39 38 0 55 rrcurveto
+0 135 109 95 193 11 rrcurveto
+closepath
+endchar } ND
+/summation { 
+0 713 hsbw
+-210 78 hstem
+648 80 hstem
+60 109 vstem
+68 728 rmoveto
+0 -85 rlineto
+294 -377 rlineto
+-302 -385 rlineto
+0 -91 rlineto
+617 0 rlineto
+0 78 rlineto
+-508 0 rlineto
+317 402 rlineto
+-297 378 rlineto
+483 0 rlineto
+0 80 rlineto
+-604 0 rlineto
+closepath
+endchar } ND
+/product { 
+0 823 hsbw
+-210 20 hstem
+643 85 hstem
+79 94 vstem
+650 94 vstem
+79 728 rmoveto
+0 -938 rlineto
+94 0 rlineto
+0 853 rlineto
+477 0 rlineto
+0 -853 rlineto
+94 0 rlineto
+0 938 rlineto
+-665 0 rlineto
+closepath
+endchar } ND
+/pi { 
+0 615 hsbw
+0 20 hstem
+374 75 hstem
+136 89 vstem
+395 89 vstem
+594 373 rmoveto
+0 76 rlineto
+-453 0 rlineto
+-42 0 -39 -10 -36 -18 rrcurveto
+0 -72 rlineto
+32 16 38 9 42 0 rrcurveto
+0 -374 rlineto
+89 0 rlineto
+0 373 rlineto
+170 0 rlineto
+0 -373 rlineto
+89 0 rlineto
+0 373 rlineto
+110 0 rlineto
+closepath
+endchar } ND
+/integral { 
+0 274 hsbw
+-107 71 hstem
+840 76 hstem
+123 51 vstem
+294 859 rmoveto
+0 33 -31 24 -37 0 rrcurveto
+-138 0 35 -91 0 -393 rrcurveto
+0 -131 1 -88 2 -56 rrcurveto
+3 -56 0 -28 0 -12 rrcurveto
+0 -70 -10 -27 -16 0 rrcurveto
+-5 0 -9 7 -9 10 rrcurveto
+-9 8 -11 8 -11 0 rrcurveto
+-26 0 -18 -21 0 -24 rrcurveto
+0 -33 28 -26 32 0 rrcurveto
+181 0 -53 136 0 389 rrcurveto
+0 107 -5 93 -4 69 rrcurveto
+-6 68 -4 46 0 11 rrcurveto
+0 18 6 10 12 0 rrcurveto
+7 0 7 -5 7 -7 rrcurveto
+9 -6 9 -6 12 0 rrcurveto
+29 0 22 17 0 26 rrcurveto
+closepath
+endchar } ND
+/ordfeminine { 
+0 365 hsbw
+367 49 426 157 593 49 hstem3
+38 57 vstem
+271 46 vstem
+264 374 rmoveto
+53 0 rlineto
+0 261 rlineto
+-54 0 rlineto
+0 -52 rlineto
+-2 0 rlineto
+-27 39 -33 20 -38 0 rrcurveto
+-68 0 -57 -62 0 -74 rrcurveto
+0 -78 55 -61 70 0 rrcurveto
+38 0 33 19 28 39 rrcurveto
+2 0 rlineto
+0 -51 rlineto
+closepath
+7 129 rmoveto
+0 -47 -40 -40 -48 0 rrcurveto
+-50 0 -38 40 0 50 rrcurveto
+0 45 41 40 48 0 rrcurveto
+48 0 39 -39 0 -49 rrcurveto
+closepath
+endchar } ND
+/ordmasculine { 
+0 323 hsbw
+366 54 hstem
+588 54 hstem
+21 54 vstem
+249 54 vstem
+21 505 rmoveto
+0 -75 65 -64 78 0 rrcurveto
+73 0 66 64 0 75 rrcurveto
+0 73 -66 64 -76 0 rrcurveto
+-74 0 -66 -65 0 -72 rrcurveto
+closepath
+228 0 rmoveto
+0 -46 -40 -39 -46 0 rrcurveto
+-46 0 -42 40 0 43 rrcurveto
+0 45 40 40 47 0 rrcurveto
+48 0 39 -38 0 -45 rrcurveto
+closepath
+endchar } ND
+/uni2126 { 
+0 768 hsbw
+0 81 hstem
+654 80 hstem
+73 104 vstem
+242 102 vstem
+439 103 vstem
+609 101 vstem
+242 82 rmoveto
+-180 0 rlineto
+0 -82 rlineto
+282 0 rlineto
+0 88 rlineto
+-104 46 -63 105 0 142 rrcurveto
+0 148 64 125 152 0 rrcurveto
+143 0 73 -148 0 -127 rrcurveto
+0 -124 -42 -105 -128 -64 rrcurveto
+0 -86 rlineto
+281 0 rlineto
+0 81 rlineto
+-178 0 rlineto
+123 79 45 85 0 146 rrcurveto
+0 191 -119 152 -196 0 rrcurveto
+-191 0 -131 -158 0 -184 rrcurveto
+0 -141 33 -91 136 -78 rrcurveto
+closepath
+endchar } ND
+/ae { 
+0 823 hsbw
+-11 78 hstem
+183 71 hstem
+336 78 hstem
+25 89 vstem
+379 75 vstem
+701 89 vstem
+369 331 rmoveto
+-43 55 -53 28 -60 0 rrcurveto
+-102 0 -86 -97 0 -114 rrcurveto
+0 -114 87 -100 99 0 rrcurveto
+62 0 53 29 42 58 rrcurveto
+2 0 rlineto
+0 -75 rlineto
+83 0 rlineto
+0 32 rlineto
+42 -29 43 -14 44 0 rrcurveto
+82 0 62 30 42 61 rrcurveto
+-62 45 rlineto
+-33 -39 -39 -19 -46 0 rrcurveto
+-67 0 -51 41 -16 74 rrcurveto
+336 0 rlineto
+0 15 rlineto
+0 117 -96 99 -113 0 rrcurveto
+-60 0 -25 -14 -44 -30 rrcurveto
+0 33 rlineto
+-83 0 rlineto
+0 -72 rlineto
+closepath
+95 -77 rmoveto
+25 54 39 28 54 0 rrcurveto
+54 0 39 -28 26 -54 rrcurveto
+-237 0 rlineto
+closepath
+-85 -54 rmoveto
+0 -72 -59 -61 -72 0 rrcurveto
+-72 0 -62 61 0 72 rrcurveto
+0 73 61 61 76 0 rrcurveto
+70 0 58 -61 0 -73 rrcurveto
+closepath
+endchar } ND
+/oslash { 
+0 500 hsbw
+-38 20 hstem
+-8 84 hstem
+331 84 hstem
+36 84 vstem
+384 84 vstem
+419 446 rmoveto
+-54 -63 rlineto
+-38 21 -38 11 -37 0 rrcurveto
+-115 0 -101 -99 0 -110 rrcurveto
+0 -59 15 -34 38 -46 rrcurveto
+-54 -63 rlineto
+48 -42 rlineto
+55 63 rlineto
+36 -22 38 -11 40 0 rrcurveto
+118 0 98 99 0 119 rrcurveto
+0 42 -19 44 -36 46 rrcurveto
+54 63 rlineto
+-48 41 rlineto
+closepath
+-274 -316 rmoveto
+-17 26 -8 23 0 22 rrcurveto
+0 70 59 60 74 0 rrcurveto
+15 0 19 -4 22 -8 rrcurveto
+-164 -189 rlineto
+closepath
+214 148 rmoveto
+16 -25 9 -24 0 -22 rrcurveto
+0 -72 -61 -59 -73 0 rrcurveto
+-17 0 -19 4 -20 10 rrcurveto
+165 188 rlineto
+closepath
+endchar } ND
+/questiondown { 
+0 385 hsbw
+-103 81 hstem
+315 81 hstem
+444 106 hstem
+26 88 133 95 252 78 vstem3
+133 497 rmoveto
+0 -30 23 -23 30 0 rrcurveto
+29 0 24 25 0 28 rrcurveto
+0 29 -24 24 -29 0 rrcurveto
+-30 0 -23 -24 0 -29 rrcurveto
+closepath
+142 -422 rmoveto
+-6 -65 -28 -32 -51 0 rrcurveto
+-42 0 -34 31 0 36 rrcurveto
+0 50 39 18 62 28 rrcurveto
+71 32 44 37 0 70 rrcurveto
+0 68 -53 48 -74 0 rrcurveto
+-76 0 -62 -47 -16 -98 rrcurveto
+81 0 rlineto
+16 45 18 19 40 0 rrcurveto
+28 0 20 -16 0 -21 rrcurveto
+0 -38 -39 -12 -57 -26 rrcurveto
+-74 -34 -51 -49 0 -76 rrcurveto
+0 -81 71 -65 91 0 rrcurveto
+90 0 65 62 8 116 rrcurveto
+-81 0 rlineto
+closepath
+endchar } ND
+/exclamdown { 
+0 219 hsbw
+-82 467 hstem
+443 107 hstem
+69 83 vstem
+57 497 rmoveto
+0 -30 23 -24 30 0 rrcurveto
+29 0 24 24 0 30 rrcurveto
+0 29 -24 24 -29 0 rrcurveto
+-30 0 -23 -24 0 -29 rrcurveto
+closepath
+12 -112 rmoveto
+0 -467 rlineto
+83 0 rlineto
+0 467 rlineto
+-83 0 rlineto
+closepath
+endchar } ND
+/logicalnot { 
+0 667 hsbw
+412 64 hstem
+535 64 vstem
+68 476 rmoveto
+0 -64 rlineto
+467 0 rlineto
+0 -238 rlineto
+64 0 rlineto
+0 302 rlineto
+-531 0 rlineto
+closepath
+endchar } ND
+/radical { 
+0 549 hsbw
+-38 20 hstem
+515 912 rmoveto
+-35 5 rlineto
+-127 -798 rlineto
+-197 403 rlineto
+-146 -72 rlineto
+16 -33 rlineto
+96 47 rlineto
+243 -502 rlineto
+150 950 rlineto
+closepath
+endchar } ND
+/florin { 
+0 556 hsbw
+-210 77 hstem
+450 68 hstem
+647 82 hstem
+265 89 vstem
+25 -198 rmoveto
+40 -8 36 -4 32 0 rrcurveto
+77 0 35 37 16 90 rrcurveto
+93 533 rlineto
+100 0 rlineto
+12 68 rlineto
+-100 0 rlineto
+10 51 rlineto
+12 62 11 16 38 0 rrcurveto
+20 0 26 -4 32 -8 rrcurveto
+17 75 rlineto
+-56 13 rlineto
+-17 4 -15 2 -13 0 rrcurveto
+-75 0 -48 -25 -20 -120 rrcurveto
+-11 -66 rlineto
+-99 0 rlineto
+-11 -68 rlineto
+98 0 rlineto
+-87 -508 rlineto
+-10 -54 -13 -21 -38 0 rrcurveto
+-18 0 -26 4 -32 7 rrcurveto
+-16 -76 rlineto
+closepath
+endchar } ND
+/approxequal { 
+0 656 hsbw
+182 65 hstem
+261 64 hstem
+377 65 hstem
+457 64 hstem
+64 528 vstem
+592 511 rmoveto
+-52 -46 -47 -23 -42 0 rrcurveto
+-22 0 -30 9 -42 20 rrcurveto
+-64 30 -36 20 -50 0 rrcurveto
+-44 0 -48 -21 -51 -41 rrcurveto
+0 -69 rlineto
+53 44 47 23 42 0 rrcurveto
+22 0 31 -10 39 -19 rrcurveto
+67 -32 29 -19 59 0 rrcurveto
+43 0 46 20 50 42 rrcurveto
+0 72 rlineto
+closepath
+0 -196 rmoveto
+-52 -46 -47 -22 -42 0 rrcurveto
+-22 0 -31 9 -41 20 rrcurveto
+-64 31 -36 18 -50 0 rrcurveto
+-44 0 -48 -21 -51 -40 rrcurveto
+0 -70 rlineto
+53 44 47 23 42 0 rrcurveto
+22 0 31 -10 39 -18 rrcurveto
+68 -32 28 -19 59 0 rrcurveto
+43 0 46 20 50 42 rrcurveto
+0 71 rlineto
+closepath
+endchar } ND
+/uni2206 { 
+0 612 hsbw
+0 49 hstem
+6 602 vstem
+326 688 rmoveto
+-320 -688 rlineto
+602 0 rlineto
+-282 688 rlineto
+closepath
+-36 -171 rmoveto
+194 -468 rlineto
+-412 0 rlineto
+218 468 rlineto
+closepath
+endchar } ND
+/guillemotleft { 
+0 500 hsbw
+39 461 hstem
+134 89 vstem
+277 90 vstem
+370 90 vstem
+135 501 rmoveto
+-94 -232 rlineto
+93 -229 rlineto
+89 0 rlineto
+-93 231 rlineto
+95 230 rlineto
+-90 0 rlineto
+closepath
+236 -1 rmoveto
+-94 -230 rlineto
+93 -231 rlineto
+90 0 rlineto
+-93 231 rlineto
+96 230 rlineto
+-92 0 rlineto
+closepath
+endchar } ND
+/guillemotright { 
+0 500 hsbw
+40 461 hstem
+38 91 vstem
+276 89 vstem
+38 501 rmoveto
+95 -230 rlineto
+-95 -231 rlineto
+91 0 rlineto
+94 230 rlineto
+-94 231 rlineto
+-91 0 rlineto
+closepath
+238 0 rmoveto
+93 -232 rlineto
+-94 -229 rlineto
+90 0 rlineto
+95 232 rlineto
+-95 229 rlineto
+-89 0 rlineto
+closepath
+endchar } ND
+/ellipsis { 
+0 1000 hsbw
+-9 143 hstem
+95 143 428 144 762 143 vstem3
+95 64 rmoveto
+0 -40 31 -32 40 0 rrcurveto
+40 0 32 32 0 40 rrcurveto
+0 38 -32 33 -40 0 rrcurveto
+-40 0 -31 -33 0 -38 rrcurveto
+closepath
+333 -1 rmoveto
+0 -40 32 -32 40 0 rrcurveto
+40 0 32 32 0 40 rrcurveto
+0 38 -32 33 -40 0 rrcurveto
+-40 0 -32 -33 0 -38 rrcurveto
+closepath
+334 0 rmoveto
+0 -40 32 -31 39 0 rrcurveto
+40 0 32 31 0 40 rrcurveto
+0 40 -32 31 -40 0 rrcurveto
+-39 0 -32 -31 0 -40 rrcurveto
+closepath
+endchar } ND
+/uni00A0 { 
+0 276 hsbw
+endchar } ND
+/Agrave { 
+0 604 hsbw
+0 20 hstem
+159 487 hstem
+684 136 hstem
+6 88 vstem
+292 71 vstem
+502 89 vstem
+297 646 rmoveto
+-291 -646 rlineto
+88 0 rlineto
+71 159 rlineto
+264 0 rlineto
+73 -159 rlineto
+89 0 rlineto
+-294 646 rlineto
+closepath
+0 -195 rmoveto
+100 -221 rlineto
+-200 0 rlineto
+100 221 rlineto
+closepath
+66 233 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/Atilde { 
+0 604 hsbw
+0 20 hstem
+159 487 hstem
+697 111 hstem
+6 88 vstem
+139 65 vstem
+402 64 vstem
+502 89 vstem
+297 646 rmoveto
+-291 -646 rlineto
+88 0 rlineto
+71 159 rlineto
+264 0 rlineto
+73 -159 rlineto
+89 0 rlineto
+-294 646 rlineto
+closepath
+0 -195 rmoveto
+100 -221 rlineto
+-200 0 rlineto
+100 221 rlineto
+closepath
+-93 245 rmoveto
+0 4 rlineto
+0 25 15 17 22 0 rrcurveto
+12 0 19 -7 26 -15 rrcurveto
+26 -15 25 -8 22 0 rrcurveto
+57 0 35 39 3 72 rrcurveto
+-64 0 rlineto
+-4 -30 -9 -12 -22 0 rrcurveto
+-10 0 -24 9 -26 12 rrcurveto
+-25 10 -28 10 -15 0 rrcurveto
+-58 0 -42 -44 0 -61 rrcurveto
+0 -6 rlineto
+65 0 rlineto
+closepath
+endchar } ND
+/Otilde { 
+0 771 hsbw
+-21 89 hstem
+555 87 hstem
+697 111 hstem
+39 89 vstem
+222 65 vstem
+485 64 vstem
+635 90 vstem
+39 315 rmoveto
+0 -187 152 -149 191 0 rrcurveto
+192 0 151 148 0 188 rrcurveto
+0 177 -155 150 -185 0 rrcurveto
+-191 0 -155 -147 0 -180 rrcurveto
+closepath
+596 -4 rmoveto
+0 -132 -113 -111 -134 0 rrcurveto
+-146 0 -114 107 0 136 rrcurveto
+0 134 112 110 138 0 rrcurveto
+144 0 113 -107 0 -137 rrcurveto
+closepath
+-348 385 rmoveto
+0 4 rlineto
+0 25 15 17 22 0 rrcurveto
+12 0 19 -7 26 -15 rrcurveto
+26 -15 25 -8 22 0 rrcurveto
+57 0 35 39 3 72 rrcurveto
+-64 0 rlineto
+-4 -30 -9 -12 -22 0 rrcurveto
+-10 0 -24 9 -26 12 rrcurveto
+-25 10 -28 10 -15 0 rrcurveto
+-58 0 -42 -44 0 -61 rrcurveto
+0 -6 rlineto
+65 0 rlineto
+closepath
+endchar } ND
+/OE { 
+0 771 hsbw
+0 84 hstem
+299 83 hstem
+537 84 hstem
+31 89 vstem
+407 82 vstem
+736 621 rmoveto
+-401 0 rlineto
+-168 0 -136 -140 0 -169 rrcurveto
+0 -180 135 -132 187 0 rrcurveto
+381 0 rlineto
+0 84 rlineto
+-245 0 rlineto
+0 215 rlineto
+246 0 rlineto
+0 83 rlineto
+-246 0 rlineto
+0 155 rlineto
+247 0 rlineto
+0 84 rlineto
+closepath
+-329 -537 rmoveto
+-40 0 rlineto
+-156 0 -91 97 0 129 rrcurveto
+0 135 96 92 156 0 rrcurveto
+35 0 rlineto
+0 -453 rlineto
+closepath
+endchar } ND
+/oe { 
+0 823 hsbw
+-10 86 hstem
+185 71 hstem
+337 78 hstem
+28 86 vstem
+374 82 vstem
+703 88 vstem
+705 128 rmoveto
+-30 -40 -38 -20 -48 0 rrcurveto
+-72 0 -44 39 -17 78 rrcurveto
+335 0 rlineto
+0 130 -90 100 -114 0 rrcurveto
+-70 0 -57 -29 -45 -56 rrcurveto
+-44 56 -55 29 -64 0 rrcurveto
+-120 0 -104 -97 0 -112 rrcurveto
+0 -115 103 -101 115 0 rrcurveto
+60 0 65 27 46 60 rrcurveto
+42 -58 57 -28 72 0 rrcurveto
+72 0 60 30 49 60 rrcurveto
+-64 47 rlineto
+closepath
+-242 128 rmoveto
+24 54 40 27 58 0 rrcurveto
+50 0 40 -27 28 -54 rrcurveto
+-240 0 rlineto
+closepath
+-89 -53 rmoveto
+0 -68 -60 -59 -68 0 rrcurveto
+-72 0 -60 57 0 67 rrcurveto
+0 73 59 58 76 0 rrcurveto
+69 0 56 -58 0 -70 rrcurveto
+closepath
+endchar } ND
+/endash { 
+0 500 hsbw
+206 89 hstem
+-5 511 vstem
+-5 295 rmoveto
+0 -89 rlineto
+511 0 rlineto
+0 89 rlineto
+-511 0 rlineto
+closepath
+endchar } ND
+/emdash { 
+0 1000 hsbw
+206 89 hstem
+-6 1011 vstem
+-6 295 rmoveto
+0 -89 rlineto
+1011 0 rlineto
+0 89 rlineto
+-1011 0 rlineto
+closepath
+endchar } ND
+/quotedblleft { 
+0 385 hsbw
+393 247 hstem
+46 56 vstem
+234 56 vstem
+300 640 rmoveto
+-44 -46 -22 -48 0 -49 rrcurveto
+0 -104 rlineto
+109 0 rlineto
+0 110 rlineto
+-53 0 rlineto
+2 35 17 33 30 31 rrcurveto
+-39 38 rlineto
+closepath
+-189 -1 rmoveto
+-46 -48 -19 -44 0 -70 rrcurveto
+0 -85 rlineto
+110 0 rlineto
+0 112 rlineto
+-54 0 rlineto
+2 28 15 33 30 37 rrcurveto
+-38 37 rlineto
+closepath
+endchar } ND
+/quotedblright { 
+0 385 hsbw
+522 111 hstem
+100 56 vstem
+289 54 vstem
+234 633 rmoveto
+0 -111 rlineto
+55 0 rlineto
+-2 -35 -17 -33 -30 -30 rrcurveto
+39 -37 rlineto
+42 42 22 45 0 50 rrcurveto
+0 109 rlineto
+-109 0 rlineto
+closepath
+-188 0 rmoveto
+0 -111 rlineto
+54 0 rlineto
+-3 -38 -17 -32 -30 -27 rrcurveto
+39 -39 rlineto
+44 46 23 49 0 52 rrcurveto
+0 100 rlineto
+-110 0 rlineto
+closepath
+endchar } ND
+/quoteleft { 
+0 219 hsbw
+394 247 hstem
+54 56 vstem
+118 641 rmoveto
+-40 -43 -24 -53 0 -41 rrcurveto
+0 -110 rlineto
+111 0 rlineto
+0 111 rlineto
+-55 0 rlineto
+2 38 16 33 30 26 rrcurveto
+-40 39 rlineto
+closepath
+endchar } ND
+/quoteright { 
+0 219 hsbw
+524 110 hstem
+107 55 vstem
+52 634 rmoveto
+0 -110 rlineto
+55 0 rlineto
+-1 -35 -16 -33 -32 -32 rrcurveto
+39 -37 rlineto
+40 37 25 53 0 44 rrcurveto
+0 113 rlineto
+-110 0 rlineto
+closepath
+endchar } ND
+/divide { 
+0 667 hsbw
+82 83 296 58 485 83 hstem3
+291 82 vstem
+291 527 rmoveto
+0 -23 19 -19 23 0 rrcurveto
+22 0 18 19 0 23 rrcurveto
+0 21 -19 20 -21 0 rrcurveto
+-23 0 -19 -18 0 -21 rrcurveto
+0 -2 rlineto
+closepath
+-223 -173 rmoveto
+0 -62 rlineto
+532 0 rlineto
+0 62 rlineto
+-532 0 rlineto
+closepath
+265 -272 rmoveto
+22 0 19 18 0 24 rrcurveto
+0 22 -19 19 -22 0 rrcurveto
+-23 0 -19 -20 0 -22 rrcurveto
+0 -23 19 -18 23 0 rrcurveto
+closepath
+endchar } ND
+/lozenge { 
+0 494 hsbw
+0 54 hstem
+691 54 hstem
+22 62 217 59 410 60 vstem3
+470 373 rmoveto
+-194 372 rlineto
+-60 0 rlineto
+-194 -372 rlineto
+194 -373 rlineto
+60 0 rlineto
+194 373 rlineto
+closepath
+-60 0 rmoveto
+-164 -319 rlineto
+-163 319 rlineto
+163 318 rlineto
+164 -318 rlineto
+closepath
+endchar } ND
+/ydieresis { 
+0 500 hsbw
+-189 20 hstem
+383 20 hstem
+484 103 hstem
+100 103 vstem
+298 103 vstem
+31 403 rmoveto
+203 -304 rlineto
+-133 -288 rlineto
+89 0 rlineto
+272 592 rlineto
+-88 0 rlineto
+-101 -219 rlineto
+-146 219 rlineto
+-96 0 rlineto
+closepath
+69 133 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+29 0 23 22 0 30 rrcurveto
+0 28 -23 23 -29 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/Ydieresis { 
+0 552 hsbw
+0 372 hstem
+602 20 hstem
+691 103 hstem
+28 94 vstem
+126 103 237 79 324 103 vstem3
+28 622 rmoveto
+203 -338 rlineto
+0 -284 rlineto
+85 0 rlineto
+0 285 rlineto
+204 337 rlineto
+-94 0 rlineto
+-151 -250 rlineto
+-153 250 rlineto
+-94 0 rlineto
+closepath
+98 121 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+28 0 24 22 0 30 rrcurveto
+0 28 -24 23 -28 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/fraction { 
+0 135 hsbw
+-44 20 hstem
+622 20 hstem
+-183 65 vstem
+254 64 vstem
+254 642 rmoveto
+-437 -686 rlineto
+65 0 rlineto
+436 686 rlineto
+-64 0 rlineto
+closepath
+endchar } ND
+/Euro { 
+0 517 hsbw
+-21 90 hstem
+227 58 hstem
+337 58 hstem
+555 88 hstem
+64 88 vstem
+481 24 rmoveto
+0 97 rlineto
+-49 -35 -46 -17 -43 0 rrcurveto
+-101 0 -61 52 -22 106 rrcurveto
+234 0 rlineto
+14 58 rlineto
+-255 0 rlineto
+0 52 rlineto
+271 0 rlineto
+14 58 rlineto
+-277 0 rlineto
+24 106 58 54 94 0 rrcurveto
+44 0 48 -17 53 -33 rrcurveto
+0 96 rlineto
+-53 28 -49 14 -46 0 rrcurveto
+-134 0 -98 -92 -30 -156 rrcurveto
+-36 0 rlineto
+-13 -58 rlineto
+42 0 rlineto
+0 -52 rlineto
+-28 0 rlineto
+-18 -58 rlineto
+52 0 rlineto
+28 -158 99 -90 140 0 rrcurveto
+52 0 48 15 44 30 rrcurveto
+closepath
+endchar } ND
+/guilsinglleft { 
+0 271 hsbw
+40 461 hstem
+131 89 vstem
+132 501 rmoveto
+-95 -232 rlineto
+94 -229 rlineto
+89 0 rlineto
+-93 231 rlineto
+95 230 rlineto
+-90 0 rlineto
+closepath
+endchar } ND
+/guilsinglright { 
+0 272 hsbw
+40 461 hstem
+36 90 vstem
+35 501 rmoveto
+95 -230 rlineto
+-94 -231 rlineto
+90 0 rlineto
+95 230 rlineto
+-95 231 rlineto
+-91 0 rlineto
+closepath
+endchar } ND
+/uniF001 { 
+0 500 hsbw
+0 20 hstem
+327 77 hstem
+406 -1 hstem
+563 82 hstem
+97 82 vstem
+367 82 vstem
+449 468 rmoveto
+0 110 -86 67 -89 0 rrcurveto
+-99 0 -78 -78 0 -94 rrcurveto
+0 -69 rlineto
+-77 0 rlineto
+0 -77 rlineto
+77 0 rlineto
+0 -327 rlineto
+82 0 rlineto
+0 327 rlineto
+115 0 rlineto
+0 77 rlineto
+-115 0 rlineto
+0 58 rlineto
+0 52 43 49 48 0 rrcurveto
+57 0 35 -34 4 -61 rrcurveto
+83 0 rlineto
+closepath
+-82 -63 rmoveto
+0 -405 rlineto
+82 0 rlineto
+0 405 rlineto
+-82 0 rlineto
+closepath
+endchar } ND
+/uniF002 { 
+0 500 hsbw
+0 20 hstem
+326 77 hstem
+562 82 hstem
+97 81 vstem
+366 82 vstem
+448 0 rmoveto
+0 483 rlineto
+0 86 -82 75 -96 0 rrcurveto
+-95 0 -78 -78 0 -93 rrcurveto
+0 -70 rlineto
+-77 0 rlineto
+0 -77 rlineto
+76 0 rlineto
+0 -326 rlineto
+82 0 rlineto
+0 326 rlineto
+116 0 rlineto
+0 77 rlineto
+-116 0 rlineto
+0 55 rlineto
+0 56 43 48 51 0 rrcurveto
+53 0 41 -42 0 -53 rrcurveto
+0 -467 rlineto
+82 0 rlineto
+closepath
+endchar } ND
+/daggerdbl { 
+0 438 hsbw
+-35 20 hstem
+-11 34 hstem
+442 208 hstem
+199 31 vstem
+230 475 rmoveto
+1 25 6 28 7 21 rrcurveto
+8 24 6 20 0 14 rrcurveto
+0 24 -18 19 -24 0 rrcurveto
+-26 0 -17 -18 0 -24 rrcurveto
+0 -10 6 -23 7 -24 rrcurveto
+7 -25 6 -28 0 -23 rrcurveto
+-24 0 -25 6 -21 7 rrcurveto
+-20 7 -18 5 -9 0 rrcurveto
+-26 0 -21 -20 0 -22 rrcurveto
+0 -24 19 -17 26 0 rrcurveto
+14 0 22 6 22 7 rrcurveto
+22 6 22 6 16 0 rrcurveto
+-1 -19 -6 -23 -7 -20 rrcurveto
+-7 -20 -6 -19 0 -11 rrcurveto
+0 -14 7 -19 7 -18 rrcurveto
+7 -17 6 -18 0 -11 rrcurveto
+0 -15 -6 -18 -7 -17 rrcurveto
+-7 -17 -6 -17 0 -13 rrcurveto
+0 -14 6 -20 7 -20 rrcurveto
+7 -20 6 -22 0 -17 rrcurveto
+-18 0 -23 6 -22 6 rrcurveto
+-21 6 -21 6 -13 0 rrcurveto
+-27 0 -18 -17 0 -25 rrcurveto
+0 -21 21 -19 24 0 rrcurveto
+9 0 20 6 22 7 rrcurveto
+22 7 26 5 20 0 rrcurveto
+0 -22 -6 -29 -7 -22 rrcurveto
+-8 -25 -6 -22 0 -14 rrcurveto
+0 -25 17 -17 26 0 rrcurveto
+28 0 14 15 0 28 rrcurveto
+0 12 -4 19 -8 23 rrcurveto
+-10 29 -5 25 0 24 rrcurveto
+21 0 23 -6 21 -6 rrcurveto
+20 -7 21 -5 13 0 rrcurveto
+25 0 18 17 0 25 rrcurveto
+0 24 -18 16 -25 0 rrcurveto
+-11 0 -21 -5 -20 -7 rrcurveto
+-22 -6 -23 -6 -21 0 rrcurveto
+0 16 6 22 7 19 rrcurveto
+7 20 6 19 0 11 rrcurveto
+0 13 -6 20 -7 20 rrcurveto
+-7 19 -6 20 0 10 rrcurveto
+0 9 6 17 8 19 rrcurveto
+7 17 6 21 0 12 rrcurveto
+0 11 -6 20 -8 20 rrcurveto
+-8 20 -6 25 0 19 rrcurveto
+20 0 22 -6 19 -6 rrcurveto
+21 -8 19 -5 17 0 rrcurveto
+28 0 17 15 0 24 rrcurveto
+0 24 -21 19 -25 0 rrcurveto
+-8 0 -14 -3 -17 -6 rrcurveto
+-29 -10 -25 -5 -24 0 rrcurveto
+closepath
+endchar } ND
+/uni00B7 { 
+0 219 hsbw
+242 141 hstem
+39 142 vstem
+39 313 rmoveto
+0 -39 32 -32 39 0 rrcurveto
+38 0 33 32 0 39 rrcurveto
+0 38 -33 32 -38 0 rrcurveto
+-39 0 -32 -32 0 -38 rrcurveto
+closepath
+endchar } ND
+/quotesinglbase { 
+0 219 hsbw
+99 123 rmoveto
+-86 -261 rlineto
+76 -30 rlineto
+115 250 rlineto
+-105 41 rlineto
+closepath
+endchar } ND
+/quotedblbase { 
+0 385 hsbw
+1 111 hstem
+100 55 vstem
+289 54 vstem
+234 113 rmoveto
+0 -111 rlineto
+55 0 rlineto
+-3 -34 -16 -33 -30 -31 rrcurveto
+38 -38 rlineto
+45 50 20 38 0 57 rrcurveto
+0 102 rlineto
+-109 0 rlineto
+closepath
+-189 -1 rmoveto
+0 -111 rlineto
+55 0 rlineto
+-6 -36 -16 -33 -28 -28 rrcurveto
+39 -38 rlineto
+44 43 22 48 0 53 rrcurveto
+0 102 rlineto
+-110 0 rlineto
+closepath
+endchar } ND
+/perthousand { 
+0 1156 hsbw
+-44 63 hstem
+244 64 hstem
+577 65 hstem
+36 66 vstem
+124 64 vstem
+248 67 vstem
+431 67 vstem
+560 64 vstem
+643 67 vstem
+774 66 vstem
+986 67 vstem
+36 461 rmoveto
+0 -106 54 -66 86 0 rrcurveto
+86 0 53 66 0 108 rrcurveto
+0 110 -53 69 -85 0 rrcurveto
+-88 0 -53 -69 0 -112 rrcurveto
+closepath
+66 9 rmoveto
+0 71 24 36 50 0 rrcurveto
+48 0 24 -37 0 -74 rrcurveto
+0 -76 -24 -37 -48 0 rrcurveto
+-50 0 -24 39 0 78 rrcurveto
+closepath
+458 172 rmoveto
+-436 -686 rlineto
+64 0 rlineto
+436 686 rlineto
+-64 0 rlineto
+closepath
+214 -515 rmoveto
+0 -104 56 -67 84 0 rrcurveto
+86 0 53 65 0 108 rrcurveto
+0 112 -53 67 -85 0 rrcurveto
+-88 0 -53 -68 0 -113 rrcurveto
+closepath
+66 9 rmoveto
+0 72 24 36 50 0 rrcurveto
+48 0 24 -38 0 -74 rrcurveto
+0 -76 -24 -37 -48 0 rrcurveto
+-50 0 -24 39 0 78 rrcurveto
+closepath
+-409 -9 rmoveto
+0 -104 54 -67 86 0 rrcurveto
+86 0 53 65 0 108 rrcurveto
+0 112 -53 67 -85 0 rrcurveto
+-88 0 -53 -68 0 -113 rrcurveto
+closepath
+67 1 rmoveto
+0 77 24 39 49 0 rrcurveto
+48 0 24 -38 0 -74 rrcurveto
+0 -76 -24 -37 -48 0 rrcurveto
+-46 0 -27 41 0 68 rrcurveto
+closepath
+endchar } ND
+/Acircumflex { 
+0 604 hsbw
+0 20 hstem
+159 487 hstem
+767 53 hstem
+6 88 vstem
+148 100 258 89 357 100 vstem3
+502 89 vstem
+297 646 rmoveto
+-291 -646 rlineto
+88 0 rlineto
+71 159 rlineto
+264 0 rlineto
+73 -159 rlineto
+89 0 rlineto
+-294 646 rlineto
+closepath
+0 -195 rmoveto
+100 -221 rlineto
+-200 0 rlineto
+100 221 rlineto
+closepath
+7 316 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/Ecircumflex { 
+0 438 hsbw
+0 84 hstem
+298 84 hstem
+537 85 hstem
+767 53 hstem
+58 84 vstem
+171 93 vstem
+274 100 vstem
+58 622 rmoveto
+0 -622 rlineto
+345 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 214 rlineto
+261 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 155 rlineto
+261 0 rlineto
+0 85 rlineto
+-345 0 rlineto
+closepath
+163 145 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/Aacute { 
+0 604 hsbw
+0 20 hstem
+159 487 hstem
+684 136 hstem
+6 88 vstem
+245 72 vstem
+502 89 vstem
+297 646 rmoveto
+-291 -646 rlineto
+88 0 rlineto
+71 159 rlineto
+264 0 rlineto
+73 -159 rlineto
+89 0 rlineto
+-294 646 rlineto
+closepath
+0 -195 rmoveto
+100 -221 rlineto
+-200 0 rlineto
+100 221 rlineto
+closepath
+-52 233 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Edieresis { 
+0 438 hsbw
+0 84 hstem
+298 84 hstem
+537 85 hstem
+691 103 hstem
+58 84 vstem
+267 103 vstem
+58 622 rmoveto
+0 -622 rlineto
+345 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 214 rlineto
+261 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 155 rlineto
+261 0 rlineto
+0 85 rlineto
+-345 0 rlineto
+closepath
+11 121 rmoveto
+0 -30 22 -22 30 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-30 0 -22 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+28 0 24 22 0 30 rrcurveto
+0 28 -24 23 -28 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/Egrave { 
+0 438 hsbw
+0 84 hstem
+298 84 hstem
+537 85 hstem
+684 136 hstem
+58 84 vstem
+209 71 vstem
+58 622 rmoveto
+0 -622 rlineto
+345 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 214 rlineto
+261 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 155 rlineto
+261 0 rlineto
+0 85 rlineto
+-345 0 rlineto
+closepath
+222 62 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/Iacute { 
+0 219 hsbw
+0 20 hstem
+602 20 hstem
+684 136 hstem
+64 84 vstem
+64 622 rmoveto
+0 -622 rlineto
+84 0 rlineto
+0 622 rlineto
+-84 0 rlineto
+closepath
+-12 62 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Icircumflex { 
+0 219 hsbw
+0 20 hstem
+602 20 hstem
+767 53 hstem
+-45 100 71 77 164 100 vstem3
+64 622 rmoveto
+0 -622 rlineto
+84 0 rlineto
+0 622 rlineto
+-84 0 rlineto
+closepath
+47 145 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/Idieresis { 
+0 219 hsbw
+0 20 hstem
+602 20 hstem
+691 103 hstem
+-41 103 71 77 157 103 vstem3
+64 622 rmoveto
+0 -622 rlineto
+84 0 rlineto
+0 622 rlineto
+-84 0 rlineto
+closepath
+-105 121 rmoveto
+0 -30 23 -22 29 0 rrcurveto
+28 0 23 24 0 28 rrcurveto
+0 28 -23 23 -28 0 rrcurveto
+-29 0 -23 -23 0 -28 rrcurveto
+closepath
+198 0 rmoveto
+0 -28 23 -24 28 0 rrcurveto
+28 0 24 22 0 30 rrcurveto
+0 28 -24 23 -28 0 rrcurveto
+-28 0 -23 -23 0 -28 rrcurveto
+closepath
+endchar } ND
+/Igrave { 
+0 219 hsbw
+0 20 hstem
+602 20 hstem
+684 136 hstem
+64 84 vstem
+64 622 rmoveto
+0 -622 rlineto
+84 0 rlineto
+0 622 rlineto
+-84 0 rlineto
+closepath
+106 62 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/Oacute { 
+0 771 hsbw
+-21 89 hstem
+555 87 hstem
+684 136 hstem
+39 89 vstem
+328 72 vstem
+635 90 vstem
+39 315 rmoveto
+0 -187 152 -149 191 0 rrcurveto
+192 0 151 148 0 188 rrcurveto
+0 177 -155 150 -185 0 rrcurveto
+-191 0 -155 -147 0 -180 rrcurveto
+closepath
+596 -4 rmoveto
+0 -132 -113 -111 -134 0 rrcurveto
+-146 0 -114 107 0 136 rrcurveto
+0 134 112 110 138 0 rrcurveto
+144 0 113 -107 0 -137 rrcurveto
+closepath
+-307 373 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Ocircumflex { 
+0 771 hsbw
+-21 89 hstem
+555 87 hstem
+767 53 hstem
+39 89 vstem
+231 100 341 89 440 100 vstem3
+635 90 vstem
+39 315 rmoveto
+0 -187 152 -149 191 0 rrcurveto
+192 0 151 148 0 188 rrcurveto
+0 177 -155 150 -185 0 rrcurveto
+-191 0 -155 -147 0 -180 rrcurveto
+closepath
+596 -4 rmoveto
+0 -132 -113 -111 -134 0 rrcurveto
+-146 0 -114 107 0 136 rrcurveto
+0 134 112 110 138 0 rrcurveto
+144 0 113 -107 0 -137 rrcurveto
+closepath
+-248 456 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/glyph210 { 
+0 350 hsbw
+endchar } ND
+/Ograve { 
+0 771 hsbw
+-21 89 hstem
+555 87 hstem
+684 136 hstem
+39 89 vstem
+375 71 vstem
+635 90 vstem
+39 315 rmoveto
+0 -187 152 -149 191 0 rrcurveto
+192 0 151 148 0 188 rrcurveto
+0 177 -155 150 -185 0 rrcurveto
+-191 0 -155 -147 0 -180 rrcurveto
+closepath
+596 -4 rmoveto
+0 -132 -113 -111 -134 0 rrcurveto
+-146 0 -114 107 0 136 rrcurveto
+0 134 112 110 138 0 rrcurveto
+144 0 113 -107 0 -137 rrcurveto
+closepath
+-189 373 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/Uacute { 
+0 604 hsbw
+-21 82 hstem
+601 20 hstem
+684 136 hstem
+62 85 vstem
+245 72 vstem
+460 85 vstem
+62 621 rmoveto
+0 -368 rlineto
+0 -180 96 -94 148 0 rrcurveto
+145 0 94 99 0 152 rrcurveto
+0 391 rlineto
+-85 0 rlineto
+0 -397 rlineto
+0 -104 -59 -59 -98 0 rrcurveto
+-99 0 -57 64 0 114 rrcurveto
+0 382 rlineto
+-85 0 rlineto
+closepath
+183 63 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Ucircumflex { 
+0 604 hsbw
+-21 82 hstem
+601 20 hstem
+767 53 hstem
+62 85 153 95 254 85 vstem3
+357 100 vstem
+460 85 vstem
+62 621 rmoveto
+0 -368 rlineto
+0 -180 96 -94 148 0 rrcurveto
+145 0 94 99 0 152 rrcurveto
+0 391 rlineto
+-85 0 rlineto
+0 -397 rlineto
+0 -104 -59 -59 -98 0 rrcurveto
+-99 0 -57 64 0 114 rrcurveto
+0 382 rlineto
+-85 0 rlineto
+closepath
+242 146 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/Ugrave { 
+0 604 hsbw
+-21 82 hstem
+601 20 hstem
+684 136 hstem
+62 85 vstem
+292 71 vstem
+460 85 vstem
+62 621 rmoveto
+0 -368 rlineto
+0 -180 96 -94 148 0 rrcurveto
+145 0 94 99 0 152 rrcurveto
+0 391 rlineto
+-85 0 rlineto
+0 -397 rlineto
+0 -104 -59 -59 -98 0 rrcurveto
+-99 0 -57 64 0 114 rrcurveto
+0 382 rlineto
+-85 0 rlineto
+closepath
+301 63 rmoveto
+-66 136 rlineto
+-118 0 rlineto
+113 -136 rlineto
+71 0 rlineto
+closepath
+endchar } ND
+/dotlessi { 
+0 219 hsbw
+0 20 hstem
+383 20 hstem
+65 84 vstem
+65 403 rmoveto
+0 -403 rlineto
+84 0 rlineto
+0 403 rlineto
+-84 0 rlineto
+closepath
+endchar } ND
+/circumflex { 
+0 333 hsbw
+560 53 hstem
+12 100 122 89 221 100 vstem3
+168 560 rmoveto
+53 -83 rlineto
+100 0 rlineto
+-110 136 rlineto
+-93 0 rlineto
+-106 -136 rlineto
+100 0 rlineto
+56 83 rlineto
+closepath
+endchar } ND
+/tilde { 
+0 333 hsbw
+535 65 hstem
+3 65 vstem
+266 64 vstem
+68 489 rmoveto
+0 4 rlineto
+0 25 14 17 23 0 rrcurveto
+12 0 19 -7 26 -15 rrcurveto
+26 -15 25 -8 22 0 rrcurveto
+57 0 35 39 3 72 rrcurveto
+-64 0 rlineto
+-4 -30 -9 -12 -22 0 rrcurveto
+-11 0 -25 10 -25 11 rrcurveto
+-25 11 -27 9 -15 0 rrcurveto
+-58 0 -42 -44 0 -61 rrcurveto
+0 -6 rlineto
+65 0 rlineto
+closepath
+endchar } ND
+/macron { 
+0 333 hsbw
+493 72 hstem
+14 305 vstem
+14 493 rmoveto
+305 0 rlineto
+0 72 rlineto
+-305 0 rlineto
+0 -72 rlineto
+closepath
+endchar } ND
+/breve { 
+0 333 hsbw
+482 61 hstem
+22 60 vstem
+251 60 vstem
+251 608 rmoveto
+-10 -44 -28 -21 -47 0 rrcurveto
+-47 0 -28 21 -9 44 rrcurveto
+-60 0 rlineto
+11 -84 49 -42 86 0 rrcurveto
+81 0 51 43 11 83 rrcurveto
+-60 0 rlineto
+closepath
+endchar } ND
+/dotaccent { 
+0 333 hsbw
+476 103 hstem
+115 103 vstem
+115 527 rmoveto
+0 -28 23 -23 28 0 rrcurveto
+29 0 23 23 0 28 rrcurveto
+0 29 -23 23 -29 0 rrcurveto
+-28 0 -23 -24 0 -28 rrcurveto
+closepath
+endchar } ND
+/ring { 
+0 333 hsbw
+455 37 hstem
+598 36 hstem
+79 37 vstem
+220 35 vstem
+167 455 rmoveto
+49 0 39 40 0 50 rrcurveto
+0 49 -39 40 -49 0 rrcurveto
+-48 0 -40 -41 0 -46 rrcurveto
+0 -51 38 -41 50 0 rrcurveto
+closepath
+1 143 rmoveto
+29 0 23 -24 0 -29 rrcurveto
+0 -30 -24 -23 -28 0 rrcurveto
+-30 0 -22 23 0 31 rrcurveto
+0 28 24 24 28 0 rrcurveto
+closepath
+endchar } ND
+/cedilla { 
+0 333 hsbw
+-206 63 hstem
+-75 86 hstem
+182 81 vstem
+105 -75 rmoveto
+8 0 rlineto
+46 0 23 -11 0 -22 rrcurveto
+0 -24 -29 -11 -58 0 rrcurveto
+-38 0 rlineto
+-5 -57 rlineto
+24 -4 22 -2 20 0 rrcurveto
+89 0 56 37 0 56 rrcurveto
+0 38 -30 28 -53 6 rrcurveto
+16 52 rlineto
+-65 0 rlineto
+-26 -86 rlineto
+closepath
+endchar } ND
+/hungarumlaut { 
+0 333 hsbw
+477 136 hstem
+28 71 vstem
+198 74 vstem
+28 477 rmoveto
+71 0 rlineto
+103 136 rlineto
+-114 0 rlineto
+-60 -136 rlineto
+closepath
+170 0 rmoveto
+74 0 rlineto
+101 136 rlineto
+-113 0 rlineto
+-62 -136 rlineto
+closepath
+endchar } ND
+/ogonek { 
+0 333 hsbw
+-208 65 hstem
+89 62 vstem
+110 12 rmoveto
+-14 -48 -7 -37 0 -27 rrcurveto
+0 -64 43 -44 64 0 rrcurveto
+32 0 36 10 39 20 rrcurveto
+0 58 rlineto
+-30 -15 -28 -8 -24 0 rrcurveto
+-40 0 -30 32 0 42 rrcurveto
+0 24 6 27 13 30 rrcurveto
+-60 0 rlineto
+closepath
+endchar } ND
+/caron { 
+0 333 hsbw
+477 53 hstem
+593 20 hstem
+20 100 130 89 229 100 vstem3
+175 530 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/Lslash { 
+0 385 hsbw
+0 83 hstem
+205 417 hstem
+85 83 vstem
+85 622 rmoveto
+0 -319 rlineto
+-57 -66 rlineto
+0 -99 rlineto
+57 67 rlineto
+0 -205 rlineto
+287 0 rlineto
+0 83 rlineto
+-204 0 rlineto
+0 219 rlineto
+84 96 rlineto
+0 99 rlineto
+-84 -97 rlineto
+0 222 rlineto
+-83 0 rlineto
+closepath
+endchar } ND
+/lslash { 
+0 219 hsbw
+0 391 hstem
+78 82 vstem
+78 635 rmoveto
+0 -313 rlineto
+-55 -47 rlineto
+0 -81 rlineto
+55 46 rlineto
+0 -240 rlineto
+82 0 rlineto
+0 308 rlineto
+56 48 rlineto
+0 82 rlineto
+-56 -47 rlineto
+0 244 rlineto
+-82 0 rlineto
+closepath
+endchar } ND
+/Scaron { 
+0 500 hsbw
+-21 90 hstem
+554 88 hstem
+684 53 hstem
+800 20 hstem
+71 88 vstem
+209 94 vstem
+372 88 vstem
+445 553 rmoveto
+-47 60 -75 29 -68 0 rrcurveto
+-103 0 -81 -72 0 -89 rrcurveto
+0 -93 64 -48 104 -42 rrcurveto
+79 -32 54 -40 0 -59 rrcurveto
+0 -56 -46 -42 -62 0 rrcurveto
+-64 0 -48 35 -30 70 rrcurveto
+-85 -24 rlineto
+42 -115 84 -56 104 0 rrcurveto
+106 0 87 83 0 104 rrcurveto
+0 105 -73 62 -118 49 rrcurveto
+-63 26 -47 22 0 50 rrcurveto
+0 44 41 30 62 0 rrcurveto
+56 0 22 -19 36 -37 rrcurveto
+69 55 rlineto
+closepath
+-186 184 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/scaron { 
+0 333 hsbw
+-11 77 hstem
+337 77 hstem
+477 53 hstem
+593 20 hstem
+39 79 127 92 231 73 vstem3
+300 355 rmoveto
+-48 39 -42 20 -38 0 rrcurveto
+-76 0 -57 -51 0 -66 rrcurveto
+0 -69 46 -24 76 -30 rrcurveto
+46 -18 24 -20 0 -22 rrcurveto
+0 -26 -32 -22 -34 0 rrcurveto
+-26 0 -24 11 -23 23 rrcurveto
+-67 -32 rlineto
+36 -53 47 -26 57 0 rrcurveto
+74 0 65 58 0 68 rrcurveto
+0 67 -47 34 -76 29 rrcurveto
+-45 17 -21 18 0 19 rrcurveto
+0 25 17 13 35 0 rrcurveto
+29 0 17 -11 30 -21 rrcurveto
+57 50 rlineto
+closepath
+-125 175 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/Zcaron { 
+0 500 hsbw
+0 84 hstem
+537 85 hstem
+684 53 hstem
+800 20 hstem
+47 420 vstem
+47 622 rmoveto
+0 -85 rlineto
+280 0 rlineto
+-295 -537 rlineto
+429 0 rlineto
+0 84 rlineto
+-291 0 rlineto
+297 538 rlineto
+-420 0 rlineto
+closepath
+212 115 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/zcaron { 
+0 438 hsbw
+0 74 hstem
+329 74 hstem
+477 53 hstem
+593 20 hstem
+25 381 vstem
+25 403 rmoveto
+0 -74 rlineto
+240 0 rlineto
+-245 -329 rlineto
+384 0 rlineto
+0 74 rlineto
+-241 0 rlineto
+243 329 rlineto
+-381 0 rlineto
+closepath
+203 127 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/brokenbar { 
+0 527 hsbw
+-135 353 hstem
+342 354 hstem
+231 65 vstem
+231 696 rmoveto
+0 -354 rlineto
+65 0 rlineto
+0 354 rlineto
+-65 0 rlineto
+closepath
+0 -478 rmoveto
+0 -353 rlineto
+65 0 rlineto
+0 353 rlineto
+-65 0 rlineto
+closepath
+endchar } ND
+/Eth { 
+0 604 hsbw
+0 83 275 71 538 83 hstem3
+77 81 vstem
+490 88 vstem
+77 621 rmoveto
+0 -275 rlineto
+-64 0 rlineto
+0 -74 rlineto
+64 0 rlineto
+0 -272 rlineto
+155 0 rlineto
+218 0 128 144 0 166 rrcurveto
+0 157 -113 154 -237 0 rrcurveto
+-151 0 rlineto
+closepath
+81 -83 rmoveto
+82 0 rlineto
+146 0 104 -96 0 -133 rrcurveto
+0 -139 -108 -87 -174 0 rrcurveto
+-50 0 rlineto
+0 190 rlineto
+159 0 rlineto
+0 74 rlineto
+-159 0 rlineto
+0 191 rlineto
+closepath
+endchar } ND
+/eth { 
+0 500 hsbw
+-11 86 hstem
+330 83 hstem
+629 20 hstem
+46 84 vstem
+391 88 vstem
+138 593 rmoveto
+66 -27 rlineto
+-104 -51 rlineto
+29 -57 rlineto
+137 68 rlineto
+55 -43 35 -51 14 -58 rrcurveto
+-2 -2 rlineto
+-31 29 -27 12 -50 0 rrcurveto
+-112 0 -102 -100 0 -109 rrcurveto
+0 -115 99 -100 116 0 rrcurveto
+126 0 92 105 0 148 rrcurveto
+0 130 -48 106 -96 82 rrcurveto
+62 32 rlineto
+-27 56 rlineto
+-92 -44 rlineto
+-36 21 -34 15 -30 9 rrcurveto
+-40 -56 rlineto
+closepath
+253 -388 rmoveto
+0 -74 -59 -56 -73 0 rrcurveto
+-68 0 -61 59 0 66 rrcurveto
+0 69 60 61 72 0 rrcurveto
+69 0 60 -57 0 -68 rrcurveto
+closepath
+endchar } ND
+/Yacute { 
+0 552 hsbw
+0 372 hstem
+602 20 hstem
+684 136 hstem
+28 94 232 84 426 94 vstem3
+28 622 rmoveto
+203 -338 rlineto
+0 -284 rlineto
+85 0 rlineto
+0 285 rlineto
+204 337 rlineto
+-94 0 rlineto
+-151 -250 rlineto
+-153 250 rlineto
+-94 0 rlineto
+closepath
+191 62 rmoveto
+73 0 rlineto
+107 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/yacute { 
+0 500 hsbw
+-189 20 hstem
+383 20 hstem
+477 136 hstem
+101 89 vstem
+193 72 vstem
+374 88 vstem
+31 403 rmoveto
+203 -304 rlineto
+-133 -288 rlineto
+89 0 rlineto
+272 592 rlineto
+-88 0 rlineto
+-101 -219 rlineto
+-146 219 rlineto
+-96 0 rlineto
+closepath
+162 74 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Thorn { 
+0 500 hsbw
+0 202 hstem
+420 202 hstem
+94 83 vstem
+364 89 vstem
+177 622 rmoveto
+-83 0 rlineto
+0 -622 rlineto
+83 0 rlineto
+0 128 rlineto
+25 0 rlineto
+148 0 103 78 0 110 rrcurveto
+0 106 -97 73 -146 0 rrcurveto
+-33 0 rlineto
+0 127 rlineto
+closepath
+0 -202 rmoveto
+31 0 rlineto
+101 0 55 -37 0 -68 rrcurveto
+0 -74 -49 -37 -138 -2 rrcurveto
+0 218 rlineto
+closepath
+endchar } ND
+/thorn { 
+0 552 hsbw
+-189 20 hstem
+-9 77 hstem
+81 240 hstem
+336 78 hstem
+614 20 hstem
+78 69 vstem
+417 89 vstem
+160 634 rmoveto
+-82 0 rlineto
+0 -823 rlineto
+82 0 rlineto
+0 270 rlineto
+2 0 rlineto
+29 -56 60 -34 66 0 rrcurveto
+102 0 87 97 0 116 rrcurveto
+0 116 -87 94 -105 0 rrcurveto
+-62 0 -65 -39 -25 -54 rrcurveto
+-2 0 rlineto
+0 313 rlineto
+closepath
+257 -432 rmoveto
+0 -74 -62 -60 -73 0 rrcurveto
+-72 0 -63 60 0 74 rrcurveto
+0 73 61 61 74 0 rrcurveto
+72 0 63 -62 0 -72 rrcurveto
+closepath
+endchar } ND
+/multiply { 
+0 667 hsbw
+278 90 hstem
+548 20 hstem
+289 91 vstem
+90 523 rmoveto
+199 -200 rlineto
+-198 -198 rlineto
+45 -45 rlineto
+198 198 rlineto
+198 -198 rlineto
+45 45 rlineto
+-197 198 rlineto
+199 199 rlineto
+-45 46 rlineto
+-200 -200 rlineto
+-199 200 rlineto
+-45 -45 rlineto
+closepath
+endchar } ND
+/onesuperior { 
+0 385 hsbw
+578 60 hstem
+164 60 vstem
+109 638 rmoveto
+-22 -60 rlineto
+77 0 rlineto
+0 -339 rlineto
+60 0 rlineto
+0 399 rlineto
+-115 0 rlineto
+closepath
+endchar } ND
+/twosuperior { 
+0 385 hsbw
+239 60 hstem
+587 61 hstem
+276 61 vstem
+179 299 rmoveto
+117 120 rlineto
+27 28 14 33 0 39 rrcurveto
+0 76 -60 53 -85 0 rrcurveto
+-90 0 -48 -41 -4 -82 rrcurveto
+60 0 rlineto
+6 44 21 18 56 0 rrcurveto
+49 0 34 -26 0 -37 rrcurveto
+0 -26 -11 -25 -22 -22 rrcurveto
+-203 -212 rlineto
+293 0 rlineto
+0 60 rlineto
+-154 0 rlineto
+closepath
+endchar } ND
+/threesuperior { 
+0 385 hsbw
+231 55 hstem
+424 57 hstem
+594 55 hstem
+50 64 vstem
+267 64 vstem
+124 548 rmoveto
+6 30 22 16 39 0 rrcurveto
+41 0 26 -21 0 -29 rrcurveto
+0 -41 -27 -21 -54 -1 rrcurveto
+0 -57 rlineto
+60 -2 30 -24 0 -47 rrcurveto
+0 -39 -31 -26 -45 0 rrcurveto
+-48 0 -25 18 -4 37 rrcurveto
+-64 0 rlineto
+6 -75 55 -35 79 0 rrcurveto
+84 0 57 48 0 70 rrcurveto
+0 53 -21 24 -52 28 rrcurveto
+45 25 20 22 0 43 rrcurveto
+0 64 -53 41 -84 0 rrcurveto
+-75 0 -52 -42 0 -56 rrcurveto
+0 -3 rlineto
+65 0 rlineto
+closepath
+endchar } ND
+/onehalf { 
+0 906 hsbw
+-44 11 hstem
+-31 60 hstem
+317 325 hstem
+147 60 vstem
+775 61 vstem
+92 638 rmoveto
+-22 -60 rlineto
+77 0 rlineto
+0 -340 rlineto
+60 0 rlineto
+0 400 rlineto
+-115 0 rlineto
+closepath
+507 4 rmoveto
+-437 -686 rlineto
+65 0 rlineto
+436 686 rlineto
+-64 0 rlineto
+closepath
+80 -613 rmoveto
+116 120 rlineto
+27 28 14 33 0 40 rrcurveto
+0 74 -59 54 -86 0 rrcurveto
+-90 0 -47 -41 -5 -82 rrcurveto
+60 0 rlineto
+6 45 22 17 55 0 rrcurveto
+50 0 33 -25 0 -38 rrcurveto
+0 -26 -11 -24 -21 -22 rrcurveto
+-203 -213 rlineto
+293 0 rlineto
+0 60 rlineto
+-154 0 rlineto
+closepath
+endchar } ND
+/onequarter { 
+0 906 hsbw
+-44 20 hstem
+42 600 hstem
+150 60 vstem
+624 64 vstem
+741 55 vstem
+95 638 rmoveto
+-22 -60 rlineto
+77 0 rlineto
+0 -340 rlineto
+60 0 rlineto
+0 400 rlineto
+-115 0 rlineto
+closepath
+529 4 rmoveto
+-437 -686 rlineto
+65 0 rlineto
+436 686 rlineto
+-64 0 rlineto
+closepath
+172 -261 rmoveto
+-283 -339 rlineto
+228 0 rlineto
+0 -73 rlineto
+55 0 rlineto
+0 73 rlineto
+38 0 rlineto
+0 55 rlineto
+-38 0 rlineto
+0 284 rlineto
+closepath
+-56 -148 rmoveto
+0 -136 rlineto
+-115 0 rlineto
+115 136 rlineto
+closepath
+endchar } ND
+/threequarters { 
+0 906 hsbw
+-44 330 hstem
+423 57 hstem
+594 54 hstem
+54 64 vstem
+271 64 vstem
+665 64 vstem
+759 55 vstem
+128 547 rmoveto
+6 31 23 16 38 0 rrcurveto
+41 0 26 -21 0 -30 rrcurveto
+0 -41 -27 -21 -54 -1 rrcurveto
+0 -57 rlineto
+60 -2 30 -24 0 -46 rrcurveto
+0 -39 -31 -26 -45 0 rrcurveto
+-48 0 -25 18 -4 36 rrcurveto
+-64 0 rlineto
+8 -75 54 -35 78 0 rrcurveto
+84 0 57 48 0 71 rrcurveto
+0 53 -21 24 -52 28 rrcurveto
+45 25 21 22 0 42 rrcurveto
+0 64 -54 41 -84 0 rrcurveto
+-74 0 -53 -41 0 -57 rrcurveto
+0 -3 rlineto
+65 0 rlineto
+closepath
+537 95 rmoveto
+-437 -686 rlineto
+64 0 rlineto
+437 686 rlineto
+-64 0 rlineto
+closepath
+149 -261 rmoveto
+-283 -339 rlineto
+228 0 rlineto
+0 -73 rlineto
+55 0 rlineto
+0 73 rlineto
+38 0 rlineto
+0 55 rlineto
+-38 0 rlineto
+0 284 rlineto
+closepath
+-56 -148 rmoveto
+0 -136 rlineto
+-115 0 rlineto
+115 136 rlineto
+closepath
+endchar } ND
+/uni00AD { 
+0 333 hsbw
+160 83 hstem
+53 227 vstem
+53 243 rmoveto
+0 -83 rlineto
+227 0 rlineto
+0 83 rlineto
+-227 0 rlineto
+closepath
+endchar } ND
+/uni00AF { 
+0 500 hsbw
+696 50 hstem
+-7 514 vstem
+-7 696 rmoveto
+514 0 rlineto
+0 50 rlineto
+-514 0 rlineto
+0 -50 rlineto
+closepath
+endchar } ND
+/foursuperior { 
+0 385 hsbw
+312 339 hstem
+254 55 vstem
+309 651 rmoveto
+-283 -339 rlineto
+228 0 rlineto
+0 -73 rlineto
+55 0 rlineto
+0 73 rlineto
+38 0 rlineto
+0 54 rlineto
+-38 0 rlineto
+0 285 rlineto
+closepath
+-56 -148 rmoveto
+0 -137 rlineto
+-115 0 rlineto
+115 137 rlineto
+closepath
+endchar } ND
+/Abreve { 
+0 604 hsbw
+0 20 hstem
+159 487 hstem
+684 61 hstem
+790 20 hstem
+6 88 vstem
+149 60 vstem
+378 60 vstem
+502 89 vstem
+297 646 rmoveto
+-291 -646 rlineto
+88 0 rlineto
+71 159 rlineto
+264 0 rlineto
+73 -159 rlineto
+89 0 rlineto
+-294 646 rlineto
+closepath
+0 -195 rmoveto
+100 -221 rlineto
+-200 0 rlineto
+100 221 rlineto
+closepath
+81 359 rmoveto
+-10 -44 -28 -21 -47 0 rrcurveto
+-47 0 -28 21 -9 44 rrcurveto
+-60 0 rlineto
+11 -84 49 -42 86 0 rrcurveto
+81 0 51 44 11 82 rrcurveto
+-60 0 rlineto
+closepath
+endchar } ND
+/abreve { 
+0 552 hsbw
+-11 77 hstem
+334 80 hstem
+482 61 hstem
+50 89 vstem
+407 74 vstem
+396 403 rmoveto
+0 -82 rlineto
+-31 54 -61 39 -64 0 rrcurveto
+-102 0 -88 -98 0 -113 rrcurveto
+0 -119 86 -95 106 0 rrcurveto
+61 0 51 30 42 61 rrcurveto
+0 -80 rlineto
+85 0 rlineto
+0 403 rlineto
+-85 0 rlineto
+closepath
+11 -203 rmoveto
+0 -72 -61 -62 -73 0 rrcurveto
+-75 0 -59 61 0 76 rrcurveto
+0 70 62 61 72 0 rrcurveto
+73 0 61 -61 0 -73 rrcurveto
+closepath
+-44 408 rmoveto
+-10 -44 -28 -21 -47 0 rrcurveto
+-47 0 -28 21 -9 44 rrcurveto
+-60 0 rlineto
+10 -84 49 -42 87 0 rrcurveto
+81 0 51 43 11 83 rrcurveto
+-60 0 rlineto
+closepath
+endchar } ND
+/Aogonek { 
+0 604 hsbw
+-208 65 hstem
+0 20 hstem
+159 487 hstem
+6 88 vstem
+484 62 vstem
+699 -178 rmoveto
+0 58 rlineto
+-31 -15 -27 -8 -24 0 rrcurveto
+-42 0 -29 33 0 41 rrcurveto
+0 22 5 23 10 24 rrcurveto
+30 0 rlineto
+-294 646 rlineto
+-291 -646 rlineto
+88 0 rlineto
+71 159 rlineto
+264 0 rlineto
+73 -159 rlineto
+-12 -42 -6 -33 0 -25 rrcurveto
+0 -64 43 -44 64 0 rrcurveto
+33 0 36 10 39 20 rrcurveto
+closepath
+-302 408 rmoveto
+-200 0 rlineto
+100 221 rlineto
+100 -221 rlineto
+closepath
+endchar } ND
+/aogonek { 
+0 552 hsbw
+-208 65 hstem
+-11 77 hstem
+334 80 hstem
+50 89 vstem
+378 62 vstem
+593 -178 rmoveto
+0 58 rlineto
+-31 -15 -27 -8 -24 0 rrcurveto
+-42 0 -29 33 0 41 rrcurveto
+0 22 5 23 10 24 rrcurveto
+26 0 rlineto
+0 403 rlineto
+-85 0 rlineto
+0 -82 rlineto
+-34 57 -61 36 -61 0 rrcurveto
+-104 0 -86 -101 0 -110 rrcurveto
+0 -116 82 -98 110 0 rrcurveto
+62 0 51 30 41 61 rrcurveto
+0 -80 rlineto
+-12 -51 rlineto
+-4 -18 -2 -16 0 -15 rrcurveto
+0 -64 44 -44 63 0 rrcurveto
+33 0 36 10 39 20 rrcurveto
+closepath
+-320 244 rmoveto
+-75 0 -59 61 0 76 rrcurveto
+0 70 62 61 72 0 rrcurveto
+73 0 61 -61 0 -73 rrcurveto
+0 -74 -61 -60 -73 0 rrcurveto
+closepath
+endchar } ND
+/Cacute { 
+0 604 hsbw
+-21 90 hstem
+554 88 hstem
+684 136 hstem
+35 91 vstem
+316 73 vstem
+568 601 rmoveto
+-66 27 -63 14 -60 0 rrcurveto
+-190 0 -154 -148 0 -181 rrcurveto
+0 -184 156 -150 194 0 rrcurveto
+65 0 61 15 57 30 rrcurveto
+0 97 rlineto
+-62 -35 -59 -17 -55 0 rrcurveto
+-152 0 -114 104 0 139 rrcurveto
+0 136 111 106 146 0 rrcurveto
+56 0 61 -17 68 -32 rrcurveto
+0 96 rlineto
+closepath
+-252 83 rmoveto
+73 0 rlineto
+108 136 rlineto
+-116 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/cacute { 
+0 385 hsbw
+-11 85 hstem
+331 83 hstem
+477 136 hstem
+24 82 vstem
+174 72 vstem
+359 123 rmoveto
+-47 -33 -42 -16 -36 0 rrcurveto
+-72 0 -56 58 0 75 rrcurveto
+0 66 61 58 71 0 rrcurveto
+38 0 40 -14 43 -27 rrcurveto
+0 95 rlineto
+-40 19 -39 10 -37 0 rrcurveto
+-126 0 -93 -92 0 -125 rrcurveto
+0 -111 97 -97 112 0 rrcurveto
+40 0 42 12 44 25 rrcurveto
+0 97 rlineto
+closepath
+-185 354 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Ccaron { 
+0 604 hsbw
+-21 90 hstem
+554 88 hstem
+684 53 hstem
+800 20 hstem
+35 91 vstem
+219 100 329 89 428 100 vstem3
+568 601 rmoveto
+-66 27 -63 14 -60 0 rrcurveto
+-190 0 -154 -148 0 -181 rrcurveto
+0 -184 156 -150 194 0 rrcurveto
+65 0 61 15 57 30 rrcurveto
+0 97 rlineto
+-62 -35 -59 -17 -55 0 rrcurveto
+-152 0 -114 104 0 139 rrcurveto
+0 136 111 106 146 0 rrcurveto
+56 0 61 -17 68 -32 rrcurveto
+0 96 rlineto
+closepath
+-194 136 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/ccaron { 
+0 385 hsbw
+-11 85 hstem
+331 83 hstem
+477 53 hstem
+593 20 hstem
+24 82 vstem
+182 94 vstem
+286 100 vstem
+359 123 rmoveto
+-47 -33 -42 -16 -36 0 rrcurveto
+-72 0 -56 58 0 75 rrcurveto
+0 66 61 58 71 0 rrcurveto
+38 0 40 -14 43 -27 rrcurveto
+0 95 rlineto
+-40 19 -39 10 -37 0 rrcurveto
+-126 0 -93 -92 0 -125 rrcurveto
+0 -111 97 -97 112 0 rrcurveto
+40 0 42 12 44 25 rrcurveto
+0 97 rlineto
+closepath
+-127 407 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/Dcaron { 
+0 604 hsbw
+0 84 hstem
+539 83 hstem
+684 53 hstem
+800 20 hstem
+66 85 vstem
+236 94 vstem
+340 100 vstem
+483 88 vstem
+66 622 rmoveto
+0 -622 rlineto
+152 0 rlineto
+229 0 124 147 0 164 rrcurveto
+0 162 -116 149 -238 0 rrcurveto
+-151 0 rlineto
+closepath
+85 -83 rmoveto
+43 0 rlineto
+171 0 118 -83 0 -145 rrcurveto
+0 -158 -129 -69 -198 0 rrcurveto
+-5 0 rlineto
+0 455 rlineto
+closepath
+135 198 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/dcaron { 
+0 679 hsbw
+-11 79 hstem
+336 78 hstem
+546 87 hstem
+635 -1 hstem
+47 88 vstem
+404 74 vstem
+596 44 vstem
+394 634 rmoveto
+0 -315 rlineto
+-32 56 -58 39 -64 0 rrcurveto
+-106 0 -87 -95 0 -116 rrcurveto
+0 -118 85 -96 106 0 rrcurveto
+64 0 53 31 40 64 rrcurveto
+0 -84 rlineto
+83 0 rlineto
+0 634 rlineto
+-84 0 rlineto
+closepath
+10 -432 rmoveto
+0 -75 -60 -59 -76 0 rrcurveto
+-71 0 -62 62 0 72 rrcurveto
+0 74 59 60 76 0 rrcurveto
+73 0 61 -62 0 -72 rrcurveto
+closepath
+236 341 rmoveto
+0 90 rlineto
+-88 0 rlineto
+0 -87 rlineto
+44 0 rlineto
+0 -28 -13 -27 -26 -26 rrcurveto
+31 -29 rlineto
+34 33 18 36 0 38 rrcurveto
+closepath
+endchar } ND
+/Dcroat { 
+0 604 hsbw
+0 84 hstem
+296 72 hstem
+539 83 hstem
+66 85 vstem
+483 88 vstem
+66 368 rmoveto
+-101 0 rlineto
+0 -72 rlineto
+101 0 rlineto
+0 -296 rlineto
+152 0 rlineto
+229 0 124 148 0 163 rrcurveto
+0 161 -116 150 -238 0 rrcurveto
+-151 0 rlineto
+0 -254 rlineto
+closepath
+204 -72 rmoveto
+0 72 rlineto
+-119 0 rlineto
+0 171 rlineto
+43 0 rlineto
+164 0 125 -84 0 -144 rrcurveto
+0 -161 -146 -66 -181 0 rrcurveto
+-5 0 rlineto
+0 212 rlineto
+119 0 rlineto
+closepath
+endchar } ND
+/dcroat { 
+0 552 hsbw
+-11 79 hstem
+336 78 hstem
+493 141 hstem
+47 88 vstem
+404 74 vstem
+478 0 rmoveto
+0 493 rlineto
+90 0 rlineto
+0 72 rlineto
+-90 0 rlineto
+0 69 rlineto
+-84 0 rlineto
+0 -69 rlineto
+-130 0 rlineto
+0 -72 rlineto
+130 0 rlineto
+0 -174 rlineto
+-35 60 -58 35 -61 0 rrcurveto
+-108 0 -85 -98 0 -113 rrcurveto
+0 -115 83 -99 108 0 rrcurveto
+64 0 52 31 41 64 rrcurveto
+0 -84 rlineto
+83 0 rlineto
+closepath
+-210 68 rmoveto
+-72 0 -61 62 0 72 rrcurveto
+0 74 59 60 76 0 rrcurveto
+73 0 61 -62 0 -72 rrcurveto
+0 -75 -60 -59 -76 0 rrcurveto
+closepath
+endchar } ND
+/Eogonek { 
+0 438 hsbw
+-208 65 hstem
+0 84 hstem
+298 84 hstem
+537 85 hstem
+58 84 vstem
+185 62 vstem
+400 -178 rmoveto
+0 58 rlineto
+-31 -15 -27 -8 -24 0 rrcurveto
+-40 0 -31 33 0 41 rrcurveto
+0 21 4 23 10 25 rrcurveto
+142 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 214 rlineto
+261 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 155 rlineto
+261 0 rlineto
+0 85 rlineto
+-345 0 rlineto
+0 -622 rlineto
+145 0 rlineto
+-12 -42 -6 -33 0 -25 rrcurveto
+0 -64 43 -44 64 0 rrcurveto
+32 0 36 10 40 20 rrcurveto
+closepath
+endchar } ND
+/eogonek { 
+0 500 hsbw
+-208 65 hstem
+185 68 hstem
+336 78 hstem
+38 77 vstem
+195 62 vstem
+370 89 vstem
+410 -178 rmoveto
+0 58 rlineto
+-31 -15 -27 -8 -24 0 rrcurveto
+-42 0 -29 33 0 41 rrcurveto
+0 20 3 19 8 19 rrcurveto
+70 6 56 29 42 55 rrcurveto
+-62 47 rlineto
+-33 -40 -40 -20 -48 0 rrcurveto
+-72 0 -53 43 -13 76 rrcurveto
+344 0 rlineto
+0 132 -89 97 -121 0 rrcurveto
+-116 0 -95 -94 0 -117 rrcurveto
+0 -103 66 -90 106 -18 rrcurveto
+-10 -42 -5 -30 0 -20 rrcurveto
+0 -64 43 -44 64 0 rrcurveto
+32 0 36 10 40 20 rrcurveto
+closepath
+-40 431 rmoveto
+-246 0 rlineto
+24 55 42 28 59 0 rrcurveto
+53 0 40 -28 28 -55 rrcurveto
+closepath
+endchar } ND
+/Ecaron { 
+0 438 hsbw
+0 84 hstem
+298 84 hstem
+537 85 hstem
+684 53 hstem
+800 20 hstem
+58 84 vstem
+193 94 vstem
+297 100 vstem
+58 622 rmoveto
+0 -622 rlineto
+345 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 214 rlineto
+261 0 rlineto
+0 84 rlineto
+-261 0 rlineto
+0 155 rlineto
+261 0 rlineto
+0 85 rlineto
+-345 0 rlineto
+closepath
+185 115 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/ecaron { 
+0 500 hsbw
+-11 77 hstem
+185 68 hstem
+336 78 hstem
+477 53 hstem
+593 20 hstem
+38 77 vstem
+201 94 vstem
+305 100 vstem
+459 185 rmoveto
+1 136 -95 93 -116 0 rrcurveto
+-118 0 -93 -97 0 -114 rrcurveto
+0 -122 91 -92 120 0 rrcurveto
+78 0 62 30 47 60 rrcurveto
+-62 47 rlineto
+-33 -40 -40 -20 -48 0 rrcurveto
+-63 0 -61 36 -14 83 rrcurveto
+344 0 rlineto
+closepath
+-335 68 rmoveto
+25 55 42 28 58 0 rrcurveto
+53 0 40 -28 28 -55 rrcurveto
+-246 0 rlineto
+closepath
+126 277 rmoveto
+-54 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-55 -83 rlineto
+closepath
+endchar } ND
+/Lacute { 
+0 385 hsbw
+0 84 hstem
+602 20 hstem
+684 136 hstem
+77 84 vstem
+214 115 vstem
+77 622 rmoveto
+0 -622 rlineto
+287 0 rlineto
+0 84 rlineto
+-203 0 rlineto
+0 538 rlineto
+-84 0 rlineto
+closepath
+72 62 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/lacute { 
+0 219 hsbw
+0 20 hstem
+614 20 hstem
+697 136 hstem
+69 85 vstem
+69 634 rmoveto
+0 -634 rlineto
+85 0 rlineto
+0 634 rlineto
+-85 0 rlineto
+closepath
+-15 63 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Lcaron { 
+0 385 hsbw
+0 84 hstem
+602 20 685 52 800 20 hstem3
+77 84 vstem
+176 94 vstem
+280 100 vstem
+77 622 rmoveto
+0 -622 rlineto
+287 0 rlineto
+0 84 rlineto
+-203 0 rlineto
+0 538 rlineto
+-84 0 rlineto
+closepath
+149 115 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/lcaron { 
+0 347 hsbw
+0 20 hstem
+546 87 hstem
+635 -1 hstem
+69 85 vstem
+264 44 vstem
+69 634 rmoveto
+0 -634 rlineto
+85 0 rlineto
+0 634 rlineto
+-85 0 rlineto
+closepath
+239 -91 rmoveto
+0 90 rlineto
+-88 0 rlineto
+0 -87 rlineto
+44 0 rlineto
+0 -28 -13 -27 -26 -26 rrcurveto
+31 -29 rlineto
+34 33 18 36 0 38 rrcurveto
+closepath
+endchar } ND
+/Nacute { 
+0 667 hsbw
+-29 20 hstem
+0 20 hstem
+602 20 hstem
+627 20 hstem
+685 135 hstem
+60 85 vstem
+262 72 vstem
+520 85 vstem
+60 647 rmoveto
+0 -647 rlineto
+85 0 rlineto
+0 442 rlineto
+460 -471 rlineto
+0 651 rlineto
+-85 0 rlineto
+0 -448 rlineto
+-460 473 rlineto
+closepath
+202 38 rmoveto
+72 0 rlineto
+108 135 rlineto
+-115 0 rlineto
+-65 -135 rlineto
+closepath
+endchar } ND
+/nacute { 
+0 438 hsbw
+0 336 hstem
+342 72 hstem
+477 136 hstem
+41 83 vstem
+161 72 vstem
+304 85 vstem
+41 0 rmoveto
+84 0 rlineto
+0 219 rlineto
+0 68 48 55 56 0 rrcurveto
+44 0 31 -32 0 -44 rrcurveto
+0 -266 rlineto
+85 0 rlineto
+0 291 rlineto
+0 68 -59 55 -73 0 rrcurveto
+-50 0 -34 -25 -49 -53 rrcurveto
+0 67 rlineto
+-83 0 rlineto
+0 -403 rlineto
+closepath
+120 477 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Ncaron { 
+0 667 hsbw
+-29 20 hstem
+0 20 hstem
+602 20 hstem
+627 20 hstem
+685 52 hstem
+800 20 hstem
+60 85 vstem
+177 100 287 89 386 100 vstem3
+520 85 vstem
+60 647 rmoveto
+0 -647 rlineto
+85 0 rlineto
+0 442 rlineto
+460 -471 rlineto
+0 651 rlineto
+-85 0 rlineto
+0 -448 rlineto
+-460 473 rlineto
+closepath
+272 90 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -135 rlineto
+94 0 rlineto
+110 135 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/ncaron { 
+0 438 hsbw
+0 336 hstem
+342 72 hstem
+477 53 hstem
+593 20 hstem
+41 83 vstem
+176 94 vstem
+304 85 vstem
+41 0 rmoveto
+84 0 rlineto
+0 219 rlineto
+0 68 48 55 56 0 rrcurveto
+44 0 31 -32 0 -44 rrcurveto
+0 -266 rlineto
+85 0 rlineto
+0 291 rlineto
+0 68 -59 55 -73 0 rrcurveto
+-50 0 -34 -25 -49 -53 rrcurveto
+0 67 rlineto
+-83 0 rlineto
+0 -403 rlineto
+closepath
+185 530 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/Ohungarumlaut { 
+0 771 hsbw
+-21 89 hstem
+555 87 hstem
+684 136 hstem
+39 89 vstem
+254 71 vstem
+424 74 vstem
+635 90 vstem
+39 315 rmoveto
+0 -187 152 -149 191 0 rrcurveto
+192 0 151 148 0 188 rrcurveto
+0 177 -155 150 -185 0 rrcurveto
+-191 0 -155 -147 0 -180 rrcurveto
+closepath
+596 -4 rmoveto
+0 -132 -113 -111 -134 0 rrcurveto
+-146 0 -114 107 0 136 rrcurveto
+0 134 112 110 138 0 rrcurveto
+144 0 113 -107 0 -137 rrcurveto
+closepath
+-381 373 rmoveto
+71 0 rlineto
+103 136 rlineto
+-114 0 rlineto
+-60 -136 rlineto
+closepath
+170 0 rmoveto
+74 0 rlineto
+101 136 rlineto
+-113 0 rlineto
+-62 -136 rlineto
+closepath
+endchar } ND
+/ohungarumlaut { 
+0 500 hsbw
+-11 84 hstem
+330 84 hstem
+477 136 hstem
+34 83 vstem
+123 71 vstem
+293 74 vstem
+384 82 vstem
+34 203 rmoveto
+0 -115 102 -99 119 0 rrcurveto
+110 0 101 100 0 114 rrcurveto
+0 113 -101 98 -116 0 rrcurveto
+-112 0 -103 -101 0 -110 rrcurveto
+closepath
+350 0 rmoveto
+0 -70 -62 -60 -70 0 rrcurveto
+-72 0 -63 59 0 68 rrcurveto
+0 70 61 60 74 0 rrcurveto
+72 0 60 -59 0 -68 rrcurveto
+closepath
+-261 274 rmoveto
+71 0 rlineto
+103 136 rlineto
+-114 0 rlineto
+-60 -136 rlineto
+closepath
+170 0 rmoveto
+74 0 rlineto
+101 136 rlineto
+-113 0 rlineto
+-62 -136 rlineto
+closepath
+endchar } ND
+/Racute { 
+0 500 hsbw
+0 330 hstem
+547 75 hstem
+684 136 hstem
+78 85 vstem
+181 72 vstem
+351 89 vstem
+78 622 rmoveto
+0 -622 rlineto
+85 0 rlineto
+0 256 rlineto
+19 0 rlineto
+173 -256 rlineto
+97 0 rlineto
+-181 266 rlineto
+116 26 53 68 0 84 rrcurveto
+0 104 -94 74 -133 0 rrcurveto
+-135 0 rlineto
+closepath
+85 -75 rmoveto
+107 0 81 -17 0 -91 rrcurveto
+0 -76 -63 -36 -125 3 rrcurveto
+0 217 rlineto
+closepath
+18 137 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/racute { 
+0 333 hsbw
+0 320 hstem
+328 86 hstem
+477 136 hstem
+68 83 vstem
+193 115 vstem
+151 403 rmoveto
+-83 0 rlineto
+0 -403 rlineto
+85 0 rlineto
+0 223 rlineto
+0 60 43 45 58 0 rrcurveto
+5 0 11 -2 16 -3 rrcurveto
+26 85 rlineto
+-16 4 -11 2 -8 0 rrcurveto
+-59 0 -30 -28 -37 -66 rrcurveto
+0 83 rlineto
+closepath
+-23 74 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Rcaron { 
+0 500 hsbw
+0 330 hstem
+547 75 hstem
+684 53 hstem
+800 20 hstem
+78 85 vstem
+193 94 vstem
+351 89 vstem
+78 622 rmoveto
+0 -622 rlineto
+85 0 rlineto
+0 256 rlineto
+19 0 rlineto
+173 -256 rlineto
+97 0 rlineto
+-181 266 rlineto
+116 26 53 68 0 84 rrcurveto
+0 104 -94 74 -133 0 rrcurveto
+-135 0 rlineto
+closepath
+85 -75 rmoveto
+107 0 81 -17 0 -91 rrcurveto
+0 -76 -63 -36 -125 3 rrcurveto
+0 217 rlineto
+closepath
+80 190 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/rcaron { 
+0 333 hsbw
+0 320 hstem
+328 86 hstem
+477 53 hstem
+593 20 hstem
+68 83 vstem
+244 100 vstem
+151 403 rmoveto
+-83 0 rlineto
+0 -403 rlineto
+85 0 rlineto
+0 223 rlineto
+0 60 43 45 58 0 rrcurveto
+5 0 11 -2 16 -3 rrcurveto
+26 85 rlineto
+-16 4 -11 2 -8 0 rrcurveto
+-59 0 -30 -28 -37 -66 rrcurveto
+0 83 rlineto
+closepath
+39 127 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/Sacute { 
+0 500 hsbw
+-21 90 hstem
+554 88 hstem
+684 136 hstem
+71 88 vstem
+208 72 vstem
+372 88 vstem
+445 553 rmoveto
+-47 60 -75 29 -68 0 rrcurveto
+-103 0 -81 -72 0 -89 rrcurveto
+0 -93 64 -48 104 -42 rrcurveto
+79 -32 54 -40 0 -59 rrcurveto
+0 -56 -46 -42 -62 0 rrcurveto
+-64 0 -48 35 -30 70 rrcurveto
+-85 -24 rlineto
+42 -115 84 -56 104 0 rrcurveto
+106 0 87 83 0 104 rrcurveto
+0 105 -73 62 -118 49 rrcurveto
+-63 26 -47 22 0 50 rrcurveto
+0 44 41 30 62 0 rrcurveto
+56 0 22 -19 36 -37 rrcurveto
+69 55 rlineto
+closepath
+-237 131 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/sacute { 
+0 333 hsbw
+-11 77 hstem
+337 77 hstem
+477 136 hstem
+39 76 vstem
+120 72 vstem
+231 73 vstem
+300 355 rmoveto
+-48 39 -42 20 -38 0 rrcurveto
+-76 0 -57 -51 0 -66 rrcurveto
+0 -69 46 -24 76 -30 rrcurveto
+46 -18 24 -20 0 -22 rrcurveto
+0 -26 -32 -22 -34 0 rrcurveto
+-26 0 -24 11 -23 23 rrcurveto
+-67 -32 rlineto
+36 -53 47 -26 57 0 rrcurveto
+74 0 65 58 0 68 rrcurveto
+0 67 -47 34 -76 29 rrcurveto
+-45 17 -21 18 0 19 rrcurveto
+0 25 17 13 35 0 rrcurveto
+29 0 17 -11 30 -21 rrcurveto
+57 50 rlineto
+closepath
+-180 122 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Scedilla { 
+0 500 hsbw
+-167 86 hstem
+-21 90 hstem
+554 88 hstem
+71 88 vstem
+262 44 vstem
+372 88 vstem
+445 553 rmoveto
+-47 60 -75 29 -68 0 rrcurveto
+-103 0 -81 -72 0 -89 rrcurveto
+0 -93 64 -48 104 -42 rrcurveto
+79 -32 54 -40 0 -59 rrcurveto
+0 -56 -46 -42 -62 0 rrcurveto
+-64 0 -48 35 -30 70 rrcurveto
+-85 -24 rlineto
+42 -115 84 -56 104 0 rrcurveto
+106 0 87 83 0 104 rrcurveto
+0 105 -73 62 -118 49 rrcurveto
+-63 26 -47 22 0 50 rrcurveto
+0 44 41 30 62 0 rrcurveto
+56 0 22 -19 36 -37 rrcurveto
+69 55 rlineto
+closepath
+-139 -723 rmoveto
+0 89 rlineto
+-88 0 rlineto
+0 -86 rlineto
+44 0 rlineto
+0 -28 -13 -27 -25 -27 rrcurveto
+30 -29 rlineto
+34 34 18 36 0 38 rrcurveto
+closepath
+endchar } ND
+/scedilla { 
+0 333 hsbw
+-167 86 hstem
+-11 77 hstem
+337 77 hstem
+39 76 vstem
+164 44 vstem
+231 73 vstem
+300 355 rmoveto
+-48 39 -42 20 -38 0 rrcurveto
+-76 0 -57 -51 0 -66 rrcurveto
+0 -69 46 -24 76 -30 rrcurveto
+46 -18 24 -20 0 -22 rrcurveto
+0 -26 -32 -22 -34 0 rrcurveto
+-26 0 -24 11 -23 23 rrcurveto
+-67 -32 rlineto
+36 -53 47 -26 57 0 rrcurveto
+74 0 65 58 0 68 rrcurveto
+0 67 -47 34 -76 29 rrcurveto
+-45 17 -21 18 0 19 rrcurveto
+0 25 17 13 35 0 rrcurveto
+29 0 17 -11 30 -21 rrcurveto
+57 50 rlineto
+closepath
+-92 -525 rmoveto
+0 89 rlineto
+-88 0 rlineto
+0 -86 rlineto
+44 0 rlineto
+0 -28 -13 -27 -26 -27 rrcurveto
+31 -29 rlineto
+34 34 18 36 0 38 rrcurveto
+closepath
+endchar } ND
+/Tcommaaccent { 
+0 438 hsbw
+-167 86 hstem
+0 20 hstem
+537 85 hstem
+219 44 vstem
+27 622 rmoveto
+0 -85 rlineto
+148 0 rlineto
+0 -537 rlineto
+84 0 rlineto
+0 537 rlineto
+148 0 rlineto
+0 85 rlineto
+-380 0 rlineto
+closepath
+236 -792 rmoveto
+0 89 rlineto
+-88 0 rlineto
+0 -86 rlineto
+44 0 rlineto
+0 -28 -13 -27 -26 -27 rrcurveto
+31 -29 rlineto
+34 34 18 36 0 38 rrcurveto
+closepath
+endchar } ND
+/tcommaaccent { 
+0 271 hsbw
+-167 86 hstem
+0 20 hstem
+383 20 hstem
+405 -1 hstem
+125 44 vstem
+84 520 rmoveto
+0 -116 rlineto
+-67 0 rlineto
+0 -79 rlineto
+67 0 rlineto
+0 -325 rlineto
+85 0 rlineto
+0 325 rlineto
+84 0 rlineto
+0 78 rlineto
+-84 0 rlineto
+0 117 rlineto
+-85 0 rlineto
+closepath
+85 -690 rmoveto
+0 89 rlineto
+-88 0 rlineto
+0 -86 rlineto
+44 0 rlineto
+0 -28 -13 -27 -26 -27 rrcurveto
+31 -29 rlineto
+34 34 18 36 0 38 rrcurveto
+closepath
+endchar } ND
+/Tcaron { 
+0 438 hsbw
+0 20 hstem
+537 85 hstem
+684 53 hstem
+800 20 hstem
+66 100 182 77 275 100 vstem3
+27 622 rmoveto
+0 -85 rlineto
+148 0 rlineto
+0 -537 rlineto
+84 0 rlineto
+0 537 rlineto
+148 0 rlineto
+0 85 rlineto
+-380 0 rlineto
+closepath
+194 115 rmoveto
+-55 83 rlineto
+-100 0 rlineto
+105 -136 rlineto
+94 0 rlineto
+110 136 rlineto
+-100 0 rlineto
+-54 -83 rlineto
+closepath
+endchar } ND
+/tcaron { 
+0 398 hsbw
+0 20 hstem
+383 20 hstem
+405 -1 hstem
+546 87 hstem
+84 85 vstem
+315 44 vstem
+84 520 rmoveto
+0 -116 rlineto
+-67 0 rlineto
+0 -79 rlineto
+67 0 rlineto
+0 -325 rlineto
+85 0 rlineto
+0 325 rlineto
+84 0 rlineto
+0 78 rlineto
+-84 0 rlineto
+0 117 rlineto
+-85 0 rlineto
+closepath
+275 23 rmoveto
+0 90 rlineto
+-88 0 rlineto
+0 -87 rlineto
+44 0 rlineto
+0 -28 -13 -27 -26 -26 rrcurveto
+31 -29 rlineto
+34 33 18 36 0 38 rrcurveto
+closepath
+endchar } ND
+/Uring { 
+0 604 hsbw
+-21 82 hstem
+601 20 hstem
+663 37 hstem
+806 35 hstem
+62 85 vstem
+215 37 vstem
+356 35 vstem
+460 85 vstem
+62 621 rmoveto
+0 -368 rlineto
+0 -180 96 -94 148 0 rrcurveto
+145 0 94 99 0 152 rrcurveto
+0 391 rlineto
+-85 0 rlineto
+0 -397 rlineto
+0 -104 -59 -59 -98 0 rrcurveto
+-99 0 -57 64 0 114 rrcurveto
+0 382 rlineto
+-85 0 rlineto
+closepath
+241 42 rmoveto
+48 0 40 39 0 50 rrcurveto
+0 49 -40 40 -48 0 rrcurveto
+-48 0 -40 -39 0 -48 rrcurveto
+0 -51 38 -40 50 0 rrcurveto
+closepath
+1 143 rmoveto
+29 0 23 -24 0 -30 rrcurveto
+0 -28 -24 -24 -28 0 rrcurveto
+-30 0 -22 23 0 30 rrcurveto
+0 29 24 24 28 0 rrcurveto
+closepath
+endchar } ND
+/uring { 
+0 438 hsbw
+-11 82 hstem
+383 20 hstem
+455 37 hstem
+598 36 hstem
+42 85 vstem
+133 37 vstem
+274 35 vstem
+42 403 rmoveto
+0 -238 rlineto
+0 -106 71 -70 104 0 rrcurveto
+101 0 74 71 0 102 rrcurveto
+0 241 rlineto
+-84 0 rlineto
+0 -227 rlineto
+0 -66 -35 -39 -54 0 rrcurveto
+-62 0 -30 35 0 70 rrcurveto
+0 227 rlineto
+-85 0 rlineto
+closepath
+179 52 rmoveto
+48 0 40 40 0 50 rrcurveto
+0 49 -40 40 -48 0 rrcurveto
+-48 0 -40 -41 0 -46 rrcurveto
+0 -51 38 -41 50 0 rrcurveto
+closepath
+1 143 rmoveto
+29 0 23 -24 0 -29 rrcurveto
+0 -30 -24 -23 -28 0 rrcurveto
+-30 0 -22 23 0 31 rrcurveto
+0 28 24 24 28 0 rrcurveto
+closepath
+endchar } ND
+/Uhungarumlaut { 
+0 604 hsbw
+-21 82 hstem
+601 20 hstem
+684 136 hstem
+62 85 vstem
+161 71 vstem
+332 73 vstem
+460 85 vstem
+62 621 rmoveto
+0 -368 rlineto
+0 -180 96 -94 148 0 rrcurveto
+145 0 94 99 0 152 rrcurveto
+0 391 rlineto
+-85 0 rlineto
+0 -397 rlineto
+0 -104 -59 -59 -98 0 rrcurveto
+-99 0 -57 64 0 114 rrcurveto
+0 382 rlineto
+-85 0 rlineto
+closepath
+99 63 rmoveto
+71 0 rlineto
+103 136 rlineto
+-114 0 rlineto
+-60 -136 rlineto
+closepath
+171 0 rmoveto
+73 0 rlineto
+101 136 rlineto
+-113 0 rlineto
+-61 -136 rlineto
+closepath
+endchar } ND
+/uhungarumlaut { 
+0 438 hsbw
+-11 82 hstem
+383 20 hstem
+477 136 hstem
+42 85 vstem
+308 84 vstem
+42 403 rmoveto
+0 -238 rlineto
+0 -106 71 -70 104 0 rrcurveto
+101 0 74 71 0 102 rrcurveto
+0 241 rlineto
+-84 0 rlineto
+0 -227 rlineto
+0 -66 -35 -39 -54 0 rrcurveto
+-62 0 -30 35 0 70 rrcurveto
+0 227 rlineto
+-85 0 rlineto
+closepath
+42 74 rmoveto
+71 0 rlineto
+103 136 rlineto
+-114 0 rlineto
+-60 -136 rlineto
+closepath
+170 0 rmoveto
+74 0 rlineto
+101 136 rlineto
+-113 0 rlineto
+-62 -136 rlineto
+closepath
+endchar } ND
+/Zacute { 
+0 500 hsbw
+0 84 hstem
+537 85 hstem
+684 136 hstem
+47 420 vstem
+47 622 rmoveto
+0 -85 rlineto
+280 0 rlineto
+-295 -537 rlineto
+429 0 rlineto
+0 84 rlineto
+-291 0 rlineto
+297 538 rlineto
+-420 0 rlineto
+closepath
+150 62 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/zacute { 
+0 438 hsbw
+0 74 hstem
+329 74 hstem
+477 136 hstem
+25 381 vstem
+25 403 rmoveto
+0 -74 rlineto
+240 0 rlineto
+-245 -329 rlineto
+384 0 rlineto
+0 74 rlineto
+-241 0 rlineto
+243 329 rlineto
+-381 0 rlineto
+closepath
+134 74 rmoveto
+72 0 rlineto
+108 136 rlineto
+-115 0 rlineto
+-65 -136 rlineto
+closepath
+endchar } ND
+/Zdotaccent { 
+0 500 hsbw
+0 84 hstem
+537 85 hstem
+692 103 hstem
+200 102 vstem
+47 622 rmoveto
+0 -85 rlineto
+280 0 rlineto
+-295 -537 rlineto
+429 0 rlineto
+0 84 rlineto
+-291 0 rlineto
+297 538 rlineto
+-420 0 rlineto
+closepath
+153 121 rmoveto
+0 -28 22 -23 28 0 rrcurveto
+29 0 23 23 0 28 rrcurveto
+0 29 -23 23 -29 0 rrcurveto
+-28 0 -22 -24 0 -28 rrcurveto
+closepath
+endchar } ND
+/zdotaccent { 
+0 438 hsbw
+0 74 hstem
+329 74 hstem
+476 103 hstem
+160 103 vstem
+25 403 rmoveto
+0 -74 rlineto
+240 0 rlineto
+-245 -329 rlineto
+384 0 rlineto
+0 74 rlineto
+-241 0 rlineto
+243 329 rlineto
+-381 0 rlineto
+closepath
+135 124 rmoveto
+0 -28 23 -23 28 0 rrcurveto
+28 0 24 23 0 28 rrcurveto
+0 29 -24 23 -28 0 rrcurveto
+-28 0 -23 -24 0 -28 rrcurveto
+closepath
+endchar } ND
+/commaaccent { 
+0 219 hsbw
+-130 87 hstem
+112 44 vstem
+156 -133 rmoveto
+0 90 rlineto
+-88 0 rlineto
+0 -87 rlineto
+44 0 rlineto
+0 -28 -13 -27 -26 -26 rrcurveto
+31 -29 rlineto
+34 34 18 35 0 38 rrcurveto
+closepath
+endchar } ND
+/currency { 
+0 667 hsbw
+103 61 hstem
+482 62 hstem
+114 61 vstem
+492 62 vstem
+95 518 rmoveto
+63 -62 rlineto
+-31 -42 -13 -25 0 -62 rrcurveto
+0 -63 13 -26 31 -46 rrcurveto
+-63 -63 rlineto
+44 -43 rlineto
+62 62 rlineto
+40 -31 22 -14 70 0 rrcurveto
+61 0 26 13 46 32 rrcurveto
+62 -62 rlineto
+43 43 rlineto
+-62 63 rlineto
+32 41 13 24 0 63 rrcurveto
+0 68 -13 24 -32 44 rrcurveto
+62 62 rlineto
+-43 44 rlineto
+-62 -63 rlineto
+-43 30 -26 15 -58 0 rrcurveto
+-74 0 -23 -13 -41 -32 rrcurveto
+-63 63 rlineto
+-43 -44 rlineto
+closepath
+240 -36 rmoveto
+86 0 71 -71 0 -88 rrcurveto
+0 -87 -73 -72 -86 0 rrcurveto
+-87 0 -71 72 0 87 rrcurveto
+0 88 72 71 88 0 rrcurveto
+closepath
+endchar } ND
+end
+end
+readonly put
+noaccess put
+dup/FontName get exch definefont pop
+mark currentfile closefile
+cleartomark
