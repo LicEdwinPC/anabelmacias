@@ -27,14 +27,14 @@ var KTLogin = function() {
                     username: {
                         validators: {
                             notEmpty: {
-                                message: 'Username is required'
+                                message: 'El usuario es requerido'
                             }
                         }
                     },
                     password: {
                         validators: {
                             notEmpty: {
-                                message: 'Password is required'
+                                message: 'La cotraseña es requerida'
                             }
                         }
                     }
@@ -53,23 +53,72 @@ var KTLogin = function() {
 
             validation.validate().then(function(status) {
                 if (status == 'Valid') {
-                    swal.fire({
-                        text: "All is cool! Now you submit this form",
-                        icon: "success",
-                        buttonsStyling: false,
-                        confirmButtonText: "Ok, got it!",
-                        customClass: {
-                            confirmButton: "btn font-weight-bold btn-light-primary"
+
+                    $.ajax({
+                        url: PATH + 'auth/login',
+                        method: "POST",
+                        dataType: "json",
+                        data: $('#kt_login_signin_form').serialize(),
+                        beforeSend: function() {
+
+                        },
+                        success: function(result) {
+                            // debugger;
+                            console.log(result);
+
+                            if (result.estatus == 'error') {
+                                swal.fire({
+                                    text: "Disculpa, parece que se detectaron algunos errores, por favor intentalo nuevamente.",
+                                    icon: "error",
+                                    buttonsStyling: false,
+                                    confirmButtonText: "Ok, vamos!",
+                                    customClass: {
+                                        confirmButton: "btn font-weight-bold btn-light-primary"
+                                    }
+                                }).then(function() {
+                                    KTUtil.scrollTop();
+                                });
+                            } else {
+                                swal.fire({
+                                    text: "Todo salió correctamente!",
+                                    icon: "success",
+                                    buttonsStyling: false,
+                                    confirmButtonText: "Ok, vamos!",
+                                    customClass: {
+                                        confirmButton: "btn font-weight-bold btn-light-primary"
+                                    }
+                                }).then(function() {
+                                    window.location.href=PATH +'auth/index';
+                                });
+
+                            }
+
+                        },
+                        complete: function() {
+
+                        },
+                        error: function() {
+                            swal.fire({
+                                text: "Disculpa, parece que se detectaron algunos errores, por favor intentalo nuevamente.",
+                                icon: "error",
+                                buttonsStyling: false,
+                                confirmButtonText: "Ok, vamos!",
+                                customClass: {
+                                    confirmButton: "btn font-weight-bold btn-light-primary"
+                                }
+                            }).then(function() {
+                                KTUtil.scrollTop();
+                            });
                         }
-                    }).then(function() {
-                        KTUtil.scrollTop();
                     });
+
+                    
                 } else {
                     swal.fire({
-                        text: "Sorry, looks like there are some errors detected, please try again.",
+                        text: "Disculpa, parece que se detectaron algunos errores, por favor intentalo nuevamente.",
                         icon: "error",
                         buttonsStyling: false,
-                        confirmButtonText: "Ok, got it!",
+                        confirmButtonText: "Ok, vamos!",
                         customClass: {
                             confirmButton: "btn font-weight-bold btn-light-primary"
                         }
@@ -242,7 +291,7 @@ var KTLogin = function() {
                                         confirmButton: "btn font-weight-bold btn-light-primary"
                                     }
                                 }).then(function() {
-                                    KTUtil.scrollTop();
+                                    _showForm('signin');
                                 });
 
                             }
