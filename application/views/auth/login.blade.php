@@ -4,12 +4,12 @@
 <!--begin::Login-->
 <div class="login login-1 login-signin-on d-flex flex-column flex-lg-row flex-column-fluid bg-white" id="kt_login">
 	<!--begin::Aside-->
-	<div class="login-aside d-flex flex-row-auto bgi-size-cover bgi-no-repeat p-10 p-lg-10" style="background-image: url(<?php echo THEME_URL.'assets/media/bg/bg-6.jpg'?>);">
+	<div class="login-aside d-flex flex-row-auto bgi-size-cover bgi-no-repeat p-10 p-lg-10" style="background-image: url(<?php echo THEME_URL . 'assets/media/bg/bg-6.jpg' ?>);">
 		<!--begin: Aside Container-->
 		<div class="d-flex flex-row-fluid flex-column justify-content-between">
 			<!--begin: Aside header-->
 			<a href="#" class="flex-column-auto mt-5 pb-lg-0 pb-10">
-				<img src="<?php echo THEME_URL.'assets/media/logos/logo-letter-1.png';?>" class="max-h-150px" alt="" />
+				<img src="<?php echo THEME_URL . 'assets/media/logos/logo-letter-1.png'; ?>" class="max-h-150px" alt="" />
 			</a>
 			<!--end: Aside header-->
 			<!--begin: Aside content-->
@@ -20,7 +20,7 @@
 			<!--end: Aside content-->
 			<!--begin: Aside footer for desktop-->
 			<div class="d-none flex-column-auto d-lg-flex justify-content-between mt-10">
-				<div class="opacity-70 font-weight-bold text-white">© <?php echo date('Y');?> EPC</div>
+				<div class="opacity-70 font-weight-bold text-white">© <?php echo date('Y'); ?> EPC</div>
 				<div class="d-flex">
 					<a href="#" class="text-white">Privacidad</a>
 					<a href="#" class="text-white ml-10">Legal</a>
@@ -51,7 +51,7 @@
 				<!--begin::Form-->
 				<form class="form" novalidate="novalidate" id="kt_login_signin_form">
 					<div class="form-group">
-						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Usuario" name="username" autocomplete="off" />
+						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Usuario" name="identity" autocomplete="off" />
 					</div>
 					<div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="password" placeholder="NIP" name="password" autocomplete="off" />
@@ -100,9 +100,9 @@
 					</div>
 					<div class="form-group">
 						<label class="checkbox mb-0">
-						<input type="checkbox" name="agree" />
-						<span></span> Acepto los &nbsp; 
-						<a href="#"> terminos y condiciones</a></label>
+							<input type="checkbox" name="agree" />
+							<span></span> Acepto los &nbsp;
+							<a href="#"> terminos y condiciones</a></label>
 					</div>
 					<div class="form-group d-flex flex-wrap flex-center">
 						<button type="button" id="kt_login_signup_submit" class="btn btn-primary font-weight-bold px-9 py-4 my-3 mx-4">Enviar</button>
@@ -135,7 +135,7 @@
 		<!--end::Content body-->
 		<!--begin::Content footer for mobile-->
 		<div class="d-flex d-lg-none flex-column-auto flex-column flex-sm-row justify-content-between align-items-center mt-5 p-5">
-			<div class="text-dark-50 font-weight-bold order-2 order-sm-1 my-2"><?php echo date('Y');?> EPC</div>
+			<div class="text-dark-50 font-weight-bold order-2 order-sm-1 my-2"><?php echo date('Y'); ?> EPC</div>
 			<div class="d-flex order-1 order-sm-2 my-2">
 				<a href="#" class="text-dark-75 text-hover-primary">Privacidad</a>
 				<a href="#" class="text-dark-75 text-hover-primary ml-4">Terninos Legales</a>
@@ -148,6 +148,6 @@
 </div>
 <script>
 	let PATH = '<?php echo  site_url(); ?>';
- </script>
+</script>
 <!--end::Login-->
 @endsection
