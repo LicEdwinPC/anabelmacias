@@ -82,6 +82,40 @@
                 @include('template/partials/header')
                 <!--begin::Content-->
                 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+                    <!--begin::Subheader-->
+                    <div class="subheader py-2 py-lg-4 subheader-solid" id="kt_subheader">
+                        <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+                            <!--begin::Info-->
+                            <div class="d-flex align-items-center flex-wrap mr-2">
+                                <!--begin::Page Title-->
+                                <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5"><?php echo isset($title) ? $title : "-"; ?></h5>
+                                <!--end::Page Title-->
+                                <!--begin::Actions-->
+                                <div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200"></div>
+                                <span class="text-muted font-weight-bold mr-4"><?php echo isset($Subtitle) ? $Subtitle : "-"; ?></span>
+                                <!-- <a href="#" class="btn btn-light-warning font-weight-bolder btn-sm">Add New</a> -->
+                                <!--end::Actions-->
+                            </div>
+                            <!--end::Info-->
+                            <!--begin::Toolbar-->
+                            <div class="d-flex align-items-center">
+                                <!--begin::Actions-->
+                                <a href="#" class="btn btn-clean btn-sm font-weight-bold font-size-base mr-1">Hoy</a>
+                                <a href="#" class="btn btn-clean btn-sm font-weight-bold font-size-base mr-1">Mes</a>
+                                <a href="#" class="btn btn-clean btn-sm font-weight-bold font-size-base mr-1">Año</a>
+                                <!--end::Actions-->
+                                <!--begin::Daterange-->
+                                <a href="#" class="btn btn-sm btn-light font-weight-bold mr-2" id="kt_dashboard_daterangepicker" data-toggle="tooltip" title="Select dashboard daterange" data-placement="left">
+                                    <span class="text-muted font-size-base font-weight-bold mr-2" id="kt_dashboard_daterangepicker_title">Hoy</span>
+                                    <span class="text-primary font-size-base font-weight-bolder" id="kt_dashboard_daterangepicker_date"><?php echo date('M') . ' ' . date('j'); ?></span>
+                                </a>
+                                <!--end::Daterange-->
+
+                            </div>
+                            <!--end::Toolbar-->
+                        </div>
+                    </div>
+                    <!--end::Subheader-->
                     <!--begin::Entry-->
                     <div class="d-flex flex-column-fluid">
                         <!--begin::Container-->
@@ -190,12 +224,10 @@
     <script src="<?php echo THEME_URL . 'assets/plugins/custom/prismjs/prismjs.bundle.js'; ?>"></script>
     <script src="<?php echo THEME_URL . 'assets/js/scripts.bundle.js'; ?>"></script>
     <!--end::Global Theme Bundle-->
-    <!--begin::Page Vendors(used by this page)-->
-    <script src="<?php echo THEME_URL . 'assets/plugins/custom/fullcalendar/fullcalendar.bundle.js'; ?>"></script>
-    <!--end::Page Vendors-->
-    <!--begin::Page Scripts(used by this page)-->
-    <script src="<?php echo THEME_URL . 'assets/js/pages/widgets.js'; ?>"></script>
-    <!--end::Page Scripts-->
+
+    
+
+    @yield('js')
 </body>
 <!--end::Body-->
 

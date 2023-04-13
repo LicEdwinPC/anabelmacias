@@ -36,9 +36,14 @@ class Auth extends CI_Controller
 			// show_error('You must be an administrator to view this page.');
 			$this->blade->render('comensales' . DIRECTORY_SEPARATOR . 'index');
 		} else {
-			$this->data['title'] = $this->lang->line('index_heading');
-			$this->data['Subtitle'] = "Listado de Usuarios";
-			$this->data['description'] = $this->lang->line('index_subheading');
+
+			// $this->data['title'] = $this->lang->line('index_heading');
+			// $this->data['Subtitle'] = "Listado de Usuarios";
+			// $this->data['description'] = $this->lang->line('index_subheading');
+
+			$this->data['title'] = "Tabla de control";
+			$this->data['Subtitle'] = "Dashboard";
+			$this->data['description'] = "Tabla de control para los pedidos de comida";
 
 			// set the flash data error message if there is one
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
