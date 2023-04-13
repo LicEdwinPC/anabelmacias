@@ -11,7 +11,7 @@
  Target Server Version : 100413
  File Encoding         : 65001
 
- Date: 11/04/2023 10:43:23
+ Date: 13/04/2023 16:24:40
 */
 
 SET NAMES utf8mb4;
@@ -49,7 +49,28 @@ CREATE TABLE `login_attempts`  (
 -- ----------------------------
 -- Records of login_attempts
 -- ----------------------------
-INSERT INTO `login_attempts` VALUES (17, '::1', 'lic.edwin.perez@gmail.com', 1679933781);
+
+-- ----------------------------
+-- Table structure for ma_menus
+-- ----------------------------
+DROP TABLE IF EXISTS `ma_menus`;
+CREATE TABLE `ma_menus`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha_menu` date NOT NULL,
+  `comida` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `postre` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `IdUserCreated` int(11) NULL DEFAULT NULL,
+  `IdUserAct` int(11) NULL DEFAULT NULL,
+  `FAct` timestamp(6) NULL DEFAULT current_timestamp(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of ma_menus
+-- ----------------------------
+INSERT INTO `ma_menus` VALUES (1, '2023-04-14', 'pozole', 'pay de queso', 1, NULL, '2023-04-13 12:01:53.364071');
+INSERT INTO `ma_menus` VALUES (2, '2023-04-12', 'tatemado', 'capirotada', 1, NULL, '2023-04-13 12:02:04.981599');
+INSERT INTO `ma_menus` VALUES (3, '2023-04-13', 'chilallo', 'arroz con leche', 1, NULL, '2023-04-13 18:01:06.000000');
 
 -- ----------------------------
 -- Table structure for users
@@ -85,7 +106,7 @@ CREATE TABLE `users`  (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES (1, '127.0.0.1', 'administrator', '$2y$10$AlnhaiJgQ6EAHZYOhib8.ui1bnm7t327j7IdXb7r0iwYW/03qEPQe', 'admin@admin.com', NULL, '', NULL, NULL, NULL, NULL, NULL, 1268889823, 1679430958, 1, 'Admin', 'istrator', 'ADMIN', '0');
+INSERT INTO `users` VALUES (1, '127.0.0.1', 'administrator', '$2y$10$AlnhaiJgQ6EAHZYOhib8.ui1bnm7t327j7IdXb7r0iwYW/03qEPQe', 'admin@admin.com', NULL, '', NULL, NULL, NULL, 'd0b9a102114079bdf1dc7eba08008d91b08a487a', '$2y$10$lXE6gHet.vj0zp4D.xuh1OFAKJT0p/wGxXcz40f5M9/zwr.xHfopK', 1268889823, 1681418074, 1, 'Admin', 'istrator', 'ADMIN', '0');
 
 -- ----------------------------
 -- Table structure for users_groups

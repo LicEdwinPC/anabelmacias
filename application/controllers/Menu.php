@@ -22,17 +22,93 @@ class Menu extends CI_Controller
         $this->data['Subtitle'] = "Agregar el menu mensualmente para los comensales";
         $this->data['description'] = "";
 
-        $this->session->set_flashdata('message', 'Esto es un mensaje para mostrar');
+        // $this->session->set_flashdata('message', 'Esto es un mensaje para mostrar');
 
-        // $this->data['menus'] = array(['title' => 'Comida: Ceviche de camarón','start' =>]);
-
+        $ArrDatos = $this->_getTodo();
+		
+		 $this->data['datos'] =  json_encode($ArrDatos);
 
         $this->blade->render('menu' . DIRECTORY_SEPARATOR . 'index', $this->data);
     }
 
+	function _getTodo(){
+		$this->load->model('menu_model');
+
+		$Arrdatos = $this->menu_model->getAll();
+
+		$ArrComida = array();
+		$ArrPostre = array();
+		$ArrAll = array();
+		foreach ($Arrdatos as $key => $row) {
+
+			
+			$ArrComida[$key]['title'] = $row->comida;
+			$ArrComida[$key]['start'] = $row->fecha_menu;
+			$ArrComida[$key]['className'] = "fc-event-solid-danger fc-event-light";
+			$ArrComida[$key]['description'] = $row->comida;
+
+			
+		}
+
+		foreach ($Arrdatos as $key => $row) {
+
+			
+			$ArrPostre[$key]['title'] = $row->postre;
+			$ArrPostre[$key]['start'] = $row->fecha_menu;
+			$ArrPostre[$key]['className'] = "fc-event-solid-info fc-event-light";
+			$ArrPostre[$key]['description'] = $row->postre;
+
+			
+		}
+
+		return $ArrAll = array_merge($ArrPostre,$ArrComida);
+		
+		// echo '<pre>';
+		// print_r($ArrComida);
+		// echo '</pre>';
+
+		// echo '<pre>';
+		// print_r($ArrPostre);
+		// echo '</pre>';
+
+		// echo '<pre>';
+		// print_r($ArrAll);
+		// echo '</pre>';
+		// die();
+	}
+
     public function agregar()
     {
-        echo "entro";
-        die();
+		$this->load->model('menu_model');
+
+		$this->form_validation->set_rules('fecha_menu', 'Fecha del registro', 'required|trim');
+		$this->form_validation->set_rules('comida', 'Comida', 'required|trim');
+		$this->form_validation->set_rules('postre', 'Postre', 'required|trim');
+
+	
+        if ($this->form_validation->run() == true) {
+
+			$data = [
+				'fecha_menu' => utils::cfecha($this->input->post('fecha_menu')),
+				'comida' => $this->input->post('comida'),
+				'postre' => $this->input->post('postre')
+			];
+
+
+			if($this->menu_model->agregar($data)){
+				$this->results['data'] = $data;
+				$this->results['mensaje'] = "Tu registro ha sido agregado con exito";
+				echo json_encode($this->results);
+			}else{
+				$this->results['estatus'] = 'error';
+				$this->results['mensaje'] = "Surgio un problema al insertar el registro, intenta nuevamente";
+				echo json_encode($this->results);
+			}
+		
+		}else{
+			$this->results['estatus'] = 'error';
+			$this->results['mensaje'] = "Los datos no son validos, intenta nuevamente";
+			echo json_encode($this->results);
+		}
     }
 }

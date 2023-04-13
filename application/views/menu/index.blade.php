@@ -23,7 +23,7 @@
                 </div>
                 <!-- ALERTAS -->
                 <?php
-                if ($this->session->flashdata('message')) {
+                if (strlen($this->session->flashdata('message')) > 0) {
                 ?>
                     <div class="alert-text">
                         <?php
@@ -100,7 +100,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <input type="hidden" id="UI" name="UI" value="<?php echo $user = base64_encode($this->ion_auth->user()->row()->id);?>">
+                <input type="hidden" id="UI" name="UI" value="<?php echo base64_encode($this->ion_auth->user()->row()->id);?>">
                 <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Cancelar</button>
                 <button type="button" id="BtnGuardaMenu" class="btn btn-primary font-weight-bold">Guardar</button>
             </div>
@@ -132,22 +132,10 @@
             var YESTERDAY = todayDate.clone().subtract(1, 'day').format('YYYY-MM-DD');
             var TODAY = todayDate.format('YYYY-MM-DD');
             var TOMORROW = todayDate.clone().add(1, 'day').format('YYYY-MM-DD');
-    var jsonMenus = [
-                    {
-                        title: 'Comida: Ceviche de camarón',
-                        url: 'http://google.com/',
-                        start: YM + '-29',
-                        className: "fc-event-solid-danger fc-event-light",
-                        description: 'Ceviche de camarón'
-                    },
-                    {
-                        title: 'Postre: Capirotada',
-                        url: 'http://google.com/',
-                        start: YM + '-29',
-                        className: "fc-event-solid-info fc-event-light",
-                        description: 'Capirotada'
-                    }
-                ];
+
+			var jsonMenus = <?php echo isset($datos) ? $datos : "[]";?>
+    
+			
 
     // Class definition
 
@@ -252,11 +240,11 @@
                                 data: $('#frmAddMenu').serialize(),
                                 success: function(result) {
                                     // debugger;
-                                    console.log(result);
+                                    // console.log(result);
 
                                     if (result.estatus == 'error') {
                                         swal.fire({
-                                            text: "Disculpa, parece que se detectaron algunos errores, por favor intentalo nuevamente.",
+                                            text: result.mensaje,
                                             icon: "error",
                                             buttonsStyling: false,
                                             confirmButtonText: "Ok, vamos!",
@@ -268,7 +256,7 @@
                                         });
                                     } else {
                                         swal.fire({
-                                            text: "Todo salió correctamente!",
+                                            text: result.mensaje,
                                             icon: "success",
                                             buttonsStyling: false,
                                             confirmButtonText: "Ok, vamos!",
@@ -277,6 +265,7 @@
                                             }
                                         }).then(function() {
                                             CierraPopup();
+											
                                             // window.location.href=PATH +'auth/index';
                                         });
 
@@ -285,7 +274,7 @@
                                 },
                                 error: function() {
                                     swal.fire({
-                                        text: "Disculpa, parece que se detectaron algunos errores, por favor intentalo nuevamente.",
+                                        text: result.mensaje,
                                         icon: "error",
                                         buttonsStyling: false,
                                         confirmButtonText: "Ok, vamos!",
@@ -293,7 +282,6 @@
                                             confirmButton: "btn font-weight-bold btn-light-primary"
                                         }
                                     }).then(function() {
-                                        CierraPopup();
                                         // KTUtil.scrollTop();
                                     });
                                 }
@@ -311,7 +299,7 @@
                                 }
                             }).then(function() {
                                 CierraPopup();
-                                // KTUtil.scrollTop();
+                                //KTUtil.scrollTop();
                             });
                         }
                     });
