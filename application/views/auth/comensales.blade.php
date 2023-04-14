@@ -57,6 +57,7 @@
 										>
                                         <thead>
                                             <tr>
+												<th>Id</th>
                                                 <th>Comensal</th>
                                                 <th>Teléfono</th>
                                                 <th>Correo Electrónico</th>
@@ -72,6 +73,7 @@
                                                 # code...
                                                 ?>
                                                 <tr>
+													<td><?php echo $row->id?></td>
 													<td><?php echo $row->first_name." ".$row->ap1." ".$row->ap2;?></td>
 													<td><?php echo $row->phone;?></td>
 													<td><?php echo $row->email;?></td>
@@ -114,4 +116,12 @@
 <script src="<?php echo THEME_URL.'assets/js/pages/crud/datatables/basic/basic.js';?>"></script>
 <!--end::Page Scripts-->
 
+
+<script>
+
+	$('#btnEditUser').on('click', function(e) 
+    {
+		console.log("entro");
+	});
+</script>
 @endsection
