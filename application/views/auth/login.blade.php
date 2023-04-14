@@ -90,6 +90,10 @@
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="email" placeholder="Correo electrónico" name="email" autocomplete="off" />
 					</div>
 					<div class="form-group">
+						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Departamento" name="company" autocomplete="off" />
+					</div>
+					
+					<div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Usuario" name="identity" autocomplete="off" />
 					</div>
 					<div class="form-group">
