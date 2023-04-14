@@ -1,7 +1,10 @@
 @layout('template/estructura')
 @section('contenido')
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0b4e60ef3f1fba67575fff8397eeb80fa24929ae
 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 
     <!--begin::Entry-->
@@ -44,6 +47,7 @@
             <div class="card card-custom">
                 <div class="card-header">
                     <div class="card-title">
+<<<<<<< HEAD
                         <h3 class="card-label">Listado de Comensales</h3>
                     </div>
                    
@@ -81,6 +85,48 @@
 
 <p><?php echo anchor('auth/create_user', lang('index_create_user_link'))?> | <?php echo anchor('auth/create_group', lang('index_create_group_link'))?></p>
 
+=======
+                        <h3 class="card-label">Listado de comensales</h3>
+                    </div>
+                    <div class="card-toolbar">
+                    </div>
+                </div>
+                <div class="card-body">
+                    
+                    <table
+											class="table table-separate table-head-custom table-checkable"
+											id="kt_datatable"
+										>
+                                        <thead>
+                                            <tr>
+                                                <th>Comensal</th>
+                                                <th>Teléfono</th>
+                                                <th>Correo Electrónico</th>
+                                                <th>Departamento</th>
+                                                <th>Status</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            
+                                            foreach ($users as $key => $row) {
+                                                # code...
+                                                ?>
+                                                <tr>
+													<td><?php echo $row->first_name." ".$row->ap1." ".$row->ap2;?></td>
+													<td><?php echo $row->phone;?></td>
+													<td><?php echo $row->email;?></td>
+													<td><?php echo $row->company;?></td>
+													<td><?php echo $row->active;?></td>
+													<td nowrap="nowrap"></td>
+												</tr>
+                                                <?php
+                                            }
+                                            ?>
+                                        </tbody>
+                                    </table>
+>>>>>>> 0b4e60ef3f1fba67575fff8397eeb80fa24929ae
                 </div>
             </div>
             <!--end::Card-->
@@ -91,4 +137,26 @@
     </div>
     <!--end::Entry-->
 </div>
+<<<<<<< HEAD
+=======
+
+
+@endsection
+
+@section('css')
+<link
+			href="<?php echo THEME_URL.'assets/plugins/custom/datatables/datatables.bundle.css';?>"
+			rel="stylesheet"
+			type="text/css"
+		/>
+@endsection
+
+@section('js')
+<!--begin::Page Vendors(used by this page)-->
+<script src="<?php echo THEME_URL.'assets/plugins/custom/datatables/datatables.bundle.js';?>"></script>
+<!--end::Page Vendors-->
+<!--begin::Page Scripts(used by this page)-->
+<script src="<?php echo THEME_URL.'assets/js/pages/crud/datatables/basic/basic.js';?>"></script>
+<!--end::Page Scripts-->
+>>>>>>> 0b4e60ef3f1fba67575fff8397eeb80fa24929ae
 @endsection

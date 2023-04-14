@@ -163,7 +163,8 @@
             rtl: KTUtil.isRTL(),
             todayHighlight: true,
             orientation: "bottom left",
-            templates: arrows
+            templates: arrows,
+            datesDisabled: <?php echo isset($fechas_inhabiles) ? $fechas_inhabiles : "[]";?>,
         });
 
         

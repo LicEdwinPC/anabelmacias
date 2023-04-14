@@ -164,6 +164,13 @@ var KTLogin = function() {
                             }
                         }
                     },
+                    company: {
+                        validators: {
+                            notEmpty: {
+                                message: 'El departamento es requerido'
+                            }
+                        }
+                    },
                     phone: {
                         validators: {
                             notEmpty: {
@@ -194,7 +201,7 @@ var KTLogin = function() {
                             }
                         }
                     },
-                    first_name: {
+                    identity: {
                         validators: {
                             notEmpty: {
                                 message: 'El usuario es requerido'

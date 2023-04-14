@@ -26,10 +26,25 @@ class Menu extends CI_Controller
 
         $ArrDatos = $this->_getTodo();
 		
-		 $this->data['datos'] =  json_encode($ArrDatos);
+		$this->data['fechas_inhabiles'] = $this->_getFechasInhabiles();
+		$this->data['datos'] =  json_encode($ArrDatos);
+
+		// print_r($this->data['fechas_inhabiles']);
+		// die();
 
         $this->blade->render('menu' . DIRECTORY_SEPARATOR . 'index', $this->data);
     }
+
+	function _getFechasInhabiles(){
+		$this->load->model('menu_model');
+		$Arrdatos = $this->menu_model->getAll();
+		$ArrFechas = array();
+		foreach ($Arrdatos as $key => $row) {
+			$ArrFechas[$key] =  utils::aFecha($row->fecha_menu,true);
+		}
+		
+		return json_encode($ArrFechas);
+	}
 
 	function _getTodo(){
 		$this->load->model('menu_model');
@@ -40,41 +55,21 @@ class Menu extends CI_Controller
 		$ArrPostre = array();
 		$ArrAll = array();
 		foreach ($Arrdatos as $key => $row) {
-
-			
 			$ArrComida[$key]['title'] = $row->comida;
 			$ArrComida[$key]['start'] = $row->fecha_menu;
 			$ArrComida[$key]['className'] = "fc-event-solid-danger fc-event-light";
 			$ArrComida[$key]['description'] = $row->comida;
-
-			
 		}
 
 		foreach ($Arrdatos as $key => $row) {
-
-			
 			$ArrPostre[$key]['title'] = $row->postre;
 			$ArrPostre[$key]['start'] = $row->fecha_menu;
 			$ArrPostre[$key]['className'] = "fc-event-solid-info fc-event-light";
 			$ArrPostre[$key]['description'] = $row->postre;
-
-			
 		}
 
 		return $ArrAll = array_merge($ArrPostre,$ArrComida);
 		
-		// echo '<pre>';
-		// print_r($ArrComida);
-		// echo '</pre>';
-
-		// echo '<pre>';
-		// print_r($ArrPostre);
-		// echo '</pre>';
-
-		// echo '<pre>';
-		// print_r($ArrAll);
-		// echo '</pre>';
-		// die();
 	}
 
     public function agregar()
