@@ -70,7 +70,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
         <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Agregar Menu</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i aria-hidden="true" class="ki ki-close"></i>
                 </button>
@@ -89,20 +89,22 @@
                     </div>
                     <div class="form-group">
                         <label>Comida <span class="text-danger">*</span></label>
-                        <input type="text" name="comida" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Nombre del Platillo" autocomplete="off"/>
+                        <input type="text" name="comida" id="comida" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Nombre del Platillo" autocomplete="off"/>
                         <span class="form-text text-muted">Ingresa el nombre de la comida</span>
                     </div>
                     <div class="form-group">
                         <label>Postre <span class="text-danger">*</span></label>
-                        <input type="text" name="postre" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Nombre del Postre" autocomplete="off"/>
+                        <input type="text" name="postre" id="postre" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Nombre del Postre" autocomplete="off"/>
                         <span class="form-text text-muted">Ingresa el nombre del postre.</span>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <input type="hidden" id="UI" name="UI" value="<?php echo base64_encode($this->ion_auth->user()->row()->id);?>">
-                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Cancelar</button>
-                <button type="button" id="BtnGuardaMenu" class="btn btn-primary font-weight-bold">Guardar</button>
+                <button type="button" id="BtnGuardaMenu" class="btn btn-primary font-weight-bold">Agregar</button>
+				<button type="button" id="BotonModificar" class="btn btn-primary font-weight-bold">Modificar</button>
+          		<button type="button" id="BotonBorrar" class="btn btn-primary font-weight-bold">Borrar</button>
+				<button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Cancelar</button>
             </div>
         </div>
     </div>
@@ -110,7 +112,9 @@
 @endsection
 
 @section('js')
-
+<script>
+	var PATH = "<?php echo site_url();?>";
+</script>
 <!--begin::Page Vendors(used by this page)-->
 <script src="<?php echo THEME_URL . 'assets/plugins/custom/fullcalendar/fullcalendar.bundle.js'; ?>"></script>
 <!--end::Page Vendors-->
@@ -124,7 +128,7 @@
     jQuery(document).ready(function() {
         KTBootstrapDatepicker.init();
         KTMenus.init();
-        var PATH = "<?php echo site_url();?>";
+        
     });
 
     var todayDate = moment().startOf('day');
@@ -266,8 +270,13 @@
                                             }
                                         }).then(function() {
                                             CierraPopup();
+
+											// calendar('refetch');
+											// calendar.render();
+
+											$("#kt_calendar").fullCalendar('render');
 											
-                                            // window.location.href=PATH +'auth/index';
+                                        	window.location.href=PATH +'Menu/index';
                                         });
 
                                     }
@@ -323,6 +332,39 @@
         $('.modal-backdrop').remove();//eliminamos el backdrop del modal
    }
 
+   $('#BotonBorrar').click(function() {
+        let registro = recuperarDatosFormulario();
+        borrarRegistro(registro);
+        $("#FormularioEventos").modal('hide');
+      });
+
+	
+	function recuperarDatosFormulario() {
+        let registro = {
+          codigo: $('#Codigo').val(),
+          titulo: $('#Titulo').val(),
+          descripcion: $('#Descripcion').val(),
+          inicio: $('#FechaInicio').val() + ' ' + $('#HoraInicio').val(),
+          fin: $('#FechaFin').val() + ' ' + $('#HoraFin').val(),
+          colorfondo: $('#ColorFondo').val(),
+          colortexto: $('#ColorTexto').val()
+        };
+        return registro;
+      }
+
+	  function borrarRegistro(registro) {
+        $.ajax({
+          type: 'POST',
+          url: 'datoseventos.php?accion=borrar',
+          data: registro,
+          success: function(msg) {
+            calendario1.refetchEvents();
+          },
+          error: function(error) {
+            alert("Hay un problema:" + error);
+          }
+        });
+      }
    
 
 </script>

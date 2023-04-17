@@ -22,6 +22,19 @@ class menu_model extends CI_Model
         return $insert_id;
     }
 
+	public function eliminar($id_menu = 0){
+
+		if ($id_menu != 0) {
+			$CadenaSQL = "DELETE FROM ".$this->tabla." WHERE id=".$id_menu;
+
+			if($this->db->query($CadenaSQL)){
+				return TRUE;
+			}else{
+				return FALSE;
+			}
+		}
+	}
+
 	public function getAll(){
 		$result= $this->db
 		->select('*')

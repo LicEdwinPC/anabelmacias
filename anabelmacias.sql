@@ -11,11 +11,48 @@
  Target Server Version : 100413
  File Encoding         : 65001
 
- Date: 13/04/2023 16:24:40
+ Date: 17/04/2023 16:11:25
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for ca_tipo_menu
+-- ----------------------------
+DROP TABLE IF EXISTS `ca_tipo_menu`;
+CREATE TABLE `ca_tipo_menu`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `UAct` int(11) NULL DEFAULT NULL,
+  `FAct` timestamp(6) NULL DEFAULT current_timestamp(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of ca_tipo_menu
+-- ----------------------------
+INSERT INTO `ca_tipo_menu` VALUES (1, 'Comida', 1, '2023-04-17 15:49:11.492914');
+INSERT INTO `ca_tipo_menu` VALUES (2, 'Postre', 1, '2023-04-17 15:49:17.227603');
+
+-- ----------------------------
+-- Table structure for de_menu
+-- ----------------------------
+DROP TABLE IF EXISTS `de_menu`;
+CREATE TABLE `de_menu`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_ma_menu` int(11) NULL DEFAULT NULL,
+  `id_tipo` int(11) NULL DEFAULT NULL,
+  `descripcion` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `FAct` timestamp(6) NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(6),
+  `UAct` int(11) NULL DEFAULT NULL,
+  `FInser` date NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of de_menu
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for groups
@@ -62,15 +99,16 @@ CREATE TABLE `ma_menus`  (
   `IdUserCreated` int(11) NULL DEFAULT NULL,
   `IdUserAct` int(11) NULL DEFAULT NULL,
   `FAct` timestamp(6) NULL DEFAULT current_timestamp(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `status` bit(1) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of ma_menus
 -- ----------------------------
-INSERT INTO `ma_menus` VALUES (1, '2023-04-14', 'pozole', 'pay de queso', 1, NULL, '2023-04-13 12:01:53.364071');
-INSERT INTO `ma_menus` VALUES (2, '2023-04-12', 'tatemado', 'capirotada', 1, NULL, '2023-04-13 12:02:04.981599');
-INSERT INTO `ma_menus` VALUES (3, '2023-04-13', 'chilallo', 'arroz con leche', 1, NULL, '2023-04-13 18:01:06.000000');
+INSERT INTO `ma_menus` VALUES (1, '2023-04-14', 'pozole', 'pay de queso', 1, NULL, '2023-04-13 12:01:53.364071', NULL);
+INSERT INTO `ma_menus` VALUES (9, '2023-04-12', 'xxxx', 'xxxxx', 1, NULL, '2023-04-17 21:27:05.000000', NULL);
+INSERT INTO `ma_menus` VALUES (3, '2023-04-13', 'chilallo', 'arroz con leche', 1, NULL, '2023-04-13 18:01:06.000000', NULL);
 
 -- ----------------------------
 -- Table structure for users
@@ -93,7 +131,8 @@ CREATE TABLE `users`  (
   `last_login` int(11) UNSIGNED NULL DEFAULT NULL,
   `active` tinyint(1) UNSIGNED NULL DEFAULT NULL,
   `first_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `last_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `ap1` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `ap2` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `company` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `phone` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
@@ -101,12 +140,13 @@ CREATE TABLE `users`  (
   UNIQUE INDEX `uc_activation_selector`(`activation_selector`) USING BTREE,
   UNIQUE INDEX `uc_forgotten_password_selector`(`forgotten_password_selector`) USING BTREE,
   UNIQUE INDEX `uc_remember_selector`(`remember_selector`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES (1, '127.0.0.1', 'administrator', '$2y$10$AlnhaiJgQ6EAHZYOhib8.ui1bnm7t327j7IdXb7r0iwYW/03qEPQe', 'admin@admin.com', NULL, '', NULL, NULL, NULL, 'd0b9a102114079bdf1dc7eba08008d91b08a487a', '$2y$10$lXE6gHet.vj0zp4D.xuh1OFAKJT0p/wGxXcz40f5M9/zwr.xHfopK', 1268889823, 1681418074, 1, 'Admin', 'istrator', 'ADMIN', '0');
+INSERT INTO `users` VALUES (1, '127.0.0.1', 'administrator', '$2y$10$AlnhaiJgQ6EAHZYOhib8.ui1bnm7t327j7IdXb7r0iwYW/03qEPQe', 'admin@admin.com', NULL, '', NULL, NULL, NULL, '4045e2d537e69d3c50547612f3e39daa253aaab5', '$2y$10$M4bF2UP6RHqOVAoRLcqL6e6YUa7jauWAbD5ljf0FGa1Nt823T1D1S', 1268889823, 1681765638, 1, 'Admin', 'istrator', NULL, 'ADMIN', '0');
+INSERT INTO `users` VALUES (2, '::1', 'edwinpc', '$2y$10$MHIFK1ypqsyqzjZfnXJ3QuAPuAMSzYmMpCKkEAQLYRiG6NXk31Kzu', 'lic.edwin.perez@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1681493356, NULL, 1, 'edwin', NULL, NULL, 'deportes', '3125500636');
 
 -- ----------------------------
 -- Table structure for users_groups
@@ -122,12 +162,13 @@ CREATE TABLE `users_groups`  (
   INDEX `fk_users_groups_groups1_idx`(`group_id`) USING BTREE,
   CONSTRAINT `fk_users_groups_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
   CONSTRAINT `fk_users_groups_users1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of users_groups
 -- ----------------------------
 INSERT INTO `users_groups` VALUES (1, 1, 1);
 INSERT INTO `users_groups` VALUES (2, 1, 2);
+INSERT INTO `users_groups` VALUES (3, 2, 2);
 
 SET FOREIGN_KEY_CHECKS = 1;

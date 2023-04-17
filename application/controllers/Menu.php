@@ -55,6 +55,8 @@ class Menu extends CI_Controller
 		$ArrPostre = array();
 		$ArrAll = array();
 		foreach ($Arrdatos as $key => $row) {
+			$ArrComida[$key]['id'] = $row->id;
+			// $ArrComida[$key]['url'] = site_url('menu/delete?id=').base64_encode($row->id);
 			$ArrComida[$key]['title'] = $row->comida;
 			$ArrComida[$key]['start'] = $row->fecha_menu;
 			$ArrComida[$key]['className'] = "fc-event-solid-danger fc-event-light";
@@ -62,6 +64,8 @@ class Menu extends CI_Controller
 		}
 
 		foreach ($Arrdatos as $key => $row) {
+			$ArrPostre[$key]['id'] = $row->id;
+			// $ArrPostre[$key]['url'] = site_url('menu/delete?id=').base64_encode($row->id);
 			$ArrPostre[$key]['title'] = $row->postre;
 			$ArrPostre[$key]['start'] = $row->fecha_menu;
 			$ArrPostre[$key]['className'] = "fc-event-solid-info fc-event-light";
@@ -106,4 +110,24 @@ class Menu extends CI_Controller
 			echo json_encode($this->results);
 		}
     }
+
+	public function delete(){
+		$this->load->model('menu_model');
+		if ($this->input->post('id') && $this->input->post('id') > 0) {
+			# code...
+			if ($this->menu_model->eliminar($this->input->post('id'))) {
+				$this->results['mensaje'] = "Tu registro ha sido eliminado con exito";
+				echo json_encode($this->results);
+			}else{
+				$this->results['estatus'] = 'error';
+				$this->results['mensaje'] = "Surgio un error al intentar eliminar el menu, intenta nuevamente";
+				echo json_encode($this->results);
+			}
+
+		}else{
+			$this->results['estatus'] = 'error';
+			$this->results['mensaje'] = "Los parametros proporcionados no son validos, intenta nuevamente";
+			echo json_encode($this->results);
+		}
+	}
 }

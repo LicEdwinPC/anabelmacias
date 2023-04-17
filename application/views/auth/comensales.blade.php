@@ -109,6 +109,7 @@
 @endsection
 
 @section('js')
+
 <!--begin::Page Vendors(used by this page)-->
 <script src="<?php echo THEME_URL.'assets/plugins/custom/datatables/datatables.bundle.js';?>"></script>
 <!--end::Page Vendors-->
@@ -118,7 +119,7 @@
 
 
 <script>
-
+	
 	$('#btnEditUser').on('click', function(e) 
     {
 		console.log("entro");
