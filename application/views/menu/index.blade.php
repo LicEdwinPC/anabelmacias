@@ -89,17 +89,18 @@
                     </div>
                     <div class="form-group">
                         <label>Comida <span class="text-danger">*</span></label>
-                        <input type="text" name="comida" id="comida" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Nombre del Platillo" autocomplete="off"/>
+                        <input type="text" name="comida" id="comida" data-tipo="1" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Nombre del Platillo" autocomplete="off"/>
                         <span class="form-text text-muted">Ingresa el nombre de la comida</span>
                     </div>
                     <div class="form-group">
                         <label>Postre <span class="text-danger">*</span></label>
-                        <input type="text" name="postre" id="postre" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Nombre del Postre" autocomplete="off"/>
+                        <input type="text" name="postre" id="postre" data-tipo="2" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Nombre del Postre" autocomplete="off"/>
                         <span class="form-text text-muted">Ingresa el nombre del postre.</span>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
+                <input type="hidden" id="Codigo">
                 <input type="hidden" id="UI" name="UI" value="<?php echo base64_encode($this->ion_auth->user()->row()->id);?>">
                 <button type="button" id="BtnGuardaMenu" class="btn btn-primary font-weight-bold">Agregar</button>
 				<button type="button" id="BotonModificar" class="btn btn-primary font-weight-bold">Modificar</button>
@@ -119,7 +120,7 @@
 <script src="<?php echo THEME_URL . 'assets/plugins/custom/fullcalendar/fullcalendar.bundle.js'; ?>"></script>
 <!--end::Page Vendors-->
 <!--begin::Page Scripts(used by this page)-->
-<script src="<?php echo THEME_URL . 'assets/js/pages/features/calendar/basic.js'; ?>"></script>
+{{-- <script src="<?php //echo THEME_URL . 'assets/js/pages/features/calendar/basic.js'; ?>"></script> --}}
 <!--end::Page Scripts-->
 <script src="<?php echo THEME_URL . 'assets/plugins/custom/fullcalendar/core/index.global.js';?>"></script>
 <script src="<?php echo base_url('assets/js/bootstrap-datepicker.es.js')?>"></script>
@@ -127,8 +128,6 @@
 
     jQuery(document).ready(function() {
         KTBootstrapDatepicker.init();
-        KTMenus.init();
-        
     });
 
     var todayDate = moment().startOf('day');
@@ -137,7 +136,7 @@
             var TODAY = todayDate.format('YYYY-MM-DD');
             var TOMORROW = todayDate.clone().add(1, 'day').format('YYYY-MM-DD');
 
-			var jsonMenus = <?php echo isset($datos) ? $datos : "[]";?>
+			// var jsonMenus = <?php echo isset($datos) ? $datos : "[]";?>
     
 			
 
@@ -182,60 +181,218 @@
     };
     }();
 
+     //Calendario:::
+    document.addEventListener("DOMContentLoaded", function() 
+    {
+        "use strict";
+
+       
+        var todayDate = moment().startOf('day');
+        var YM = todayDate.format('YYYY-MM');
+        var YESTERDAY = todayDate.clone().subtract(1, 'day').format('YYYY-MM-DD');
+        var TODAY = todayDate.format('YYYY-MM-DD');
+        var TOMORROW = todayDate.clone().add(1, 'day').format('YYYY-MM-DD');
+
+        var calendarEl = document.getElementById('kt_calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            locale: 'es',
+            plugins: ['bootstrap', 'interaction', 'dayGrid', 'timeGrid', 'list'],
+            themeSystem: 'bootstrap',
+
+            isRTL: KTUtil.isRTL(),
+
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+
+            height: 800,
+            contentHeight: 780,
+            aspectRatio: 3, // see: https://fullcalendar.io/docs/aspectRatio
+
+            nowIndicator: true,
+            now: TODAY + 'T09:25:00', // just for demo
+
+            views: {
+                dayGridMonth: { buttonText: 'mes' },
+                timeGridWeek: { buttonText: 'semana' },
+                timeGridDay: { buttonText: 'día' }
+            },
+
+            defaultView: 'dayGridMonth',
+            defaultDate: TODAY,
+
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            navLinks: true,
+            // events: jsonMenus,
+            events: 'menu/datosMenu',
+
+            eventRender: function(info) {
+                var element = $(info.el);
+
+                if (info.event.extendedProps && info.event.extendedProps.description) {
+                    if (element.hasClass('fc-day-grid-event')) {
+                        element.data('content', info.event.extendedProps.description);
+                        element.data('placement', 'top');
+                        KTApp.initPopover(element);
+                    } else if (element.hasClass('fc-time-grid-event')) {
+                        element.find('.fc-title').append('<div class="fc-description">' + info.event.extendedProps.description + '</div>');
+                    } else if (element.find('.fc-list-item-title').lenght !== 0) {
+                        element.find('.fc-list-item-title').append('<div class="fc-description">' + info.event.extendedProps.description + '</div>');
+                    }
+                }
+            },
+            dateClick: function(info) {
+                limpiarFormulario();
+                var fecha = info.dateStr;
+                var arrFecha = fecha.split("-");
+                var fecha2 = arrFecha[2] + "/" + arrFecha[1] + "/" + arrFecha[0];
+
+                $('#BtnGuardaMenu').show();
+                $('#BotonModificar').hide();
+                $('#BotonBorrar').hide();
+                $('#kt_datepicker_2').val(fecha2);
+
+                $("#exampleModalCenter").modal();
+            },
+            eventClick: function(info) {
+                console.log(info.event.extendedProps.tipo);
+                $('#BotonModificar').show();
+                $('#BotonBorrar').show();
+                $('#BtnGuardaMenu').hide();
+                $('#Codigo').val(info.event.id);
+                if (info.event.extendedProps.tipo==1) {
+                    $('#comida').val(info.event.title);
+                    $('#postre').val('');
+                }else{
+                    $('#postre').val(info.event.title);
+                    $('#comida').val('');
+                }
+                
+                
+                $('#kt_datepicker_2').val(moment(info.event.start).format("DD/MM/YYYY"));
+                $("#exampleModalCenter").modal();
+            }
+        });
+
+        calendar.render();
     
+        $('#BotonBorrar').click(function() {
+            let registro = recuperarDatosFormulario();
+            borrarRegistro(registro);
+            $("#exampleModalCenter").modal('hide');
+        });
 
-    var KTMenus = function() {
+	
+        function recuperarDatosFormulario() {
+            let registro = {
+            id: $('#Codigo').val(),
+            comida: $('#comida').val(),
+            postre: $('#postre').val(),
+            fecha_menu: $('#fecha_menu').val()
+            };
+            return registro;
+        }
 
-        var _handleMenusForm = function() {
-            var validation;
+        function borrarRegistro(registro) {
 
-            // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
-            validation = FormValidation.formValidation(
-                KTUtil.getById('frmAddMenu'), {
-                    fields: {
-                        fecha_menu: {
-                            validators: {
-                                notEmpty: {
-                                    message: 'La Fecha  es requerida'
-                                }
-                                // date: {
-                                //     format: 'YYYY/MM/DD',
-                                //     message: 'El valor no es una fecha valida',
-                                // },
-                            }
+            swal.fire({
+                title: "¿Estas seguro de borrar este registro?",
+                text: "Ya no podras revertir esta acción",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Ok, vamos!",
+                // customClass: {
+                //     confirmButton: "btn font-weight-bold btn-light-primary",
+                //     cancelButton:"btn font-weight-bold btn-light-secondary"
+
+                // }
+            }).then(function(result) {
+
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: 'POST',
+                        url: PATH+'Menu/delete',
+                        data: registro,
+                        success: function(msg) {
+                            calendar.refetchEvents();
                         },
-                        comida: {
-                            validators: {
-                                notEmpty: {
-                                    message: 'La descripcion de la comida es requerida'
-                                }
+                        error: function(error) {
+                            alert("Hay un problema:" + error);
+                        }
+                    });
+                }
+                
+                
+            });
+
+            
+        }
+
+      // funciones que interactuan con el formulario de entrada de datos
+        function limpiarFormulario() {
+            $('#fecha_menu').val('');
+            $('#comida').val('');
+            $('#postre').val('');
+        }
+
+        function CierraPopup(){
+                $("#exampleModalCenter").modal('hide');//ocultamos el modal
+                $('body').removeClass('modal-open');//eliminamos la clase del body para poder hacer scroll
+                $('.modal-backdrop').remove();//eliminamos el backdrop del modal
+                calendar.refetchEvents();
+        }
+
+        var validation;
+
+        // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
+        validation = FormValidation.formValidation(
+            KTUtil.getById('frmAddMenu'), {
+                fields: {
+                    fecha_menu: {
+                        validators: {
+                            notEmpty: {
+                                message: 'La Fecha  es requerida'
                             }
-                        },
-                        postre: {
-                            validators: {
-                                notEmpty: {
-                                    message: 'La descripcion del postre es requerida'
-                                }
+                            // date: {
+                            //     format: 'YYYY/MM/DD',
+                            //     message: 'El valor no es una fecha valida',
+                            // },
+                        }
+                    },
+                    comida: {
+                        validators: {
+                            notEmpty: {
+                                message: 'La descripcion de la comida es requerida'
                             }
                         }
                     },
-                    plugins: {
-                        trigger: new FormValidation.plugins.Trigger(),
-                        submitButton: new FormValidation.plugins.SubmitButton(),
-                        // defaultSubmit: new FormValidation.plugins.DefaultSubmit(), // Uncomment this line to enable normal button submit after form validation
-                        bootstrap: new FormValidation.plugins.Bootstrap()
+                    postre: {
+                        validators: {
+                            notEmpty: {
+                                message: 'La descripcion del postre es requerida'
+                            }
+                        }
                     }
+                },
+                plugins: {
+                    trigger: new FormValidation.plugins.Trigger(),
+                    submitButton: new FormValidation.plugins.SubmitButton(),
+                    // defaultSubmit: new FormValidation.plugins.DefaultSubmit(), // Uncomment this line to enable normal button submit after form validation
+                    bootstrap: new FormValidation.plugins.Bootstrap()
                 }
-            );
+            }
+        );
 
-            $('#BtnGuardaMenu').on('click', function(e) 
+        $('#BtnGuardaMenu').on('click', function(e) 
             {
                     e.preventDefault();
 
                     validation.validate().then(function(status) {
                         if (status == 'Valid') {
 
-                              console.log(status);
                               var URL  = "<?php echo site_url();?>";
 
                             $.ajax({
@@ -270,13 +427,7 @@
                                             }
                                         }).then(function() {
                                             CierraPopup();
-
-											// calendar('refetch');
-											// calendar.render();
-
-											$("#kt_calendar").fullCalendar('render');
 											
-                                        	window.location.href=PATH +'Menu/index';
                                         });
 
                                     }
@@ -314,59 +465,19 @@
                         }
                     });
             });
-        }
 
-        // Public Functions
-        return {
-            // public functions
-            init: function() {
-                _handleMenusForm();
-            }
-        };
+    });
 
-    }();
-
-   function CierraPopup(){
-        $("#exampleModalCenter").modal('hide');//ocultamos el modal
-        $('body').removeClass('modal-open');//eliminamos la clase del body para poder hacer scroll
-        $('.modal-backdrop').remove();//eliminamos el backdrop del modal
-   }
-
-   $('#BotonBorrar').click(function() {
-        let registro = recuperarDatosFormulario();
-        borrarRegistro(registro);
-        $("#FormularioEventos").modal('hide');
-      });
-
-	
-	function recuperarDatosFormulario() {
-        let registro = {
-          codigo: $('#Codigo').val(),
-          titulo: $('#Titulo').val(),
-          descripcion: $('#Descripcion').val(),
-          inicio: $('#FechaInicio').val() + ' ' + $('#HoraInicio').val(),
-          fin: $('#FechaFin').val() + ' ' + $('#HoraFin').val(),
-          colorfondo: $('#ColorFondo').val(),
-          colortexto: $('#ColorTexto').val()
-        };
-        return registro;
-      }
-
-	  function borrarRegistro(registro) {
-        $.ajax({
-          type: 'POST',
-          url: 'datoseventos.php?accion=borrar',
-          data: registro,
-          success: function(msg) {
-            calendario1.refetchEvents();
-          },
-          error: function(error) {
-            alert("Hay un problema:" + error);
-          }
-        });
-      }
    
 
+    
+
+    
+   
+
+   
+   
+     
 </script>
 <script src="<?php echo THEME_URL . 'assets/plugins/custom/fullcalendar/core/locales/es.global.js';?>"></script>
 

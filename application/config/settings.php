@@ -24,8 +24,8 @@ $config['produccion'] = array(
 #------------------------------------------------------------
 $config['desarrollo'] = array(
     'desarrollo'    => true,
-    'host'          => 'localhost:8080/anabelmacias',
-    'bd_hostname'   => 'localhost:3307',
+    'host'          => 'localhost/anabelmacias',
+    'bd_hostname'   => 'localhost',
     'bd_database'   => 'anabelmacias',
     'bd_user'       => 'root',
     'bd_password'   => '',
