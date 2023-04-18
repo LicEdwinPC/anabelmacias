@@ -24,16 +24,28 @@ class Menu extends CI_Controller
 
         // $this->session->set_flashdata('message', 'Esto es un mensaje para mostrar');
 
-        $ArrDatos = $this->_getTodo();
+        // $ArrDatos = $this->_getTodo();
 		
 		$this->data['fechas_inhabiles'] = $this->_getFechasInhabiles();
-		$this->data['datos'] =  json_encode($ArrDatos);
+		// $this->data['datos'] =  json_encode($ArrDatos);
 
 		// print_r($this->data['fechas_inhabiles']);
 		// die();
 
+
+		//Combo tipo de platillo.
+		$this->data['LstTipoPlatillo'] = $this->_getTipoPlatillo();
+
         $this->blade->render('menu' . DIRECTORY_SEPARATOR . 'index', $this->data);
     }
+
+	function _getTipoPlatillo(){
+		$this->load->model("TipoPlatillo_model");
+
+		if ($ArrDatos = $this->TipoPlatillo_model->getAll()) {
+			return $ArrDatos;
+		}
+	}
 
 	function _getFechasInhabiles(){
 		$this->load->model('menu_model');
@@ -44,6 +56,30 @@ class Menu extends CI_Controller
 		}
 		
 		return json_encode($ArrFechas);
+	}
+
+	function datosMenu(){
+		$this->load->model('detalle_menu_model');
+		$Arrdatos = $this->detalle_menu_model->getAll();
+
+		foreach ($Arrdatos as $key => $row) {
+			$ArrComida[$key]['id'] = $row->id;
+			// $ArrComida[$key]['url'] = site_url('menu/delete?id=').base64_encode($row->id);
+			$ArrComida[$key]['title'] = $row->descripcion;
+			$ArrComida[$key]['start'] = $row->fecha_menu;
+			$ArrComida[$key]['tipo'] = $row->id_tipo;
+			if ($row->id_tipo == 1) {
+				# code...
+				$ArrComida[$key]['className'] = "fc-event-solid-danger fc-event-light fc-x";
+			}else{
+				$ArrComida[$key]['className'] = "fc-event-solid-info fc-event-light fc-x";
+			}
+			
+			$ArrComida[$key]['description'] = $row->descripcion;
+		}
+
+		
+		echo  json_encode($ArrComida);
 	}
 
 	function _getTodo(){
@@ -79,6 +115,7 @@ class Menu extends CI_Controller
     public function agregar()
     {
 		$this->load->model('menu_model');
+		$this->load->model('detalle_menu_model');
 
 		$this->form_validation->set_rules('fecha_menu', 'Fecha del registro', 'required|trim');
 		$this->form_validation->set_rules('comida', 'Comida', 'required|trim');
@@ -87,17 +124,41 @@ class Menu extends CI_Controller
 	
         if ($this->form_validation->run() == true) {
 
-			$data = [
+			$dataMenu = [
 				'fecha_menu' => utils::cfecha($this->input->post('fecha_menu')),
-				'comida' => $this->input->post('comida'),
-				'postre' => $this->input->post('postre')
+				'IdUserCreated' => $this->ion_auth->user()->row()->id,
+				'FCreated' => utils::datetime(),
+				'Status' => 1
 			];
 
 
-			if($this->menu_model->agregar($data)){
-				$this->results['data'] = $data;
-				$this->results['mensaje'] = "Tu registro ha sido agregado con exito";
-				echo json_encode($this->results);
+			if($IdMenu = $this->menu_model->agregar($dataMenu)){
+				
+				if ($IdMenu > 0) {
+
+					
+					$dataComida = [
+						'id_ma_menu' => $IdMenu,
+						'id_tipo' => 1,
+						'descripcion' => trim($this->input->post('comida')),
+						'IdUserCreated' => $this->ion_auth->user()->row()->id,
+						'FCreated' => utils::datetime()
+					];
+
+					$dataPostre = [
+						'id_ma_menu' => $IdMenu,
+						'id_tipo' => 2,
+						'descripcion' => trim($this->input->post('postre')),
+						'IdUserCreated' => $this->ion_auth->user()->row()->id,
+						'FCreated' => utils::datetime()
+					];
+
+					if ($this->detalle_menu_model->agregar($dataComida) && $this->detalle_menu_model->agregar($dataPostre)) {
+						$this->results['mensaje'] = "Tu registro ha sido agregado con exito";
+						echo json_encode($this->results);
+					}
+				}
+				
 			}else{
 				$this->results['estatus'] = 'error';
 				$this->results['mensaje'] = "Surgio un problema al insertar el registro, intenta nuevamente";
@@ -112,10 +173,11 @@ class Menu extends CI_Controller
     }
 
 	public function delete(){
-		$this->load->model('menu_model');
+		$this->load->model('detalle_menu_model');
 		if ($this->input->post('id') && $this->input->post('id') > 0) {
 			# code...
-			if ($this->menu_model->eliminar($this->input->post('id'))) {
+			
+			if ($this->detalle_menu_model->eliminar($this->input->post('id'))) {
 				$this->results['mensaje'] = "Tu registro ha sido eliminado con exito";
 				echo json_encode($this->results);
 			}else{

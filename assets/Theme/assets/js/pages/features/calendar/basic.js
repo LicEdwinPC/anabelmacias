@@ -12,84 +12,7 @@ var KTCalendarBasic = function() {
             var TOMORROW = todayDate.clone().add(1, 'day').format('YYYY-MM-DD');
 
             var calendarEl = document.getElementById('kt_calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                // eventClick: function(info) {
-                //     var eventObj = info.event;
-
-                //     if (eventObj.url) {
-                //         var id_menu = 0;
-
-                //         console.log(eventObj.id);
-
-                //         $.ajax({
-                //             url: 'Menu/delete',
-                //             method: "POST",
-                //             dataType: "json",
-                //             data: { id: eventObj.id },
-                //             success: function(result) {
-                //                 // debugger;
-                //                 // console.log(result);
-
-                //                 if (result.estatus == 'error') {
-                //                     swal.fire({
-                //                         text: result.mensaje,
-                //                         icon: "error",
-                //                         buttonsStyling: false,
-                //                         confirmButtonText: "Ok, vamos!",
-                //                         customClass: {
-                //                             confirmButton: "btn font-weight-bold btn-light-primary"
-                //                         }
-                //                     }).then(function() {
-                //                         KTUtil.scrollTop();
-                //                     });
-                //                 } else {
-                //                     swal.fire({
-                //                         text: result.mensaje,
-                //                         icon: "success",
-                //                         buttonsStyling: false,
-                //                         confirmButtonText: "Ok, vamos!",
-                //                         customClass: {
-                //                             confirmButton: "btn font-weight-bold btn-light-primary"
-                //                         }
-                //                     }).then(function() {
-                //                         // CierraPopup();
-
-                //                         window.location.href = PATH + 'menu/index';
-                //                         // $("#kt_calendar").fullCalendar('render');
-                //                         // ReloadCalendar();
-                //                     });
-
-                //                 }
-
-                //             },
-                //             error: function() {
-                //                 swal.fire({
-                //                     text: result.mensaje,
-                //                     icon: "error",
-                //                     buttonsStyling: false,
-                //                     confirmButtonText: "Ok, vamos!",
-                //                     customClass: {
-                //                         confirmButton: "btn font-weight-bold btn-light-primary"
-                //                     }
-                //                 }).then(function() {
-                //                     // KTUtil.scrollTop();
-                //                 });
-                //             }
-                //         });
-
-
-                //         // alert(
-                //         //     'Clicked ' + eventObj.title + '.\n' +
-                //         //     'Will open ' + eventObj.url + ' in a new tab'
-                //         // );
-
-                //         // window.open(eventObj.url);
-
-                //         info.jsEvent.preventDefault(); // prevents browser from following link in current tab.
-                //     } else {
-                //         // alert('Clicked ' + eventObj.title);
-                //     }
-                // },
+            let calendar = new FullCalendar.Calendar(calendarEl, {
                 locale: 'es',
                 plugins: ['bootstrap', 'interaction', 'dayGrid', 'timeGrid', 'list'],
                 themeSystem: 'bootstrap',
@@ -121,7 +44,8 @@ var KTCalendarBasic = function() {
                 editable: true,
                 eventLimit: true, // allow "more" link when too many events
                 navLinks: true,
-                events: jsonMenus,
+                // events: jsonMenus,
+                events: 'menu/datosMenu',
 
                 eventRender: function(info) {
                     var element = $(info.el);
@@ -152,11 +76,6 @@ var KTCalendarBasic = function() {
                     $("#exampleModalCenter").modal();
                 },
                 eventClick: function(info) {
-                    // var fecha = info.event.dateStr;
-
-                    console.log(info);
-                    // var arrFecha = fecha.split("-");
-                    // var fecha2 = arrFecha[2] + "/" + arrFecha[1] + "/" + arrFecha[0];
                     $('#BotonModificar').show();
                     $('#BotonBorrar').show();
                     $('#BtnGuardaMenu').hide();
@@ -180,6 +99,3 @@ function limpiarFormulario() {
     $('#postre').val('');
 }
 
-jQuery(document).ready(function() {
-    KTCalendarBasic.init();
-});
