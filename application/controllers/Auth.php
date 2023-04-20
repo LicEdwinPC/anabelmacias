@@ -702,8 +702,8 @@ class Auth extends CI_Controller
 			'type' => 'password'
 		];
 
-		// $this->_render_page('auth/edit_user', $this->data);
 		$this->blade->render('auth' . DIRECTORY_SEPARATOR . 'edit_user', $this->data);
+		// $this->_render_page('auth/edit_user', $this->data);
 	}
 
 	/**

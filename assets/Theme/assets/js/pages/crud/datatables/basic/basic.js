@@ -165,8 +165,6 @@ var KTDatatablesBasicBasic = function() {
             initTable1();
         }
     };
-}();
 
-jQuery(document).ready(function() {
-    KTDatatablesBasicBasic.init();
-});
+
+}();

@@ -112,6 +112,8 @@
     <!--end::Entry-->
 </div>
 
+
+
 @endsection
 
 @section('css')
@@ -133,10 +135,37 @@
 
 
 <script>
-	
-	$('#btnEditUser').on('click', function(e) 
-    {
-		console.log("entro");
+	var PATH = "<?php echo site_url();?>";
+	jQuery(document).ready(function() {
+		KTDatatablesBasicBasic.init();
+
+		$('.btnEditUser').on('click', function(e) 
+		{
+			// alert($(this).data('id'));
+
+			$.ajax({
+				type: 'GET',
+				url: PATH+'Auth/edit_user',
+				data: {'id':$(this).data('id')},
+				success: function(msg) {
+					swal.fire({
+						text: msg,
+						icon: "success",
+						buttonsStyling: false,
+						confirmButtonText: "Ok, vamos!",
+						customClass: {
+							confirmButton: "btn font-weight-bold btn-light-primary"
+						}
+					}).then(function() {
+						
+					});
+				},
+				error: function(error) {
+					alert("Hay un problema:" + error);
+				}
+			});
+		});
 	});
+	
 </script>
 @endsection
