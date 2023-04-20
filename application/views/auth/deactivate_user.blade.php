@@ -18,33 +18,24 @@
     $attributes = array('class' => 'form', 'id' => 'formUser');
     echo form_open("auth/deactivate/".$user->id,$attributes);?>
     <div class="card-body">
-        <div id="infoMessage"><?php echo $message;?></div>
             <div class="form-group row">
                     
             <label class="col-3 col-form-label">¿Confirmar acción?</label>
             <div class="col-9 col-form-label">
-            <div class="radio-inline">
-                                <label class="radio">
-                                    <input type="radio" name="confirm" value="yes" checked="checked">
-                                    <span></span>
-                                    Si
-                                </label>
-                                <label class="radio">
-                                    <input type="radio" name="confirm" value="no">
-                                    <span></span>
-                                    No
-                                </label>
-                                <label class="radio">
-                                    <input type="radio" name="radios5">
-                                    <span></span>
-                                    Option 3
-                                </label>
-                            </div>
+                <div class="radio-inline">
+                    <label class="radio">
+                        <input type="radio" name="confirm" value="yes" checked="checked">
+                        <span></span>
+                        Si
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="confirm" value="no">
+                        <span></span>
+                        No
+                    </label>
+                </div>
             </div>
-            </div>
-
-         
-
+        </div>
           <?php echo form_hidden($csrf); ?>
           <?php echo form_hidden(['id' => $user->id]); ?>
 
