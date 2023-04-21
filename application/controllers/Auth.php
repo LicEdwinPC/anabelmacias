@@ -560,9 +560,11 @@ class Auth extends CI_Controller
 	 *
 	 * @param int|string $id
 	 */
-	public function edit_user($id)
+	public function edit_user()
 	{
 		$this->data['title'] = $this->lang->line('edit_user_heading');
+
+		// $id= $this->input->post('id');
 
 		if (!$this->ion_auth->logged_in() || (!$this->ion_auth->is_admin() && !($this->ion_auth->user()->row()->id == $id))) {
 			redirect('auth', 'refresh');
@@ -581,6 +583,10 @@ class Auth extends CI_Controller
 		$this->form_validation->set_rules('ap1', $this->lang->line('edit_user_validation_lname_label'), 'trim|required');
 		$this->form_validation->set_rules('phone', $this->lang->line('edit_user_validation_phone_label'), 'trim');
 		$this->form_validation->set_rules('company', $this->lang->line('edit_user_validation_company_label'), 'trim');
+
+		
+		
+		
 
 		if (isset($_POST) && !empty($_POST)) {
 			// do we have a valid request?
