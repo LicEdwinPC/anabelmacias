@@ -369,7 +369,7 @@ class Auth extends CI_Controller
 		if ($activation) {
 			// redirect them to the auth page
 			$this->session->set_flashdata('message', $this->ion_auth->messages());
-			redirect("auth", 'refresh');
+			redirect("auth/comensales", 'refresh');
 		} else {
 			// redirect them to the forgot password page
 			$this->session->set_flashdata('message', $this->ion_auth->errors());
@@ -400,13 +400,19 @@ class Auth extends CI_Controller
 			$this->data['csrf'] = $this->_get_csrf_nonce();
 			$this->data['user'] = $this->ion_auth->user($id)->row();
 			$this->data['identity'] = $this->config->item('identity', 'ion_auth');
+			
+			$this->data['title'] = "Desactivar comensal";
+			$this->data['Subtitle'] = "Confirmar los datos";
 
-			$this->_render_page('auth' . DIRECTORY_SEPARATOR . 'deactivate_user', $this->data);
+
+			$this->blade->render('auth' . DIRECTORY_SEPARATOR . 'deactivate_user', $this->data);
+			// $this->_render_page('auth' . DIRECTORY_SEPARATOR . 'deactivate_user', $this->data);
+		
 		} else {
 			// do we really want to deactivate?
 			if ($this->input->post('confirm') == 'yes') {
 				// do we have a valid request?
-				if ($this->_valid_csrf_nonce() === FALSE || $id != $this->input->post('id')) {
+				if (/*$this->_valid_csrf_nonce() === FALSE ||*/ $id != $this->input->post('id')) {
 					show_error($this->lang->line('error_csrf'));
 				}
 
@@ -414,6 +420,7 @@ class Auth extends CI_Controller
 				if ($this->ion_auth->logged_in() && $this->ion_auth->is_admin()) {
 					$this->ion_auth->deactivate($id);
 				}
+				redirect('auth/comensales', 'refresh');
 			}
 
 			// redirect them back to the auth page
@@ -550,7 +557,7 @@ class Auth extends CI_Controller
 	public function redirectUser()
 	{
 		if ($this->ion_auth->is_admin()) {
-			redirect('auth', 'refresh');
+			redirect('auth/comensales', 'refresh');
 		}
 		redirect('/', 'refresh');
 	}
@@ -563,6 +570,7 @@ class Auth extends CI_Controller
 	public function edit_user()
 	{
 		$this->data['title'] = $this->lang->line('edit_user_heading');
+		$this->data['Subtitle'] = $this->lang->line('edit_user_subheading');
 
 		// $id= $this->input->post('id');
 
@@ -589,11 +597,19 @@ class Auth extends CI_Controller
 		
 
 		if (isset($_POST) && !empty($_POST)) {
+
+			
+			// echo "<pre>";
+			// print_r ($this->_valid_csrf_nonce());
+			// echo "</pre>";
+
+			// die();
+			
 			// do we have a valid request?
-			if ($this->_valid_csrf_nonce() === FALSE || $id != $this->input->post('id')) {
+			if (/*$this->_valid_csrf_nonce() === FALSE||*/  $id != $this->input->post('id')) {
 				show_error($this->lang->line('error_csrf'));
 			}
-
+			
 			// update the password if it was posted
 			if ($this->input->post('password')) {
 				$this->form_validation->set_rules('password', $this->lang->line('edit_user_validation_password_label'), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|matches[password_confirm]');
@@ -601,6 +617,7 @@ class Auth extends CI_Controller
 			}
 
 			if ($this->form_validation->run() === TRUE) {
+				
 				$data = [
 					'first_name' => $this->input->post('first_name'),
 					'last_name' => $this->input->post('last_name'),
@@ -656,11 +673,17 @@ class Auth extends CI_Controller
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('first_name', $user->first_name),
 		];
-		$this->data['last_name'] = [
-			'name'  => 'last_name',
-			'id'    => 'last_name',
+		$this->data['ap1'] = [
+			'name'  => 'ap1',
+			'id'    => 'ap1',
 			'type'  => 'text',
-			'value' => $this->form_validation->set_value('last_name', $user->last_name),
+			'value' => $this->form_validation->set_value('ap1', $user->ap1),
+		];
+		$this->data['ap2'] = [
+			'name'  => 'ap2',
+			'id'    => 'ap2',
+			'type'  => 'text',
+			'value' => $this->form_validation->set_value('ap2', $user->ap2),
 		];
 		$this->data['company'] = [
 			'name'  => 'company',
@@ -804,11 +827,15 @@ class Auth extends CI_Controller
 	 */
 	public function _get_csrf_nonce()
 	{
+
+		
 		$this->load->helper('string');
 		$key = random_string('alnum', 8);
 		$value = random_string('alnum', 20);
 		$this->session->set_flashdata('csrfkey', $key);
 		$this->session->set_flashdata('csrfvalue', $value);
+
+		
 
 		return [$key => $value];
 	}
@@ -818,6 +845,9 @@ class Auth extends CI_Controller
 	 */
 	public function _valid_csrf_nonce()
 	{
+
+		
+		
 		$csrfkey = $this->input->post($this->session->flashdata('csrfkey'));
 		if ($csrfkey && $csrfkey === $this->session->flashdata('csrfvalue')) {
 			return TRUE;
@@ -858,10 +888,10 @@ class Auth extends CI_Controller
 		$this->data['description'] = "Listado de todos los trabajadores registrados";
 		
 		//list the users
-		// $this->data['users'] = $this->ion_auth->users()->result();
+		 $this->data['users'] = $this->ion_auth->users()->result();
 
 		//USAGE NOTE - you can do more complicated queries like this
-		$this->data['users'] = $this->ion_auth->where('active', '1')->users()->result();
+		//$this->data['users'] = $this->ion_auth->where('active', '1')->users()->result();
 
 		foreach ($this->data['users'] as $k => $user) {
 			$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();

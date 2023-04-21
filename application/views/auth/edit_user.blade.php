@@ -1,62 +1,87 @@
-
 @layout('template/estructura')
 @section('contenido')
-<h1><?php echo lang('edit_user_heading');?></h1>
-<p><?php echo lang('edit_user_subheading');?></p>
+<div class="row">
+    <div class="col-xl-3"></div>
+    <div class="col-xl-7">
+<div class="card card-custom">
+    <div class="card-header">
+        <div class="card-title">
 
-<div id="infoMessage"><?php echo $message;?></div>
+            <h3 class="card-label text-center">
+                
+            </h3>
+        </div>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <?php 
+    $attributes = array('class' => 'form', 'id' => 'formUser');
+    echo form_open(uri_string(),$attributes);?>
+    <div class="card-body">
+        <div id="infoMessage"><?php echo $message;?></div>
+            <div class="form-group">
+                    <?php echo lang('edit_user_fname_label', 'first_name');?> <br />
+                    <?php echo form_input($first_name,'Nombre','class="form-control form-control-solid form-control-lg"');?>
+            </div>
 
-<?php echo form_open(uri_string());?>
+            <div class="form-group">
+                    <?php echo lang('edit_user_lname_label', 'ap1');?> <br />
+                    <?php echo form_input($ap1,"Primer Apellido",'class="form-control form-control-solid form-control-lg"');?>
+            </div>
+            <div class="form-group">
+                <?php echo lang('edit_user_lname_label2', 'ap2');?> <br />
+                <?php echo form_input($ap2,"Segundo Apellido",'class="form-control form-control-solid form-control-lg"');?>
+            </div>
 
-      <p>
-            <?php echo lang('edit_user_fname_label', 'first_name');?> <br />
-            <?php echo form_input($first_name);?>
-      </p>
+            <div class="form-group">
+                <?php echo lang('edit_user_company_label', 'company');?> <br />
+                <?php echo form_input($company,"Departamento",'class="form-control form-control-solid form-control-lg"');?>
+            </div>
 
-      <p>
-            <?php echo lang('edit_user_lname_label', 'last_name');?> <br />
-            <?php echo form_input($last_name);?>
-      </p>
+            <div class="form-group">
+                <?php echo lang('edit_user_phone_label', 'phone');?> <br />
+                <?php echo form_input($phone,"Teléfono",'class="form-control form-control-solid form-control-lg"');?>
+            </div>
 
-      <p>
-            <?php echo lang('edit_user_company_label', 'company');?> <br />
-            <?php echo form_input($company);?>
-      </p>
+            <div class="form-group">
+                <?php echo lang('edit_user_password_label', 'password');?> <br />
+                <?php echo form_input($password,"Contraseña",'class="form-control form-control-solid form-control-lg"');?>
+            </div>
 
-      <p>
-            <?php echo lang('edit_user_phone_label', 'phone');?> <br />
-            <?php echo form_input($phone);?>
-      </p>
+            <div class="form-group">
+                <?php echo lang('edit_user_password_confirm_label', 'password_confirm');?><br />
+                <?php echo form_input($password_confirm,"Confirmar contraseña",'class="form-control form-control-solid"');?>
+            </div>
 
-      <p>
-            <?php echo lang('edit_user_password_label', 'password');?> <br />
-            <?php echo form_input($password);?>
-      </p>
+        <?php if ($this->ion_auth->is_admin()): ?>
 
-      <p>
-            <?php echo lang('edit_user_password_confirm_label', 'password_confirm');?><br />
-            <?php echo form_input($password_confirm);?>
-      </p>
+            <h3><?php echo lang('edit_user_groups_heading');?></h3>
+            <div class="form-group row">
+                <div class="checkbox-inline">
+                    <?php foreach ($groups as $group):?>
+                
+                            <label class="checkbox">
+                                <input type="checkbox" name="groups[]" value="<?php echo $group['id'];?>" <?php echo (in_array($group, $currentGroups)) ? 'checked="checked"' : null; ?>>
+                                <span></span>
+                                <?php echo htmlspecialchars($group['name'],ENT_QUOTES,'UTF-8');?>
+                            </label>
+                    <?php endforeach?>
+                </div>
+            </div>
 
-      <?php if ($this->ion_auth->is_admin()): ?>
+        <?php endif ?>
 
-          <h3><?php echo lang('edit_user_groups_heading');?></h3>
-          <?php foreach ($groups as $group):?>
-              <label class="checkbox">
-              <input type="checkbox" name="groups[]" value="<?php echo $group['id'];?>" <?php echo (in_array($group, $currentGroups)) ? 'checked="checked"' : null; ?>>
-              <?php echo htmlspecialchars($group['name'],ENT_QUOTES,'UTF-8');?>
-              </label>
-          <?php endforeach?>
+        <?php echo form_hidden('id', $user->id);?>
+        <?php echo form_hidden($csrf); ?>
 
-      <?php endif ?>
-
-      <?php echo form_hidden('id', $user->id);?>
-      <?php echo form_hidden($csrf); ?>
-
-      <p><?php echo form_submit('submit', lang('edit_user_submit_btn'));?></p>
-
+    </div>
+    <div class="card-footer">
+        <button type="submit" name="submit" class="btn btn-primary mr-2"><?php echo lang('edit_user_submit_btn');?></button>
+        <button type="reset" class="btn btn-secondary">Cancel</button>
+    </div>
+</div>
+<!--end::Card-->
 <?php echo form_close();?>
-
+</div>
+</div>
 @endsection
-
-
