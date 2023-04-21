@@ -80,7 +80,7 @@
 													<td><?php echo $row->company;?></td>
 													<td><?php echo $row->active;?></td>
 													<td>
-														<button id="btnEdit" data-id="<?php echo $row->id;?>" name="btnEdit"  class="btn btn-sm btn-clean btn-icon mr-2 btnEditUser" title="modificar">
+														<a id="btnEdit" data-id="<?php echo $row->id;?>" href="<?php echo site_url('auth/edit_user/'.$row->id);?>"  name="btnEdit"  class="btn btn-sm btn-clean btn-icon mr-2 btnEditUser" title="modificar">
 															<span class="svg-icon svg-icon-md">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -90,7 +90,7 @@
 																	</g>
 																</svg>
 															</span>
-														</button>
+														</a>
 													</td>
 												</tr>
                                                 <?php
@@ -142,8 +142,8 @@
 			// alert($(this).data('id'));
 
 			$.ajax({
-				type: 'GET',
-				url: PATH+'Auth/edit_user',
+				type: 'POST',
+				url: PATH+'auth/edit_user',
 				data: {'id':$(this).data('id')},
 				success: function(msg) {
 					swal.fire({
