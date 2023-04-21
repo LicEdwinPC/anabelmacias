@@ -30,11 +30,15 @@ class Auth extends CI_Controller
 		if (!$this->ion_auth->logged_in()) {
 			// redirect them to the login page
 			redirect('auth/login', 'refresh');
+
 		} else if (!$this->ion_auth->is_admin()) // remove this elseif if you want to enable this for non-admins
 		{
-			// redirect them to the home page because they must be an administrator to view this
-			// show_error('You must be an administrator to view this page.');
-			$this->blade->render('comensales' . DIRECTORY_SEPARATOR . 'index');
+			$this->data['title'] = "Tabla de control";
+			$this->data['Subtitle'] = "pedidos";
+			$this->data['description'] = "Tabla de control para los pedidos de comida";
+			//Manda a los pedidos del comensal.
+			$this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'index',$this->data);
+			
 		} else {
 
 			// $this->data['title'] = $this->lang->line('index_heading');

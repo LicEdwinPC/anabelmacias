@@ -59,6 +59,7 @@
                                             <tr>
 												<th>Id</th>
                                                 <th>Comensal</th>
+												<th>Usuario</th>
                                                 <th>Teléfono</th>
                                                 <th>Correo Electrónico</th>
                                                 <th>Departamento</th>
@@ -75,6 +76,7 @@
                                                 <tr>
 													<td><?php echo $row->id?></td>
 													<td><?php echo $row->first_name." ".$row->ap1." ".$row->ap2;?></td>
+													<td><?php echo $row->username;?></td>
 													<td><?php echo $row->phone;?></td>
 													<td><?php echo $row->email;?></td>
 													<td><?php echo $row->company;?></td>
