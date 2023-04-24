@@ -37,7 +37,8 @@ class Auth extends CI_Controller
 			$this->data['Subtitle'] = "pedidos";
 			$this->data['description'] = "Tabla de control para los pedidos de comida";
 			//Manda a los pedidos del comensal.
-			$this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'index',$this->data);
+			redirect('pedido/index', 'refresh');
+			// $this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'index',$this->data);
 			
 		} else {
 

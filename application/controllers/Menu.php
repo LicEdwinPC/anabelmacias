@@ -34,7 +34,7 @@ class Menu extends CI_Controller
 
 
 		//Combo tipo de platillo.
-		$this->data['LstTipoPlatillo'] = $this->_getTipoPlatillo();
+		// $this->data['LstTipoPlatillo'] = $this->_getTipoPlatillo();
 
         $this->blade->render('menu' . DIRECTORY_SEPARATOR . 'index', $this->data);
     }

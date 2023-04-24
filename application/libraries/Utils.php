@@ -712,7 +712,7 @@ class utils
         return $number;
     }
 
-    function fecha($fecha) //cambia de ao/mes/dia -> dia/mes/ao
+    public static function  fecha($fecha) //cambia de ao/mes/dia -> dia/mes/ao
     {
         $fecha = str_replace("-", "/", $fecha);
         $fe = explode("/", $fecha);
@@ -723,7 +723,7 @@ class utils
         return $fec;
     }
 
-    function mes($mesi)
+    public static function mes($mesi)
     {
         $mesi = $mesi - 1;
         $mes[0] = "Enero";
@@ -742,7 +742,7 @@ class utils
         return $mes[$mesi];
     }
 
-    function fechalarga($fecha)
+    public static function  fechalarga($fecha)
     {
         $fecha = explode(' ', $fecha);
         $fecha = current($fecha);
@@ -971,5 +971,41 @@ class utils
     {
         return str_replace([','], [''], $money);
     }
+ 
+	public static function semana($Fecha){
+
+		$separa = explode("/", $Fecha);
+		
+		$year=$separa[0];
+		$month=$separa[1];
+		$day=$separa[2];
+
+
+
+		# Obtenemos el numero de la semana
+		$semana=date("W",mktime(0,0,0,$month,$day,$year));
+
+		# Obtenemos el día de la semana de la fecha dada
+		$diaSemana=date("w",mktime(0,0,0,$month,$day,$year));
+
+		# el 0 equivale al domingo...
+		if($diaSemana==0)
+			$diaSemana=7;
+
+		# A la fecha recibida, le restamos el dia de la semana y obtendremos el lunes
+		$primerDia=date("d-m-Y",mktime(0,0,0,$month,$day-$diaSemana+1,$year));
+
+		# A la fecha recibida, le sumamos el dia de la semana menos siete y obtendremos el domingo
+		$ultimoDia=date("d-m-Y",mktime(0,0,0,$month,$day+(7-$diaSemana),$year));
+
+		// echo "<br>Semana: ".$semana." - año: ".$year;
+		// echo "<br>Primer día ".$primerDia;
+		// echo "<br>Ultimo día ".$ultimoDia;
+		
+
+		return $ArrSemana = ['Fecha_inicio' => $primerDia,'Fecha_fin' => $ultimoDia];
+
+		
+	}
 }
 //===============================================

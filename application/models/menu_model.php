@@ -35,7 +35,15 @@ class menu_model extends CI_Model
 		}
 	}
 
-	public function getAll(){
+	public function getAll($condicion = null)
+	{
+		if ($condicion != null) {
+			$this->db->where($condicion);
+			# code...
+		}else{
+			$this->db->where('1=1');
+		}
+		
 		$result= $this->db
 		->select('*')
 		->from($this->tabla)
@@ -43,6 +51,26 @@ class menu_model extends CI_Model
 		->get();
 
 		return $result->result();
+
+	}
+
+	public function getMenus($condicion = null){
+		if ($condicion != null) {
+			$this->db->where($condicion);
+			# code...
+		}else{
+			$this->db->where('1=1');
+		}
+
+		$result= $this->db
+		->select('ma_menus.id,ma_menus.fecha_menu,ma_menus.NoPlatillos,ma_menus.status,de_menu.id as id_detalle,de_menu.id_tipo,de_menu.descripcion')
+		->from($this->tabla)
+        ->join('de_menu', 'de_menu.id_ma_menu = ma_menus.id')
+		->get();
+
+		return $result->result();
+
+
 
 	}
 }

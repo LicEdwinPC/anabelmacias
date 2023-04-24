@@ -34,7 +34,16 @@ class detalle_menu_model extends CI_Model
 		}
 	}
 
-	public function getAll(){
+	public function getAll($condicion = null){
+
+		
+		if ($condicion != null) {
+			$this->db->where($condicion);
+			# code...
+		}else{
+			$this->db->where('1=1');
+		}
+
 		$result= $this->db
 		->select('de_menu.*,ma_menus.fecha_menu')
 		->from($this->tabla)
@@ -43,5 +52,16 @@ class detalle_menu_model extends CI_Model
 
 		return $result->result();
 
+	}
+
+	public function detalle($id_ma_menu= 0){
+		
+		$result= $this->db
+		->select('*')
+		->from($this->tabla)
+		->where('id_ma_menu',$id_ma_menu)
+		->get();
+
+		return $result->result();
 	}
 }

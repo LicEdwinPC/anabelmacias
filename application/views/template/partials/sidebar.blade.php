@@ -53,12 +53,10 @@
 					}
 				}
 			} ?>
-			<li><a href="<?php echo site_url('inicio/logout'); ?>"><i class="zmdi zmdi-power"></i><span>Cerrar sesión</span></a></li>
+			<li><a href="<?php echo site_url('Auth/logout'); ?>"><i class="zmdi zmdi-power"></i><span>Cerrar sesión</span></a></li>
 
 		</ul>
-		<center>
-			<img class="mt-5 align-text-bottom" width="150px" src="<?php echo base_url("assets/imagenes/logo_armas_blanco.png"); ?>" alt="Gobierno del Estado de Colima">
-		</center>
+		
 	</div>
 
 </aside>
