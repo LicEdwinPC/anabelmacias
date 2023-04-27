@@ -2,24 +2,19 @@
     exit('No direct script access allowed');
 }
 
-class pedidos_model extends CI_Model
+class de_pedidos_model extends CI_Model
 {
 
 	public $tabla;
     public function __construct()
     {
-        $this->tabla = 'ma_pedidos';
+        $this->tabla = 'de_pedidos';
         parent::__construct();
     }
 
 
 	public function agregar($dataContent = array())
     {
-
-		// echo '<pre>';
-		// print_r($dataContent);
-		// echo '</pre>';
-		// die();
        
         $insert_id = ($this->db->insert($this->tabla, $dataContent) == true) ? $this->db->insert_id() : false;
        

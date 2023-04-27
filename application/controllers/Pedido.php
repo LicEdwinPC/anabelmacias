@@ -62,33 +62,87 @@ class Pedido extends CI_Controller
 
 	function guardar(){
 		$this->load->model('pedidos_model');
-		$data = [
+		$this->load->model('de_pedidos_model');
+
+
+		$dataMaPedido = [
 			"id_menu" => base64_decode($this->input->post('id')),
-			"comida"  => $this->input->post('comida'),
-			"postre"  => $this->input->post('postre'),
 			"FPedido"  => utils::datetime(),
 			"id_comensal" => $this->ion_auth->user()->row()->id,
-			"FCreated" => utils::datetime(),
+			"FInsert" => utils::datetime(),
 			"UInsert" =>  $this->ion_auth->user()->row()->id,
-			"status" => 1
+			"Status" => 1,
+			"Descripcion" => ""
 
 		];
+		
+		if ($id_ma_pedido = $this->pedidos_model->agregar($dataMaPedido)) {
+			$i=0;
+			$y=0;
+			if ($this->input->post('comida') > 0) {
+				# code...
+				$dataPedido = [
+					"id_ma_pedido" => $id_ma_pedido,
+					"id_detalle_menu"  => $this->input->post('comida'),
+					"FInsert" => utils::datetime(),
+					"UCreate" =>  $this->ion_auth->user()->row()->id,
+					"Status" => 1
+		
+				];
 
+
+				if ($this->de_pedidos_model->agregar($dataPedido)) {
+					# code...
+					$this->results['mensaje'] ="Tu pedido se registró con exito";
+					//echo json_encode($this->results);
+				}else{
+					$this->results['estatus'] = 'error';
+					$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
+					//echo json_encode($this->results);
+				}
+			}else{
+				$i=1;
+			}
+
+			if ($this->input->post('postre') > 0) {
+				# code...
+				$dataPedido = [
+					"id_ma_pedido" => $id_ma_pedido,
+					"id_detalle_menu"  => $this->input->post('postre'),
+					"FInsert" => utils::datetime(),
+					"UCreate" =>  $this->ion_auth->user()->row()->id,
+					"Status" => 1
 		
-		echo "<pre>";
-		print_r ($data);
-		echo "</pre>";
-		die();
-		
-		if ($this->pedidos_model->agregar($data)) {
-			$this->results['mensaje'] ="Tu pedido se registró con exito";
-			echo json_encode($this->results);
+				];
+
+				if ($this->de_pedidos_model->agregar($dataPedido)) {
+					# code...
+					$this->results['mensaje'] ="Tu pedido se registró con exito";
+					// echo json_encode($this->results);
+				}else{
+					$this->results['estatus'] = 'error';
+					$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
+					// echo json_encode($this->results);
+				}
+			}else{
+					$y=1;
+			}
+
+			if ($i == 1 && $y == 1 ) {
+				$this->results['estatus'] = 'error';
+				$this->results['mensaje'] = "Es necesario seleccionar una opcion del menu";
+			}
+	
+			
 		}else{
 			$this->results['estatus'] = 'error';
 			$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
-			echo json_encode($this->results);
+			// echo json_encode($this->results);
 		}
 
+
+		
+		echo json_encode($this->results);
 		
 	}
 }
