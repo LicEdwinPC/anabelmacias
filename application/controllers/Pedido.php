@@ -19,7 +19,7 @@ class Pedido extends CI_Controller
 	{
 
 		$this->data['title'] = "Tabla de control";
-		$this->data['Subtitle'] = "Dashboard";
+		$this->data['Subtitle'] = "Pedidos";
 		$this->data['description'] = "Tabla de control para los pedidos de comida";
 
 		$this->load->model('menu_model');
@@ -57,6 +57,38 @@ class Pedido extends CI_Controller
 
 		$ArrDetalle = array();
 		return $ArrDetalle = $this->detalle_menu_model->detalle($id);
+		
+	}
+
+	function guardar(){
+		$this->load->model('pedidos_model');
+		$data = [
+			"id_menu" => base64_decode($this->input->post('id')),
+			"comida"  => $this->input->post('comida'),
+			"postre"  => $this->input->post('postre'),
+			"FPedido"  => utils::datetime(),
+			"id_comensal" => $this->ion_auth->user()->row()->id,
+			"FCreated" => utils::datetime(),
+			"UInsert" =>  $this->ion_auth->user()->row()->id,
+			"status" => 1
+
+		];
+
+		
+		echo "<pre>";
+		print_r ($data);
+		echo "</pre>";
+		die();
+		
+		if ($this->pedidos_model->agregar($data)) {
+			$this->results['mensaje'] ="Tu pedido se registró con exito";
+			echo json_encode($this->results);
+		}else{
+			$this->results['estatus'] = 'error';
+			$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
+			echo json_encode($this->results);
+		}
+
 		
 	}
 }

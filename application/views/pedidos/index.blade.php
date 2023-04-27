@@ -53,6 +53,7 @@
 						</span><hr>
 						<p class="mb-5 d-flex flex-column">
 							<div class="checkbox-list">
+								<input type="hidden" id="Codigo" name="Codigo" value="<?php echo isset($row->id)? base64_encode($row->id): 0;?>">
 									<?php 
 									foreach ($row->detalle as $key => $detalle) {
 										# code...
@@ -83,7 +84,7 @@
 						</p>
 						
 						<div class="d-flex justify-content-center pt-5">
-							<button type="button" class="btn btn-info text-uppercase font-weight-bolder px-15 py-3">Enviar</button>
+							<button type="button" name="btnGuardaPedido" id="btnGuardaPedido" class="btn btn-info text-uppercase font-weight-bolder px-15 py-3">Enviar</button>
 						</div>
 					</div>
 				</div>
@@ -98,4 +99,86 @@
 		</div>
 	</div>
 </div>
+@endsection
+
+@section('js')
+
+<script>
+	var PATH = "<?php echo site_url();?>";
+
+	jQuery(document).ready(function() {
+
+		$('#btnGuardaPedido').click(function() {
+            let registro = recuperarDatosFormulario();
+			// console.log(registro);
+
+            guardaRegistro(registro);
+            // $("#exampleModalCenter").modal('hide');
+        });
+
+	
+        function recuperarDatosFormulario() {
+            let registro = {
+            id: $('#Codigo').val(),
+            comida: $('#chk_comida').val(),
+            postre: $('#chk_postre').val()
+            };
+            return registro;
+        }
+
+		function guardaRegistro(registro){
+			$.ajax({
+				type: 'POST',
+				url: PATH+'Pedido/guardar',
+				data: registro,
+				dataType: "json",
+				success: function(result) {
+					console.log(result);
+					if (result.estatus == 'error') {
+						swal.fire({
+							text: result.mensaje,
+							icon: "error",
+							buttonsStyling: false,
+							confirmButtonText: "Ok, vamos!",
+							customClass: {
+								confirmButton: "btn font-weight-bold btn-light-primary"
+							}
+						}).then(function() {
+							 KTUtil.scrollTop();
+						});
+					} else {
+						swal.fire({
+							text: result.mensaje,
+							icon: "success",
+							buttonsStyling: false,
+							confirmButtonText: "Ok, vamos!",
+							customClass: {
+								confirmButton: "btn font-weight-bold btn-light-primary"
+							}
+						}).then(function() {
+							CierraPopup();
+							
+						});
+
+					}
+				},
+				error: function(result) {
+					swal.fire({
+						text: "Surgio un error al ingresar tu pedido, favor de volver a intentar",
+						icon: "error",
+						buttonsStyling: false,
+						confirmButtonText: "Ok, vamos!",
+						customClass: {
+							confirmButton: "btn font-weight-bold btn-light-primary"
+						}
+					}).then(function() {
+						 KTUtil.scrollTop();
+					});
+				}
+			});
+		}
+    });
+</script>
+
+
 @endsection
