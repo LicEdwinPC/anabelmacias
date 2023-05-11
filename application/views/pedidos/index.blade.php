@@ -23,8 +23,8 @@
 				
 				
 				$id_ma_menu = 0;
-				foreach ($Menus as $key => $row) {
-					# code...
+				foreach ($Menus as $key => $row) 
+				{
 				?>
 				<!--begin: item-->
 				<div class="col-md-6 col-xxl-3 border-right-0 border-right-md border-bottom border-bottom-xxl-0  text-center">
@@ -63,7 +63,7 @@
 											?>
 											
 												<label class="checkbox checkbox-lg">
-													<input type="checkbox" value="<?php echo isset($detalle-> id) ? $detalle->id: 0;?>" name="chk_comida" id="chk_comida">
+													<input type="checkbox" value="<?php echo isset($detalle-> id) ? $detalle->id: 0;?>" name="chk_comida-<?php echo $row->id?>" id="chk_comida-<?php echo $row->id?>">
 													<span></span>
 													Comida: <?php echo isset($detalle-> descripcion) ? trim($detalle->descripcion): "";?>	
 												</label>
@@ -71,7 +71,7 @@
 										}else{
 											?>
 											<label class="checkbox checkbox-lg">
-												<input type="checkbox" value="<?php echo isset($detalle-> id) ? $detalle->id: 0;?>" name="chk_postre" id="chk_postre">
+												<input type="checkbox" value="<?php echo isset($detalle-> id) ? $detalle->id: 0;?>" name="chk_postre-<?php echo $row->id?>" id="chk_postre-<?php echo $row->id?>">
 												<span></span>
 												Postre: <?php echo isset($detalle-> descripcion) ? trim($detalle->descripcion): "";?>
 											</label>
@@ -85,7 +85,7 @@
 						</p>
 						
 						<div class="d-flex justify-content-center pt-5">
-							<button type="button" name="btnGuardaPedido" id="btnGuardaPedido" class=" btnGuardaPedido btn btn-info text-uppercase font-weight-bolder px-15 py-3">Enviar</button>
+							<button type="button" name="btnGuardaPedido" data-id="<?php echo isset($row->id)? base64_encode($row->id): 0;?>" id="btnGuardaPedido" class="btnGuardaPedido btn btn-info text-uppercase font-weight-bolder px-15 py-3">Enviar</button>
 						</div>
 					</div>
 				</div>
@@ -109,10 +109,17 @@
 
 	jQuery(document).ready(function() {
 
-		$('.btnGuardaPedido').click(function() {
-            let registro = recuperarDatosFormulario();
+		$('.btnGuardaPedido').click(function() 
+		{
+			let id_menu = atob($(this).data('id'));
+			// console.log(id_menu);
+            let registro = recuperarDatosFormulario(id_menu);
 
-			if ($('#chk_comida').prop("checked", false) && $('#chk_postre').prop("checked", false)) {
+			// console.log(registro);
+
+			// return false;
+
+			if ($('#chk_comida-'+id_menu).prop("checked") === false && $('#chk_postre-'+id_menu).prop("checked") === false) {
 				swal.fire({
 					text: "Es necesario seleccionar por una opción del menu",
 					icon: "error",
@@ -123,7 +130,7 @@
 					}
 				}).then(function() {
 				// KTUtil.scrollTop();
-					$('#chk_comida').focus();
+					$('#chk_comida-'+id_menu).focus();
 				});
 
 				return false;
@@ -135,24 +142,24 @@
         });
 
 	
-        function recuperarDatosFormulario() {
+        function recuperarDatosFormulario(id_menu) {
 
-			let comida = 0 ;
+			let comida = 0;
 			let postre = 0;
 
-			
+			// console.log($('#chk_comida-'+id_menu).val());
 
-			if ($('#chk_comida').prop("checked", true)) {
-				comida = $('#chk_comida').val();
+			if ($('#chk_comida-'+id_menu).prop("checked") === true) {
+				comida = $('#chk_comida-'+id_menu).val();
 			}
 
-			if ($('#chk_postre').prop("checked", true)) {
-				postre = $('#chk_postre').val();
+			if ($('#chk_postre-'+id_menu).prop("checked") === true) {
+				postre = $('#chk_postre-'+id_menu).val();
 			}
 
 
             let registro = {
-            id: $('#Codigo').val(),
+            id: id_menu,
             comida: comida,
             postre: postre
             };

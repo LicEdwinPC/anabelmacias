@@ -13,17 +13,33 @@ class pedidos_model extends CI_Model
     }
 
 
-	public function agregar($dataContent = array())
+	public function agregar($dataContent = array(),$id_ma_menu=0)
     {
 
 		// echo '<pre>';
 		// print_r($dataContent);
 		// echo '</pre>';
 		// die();
+
+		if ($id_ma_menu > 0) {
+
+
+			$this->db->select('id');
+			$this->db->where('id_menu',$id_ma_menu);
+			$result = $this->db->get($this->tabla);
+			
+			if ($result->num_rows() > 0){
+				return $id_ma_menu;
+			}else{
+				$insert_id = ($this->db->insert($this->tabla, $dataContent) == true) ? $this->db->insert_id() : false;
+				return $insert_id;
+			}	
+
+		}
+
+		
        
-        $insert_id = ($this->db->insert($this->tabla, $dataContent) == true) ? $this->db->insert_id() : false;
        
-        return $insert_id;
     }
 
 	public function eliminar($id = 0){

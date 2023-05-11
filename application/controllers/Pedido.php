@@ -26,6 +26,16 @@ class Pedido extends CI_Controller
 		
 		$ArrSemana = utils::semana(date('Y/m/d'));
 
+		echo '<pre>';
+		print_r($ArrSemana);
+		echo '</pre>';
+		die();
+
+		if ($ArrSemana['Fecha_inicio']) {
+			# code...
+		}
+		$FInicio = "";
+
 		$condicion = 'fecha_menu BETWEEN "'. utils::fecha($ArrSemana['Fecha_inicio']). '" and "'.utils::fecha($ArrSemana['Fecha_fin']).'" and status=1';
 		
 		
@@ -66,7 +76,7 @@ class Pedido extends CI_Controller
 
 
 		$dataMaPedido = [
-			"id_menu" => base64_decode($this->input->post('id')),
+			"id_menu" => $this->input->post('id'),
 			"FPedido"  => utils::datetime(),
 			"id_comensal" => $this->ion_auth->user()->row()->id,
 			"FInsert" => utils::datetime(),
@@ -78,7 +88,10 @@ class Pedido extends CI_Controller
 
 		
 
-		if ($id_ma_pedido = $this->pedidos_model->agregar($dataMaPedido)) {
+		
+
+		if ($id_ma_pedido = $this->pedidos_model->agregar($dataMaPedido,$this->input->post('id'))) 
+		{
 			$i=0;
 			$y=0;
 			if ($this->input->post('comida') > 0) {
@@ -100,7 +113,6 @@ class Pedido extends CI_Controller
 				}else{
 					$this->results['estatus'] = 'error';
 					$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
-					//echo json_encode($this->results);
 				}
 			}else{
 				$i=1;
@@ -120,26 +132,18 @@ class Pedido extends CI_Controller
 				if ($this->de_pedidos_model->agregar($dataPedido)) {
 					# code...
 					$this->results['mensaje'] ="Tu pedido se registró con exito";
-					// echo json_encode($this->results);
 				}else{
 					$this->results['estatus'] = 'error';
 					$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
-					// echo json_encode($this->results);
 				}
 			}else{
 					$y=1;
 			}
 
-			// if ($i == 1 && $y == 1 ) {
-			// 	$this->results['estatus'] = 'error';
-			// 	$this->results['mensaje'] = "Es necesario seleccionar una opcion del menu";
-			// }
-	
 			
 		}else{
 			$this->results['estatus'] = 'error';
 			$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
-			// echo json_encode($this->results);
 		}
 
 
