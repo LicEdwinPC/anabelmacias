@@ -75,7 +75,9 @@ class Pedido extends CI_Controller
 			"Descripcion" => ""
 
 		];
+
 		
+
 		if ($id_ma_pedido = $this->pedidos_model->agregar($dataMaPedido)) {
 			$i=0;
 			$y=0;
@@ -128,10 +130,10 @@ class Pedido extends CI_Controller
 					$y=1;
 			}
 
-			if ($i == 1 && $y == 1 ) {
-				$this->results['estatus'] = 'error';
-				$this->results['mensaje'] = "Es necesario seleccionar una opcion del menu";
-			}
+			// if ($i == 1 && $y == 1 ) {
+			// 	$this->results['estatus'] = 'error';
+			// 	$this->results['mensaje'] = "Es necesario seleccionar una opcion del menu";
+			// }
 	
 			
 		}else{

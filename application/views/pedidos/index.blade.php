@@ -85,7 +85,7 @@
 						</p>
 						
 						<div class="d-flex justify-content-center pt-5">
-							<button type="button" name="btnGuardaPedido" id="btnGuardaPedido" class="btn btn-info text-uppercase font-weight-bolder px-15 py-3">Enviar</button>
+							<button type="button" name="btnGuardaPedido" id="btnGuardaPedido" class=" btnGuardaPedido btn btn-info text-uppercase font-weight-bolder px-15 py-3">Enviar</button>
 						</div>
 					</div>
 				</div>
@@ -109,21 +109,54 @@
 
 	jQuery(document).ready(function() {
 
-		$('#btnGuardaPedido').click(function() {
+		$('.btnGuardaPedido').click(function() {
             let registro = recuperarDatosFormulario();
-			// console.log(registro);
 
-            guardaRegistro(registro);
-            // $("#exampleModalCenter").modal('hide');
+			if ($('#chk_comida').prop("checked", false) && $('#chk_postre').prop("checked", false)) {
+				swal.fire({
+					text: "Es necesario seleccionar por una opción del menu",
+					icon: "error",
+					buttonsStyling: false,
+					confirmButtonText: "Ok",
+					customClass: {
+						confirmButton: "btn font-weight-bold btn-light-primary"
+					}
+				}).then(function() {
+				// KTUtil.scrollTop();
+					$('#chk_comida').focus();
+				});
+
+				return false;
+			}else{
+				guardaRegistro(registro);
+			}
+
+            
         });
 
 	
         function recuperarDatosFormulario() {
+
+			let comida = 0 ;
+			let postre = 0;
+
+			
+
+			if ($('#chk_comida').prop("checked", true)) {
+				comida = $('#chk_comida').val();
+			}
+
+			if ($('#chk_postre').prop("checked", true)) {
+				postre = $('#chk_postre').val();
+			}
+
+
             let registro = {
             id: $('#Codigo').val(),
-            comida: $('#chk_comida').val(),
-            postre: $('#chk_postre').val()
+            comida: comida,
+            postre: postre
             };
+
             return registro;
         }
 
@@ -157,7 +190,7 @@
 								confirmButton: "btn font-weight-bold btn-light-primary"
 							}
 						}).then(function() {
-							CierraPopup();
+							// CierraPopup();
 							
 						});
 
