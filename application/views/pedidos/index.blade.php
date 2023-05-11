@@ -27,7 +27,7 @@
 					# code...
 				?>
 				<!--begin: item-->
-				<div class="col-md-6 col-xxl-2 border-right-0 border-right-md border-bottom border-bottom-xxl-0  text-center">
+				<div class="col-md-6 col-xxl-3 border-right-0 border-right-md border-bottom border-bottom-xxl-0  text-center">
 					<div class="pt-30 pt-md-25 pb-15 px-5 ">
 						<div class="d-flex flex-center position-relative mb-25 ">
 							<span class="svg svg-fill-primary opacity-4 position-absolute">
@@ -48,7 +48,8 @@
 						<span class="font-size-h1 d-block font-weight-boldest text-dark-75 py-2">
 						<?php
 							$Dia = explode(' ', $row->str_fecha);
-							echo $Dia[0];	
+							// echo $row->str_fecha;
+							echo $Dia[0]." ".$Dia[1];	
 						?>
 						</span><hr>
 						<p class="mb-5 d-flex flex-column">

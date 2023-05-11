@@ -76,7 +76,7 @@ class Auth extends CI_Controller
 	public function login()
 	{
 
-
+		$this->results = array();
 
 		$this->data['title'] = $this->lang->line('login_heading');
 
@@ -91,14 +91,20 @@ class Auth extends CI_Controller
 			// check for "remember me"
 			//$remember = (bool)$this->input->post('remember');
 
-			if ($this->ion_auth->login($this->input->post('identity'), $this->input->post('password'), $remember = true)) {
+			if ($this->ion_auth->login($this->input->post('identity'), $this->input->post('password'), $remember = true) == true) {
+
+				
 
 				//if the login is successful
 				//redirect them back to the home page.
 
+				
+
 				$this->results['mensaje'] = $this->ion_auth->messages();
-				echo json_encode($this->results);
+				// echo json_encode($this->results);
+				// die();
 			} else {
+				
 				// if the login was un-successful
 				// redirect them back to the login page
 				// $this->session->set_flashdata('message', $this->ion_auth->errors());
@@ -107,12 +113,15 @@ class Auth extends CI_Controller
 
 				$this->result['estatus'] = 'error';
 				$this->results['mensaje'] = $this->ion_auth->errors();
-				echo json_encode($this->results);
+				// echo json_encode($this->results);
+				// die();
 			}
+			
+			echo json_encode($this->results);
 		} else {
 			// the user is not logging in so display the login page
 			// set the flash data error message if there is one
-			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+			$this->data['mensaje'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
 			$this->data['identity'] = [
 				'name' => 'identity',
@@ -132,6 +141,9 @@ class Auth extends CI_Controller
 
 			// $this->_render_page('auth' . DIRECTORY_SEPARATOR . 'login', $this->data);
 		}
+
+		
+
 	}
 
 	/**
@@ -153,6 +165,12 @@ class Auth extends CI_Controller
 	 */
 	public function change_password()
 	{
+
+		$this->data['title'] = "Usuarios";
+		$this->data['Subtitle'] = "Cambiar contraseña";
+		$this->data['description'] = "Cambia tu contraseña actual";
+
+
 		$this->form_validation->set_rules('old', $this->lang->line('change_password_validation_old_password_label'), 'required');
 		$this->form_validation->set_rules('new', $this->lang->line('change_password_validation_new_password_label'), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|matches[new_confirm]');
 		$this->form_validation->set_rules('new_confirm', $this->lang->line('change_password_validation_new_password_confirm_label'), 'required');
@@ -173,28 +191,36 @@ class Auth extends CI_Controller
 				'name' => 'old',
 				'id' => 'old',
 				'type' => 'password',
+				'class' => 'form-control form-control-lg form-control-solid mb-2',
+				'placeholder' => 'Contraseña actual',
 			];
 			$this->data['new_password'] = [
 				'name' => 'new',
 				'id' => 'new',
 				'type' => 'password',
+				'class' => 'form-control form-control-lg form-control-solid',
+				'placeholder' => 'Nueva contraseña',
 				'pattern' => '^.{' . $this->data['min_password_length'] . '}.*$',
 			];
 			$this->data['new_password_confirm'] = [
 				'name' => 'new_confirm',
 				'id' => 'new_confirm',
 				'type' => 'password',
+				'class' => 'form-control form-control-lg form-control-solid',
+				'placeholder' => 'Verificar contraseña',
 				'pattern' => '^.{' . $this->data['min_password_length'] . '}.*$',
 			];
 			$this->data['user_id'] = [
 				'name' => 'user_id',
 				'id' => 'user_id',
 				'type' => 'hidden',
-				'value' => $user->id,
+				'value' => base64_encode($user->id),
 			];
 
 			// render
-			$this->_render_page('auth' . DIRECTORY_SEPARATOR . 'change_password', $this->data);
+			// $this->_render_page('auth' . DIRECTORY_SEPARATOR . 'change_password', $this->data);
+			$this->blade->render('auth' . DIRECTORY_SEPARATOR . 'change_pass', $this->data);
+
 		} else {
 			$identity = $this->session->userdata('identity');
 

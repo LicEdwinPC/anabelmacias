@@ -64,11 +64,11 @@ var KTLogin = function() {
                         },
                         success: function(result) {
                             // debugger;
-                            console.log(result);
+                            // console.log(result);
 
                             if (result.estatus == 'error') {
                                 swal.fire({
-                                    text: "Disculpa, parece que se detectaron algunos errores, por favor intentalo nuevamente.",
+                                    text: result.mensaje,
                                     icon: "error",
                                     buttonsStyling: false,
                                     confirmButtonText: "Ok, vamos!",
@@ -79,8 +79,10 @@ var KTLogin = function() {
                                     KTUtil.scrollTop();
                                 });
                             } else {
+                                console.log(result.mensaje);
+
                                 swal.fire({
-                                    text: "Todo salió correctamente!",
+                                    text: result.mensaje,
                                     icon: "success",
                                     buttonsStyling: false,
                                     confirmButtonText: "Ok, vamos!",
@@ -88,7 +90,7 @@ var KTLogin = function() {
                                         confirmButton: "btn font-weight-bold btn-light-primary"
                                     }
                                 }).then(function() {
-                                    window.location.href=PATH +'auth/index';
+                                    window.location.href = PATH + 'auth/index';
                                 });
 
                             }
@@ -112,7 +114,7 @@ var KTLogin = function() {
                         }
                     });
 
-                    
+
                 } else {
                     swal.fire({
                         text: "Disculpa, parece que se detectaron algunos errores, por favor intentalo nuevamente.",

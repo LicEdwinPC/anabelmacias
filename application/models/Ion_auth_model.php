@@ -336,7 +336,13 @@ class Ion_auth_model extends CI_Model
 		// password_hash always starts with $
 		if (strpos($hash_password_db, '$') === 0)
 		{
-			return password_verify($password, $hash_password_db);
+			
+			if(password_verify($password, $hash_password_db)){
+				return TRUE;
+			}else{
+				return FALSE;
+			}
+			
 		}
 		else
 		{
@@ -929,11 +935,14 @@ class Ion_auth_model extends CI_Model
 			return FALSE;
 		}
 
+		
 		if ($query->num_rows() === 1)
 		{
 			$user = $query->row();
 
-			if ($this->verify_password($password, $user->password, $identity))
+			
+
+			if ($this->verify_password($password, $user->password, $identity) == TRUE)
 			{
 				if ($user->active == 0)
 				{
@@ -973,6 +982,9 @@ class Ion_auth_model extends CI_Model
 
 				return TRUE;
 			}
+			// else{
+			// 	return FALSE;
+			// }
 		}
 
 		// Hash something anyway, just to take up time
@@ -2739,6 +2751,8 @@ class Ion_auth_model extends CI_Model
 	 **/
 	protected function _password_verify_sha1_legacy($identity, $password, $hashed_password_db)
 	{
+
+		
 		$this->trigger_events('pre_sha1_password_migration');
 
 		if ($this->config->item('store_salt', 'ion_auth'))
