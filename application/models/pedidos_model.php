@@ -85,4 +85,17 @@ class pedidos_model extends CI_Model
 
 		return $result->result();
 	}
+
+	public function getByIdComensal($id=0,$id_menu=0){
+		$result= $this->db
+		->select('ma_pedidos.id_menu,de_pedidos.id,de_pedidos.id_detalle_menu,ma_pedidos.FPedido,ma_pedidos.id_comensal')
+		->from($this->tabla)
+        ->join('de_pedidos', 'ma_pedidos.id = de_pedidos.id_ma_pedido')
+		->where('ma_pedidos.id_comensal='.$id)
+		->where('ma_pedidos.id_menu='.$id_menu)
+		->order_by('ma_pedidos.id_menu','ASC')
+		->get();
+
+		return $result->result();
+	}
 }

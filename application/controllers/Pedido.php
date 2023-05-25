@@ -23,42 +23,23 @@ class Pedido extends CI_Controller
 		$this->data['description'] = "Tabla de control para los pedidos de comida";
 
 		$this->load->model('menu_model');
+		$this->load->model('pedidos_model');
 		
 		$ArrSemana = utils::semana(date('Y/m/d'));
-
-		echo '<pre>';
-		print_r($ArrSemana);
-		echo '</pre>';
-		die();
-
-		if ($ArrSemana['Fecha_inicio']) {
-			# code...
-		}
 		$FInicio = "";
-
-		$condicion = 'fecha_menu BETWEEN "'. utils::fecha($ArrSemana['Fecha_inicio']). '" and "'.utils::fecha($ArrSemana['Fecha_fin']).'" and status=1';
-		
-		
+		$condicion = 'fecha_menu BETWEEN "'. utils::fecha(date('d/m/Y')). '" and "'.utils::fecha($ArrSemana['Fecha_fin']).'" and status=1';
 		$ArrMenus = $this->menu_model->getAll($condicion);
 
 		foreach ($ArrMenus as $key => $row) {
 			
-			# code...
 			$row->str_fecha = utils::fechalarga($row->fecha_menu);
 			$row->detalle = $this->_getDetalle($row->id);
+			$row->pedidos = $this->pedidos_model->getByIdComensal($this->ion_auth->user()->row()->id,$row->id);
 		}
 
 		$this->data['Menus'] = $ArrMenus;
-
-		
 		$this->data['SemanaInicio'] = utils::fechalarga(utils::fecha($ArrSemana['Fecha_inicio']));
 		$this->data['SemanaFin'] = utils::fechalarga(utils::fecha($ArrSemana['Fecha_fin']));
-
-		// echo '<pre>';
-		// print_r($this->data);
-		// echo '</pre>';
-		// die();
-
 		$this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'index',$this->data);
 	}
 
@@ -85,10 +66,6 @@ class Pedido extends CI_Controller
 			"Descripcion" => ""
 
 		];
-
-		
-
-		
 
 		if ($id_ma_pedido = $this->pedidos_model->agregar($dataMaPedido,$this->input->post('id'))) 
 		{
@@ -146,9 +123,19 @@ class Pedido extends CI_Controller
 			$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
 		}
 
-
-		
 		echo json_encode($this->results);
 		
+	}
+
+	public function concentrado(){
+		$this->data['title'] = "Pedidos";
+		$this->data['Subtitle'] = "Concentrado de pedidos";
+		$this->data['description'] = "Tabla de control para los pedidos de comida";
+
+		$this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'concentrado',$this->data);
+
+
+
+
 	}
 }

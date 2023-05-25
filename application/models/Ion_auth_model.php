@@ -942,8 +942,13 @@ class Ion_auth_model extends CI_Model
 
 			
 
+			
+
 			if ($this->verify_password($password, $user->password, $identity) == TRUE)
-			{
+			{	
+
+			
+
 				if ($user->active == 0)
 				{
 					$this->trigger_events('post_login_unsuccessful');
@@ -982,20 +987,32 @@ class Ion_auth_model extends CI_Model
 
 				return TRUE;
 			}
-			// else{
-			// 	return FALSE;
-			// }
+			else{
+				// echo '<pre>';
+				// print_r($user);
+				// echo '</pre>';
+				// Hash something anyway, just to take up time
+				$this->hash_password($password);
+
+				$this->increase_login_attempts($identity);
+
+				$this->trigger_events('post_login_unsuccessful');
+				$this->set_error('login_unsuccessful');
+				return FALSE;
+			}
+		}else{
+			// Hash something anyway, just to take up time
+			$this->hash_password($password);
+
+			$this->increase_login_attempts($identity);
+
+			$this->trigger_events('post_login_unsuccessful');
+			$this->set_error('login_unsuccessful');
+
+			return FALSE;
 		}
 
-		// Hash something anyway, just to take up time
-		$this->hash_password($password);
-
-		$this->increase_login_attempts($identity);
-
-		$this->trigger_events('post_login_unsuccessful');
-		$this->set_error('login_unsuccessful');
-
-		return FALSE;
+		
 	}
 
 	/**

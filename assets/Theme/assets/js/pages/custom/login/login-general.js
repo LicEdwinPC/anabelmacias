@@ -79,7 +79,7 @@ var KTLogin = function() {
                                     KTUtil.scrollTop();
                                 });
                             } else {
-                                console.log(result.mensaje);
+                                console.log(result.estatus);
 
                                 swal.fire({
                                     text: result.mensaje,

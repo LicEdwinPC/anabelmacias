@@ -1,10 +1,5 @@
 @layout('template/estructura')
 @section('contenido')
-<?php
-
-// echo $SemanaInicio;
-// echo $SemanaFin;
-?>
 <div class="card card-custom">
 	<div class="card-header">
 		<div class="card-title">
@@ -19,9 +14,6 @@
 
 			<?php 
 			if (isset($Menus) && count($Menus) > 0) {
-
-				
-				
 				$id_ma_menu = 0;
 				foreach ($Menus as $key => $row) 
 				{
@@ -57,13 +49,22 @@
 								<input type="hidden" id="Codigo" name="Codigo" value="<?php echo isset($row->id)? base64_encode($row->id): 0;?>">
 									<?php 
 									foreach ($row->detalle as $key => $detalle) {
-										# code...
+										$ban = "";
+										$key = array_search($detalle->id, array_column($row->pedidos, 'id_detalle_menu'));
+
+										if ($key !== false) {
+											// Se encontró el valor buscado
+											$ban = "checked";
+											// echo "El valor $detalle->id se encontró en el array.";
+										}
+
+										
 										if ($detalle->id_tipo == 1) {
 											# code...
 											?>
 											
 												<label class="checkbox checkbox-lg">
-													<input type="checkbox" value="<?php echo isset($detalle-> id) ? $detalle->id: 0;?>" name="chk_comida-<?php echo $row->id?>" id="chk_comida-<?php echo $row->id?>">
+													<input type="checkbox" <?php echo $ban;?> value="<?php echo isset($detalle-> id) ? $detalle->id: 0;?>" name="chk_comida-<?php echo $row->id?>" id="chk_comida-<?php echo $row->id?>">
 													<span></span>
 													Comida: <?php echo isset($detalle-> descripcion) ? trim($detalle->descripcion): "";?>	
 												</label>
@@ -71,7 +72,7 @@
 										}else{
 											?>
 											<label class="checkbox checkbox-lg">
-												<input type="checkbox" value="<?php echo isset($detalle-> id) ? $detalle->id: 0;?>" name="chk_postre-<?php echo $row->id?>" id="chk_postre-<?php echo $row->id?>">
+												<input type="checkbox" <?php echo $ban;?> value="<?php echo isset($detalle-> id) ? $detalle->id: 0;?>" name="chk_postre-<?php echo $row->id?>" id="chk_postre-<?php echo $row->id?>">
 												<span></span>
 												Postre: <?php echo isset($detalle-> descripcion) ? trim($detalle->descripcion): "";?>
 											</label>

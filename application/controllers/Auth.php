@@ -91,33 +91,23 @@ class Auth extends CI_Controller
 			// check for "remember me"
 			//$remember = (bool)$this->input->post('remember');
 
-			if ($this->ion_auth->login($this->input->post('identity'), $this->input->post('password'), $remember = true) == true) {
-
-				
+			if ($this->ion_auth->login($this->input->post('identity'), $this->input->post('password'), $remember = true) == TRUE) {
 
 				//if the login is successful
 				//redirect them back to the home page.
 
 				
-
-				$this->results['mensaje'] = $this->ion_auth->messages();
-				// echo json_encode($this->results);
-				// die();
+				$this->result['mensaje'] = $this->ion_auth->messages();
 			} else {
 				
 				// if the login was un-successful
 				// redirect them back to the login page
-				// $this->session->set_flashdata('message', $this->ion_auth->errors());
-				// redirect('auth/login', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
-				// $this->blade->render('auth/login');
 
 				$this->result['estatus'] = 'error';
-				$this->results['mensaje'] = $this->ion_auth->errors();
-				// echo json_encode($this->results);
-				// die();
+				$this->result['mensaje'] = $this->ion_auth->errors();
 			}
 			
-			echo json_encode($this->results);
+			echo json_encode($this->result);
 		} else {
 			// the user is not logging in so display the login page
 			// set the flash data error message if there is one
