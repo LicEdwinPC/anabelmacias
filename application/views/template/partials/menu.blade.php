@@ -112,7 +112,7 @@
                                 </g>
                             </svg><!--end::Svg Icon-->
                         </span>
-                        <span class="menu-text">Concentrado</span>
+                        <span class="menu-text">Pedidos</span>
                         <i class="menu-arrow"></i>
                     </a>
                     <div class="menu-submenu">
@@ -120,15 +120,23 @@
                         <ul class="menu-subnav">
                             <li class="menu-item menu-item-parent" aria-haspopup="true">
                                 <span class="menu-link">
-                                    <span class="menu-text">Concentrado</span>
+                                    <span class="menu-text">Pedidos</span>
                                 </span>
                             </li>
                             <li class="menu-item" aria-haspopup="true">
-                                <a href="<?php echo base_url('Pedido/concentrado');?>" class="menu-link">
+                                <a href="<?php echo base_url('Pedido/listado');?>" class="menu-link">
                                     <i class="menu-bullet menu-bullet-dot">
                                         <span></span>
                                     </i>
                                     <span class="menu-text">Listado</span>
+                                </a>
+                            </li>
+							<li class="menu-item" aria-haspopup="true">
+                                <a href="<?php echo base_url('Pedido/concentrado');?>" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">Concentrado</span>
                                 </a>
                             </li>
 

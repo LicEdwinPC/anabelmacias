@@ -98,4 +98,27 @@ class pedidos_model extends CI_Model
 
 		return $result->result();
 	}
+
+	public function getPedidos($condicion=''){
+		
+		if ($condicion != null) {
+			$this->db->where($condicion);
+			# code...
+		}
+
+		$result= $this->db
+		->select("ma_pedidos.FPedido, ma_pedidos.id_menu,ma_pedidos.id_comensal,de_pedidos.id_detalle_menu, ma_menus.fecha_menu , CONCAT(users.first_name,' ',users.ap1,' ',users.ap2) as Comensal,ma_pedidos.id, de_menu.descripcion as platillo,ca_tipo_platillo.descripcion as TipoPlatillo")
+		->from($this->tabla)
+        ->join('de_pedidos', 'de_pedidos.id_ma_pedido = ma_pedidos.id')
+		->join('ma_menus', 'ma_pedidos.id_menu = ma_menus.id')
+		->join('de_menu', 'de_pedidos.id_detalle_menu = de_menu.id')
+		->join('ca_tipo_platillo', 'de_menu.id_tipo = ca_tipo_platillo.id','left')
+		->join('users', 'ma_pedidos.id_comensal = users.id')
+		->where('ma_menus.Status',1)
+		->where('de_pedidos.Status',1)
+		->order_by('ma_pedidos.FPedido','DESC')
+		->get();
+
+		return $result->result();
+	}
 }
