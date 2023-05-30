@@ -110,6 +110,8 @@
 
 	jQuery(document).ready(function() {
 
+		
+
 		$('.btnGuardaPedido').click(function() 
 		{
 			let id_menu = atob($(this).data('id'));

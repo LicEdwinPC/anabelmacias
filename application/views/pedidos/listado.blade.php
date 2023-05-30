@@ -127,7 +127,7 @@
 												<?php 
 												foreach ($lstMenu as $key => $menu) {
 													?>
-													<option value="<?php echo isset($menu->id) ? $menu->id : 0;?>"><?php echo isset($menu->fecha_menu) ?  utils::fecha($menu->fecha_menu) : "S/D";?></option>
+													<option value="<?php echo isset($menu->fecha_menu) ? utils::fecha($menu->fecha_menu) : "";?>"><?php echo isset($menu->fecha_menu) ?  utils::fecha($menu->fecha_menu) : "S/D";?></option>
 													<?php
 												}
 												?>
@@ -162,7 +162,7 @@
 					<!--end::Search Form-->
 					<!--end: Search Form-->
 					<!--begin: Datatable-->
-					<table class="datatable datatable-bordered datatable-head-custom" id="kt_datatable2">
+					<table class="datatable table-bordered datatable-head-custom table-striped" id="kt_datatable2">
 						<thead>
 							<tr>
 								<th title="Menu">Menu</th>

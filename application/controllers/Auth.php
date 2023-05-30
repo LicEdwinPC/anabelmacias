@@ -46,27 +46,17 @@ class Auth extends CI_Controller
 			// $this->data['Subtitle'] = "Listado de Usuarios";
 			// $this->data['description'] = $this->lang->line('index_subheading');
 
-			$this->data['title'] = "Tabla de control";
-			$this->data['Subtitle'] = "Dashboard";
+			$this->load->model('pedidos_model');
+			$this->load->model('TipoPlatillo_model');
+			$this->load->model('menu_model');
+			$this->data['title'] = "Pedidos";
+			$this->data['Subtitle'] = "Listado de pedidos";
 			$this->data['description'] = "Tabla de control para los pedidos de comida";
+			$this->data['pedidos'] = $this->pedidos_model->getPedidos();
+			$this->data['tipo_platillo'] = $this->TipoPlatillo_model->getAll();
+			$this->data['lstMenu'] = $this->menu_model->LstMenu();
 
-			// set the flash data error message if there is one
-			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-
-			//list the users
-			$this->data['users'] = $this->ion_auth->users()->result();
-
-			//USAGE NOTE - you can do more complicated queries like this
-			//$this->data['users'] = $this->ion_auth->where('field', 'value')->users()->result();
-
-			foreach ($this->data['users'] as $k => $user) {
-				$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
-			}
-
-
-
-			// $this->_render_page('auth' . DIRECTORY_SEPARATOR . 'index', $this->data);
-			$this->blade->render('auth' . DIRECTORY_SEPARATOR . 'index', $this->data);
+			$this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'listadoDT',$this->data);
 		}
 	}
 

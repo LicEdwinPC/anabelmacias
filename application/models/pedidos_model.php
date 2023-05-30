@@ -13,7 +13,7 @@ class pedidos_model extends CI_Model
     }
 
 
-	public function agregar($dataContent = array(),$id_ma_menu=0)
+	public function agregar($dataContent = array(),$id_ma_menu=0,$id_comensal=0)
     {
 
 		// echo '<pre>';
@@ -26,10 +26,15 @@ class pedidos_model extends CI_Model
 
 			$this->db->select('id');
 			$this->db->where('id_menu',$id_ma_menu);
+			$this->db->where('id_comensal',$id_comensal);
 			$result = $this->db->get($this->tabla);
 			
 			if ($result->num_rows() > 0){
-				return $id_ma_menu;
+				// echo '<pre>';
+				// print_r($result->row()->id);
+				// echo '</pre>';
+				// die();
+				return $result->row()->id;
 			}else{
 				$insert_id = ($this->db->insert($this->tabla, $dataContent) == true) ? $this->db->insert_id() : false;
 				return $insert_id;
@@ -121,4 +126,6 @@ class pedidos_model extends CI_Model
 
 		return $result->result();
 	}
+
+	
 }

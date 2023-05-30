@@ -30,15 +30,15 @@
 				<div class="card-body">
 					
 					<!--begin: Datatable-->
-					<table class="table table-separate table-head-custom table-checkable" id="kt_datatable3">
+					<table class="table table-separate table-head-custom table-checkable" id="kt_datatable1">
 						<thead>
 							<tr>
 								<th title="Menu">Menu</th>
+								<th title="Comensal">Comensal</th>
 								<th title="Tipo de platillo">Tipo</th>
 								<th title="Platillo">Platillo</th>
-								<th title="Estatus">Estatus</th>
-								<th title="Cantidad">No. pedidos</th>
-							    <th title="Detalle">Detalle</th>
+								<th title="Fecha de pedido">Fecha de pedido</th>
+								<!-- <th title="Detalle">Detalle</th> -->
 							</tr>
 						</thead>
 						<tbody>
@@ -52,11 +52,11 @@
 								?>
 								<tr>
 									<td><?php echo isset($pedido->fecha_menu)? utils::fecha($pedido->fecha_menu): "S/D";?></td>
+									<td><?php echo isset($pedido->Comensal)? strtoupper(trim($pedido->Comensal)): "S/D";?></td>
 									<td><?php echo isset($pedido->TipoPlatilloId)? strtoupper($pedido->TipoPlatilloId): "S/D";?></td>
 									<td><?php echo isset($pedido->platillo)? strtoupper(trim($pedido->platillo)): "S/D";?></td>
-									<td><?php echo isset($pedido->Status)? $pedido->Status : 0; ?></td>
-									<td><?php echo isset($pedido->no_pedidos)? $pedido->no_pedidos : 0; ?></td>
-								 	<td class="text-right"> <a name="" id="" class="btn btn-seccess" href="#" role="button">No. platillos</a></td>
+									<td><?php echo isset($pedido->FPedido)? utils::fechalarga($pedido->FPedido) : "S/D"; ?></td>
+									<!-- <td class="text-right"> <a name="" id="" class="btn btn-primary" href="#" role="button">No. platillos</a></td> -->
 								</tr>
 								<?php
 							}

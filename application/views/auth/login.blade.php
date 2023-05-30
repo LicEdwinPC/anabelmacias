@@ -9,7 +9,7 @@
 		<div class="d-flex flex-row-fluid flex-column justify-content-between">
 			<!--begin: Aside header-->
 			<a href="#" class="flex-column-auto mt-5 pb-lg-0 pb-10">
-				<img src="<?php echo THEME_URL . 'assets/media/logos/logo-letter-1.png'; ?>" class="max-h-150px" alt="" />
+				<img src="<?php echo THEME_URL . 'assets/media/logos/logo-letter-1.png'; ?>" class="max-h-250px" alt="" />
 			</a>
 			<!--end: Aside header-->
 			<!--begin: Aside content-->

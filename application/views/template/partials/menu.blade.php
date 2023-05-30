@@ -4,7 +4,7 @@
     <div class="brand flex-column-auto" id="kt_brand">
         <!--begin::Logo-->
         <a href="index.html" class="brand-logo">
-            <img alt="Logo" src="<?php echo THEME_URL . 'assets/media/logos/logo-light.png' ?>" />
+            <img alt="Logo" class="img-fluid" src="<?php echo THEME_URL . 'assets/media/logos/logo-light.png' ?>" />
         </a>
         <!--end::Logo-->
         <!--begin::Toggle-->

@@ -67,7 +67,7 @@ class Pedido extends CI_Controller
 
 		];
 
-		if ($id_ma_pedido = $this->pedidos_model->agregar($dataMaPedido,$this->input->post('id'))) 
+		if ($id_ma_pedido = $this->pedidos_model->agregar($dataMaPedido,$this->input->post('id'),$this->ion_auth->user()->row()->id)) 
 		{
 			$i=0;
 			$y=0;
@@ -92,6 +92,7 @@ class Pedido extends CI_Controller
 					$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
 				}
 			}else{
+
 				$i=1;
 			}
 
@@ -128,9 +129,11 @@ class Pedido extends CI_Controller
 	}
 
 	public function concentrado(){
+		$this->load->model('de_pedidos_model');
 		$this->data['title'] = "Pedidos";
 		$this->data['Subtitle'] = "Concentrado de pedidos";
 		$this->data['description'] = "Tabla de control para los pedidos de comida";
+		$this->data['pedidos'] = $this->de_pedidos_model->getConcentrado();
 
 		$this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'concentrado',$this->data);
 
@@ -152,7 +155,7 @@ class Pedido extends CI_Controller
 		$this->data['tipo_platillo'] = $this->TipoPlatillo_model->getAll();
 		$this->data['lstMenu'] = $this->menu_model->LstMenu();
 
-		$this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'listado',$this->data);
+		$this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'listadoDT',$this->data);
 
 
 

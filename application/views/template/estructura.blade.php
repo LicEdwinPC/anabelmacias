@@ -15,6 +15,7 @@
     <!--begin::Page Vendors Styles(used by this page)-->
     <link href="<?php echo THEME_URL . 'assets/plugins/custom/fullcalendar/fullcalendar.bundle.css'; ?>" rel="stylesheet" type="text/css" />
     <!--end::Page Vendors Styles-->
+	@yield('css')
     <!--begin::Global Theme Styles(used by all pages)-->
     <link href="<?php echo THEME_URL . 'assets/plugins/global/plugins.bundle.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo THEME_URL . 'assets/plugins/custom/prismjs/prismjs.bundle.css'; ?>" rel="stylesheet" type="text/css" />
@@ -27,7 +28,7 @@
     <link href="<?php echo THEME_URL . 'assets/css/themes/layout/aside/dark.css'; ?>" rel="stylesheet" type="text/css" />
     <!--end::Layout Themes-->
     <link rel="shortcut icon" href="<?php echo THEME_URL . 'assets/media/logos/favicon.ico'; ?>" />
-    @yield('css')
+   
 </head>
 <!--end::Head-->
 
