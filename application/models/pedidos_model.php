@@ -107,7 +107,7 @@ class pedidos_model extends CI_Model
 		}
 
 		$result= $this->db
-		->select("ma_pedidos.FPedido, ma_pedidos.id_menu,ma_pedidos.id_comensal,de_pedidos.id_detalle_menu, ma_menus.fecha_menu , CONCAT(users.first_name,' ',users.ap1,' ',users.ap2) as Comensal,ma_pedidos.id, de_menu.descripcion as platillo,ca_tipo_platillo.descripcion as TipoPlatillo")
+		->select("ma_pedidos.FPedido, ma_pedidos.id_menu,ma_pedidos.id_comensal,de_pedidos.id_detalle_menu, ma_menus.fecha_menu , CONCAT(users.first_name,' ',users.ap1,' ',users.ap2) as Comensal,ma_pedidos.id, de_menu.descripcion as platillo,ca_tipo_platillo.descripcion as TipoPlatillo, ca_tipo_platillo.id as TipoPlatilloId")
 		->from($this->tabla)
         ->join('de_pedidos', 'de_pedidos.id_ma_pedido = ma_pedidos.id')
 		->join('ma_menus', 'ma_pedidos.id_menu = ma_menus.id')

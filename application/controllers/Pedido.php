@@ -144,20 +144,15 @@ class Pedido extends CI_Controller
 
 		$this->load->model('pedidos_model');
 		$this->load->model('TipoPlatillo_model');
-		$this->load->model('pedidos_model');
+		$this->load->model('menu_model');
 		$this->data['title'] = "Pedidos";
 		$this->data['Subtitle'] = "Listado de pedidos";
 		$this->data['description'] = "Tabla de control para los pedidos de comida";
-
 		$this->data['pedidos'] = $this->pedidos_model->getPedidos();
-
 		$this->data['tipo_platillo'] = $this->TipoPlatillo_model->getAll();
+		$this->data['lstMenu'] = $this->menu_model->LstMenu();
 
-		// echo '<pre>';
-		// print_r($this->data['tipo_platillo']);
-		// echo '</pre>';
-
-		$this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'concentrado',$this->data);
+		$this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'listado',$this->data);
 
 
 

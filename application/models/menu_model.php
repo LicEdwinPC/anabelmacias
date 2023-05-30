@@ -54,6 +54,19 @@ class menu_model extends CI_Model
 
 	}
 
+	public function LstMenu(){
+		$result= $this->db
+		->select('*')
+		->from($this->tabla)
+		->where('fecha_menu >=', date('Y/m/d'))
+		->where('status =', 1)
+		->order_by('fecha_menu','desc')
+
+		->get();
+
+		return $result->result();
+	}
+
 	public function getMenus($condicion = null){
 		if ($condicion != null) {
 			$this->db->where($condicion);
