@@ -33,11 +33,20 @@ class Auth extends CI_Controller
 
 		} else if (!$this->ion_auth->is_admin()) // remove this elseif if you want to enable this for non-admins
 		{
-			$this->data['title'] = "Tabla de control";
-			$this->data['Subtitle'] = "pedidos";
-			$this->data['description'] = "Tabla de control para los pedidos de comida";
-			//Manda a los pedidos del comensal.
-			redirect('pedido/index', 'refresh');
+			if ($this->ion_auth->is_repartidor()) {
+				$this->data['title'] = "Tabla de control";
+				$this->data['Subtitle'] = "Entregas";
+				$this->data['description'] = "Tabla de control para las entregas de comida";
+				//Manda a las entregas de los pedidos.
+				redirect('Entregas/index', 'refresh');
+				# code...
+			}else{
+				$this->data['title'] = "Tabla de control";
+				$this->data['Subtitle'] = "pedidos";
+				$this->data['description'] = "Tabla de control para los pedidos de comida";
+				//Manda a los pedidos del comensal.
+				redirect('pedido/index', 'refresh');
+			}
 			// $this->blade->render('pedidos' . DIRECTORY_SEPARATOR . 'index',$this->data);
 			
 		} else {
@@ -465,12 +474,12 @@ class Auth extends CI_Controller
 		$this->form_validation->set_rules('ap1', $this->lang->line('create_user_validation_lname_label'), 'trim|required');
 		$this->form_validation->set_rules('ap2', "Segundo Apellido", 'trim');
 		if ($identity_column !== 'email') {
-			$this->form_validation->set_rules('identity', $this->lang->line('create_user_validation_identity_label'), 'trim|required|is_unique[' . $tables['users'] . '.' . $identity_column . ']');
-			$this->form_validation->set_rules('email', $this->lang->line('create_user_validation_email_label'), 'trim|required|valid_email');
+			$this->form_validation->set_rules('phone', $this->lang->line('create_user_validation_phone_label'), 'trim|required|is_unique[' . $tables['users'] . '.' . $identity_column . ']');
+			// $this->form_validation->set_rules('email', $this->lang->line('create_user_validation_email_label'), 'trim|required|valid_email');
 		} else {
-			$this->form_validation->set_rules('email', $this->lang->line('create_user_validation_email_label'), 'trim|required|valid_email|is_unique[' . $tables['users'] . '.email]');
+			// $this->form_validation->set_rules('email', $this->lang->line('create_user_validation_email_label'), 'trim|valid_email|is_unique[' . $tables['users'] . '.email]');
 		}
-		$this->form_validation->set_rules('phone', $this->lang->line('create_user_validation_phone_label'), 'trim');
+		// $this->form_validation->set_rules('phone', $this->lang->line('create_user_validation_phone_label'), 'trim|required');
 		$this->form_validation->set_rules('company', $this->lang->line('create_user_validation_company_label'), 'trim');
 		$this->form_validation->set_rules('password', $this->lang->line('create_user_validation_password_label'), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|matches[password_confirm]');
 		$this->form_validation->set_rules('password_confirm', $this->lang->line('create_user_validation_password_confirm_label'), 'required');
@@ -578,8 +587,11 @@ class Auth extends CI_Controller
 	 *
 	 * @param int|string $id
 	 */
-	public function edit_user()
+	public function edit_user($id=0)
 	{
+
+		// echo $id;
+		// die();
 		$this->data['title'] = $this->lang->line('edit_user_heading');
 		$this->data['Subtitle'] = $this->lang->line('edit_user_subheading');
 

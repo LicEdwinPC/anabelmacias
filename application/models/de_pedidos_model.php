@@ -83,17 +83,31 @@ class de_pedidos_model extends CI_Model
 		}
 
 		$result= $this->db
-		->select("de_pedidos.*,de_menu.descripcion as platillo, ma_menus.fecha_menu, ma_menus.Status,COUNT(de_pedidos.id_detalle_menu) as no_pedidos")
+		->select("de_pedidos.*,de_menu.descripcion as platillo, ma_menus.fecha_menu, ma_menus.Status,COUNT(de_pedidos.id_detalle_menu) as no_pedidos, ca_tipo_platillo.descripcion as tipoPlatillo, ca_tipo_platillo.id as idTipoP")
 		->from($this->tabla)
         ->join('ma_pedidos', 'ma_pedidos.id = de_pedidos.id_ma_pedido','left')
 		->join('de_menu', 'de_pedidos.id_detalle_menu = de_menu.id')
 		->join('ma_menus', 'de_menu.id_ma_menu = ma_menus.id')
+		->join('ca_tipo_platillo', 'de_menu.id_tipo = ca_tipo_platillo.id','left')
 		->where('ma_menus.Status',1)
 		->group_by('de_pedidos.id_detalle_menu')
 		->order_by('ma_menus.fecha_menu','DESC')
 		->get();
 
 		return $result->result();
+
+	}
+	
+	public function entregado($id=0)
+	{
+		if ($id != 0) {
+			$CadenaSQL = "Update ".$this->tabla." SET Status = 1  WHERE id=".$id;
+			if($this->db->query($CadenaSQL)){
+				return TRUE;
+			}else{
+				return FALSE;
+			}
+		}
 
 	}
 }

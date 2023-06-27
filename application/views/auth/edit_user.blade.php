@@ -28,10 +28,10 @@
                     <?php echo lang('edit_user_lname_label', 'ap1');?> <br />
                     <?php echo form_input($ap1,"Primer Apellido",'class="form-control form-control-solid form-control-lg"');?>
             </div>
-            <div class="form-group">
-                <?php echo lang('edit_user_lname_label2', 'ap2');?> <br />
-                <?php echo form_input($ap2,"Segundo Apellido",'class="form-control form-control-solid form-control-lg"');?>
-            </div>
+            <!-- <div class="form-group">
+                <?php //echo lang('edit_user_lname_label2', 'ap2');?> <br />
+                <?php //echo form_input($ap2,"Segundo Apellido",'class="form-control form-control-solid form-control-lg"');?>
+            </div> -->
 
             <div class="form-group">
                 <?php echo lang('edit_user_company_label', 'company');?> <br />

@@ -35,6 +35,7 @@
 							<tr>
 								<th title="Menu">Menu</th>
 								<th title="Comensal">Comensal</th>
+								<th title="Comensal">Teléfono</th>
 								<th title="Tipo de platillo">Tipo</th>
 								<th title="Platillo">Platillo</th>
 								<th title="Fecha de pedido">Fecha de pedido</th>
@@ -53,6 +54,7 @@
 								<tr>
 									<td><?php echo isset($pedido->fecha_menu)? utils::fecha($pedido->fecha_menu): "S/D";?></td>
 									<td><?php echo isset($pedido->Comensal)? strtoupper(trim($pedido->Comensal)): "S/D";?></td>
+									<td><?php echo isset($pedido->Comensal)? strtoupper(trim($pedido->telefono)): "S/D";?></td>
 									<td><?php echo isset($pedido->TipoPlatilloId)? strtoupper($pedido->TipoPlatilloId): "S/D";?></td>
 									<td><?php echo isset($pedido->platillo)? strtoupper(trim($pedido->platillo)): "S/D";?></td>
 									<td><?php echo isset($pedido->FPedido)? utils::fechalarga($pedido->FPedido) : "S/D"; ?></td>

@@ -42,7 +42,7 @@ var KTDatatablesExtensionButtons = function() {
 			columnDefs: [
 				{
 					width: '75px',
-					targets: 2,
+					targets: 3,
 					render: function(data, type, full, meta) {
 						var status = {
 							1: {'title': 'Comida', 'class': 'label-light-success'},
@@ -236,6 +236,207 @@ var KTDatatablesExtensionButtons = function() {
 
 	};
 
+	var initTable4 = function() {
+
+		// begin first table
+		var table_entregas = $('#kt_datatable_entregas').DataTable({
+			language: {
+				"decimal": "",
+				"emptyTable": "No hay información",
+				"info": "Mostrando _START_ a _END_ de _TOTAL_  Entradas",
+				"infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+				"infoFiltered": "(Filtrado de _MAX_ total entradas)",
+				"infoPostFix": "",
+				"thousands": ",",
+				"lengthMenu": "Mostrar _MENU_  Entradas",
+				"loadingRecords": "Cargando...",
+				"processing": "Procesando...",
+				"search": "Buscar:",
+				"zeroRecords": "Sin resultados encontrados",
+				"paginate": {
+					"first": "Primero",
+					"last": "Ultimo",
+					"next": "Siguiente",
+					"previous": "Anterior"
+				}
+			},
+			ajax: {
+                "url": PATH + '/Entregas/getLstpedidos',
+                "type": 'GET'
+            },
+			order:[0,'desc'],
+			responsive: true,
+			// Pagination settings
+			dom: `<'row'<'col-sm-6 text-left'f><'col-sm-6 text-right'B>>
+			<'row'<'col-sm-12'tr>>
+			<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7 dataTables_pager'lp>>`,
+
+			buttons: [
+				'print',
+				'copyHtml5',
+				'excelHtml5',
+				'pdfHtml5',
+			],
+			columns: [
+				{
+					title: "NOMBRE",
+					data: 'Comensal'
+				},
+				{
+					title: "DEPARTAMENTO",
+					data: 'departamento'
+				},
+				{
+					title: "TELÉFONO",
+					data: 'telefono'
+				},
+				{
+					title: "TIPO",
+					data: 'TipoPlatilloId'
+				},
+				{
+					title: "CANTIDAD",
+					data: 'cantidad'
+				},
+				{
+					title: "ENTREGADO",
+					defaultContent: '',
+					orderable: false,
+					render: function(data, type, row) {
+						console.log(row);
+						
+						let detalle = '';
+						
+						detalle = '<a title="Detalle" onclick="Entregado(this);"  id="btn_entregado"  data-id="' + btoa(row.id_de_pedido) + '" class="btn_entregado btn btn-info">Entregado</a>';
+
+						return detalle;
+					}
+				}
+			],
+			columnDefs: [
+				{
+					width: '75px',
+					targets: 3,
+					render: function(data, type, full, meta) {
+						var status = {
+							1: {'title': 'Comida', 'class': ' label-light-danger'},
+							2: {'title': 'Postre', 'class': ' label-light-info'},
+							
+						};
+						if (typeof status[data] === 'undefined') {
+							return data;
+						}
+						return '<span class="label label-lg font-weight-bold' + status[data].class + ' label-inline">' + status[data].title + '</span>';
+					},
+				},
+				
+			],
+		});
+
+	
+
+	};
+
+	var initTable5 = function() {
+
+		
+
+		var table_entregados = $('#kt_datatable_entregados').DataTable({
+			language: {
+				"decimal": "",
+				"emptyTable": "No hay información",
+				"info": "Mostrando _START_ a _END_ de _TOTAL_  Entradas",
+				"infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+				"infoFiltered": "(Filtrado de _MAX_ total entradas)",
+				"infoPostFix": "",
+				"thousands": ",",
+				"lengthMenu": "Mostrar _MENU_  Entradas",
+				"loadingRecords": "Cargando...",
+				"processing": "Procesando...",
+				"search": "Buscar:",
+				"zeroRecords": "Sin resultados encontrados",
+				"paginate": {
+					"first": "Primero",
+					"last": "Ultimo",
+					"next": "Siguiente",
+					"previous": "Anterior"
+				}
+			},
+			ajax: {
+                "url": PATH + '/Entregas/getLstPedidosEntregados',
+                "type": 'GET'
+            },
+			order:[0,'desc'],
+			responsive: true,
+			// Pagination settings
+			dom: `<'row'<'col-sm-6 text-left'f><'col-sm-6 text-right'B>>
+			<'row'<'col-sm-12'tr>>
+			<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7 dataTables_pager'lp>>`,
+
+			buttons: [
+				'print',
+				'copyHtml5',
+				'excelHtml5',
+				'pdfHtml5',
+			],
+			columns: [
+				{
+					title: "NOMBRE",
+					data: 'Comensal'
+				},
+				{
+					title: "DEPARTAMENTO",
+					data: 'departamento'
+				},
+				{
+					title: "TELÉFONO",
+					data: 'telefono'
+				},
+				{
+					title: "TIPO",
+					data: 'TipoPlatilloId'
+				},
+				{
+					title: "CANTIDAD",
+					data: 'cantidad'
+				},
+				{
+					title: "ENTREGADO",
+					defaultContent: '',
+					orderable: false,
+					render: function(data, type, row) {
+						console.log(row);
+						
+						let detalle = '';
+						
+						detalle = '<a title="Detalle" onclick="Entregado(this);"  id="btn_entregado"  data-id="' + btoa(row.id_de_pedido) + '" class="btn_entregado btn btn-info">Pendiente</a>';
+
+						return detalle;
+					}
+				}
+			],
+			columnDefs: [
+				{
+					width: '75px',
+					targets: 3,
+					render: function(data, type, full, meta) {
+						var status = {
+							1: {'title': 'Comida', 'class': ' label-light-danger'},
+							2: {'title': 'Postre', 'class': ' label-light-info'},
+							
+						};
+						if (typeof status[data] === 'undefined') {
+							return data;
+						}
+						return '<span class="label label-lg font-weight-bold' + status[data].class + ' label-inline">' + status[data].title + '</span>';
+					},
+				},
+				
+			],
+		});
+
+	};
+
 	return {
 
 		//main function to initiate the module
@@ -243,6 +444,8 @@ var KTDatatablesExtensionButtons = function() {
 			initTable1(); //Listado
 			initTable2();
 			initTable3(); //concentrado
+			initTable4(); //Entregas
+			initTable5(); //Entregados
 		},
 
 	};
@@ -251,4 +454,5 @@ var KTDatatablesExtensionButtons = function() {
 
 jQuery(document).ready(function() {
 	KTDatatablesExtensionButtons.init();
+	
 });

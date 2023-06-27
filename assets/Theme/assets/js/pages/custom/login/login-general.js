@@ -193,23 +193,23 @@ var KTLogin = function() {
                             }
                         }
                     },
-                    email: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Correo electronico es requerido'
-                            },
-                            emailAddress: {
-                                message: 'El formato de correo electrónico no es valido, favor de verificar'
-                            }
-                        }
-                    },
-                    identity: {
-                        validators: {
-                            notEmpty: {
-                                message: 'El usuario es requerido'
-                            }
-                        }
-                    },
+                    // email: {
+                    //     validators: {
+                    //         notEmpty: {
+                    //             message: 'Correo electronico es requerido'
+                    //         },
+                    //         emailAddress: {
+                    //             message: 'El formato de correo electrónico no es valido, favor de verificar'
+                    //         }
+                    //     }
+                    // },
+                    // identity: {
+                    //     validators: {
+                    //         notEmpty: {
+                    //             message: 'El usuario es requerido'
+                    //         }
+                    //     }
+                    // },
                     password: {
                         validators: {
                             stringLength: {
@@ -241,13 +241,13 @@ var KTLogin = function() {
                             }
                         }
                     },
-                    agree: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Debes de aceptar los terminos y condiciones'
-                            }
-                        }
-                    },
+                    // agree: {
+                    //     validators: {
+                    //         notEmpty: {
+                    //             message: 'Debes de aceptar los terminos y condiciones'
+                    //         }
+                    //     }
+                    // },
                 },
                 plugins: {
                     trigger: new FormValidation.plugins.Trigger(),

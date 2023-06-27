@@ -77,8 +77,7 @@ class Pedido extends CI_Controller
 					"id_ma_pedido" => $id_ma_pedido,
 					"id_detalle_menu"  => $this->input->post('comida'),
 					"FInsert" => utils::datetime(),
-					"UCreate" =>  $this->ion_auth->user()->row()->id,
-					"Status" => 1
+					"UCreate" =>  $this->ion_auth->user()->row()->id
 		
 				];
 
@@ -102,8 +101,7 @@ class Pedido extends CI_Controller
 					"id_ma_pedido" => $id_ma_pedido,
 					"id_detalle_menu"  => $this->input->post('postre'),
 					"FInsert" => utils::datetime(),
-					"UCreate" =>  $this->ion_auth->user()->row()->id,
-					"Status" => 1
+					"UCreate" =>  $this->ion_auth->user()->row()->id
 		
 				];
 
@@ -160,5 +158,24 @@ class Pedido extends CI_Controller
 
 
 
+	}
+
+	public function entregas(){
+		$this->load->model('de_pedidos_model');
+		if ($this->input->post('id_detalle')) {
+
+			$id_detalle = $this->input->post('id_detalle');
+
+			if ($this->de_pedidos_model->entregado($id_detalle)) {
+				$this->results['mensaje'] ="Tu pedido se entrego con exito";
+			}else{
+				$this->results['estatus'] = 'error';
+				$this->results['mensaje'] = "Surgio un error al registrar tu entrega, intenta nuevamente";
+			}
+			
+
+			echo  json_encode($this->results);
+			
+		}
 	}
 }

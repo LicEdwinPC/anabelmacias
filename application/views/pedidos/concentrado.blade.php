@@ -52,7 +52,7 @@
 								?>
 								<tr>
 									<td><?php echo isset($pedido->fecha_menu)? utils::fecha($pedido->fecha_menu): "S/D";?></td>
-									<td><?php echo isset($pedido->TipoPlatilloId)? strtoupper($pedido->TipoPlatilloId): "S/D";?></td>
+									<td><?php echo isset($pedido->idTipoP)? strtoupper($pedido->idTipoP): "S/D";?></td>
 									<td><?php echo isset($pedido->platillo)? strtoupper(trim($pedido->platillo)): "S/D";?></td>
 									<td><?php echo isset($pedido->Status)? $pedido->Status : 0; ?></td>
 									<td><?php echo isset($pedido->no_pedidos)? $pedido->no_pedidos : 0; ?></td>

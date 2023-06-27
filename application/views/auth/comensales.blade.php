@@ -59,9 +59,9 @@
                                             <tr>
 												<th>Id</th>
                                                 <th>Comensal</th>
-												<th>Usuario</th>
+												<!-- <th>Usuario</th> -->
                                                 <th>Teléfono</th>
-                                                <th>Correo Electrónico</th>
+                                                <!--<th>Correo Electrónico</th>-->
                                                 <th>Departamento</th>
                                                 <th>Status</th>
                                                 <th>Acciones</th>
@@ -76,9 +76,9 @@
                                                 <tr>
 													<td><?php echo $row->id?></td>
 													<td><?php echo $row->first_name." ".$row->ap1." ".$row->ap2;?></td>
-													<td><?php echo $row->username;?></td>
+													<!--<td><?php //echo $row->username;?></td>-->
 													<td><?php echo $row->phone;?></td>
-													<td><?php echo $row->email;?></td>
+													<!-- <td><?php //echo $row->email;?></td> -->
 													<td><?php echo $row->company;?></td>
 													<td>
                                                         <?php echo ($row->active) ? anchor("auth/deactivate/".$row->id, lang('index_active_link'),'class="label label-lg font-weight-bold label-light-success label-inline"') : anchor("auth/activate/". $row->id, lang('index_inactive_link'),'class="label label-lg font-weight-bold label-light-danger label-inline"');?>

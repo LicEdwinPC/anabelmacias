@@ -9,7 +9,7 @@
 		<div class="d-flex flex-row-fluid flex-column justify-content-between">
 			<!--begin: Aside header-->
 			<a href="#" class="flex-column-auto mt-5 pb-lg-0 pb-10">
-				<img src="<?php echo THEME_URL . 'assets/media/logos/logo-letter-1.png'; ?>" class="max-h-250px" alt="" />
+				<img src="<?php echo THEME_URL . 'assets/media/logos/logo-letter-1.png'; ?>" class="max-h-250px" alt="liverpool Comedor" />
 			</a>
 			<!--end: Aside header-->
 			<!--begin: Aside content-->
@@ -22,8 +22,8 @@
 			<div class="d-none flex-column-auto d-lg-flex justify-content-between mt-10">
 				<div class="opacity-70 font-weight-bold text-white">© <?php echo date('Y'); ?> EPC</div>
 				<div class="d-flex">
-					<a href="#" class="text-white">Privacidad</a>
-					<a href="#" class="text-white ml-10">Legal</a>
+					<!-- <a href="#" class="text-white">Privacidad</a>
+					<a href="#" class="text-white ml-10">Legal</a> -->
 					<a href="#" class="text-white ml-10">Contacto</a>
 				</div>
 			</div>
@@ -80,34 +80,34 @@
 					<div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Primer Apellido" name="ap1" autocomplete="off" />
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Segundo Apellido" name="ap2" autocomplete="off" />
-					</div>
+					</div> -->
 					<div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Telefono" name="phone" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="email" placeholder="Correo electrónico" name="email" autocomplete="off" />
-					</div>
+					</div> -->
 					<div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Departamento" name="company" autocomplete="off" />
 					</div>
 					
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Usuario" name="identity" autocomplete="off" />
-					</div>
+					</div> -->
 					<div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="password" placeholder="NIP" name="password" autocomplete="off" />
 					</div>
 					<div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="password" placeholder="Confirm NIP" name="password_confirm" autocomplete="off" />
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label class="checkbox mb-0">
 							<input type="checkbox" name="agree" />
 							<span></span> Acepto los &nbsp;
 							<a href="#"> terminos y condiciones</a></label>
-					</div>
+					</div> -->
 					<div class="form-group d-flex flex-wrap flex-center">
 						<button type="button" id="kt_login_signup_submit" class="btn btn-primary font-weight-bold px-9 py-4 my-3 mx-4">Enviar</button>
 						<button type="button" id="kt_login_signup_cancel" class="btn btn-light-primary font-weight-bold px-9 py-4 my-3 mx-4">Cancelar</button>
@@ -141,8 +141,8 @@
 		<div class="d-flex d-lg-none flex-column-auto flex-column flex-sm-row justify-content-between align-items-center mt-5 p-5">
 			<div class="text-dark-50 font-weight-bold order-2 order-sm-1 my-2"><?php echo date('Y'); ?> EPC</div>
 			<div class="d-flex order-1 order-sm-2 my-2">
-				<a href="#" class="text-dark-75 text-hover-primary">Privacidad</a>
-				<a href="#" class="text-dark-75 text-hover-primary ml-4">Terninos Legales</a>
+				<!-- <a href="#" class="text-dark-75 text-hover-primary">Privacidad</a>
+				<a href="#" class="text-dark-75 text-hover-primary ml-4">Terninos Legales</a> -->
 				<a href="#" class="text-dark-75 text-hover-primary ml-4">Contacto</a>
 			</div>
 		</div>
