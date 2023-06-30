@@ -11,7 +11,7 @@
  Target Server Version : 100413
  File Encoding         : 65001
 
- Date: 29/05/2023 16:24:40
+ Date: 30/06/2023 16:15:25
 */
 
 SET NAMES utf8mb4;
@@ -50,7 +50,7 @@ CREATE TABLE `de_menu`  (
   `IdUserCreated` int(11) NULL DEFAULT NULL,
   `NoPlatillos` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 73 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 77 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of de_menu
@@ -123,6 +123,10 @@ INSERT INTO `de_menu` VALUES (69, 34, 1, 'comida27', NULL, NULL, '2023-05-23', 1
 INSERT INTO `de_menu` VALUES (70, 34, 2, 'postre27', NULL, NULL, '2023-05-23', 1, NULL);
 INSERT INTO `de_menu` VALUES (71, 35, 1, 'comida28', NULL, NULL, '2023-05-23', 1, NULL);
 INSERT INTO `de_menu` VALUES (72, 35, 2, 'postre28', NULL, NULL, '2023-05-23', 1, NULL);
+INSERT INTO `de_menu` VALUES (73, 36, 1, 'comida30', NULL, NULL, '2023-05-30', 1, NULL);
+INSERT INTO `de_menu` VALUES (74, 36, 2, 'postre30', NULL, NULL, '2023-05-30', 1, NULL);
+INSERT INTO `de_menu` VALUES (75, 37, 1, 'comida31', NULL, NULL, '2023-05-30', 1, NULL);
+INSERT INTO `de_menu` VALUES (76, 37, 2, 'postre31', NULL, NULL, '2023-05-30', 1, NULL);
 
 -- ----------------------------
 -- Table structure for de_pedidos
@@ -136,49 +140,57 @@ CREATE TABLE `de_pedidos`  (
   `UAct` int(11) NULL DEFAULT NULL,
   `FInsert` timestamp(6) NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(6),
   `FAct` timestamp(6) NULL DEFAULT NULL,
-  `Status` bit(1) NULL DEFAULT NULL,
+  `Status` bit(1) NULL DEFAULT b'0',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 37 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
+) ENGINE = MyISAM AUTO_INCREMENT = 45 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
 
 -- ----------------------------
 -- Records of de_pedidos
 -- ----------------------------
-INSERT INTO `de_pedidos` VALUES (1, 1, 25, 2, NULL, '2023-04-27 21:59:31.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (2, 1, 26, 2, NULL, '2023-04-27 21:59:31.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (3, 2, 39, 2, NULL, '2023-05-11 20:39:14.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (4, 2, 40, 2, NULL, '2023-05-11 20:39:14.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (5, 3, 41, 2, NULL, '2023-05-11 22:15:33.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (6, 3, 42, 2, NULL, '2023-05-11 22:15:33.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (7, 4, 43, 2, NULL, '2023-05-11 22:15:40.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (8, 4, 44, 2, NULL, '2023-05-11 22:15:40.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (9, 5, 45, 2, NULL, '2023-05-11 22:15:43.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (10, 5, 46, 2, NULL, '2023-05-11 22:15:43.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (11, 6, 51, 2, NULL, '2023-05-17 20:30:04.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (12, 6, 52, 2, NULL, '2023-05-17 20:30:04.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (13, 7, 53, 2, NULL, '2023-05-17 20:30:07.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (14, 7, 54, 2, NULL, '2023-05-17 20:30:07.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (15, 8, 55, 2, NULL, '2023-05-17 20:30:09.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (16, 8, 56, 2, NULL, '2023-05-17 20:30:09.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (17, 9, 57, 2, NULL, '2023-05-17 20:30:12.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (18, 9, 58, 2, NULL, '2023-05-17 20:30:12.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (19, 10, 67, 3, NULL, '2023-05-26 17:43:12.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (20, 10, 68, 3, NULL, '2023-05-26 17:43:12.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (21, 11, 69, 3, NULL, '2023-05-26 17:43:15.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (22, 11, 70, 3, NULL, '2023-05-26 17:43:15.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (23, 12, 71, 3, NULL, '2023-05-26 17:43:17.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (24, 12, 72, 3, NULL, '2023-05-26 17:43:17.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (25, 33, 67, 2, NULL, '2023-05-26 17:43:40.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (26, 33, 68, 2, NULL, '2023-05-26 17:43:40.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (27, 34, 69, 2, NULL, '2023-05-26 17:43:42.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (28, 34, 70, 2, NULL, '2023-05-26 17:43:42.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (29, 35, 71, 2, NULL, '2023-05-26 17:43:45.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (30, 35, 72, 2, NULL, '2023-05-26 17:43:45.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (31, 33, 67, 4, NULL, '2023-05-26 17:57:53.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (32, 33, 68, 4, NULL, '2023-05-26 17:57:53.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (33, 34, 69, 4, NULL, '2023-05-26 17:57:54.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (34, 34, 70, 4, NULL, '2023-05-26 17:57:54.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (35, 35, 71, 4, NULL, '2023-05-26 17:57:56.000000', NULL, b'1');
-INSERT INTO `de_pedidos` VALUES (36, 35, 72, 4, NULL, '2023-05-26 17:57:56.000000', NULL, b'1');
+INSERT INTO `de_pedidos` VALUES (1, 1, 25, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (2, 1, 26, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (3, 2, 39, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (4, 2, 40, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (5, 3, 41, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (6, 3, 42, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (7, 4, 43, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (8, 4, 44, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (9, 5, 45, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (10, 5, 46, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (11, 6, 51, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (12, 6, 52, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (13, 7, 53, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (14, 7, 54, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (15, 8, 55, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (16, 8, 56, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (17, 9, 57, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (18, 9, 58, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (19, 10, 67, 3, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (20, 10, 68, 3, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (21, 11, 69, 3, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (22, 11, 70, 3, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (23, 12, 71, 3, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (24, 12, 72, 3, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (25, 33, 67, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (26, 33, 68, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (27, 34, 69, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (28, 34, 70, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (29, 35, 71, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (30, 35, 72, 2, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (31, 33, 67, 4, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (32, 33, 68, 4, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (33, 34, 69, 4, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (34, 34, 70, 4, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (35, 35, 71, 4, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (36, 35, 72, 4, NULL, '2023-06-08 12:22:11.978872', NULL, b'0');
+INSERT INTO `de_pedidos` VALUES (37, 13, 73, 2, NULL, '2023-06-29 15:34:09.974828', NULL, b'1');
+INSERT INTO `de_pedidos` VALUES (38, 13, 74, 2, NULL, '2023-06-29 15:34:11.573197', NULL, b'1');
+INSERT INTO `de_pedidos` VALUES (39, 14, 75, 2, NULL, '2023-06-08 15:00:58.174078', NULL, b'1');
+INSERT INTO `de_pedidos` VALUES (40, 14, 76, 2, NULL, '2023-06-08 14:48:26.676234', NULL, b'1');
+INSERT INTO `de_pedidos` VALUES (41, 15, 73, 3, NULL, '2023-06-29 15:34:07.606525', NULL, b'1');
+INSERT INTO `de_pedidos` VALUES (42, 15, 74, 3, NULL, '2023-06-29 15:34:05.514006', NULL, b'1');
+INSERT INTO `de_pedidos` VALUES (43, 16, 75, 3, NULL, '2023-06-08 12:52:23.442860', NULL, b'1');
+INSERT INTO `de_pedidos` VALUES (44, 16, 76, 3, NULL, '2023-06-08 12:46:47.391262', NULL, b'1');
 
 -- ----------------------------
 -- Table structure for groups
@@ -189,13 +201,14 @@ CREATE TABLE `groups`  (
   `name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `description` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of groups
 -- ----------------------------
 INSERT INTO `groups` VALUES (1, 'admin', 'Administrator');
-INSERT INTO `groups` VALUES (2, 'members', 'General User');
+INSERT INTO `groups` VALUES (2, 'members', 'Comensal');
+INSERT INTO `groups` VALUES (3, 'repartidor', 'Repartidor');
 
 -- ----------------------------
 -- Table structure for login_attempts
@@ -207,7 +220,7 @@ CREATE TABLE `login_attempts`  (
   `login` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `time` int(11) UNSIGNED NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 53 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 54 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of login_attempts
@@ -227,7 +240,7 @@ CREATE TABLE `ma_menus`  (
   `Status` bit(1) NULL DEFAULT NULL,
   `FCreated` date NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 36 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 38 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of ma_menus
@@ -267,6 +280,8 @@ INSERT INTO `ma_menus` VALUES (32, '2023-05-25', 1, NULL, '2023-05-23 16:23:27.0
 INSERT INTO `ma_menus` VALUES (33, '2023-05-26', 1, NULL, '2023-05-23 16:23:38.000000', 0, b'1', '2023-05-23');
 INSERT INTO `ma_menus` VALUES (34, '2023-05-27', 1, NULL, '2023-05-23 16:23:46.000000', 0, b'1', '2023-05-23');
 INSERT INTO `ma_menus` VALUES (35, '2023-05-28', 1, NULL, '2023-05-23 16:23:57.000000', 0, b'1', '2023-05-23');
+INSERT INTO `ma_menus` VALUES (36, '2023-05-30', 1, NULL, '2023-05-30 16:01:21.000000', 0, b'1', '2023-05-30');
+INSERT INTO `ma_menus` VALUES (37, '2023-05-31', 1, NULL, '2023-05-30 16:01:30.000000', 0, b'1', '2023-05-30');
 
 -- ----------------------------
 -- Table structure for ma_pedidos
@@ -284,7 +299,7 @@ CREATE TABLE `ma_pedidos`  (
   `Status` bit(1) NULL DEFAULT NULL,
   `Descripcion` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of ma_pedidos
@@ -301,6 +316,10 @@ INSERT INTO `ma_pedidos` VALUES (9, 28, '2023-05-17 20:30:12.000000', 2, 2, NULL
 INSERT INTO `ma_pedidos` VALUES (10, 33, '2023-05-26 17:43:12.000000', 3, 3, NULL, '2023-05-26 17:43:12.000000', NULL, b'1', '');
 INSERT INTO `ma_pedidos` VALUES (11, 34, '2023-05-26 17:43:15.000000', 3, 3, NULL, '2023-05-26 17:43:15.000000', NULL, b'1', '');
 INSERT INTO `ma_pedidos` VALUES (12, 35, '2023-05-26 17:43:17.000000', 3, 3, NULL, '2023-05-26 17:43:17.000000', NULL, b'1', '');
+INSERT INTO `ma_pedidos` VALUES (13, 36, '2023-05-30 16:04:01.000000', 2, 2, NULL, '2023-05-30 16:04:01.000000', NULL, b'1', '');
+INSERT INTO `ma_pedidos` VALUES (14, 37, '2023-05-30 18:47:30.000000', 2, 2, NULL, '2023-05-30 18:47:30.000000', NULL, b'1', '');
+INSERT INTO `ma_pedidos` VALUES (15, 36, '2023-05-30 18:49:50.000000', 3, 3, NULL, '2023-05-30 18:49:50.000000', NULL, b'1', '');
+INSERT INTO `ma_pedidos` VALUES (16, 37, '2023-05-30 18:49:54.000000', 3, 3, NULL, '2023-05-30 18:49:54.000000', NULL, b'1', '');
 
 -- ----------------------------
 -- Table structure for users
@@ -311,7 +330,7 @@ CREATE TABLE `users`  (
   `ip_address` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `username` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `email` varchar(254) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `email` varchar(254) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `activation_selector` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `activation_code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `forgotten_password_selector` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
@@ -328,19 +347,22 @@ CREATE TABLE `users`  (
   `company` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `phone` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE INDEX `uc_email`(`email`) USING BTREE,
   UNIQUE INDEX `uc_activation_selector`(`activation_selector`) USING BTREE,
   UNIQUE INDEX `uc_forgotten_password_selector`(`forgotten_password_selector`) USING BTREE,
   UNIQUE INDEX `uc_remember_selector`(`remember_selector`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 18 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES (1, '127.0.0.1', 'administrator', '$2y$10$AlnhaiJgQ6EAHZYOhib8.ui1bnm7t327j7IdXb7r0iwYW/03qEPQe', 'admin@admin.com', NULL, '', NULL, NULL, NULL, 'f5d207ac6fad46e2e2b4f4867fc5430c07c51a8d', '$2y$10$x4KFxjGHwQX9XoNXv1Aleu0DD9octD.zgd2xiWrSoImmcKQA/JVES', 1268889823, 1685392961, 1, 'Admin', 'istrator', NULL, 'ADMIN', '0');
-INSERT INTO `users` VALUES (2, '::1', 'edwinpc', '$2y$10$MHIFK1ypqsyqzjZfnXJ3QuAPuAMSzYmMpCKkEAQLYRiG6NXk31Kzu', 'lic.edwin.perez@gmail.com', NULL, NULL, NULL, NULL, NULL, 'ebc94399d196b5d116eeb2eec2f10771448b23bc', '$2y$10$QB20kZdkiWNcFPwaNE0TBuyfjm1BgmTLWLViTonIocPo4IWjyopEe', 1681493356, 1685123016, 1, 'edwin', 'perez', 'castrejon', 'deportes', '3125500636');
-INSERT INTO `users` VALUES (3, '::1', 'minecp', '$2y$10$0iUnG9CDAEnb7GLn8SMpq./VCdSwwfArx2WZm.K2AqFOC8KGLYBRq', 'minecp.mcp@gmail.com', NULL, NULL, NULL, NULL, NULL, 'ded589ac376671cf87f2c74a8d647b33ca9aa30b', '$2y$10$PyC3JOGeayr8/cUHSd3ASuU3uxYWJT/ERoo1fTygBuOpMEZ2bnZ2G', 1684858903, 1685122985, 1, 'Minerva', 'Cobarribias', 'Perez', 'Damas', '3121115734');
+INSERT INTO `users` VALUES (1, '127.0.0.1', 'administrator', '$2y$10$AlnhaiJgQ6EAHZYOhib8.ui1bnm7t327j7IdXb7r0iwYW/03qEPQe', 'admin@admin.com', NULL, '', NULL, NULL, NULL, '7132fefdcd56d4281a7825125c0442f76ae93c87', '$2y$10$Mz/ye7w8Z6i695cd9fheE.ONOMwjd6sfqrevQmzhC6kxHRcUuG7KK', 1268889823, 1687884754, 1, 'Admin', 'istrator', NULL, 'ADMIN', '3121111111');
+INSERT INTO `users` VALUES (2, '::1', 'edwinpc', '$2y$10$MHIFK1ypqsyqzjZfnXJ3QuAPuAMSzYmMpCKkEAQLYRiG6NXk31Kzu', 'lic.edwin.perez@gmail.com', NULL, NULL, NULL, NULL, NULL, '1c9e759a2903064ef7667709e935c0868c9e66a7', '$2y$10$oVcIKCvsZTdrrC7cG59rb.caHBQNS4AUdHTuIiGhkyezbAsIbJjTO', 1681493356, 1685462744, 1, 'edwin', 'perez', 'castrejon', 'deportes', '3125500636');
+INSERT INTO `users` VALUES (3, '::1', 'minecp', '$2y$10$0iUnG9CDAEnb7GLn8SMpq./VCdSwwfArx2WZm.K2AqFOC8KGLYBRq', 'minecp.mcp@gmail.com', NULL, NULL, NULL, NULL, NULL, 'b71d7b7d35d284c776d43d9bd4bb0f159475af3e', '$2y$10$6SjxGwdNmdQm9uucJdgDFeUiRn4bx2DcXtLXB.Z2uv03vpU.C6X0e', 1684858903, 1685472535, 1, 'Minerva', 'Cobarribias', 'Perez', 'Damas', '3121115734');
 INSERT INTO `users` VALUES (4, '::1', 'luisfer', '$2y$10$ZUL8SShahJt9TtUPnPXEvutsTZQDYs5YSFpKD5fcx.sn4qPd2UAgW', 'luis.fernando@gmail.com', NULL, NULL, NULL, NULL, NULL, '9123025a46421d5cba719470c7c6ed3aa12667c3', '$2y$10$voQ5MTAZmbHa5dn4AJv82OdxE9SPkSfzEZ1vm2HK1t4VNR4L4cwxC', 1685123859, 1685123865, 1, 'LUIS FERNANDO', 'MUNGUIA', 'GONZALEZ', 'DEPORTES', '3121110545');
+INSERT INTO `users` VALUES (5, '::1', 'repartidor', '$2y$10$cBOpxmKNRJP84XhUzBh0Cuy/DqmPnGx1WW4nkRKVvVwNWJLtxCpyO', 'repartidor@gmail.com', NULL, NULL, NULL, NULL, NULL, '165ce53d7929464c2c1d7a1bfecd579bd8ae8ae3', '$2y$10$.JOD2nKygDEGNORnUYsTXOXtPdBWHv2GKxswek.C4CNV1bbd/dWeO', 1685984556, 1688145522, 1, 'jaime', 'perez', '', 'autos', '3121111231');
+INSERT INTO `users` VALUES (6, '::1', NULL, '$2y$10$NIB789YNd06KY8sGfktPCeZJROLC2HfWlZ1xQzI9WZwiDNhDls05K', '', NULL, NULL, NULL, NULL, NULL, 'd15538d5f4a92f60b4c51a9869e26273c74e3623', '$2y$10$9Mrgpse8AzjlXW9GLknTJ.id6bEwfMiW5L4e2pFoohssGTgkEyqcS', 1687884097, 1687884628, 1, 'edmundo', 'perez', NULL, 'caballeros', '3121115733');
+INSERT INTO `users` VALUES (16, '::1', NULL, '$2y$10$bFRURTBW1CHOflbhpfgt1uGEhgL4G8JjUIsB9U75DICDoc.uSGxSm', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1688065657, NULL, 1, 'juan', 'nepomuseno', NULL, 'caballeros', '3123135152');
+INSERT INTO `users` VALUES (17, '::1', NULL, '$2y$10$0otNuzm88TFg0T2KGEMGIO0MBk07qZbFrDT.ScHNZQrj3X7Wmqyke', '', NULL, NULL, NULL, NULL, NULL, 'f10e49374cb06c3351c5fd0725fec12270289092', '$2y$10$fc9ESIWd3gdah26whlhumeXyPzKBqdPvTR07HM6wy8QeG7x4sFqV6', 1688067169, 1688067184, 1, 'pedro', 'paramo', NULL, 'cultura', '331361694');
 
 -- ----------------------------
 -- Table structure for users_groups
@@ -356,7 +378,7 @@ CREATE TABLE `users_groups`  (
   INDEX `fk_users_groups_groups1_idx`(`group_id`) USING BTREE,
   CONSTRAINT `fk_users_groups_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
   CONSTRAINT `fk_users_groups_users1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of users_groups
@@ -366,6 +388,9 @@ INSERT INTO `users_groups` VALUES (2, 1, 2);
 INSERT INTO `users_groups` VALUES (3, 2, 2);
 INSERT INTO `users_groups` VALUES (4, 3, 2);
 INSERT INTO `users_groups` VALUES (5, 4, 2);
+INSERT INTO `users_groups` VALUES (6, 5, 3);
+INSERT INTO `users_groups` VALUES (7, 6, 2);
+INSERT INTO `users_groups` VALUES (8, 17, 2);
 
 -- ----------------------------
 -- View structure for vwconcentrado
