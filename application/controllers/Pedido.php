@@ -178,4 +178,23 @@ class Pedido extends CI_Controller
 			
 		}
 	}
+
+	public function pendientes(){
+		$this->load->model('de_pedidos_model');
+		if ($this->input->post('id_detalle')) {
+
+			$id_detalle = $this->input->post('id_detalle');
+
+			if ($this->de_pedidos_model->pendiente($id_detalle)) {
+				$this->results['mensaje'] ="Tu pedido se entrego con exito";
+			}else{
+				$this->results['estatus'] = 'error';
+				$this->results['mensaje'] = "Surgio un error al registrar tu entrega, intenta nuevamente";
+			}
+			
+
+			echo  json_encode($this->results);
+			
+		}
+	}
 }

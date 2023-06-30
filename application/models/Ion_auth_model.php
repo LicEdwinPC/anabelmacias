@@ -866,9 +866,18 @@ class Ion_auth_model extends CI_Model
 		// and merge the set user data and the additional data
 		$user_data = array_merge($this->_filter_data($this->tables['users'], $additional_data), $data);
 
+		
+		// echo "<pre>";
+		// print_r ($user_data);
+		// echo "</pre>";
+		
+
 		$this->trigger_events('extra_set');
 
 		$this->db->insert($this->tables['users'], $user_data);
+
+		// echo $this->db->last_query();
+		// die();
 
 		$id = $this->db->insert_id($this->tables['users'] . '_id_seq');
 
@@ -2585,6 +2594,8 @@ class Ion_auth_model extends CI_Model
 	 */
 	protected function _filter_data($table, $data)
 	{
+
+		
 		$filtered_data = [];
 		$columns = $this->db->list_fields($table);
 

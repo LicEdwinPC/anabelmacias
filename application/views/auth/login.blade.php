@@ -84,7 +84,7 @@
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Segundo Apellido" name="ap2" autocomplete="off" />
 					</div> -->
 					<div class="form-group">
-						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Telefono" name="phone" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+						<input class="form-control form-control-solid h-auto py-5 px-6" type="text" placeholder="Telefono" name="identity" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
 					</div>
 					<!-- <div class="form-group">
 						<input class="form-control form-control-solid h-auto py-5 px-6" type="email" placeholder="Correo electrónico" name="email" autocomplete="off" />

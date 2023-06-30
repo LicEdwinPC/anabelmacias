@@ -409,7 +409,7 @@ var KTDatatablesExtensionButtons = function() {
 						
 						let detalle = '';
 						
-						detalle = '<a title="Detalle" onclick="Entregado(this);"  id="btn_entregado"  data-id="' + btoa(row.id_de_pedido) + '" class="btn_entregado btn btn-info">Pendiente</a>';
+						detalle = '<a title="Detalle" onclick="Pendiente(this);"  id="btn_entregado"  data-id="' + btoa(row.id_de_pedido) + '" class="btn_entregado btn btn-info">Pendiente</a>';
 
 						return detalle;
 					}

@@ -110,4 +110,17 @@ class de_pedidos_model extends CI_Model
 		}
 
 	}
+
+	public function pendiente($id=0)
+	{
+		if ($id != 0) {
+			$CadenaSQL = "Update ".$this->tabla." SET Status = 0  WHERE id=".$id;
+			if($this->db->query($CadenaSQL)){
+				return TRUE;
+			}else{
+				return FALSE;
+			}
+		}
+
+	}
 }

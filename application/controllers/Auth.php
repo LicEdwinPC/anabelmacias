@@ -472,14 +472,15 @@ class Auth extends CI_Controller
 		// validate form input
 		$this->form_validation->set_rules('first_name', $this->lang->line('create_user_validation_fname_label'), 'trim|required');
 		$this->form_validation->set_rules('ap1', $this->lang->line('create_user_validation_lname_label'), 'trim|required');
-		$this->form_validation->set_rules('ap2', "Segundo Apellido", 'trim');
+		// $this->form_validation->set_rules('ap2', "Segundo Apellido", 'trim');
 		if ($identity_column !== 'email') {
-			$this->form_validation->set_rules('phone', $this->lang->line('create_user_validation_phone_label'), 'trim|required|is_unique[' . $tables['users'] . '.' . $identity_column . ']');
+			// $this->form_validation->set_rules('phone', $this->lang->line('create_user_validation_phone_label'), 'trim|required');
+			 $this->form_validation->set_rules('identity', $this->lang->line('create_user_validation_phone_label'), 'trim|required|is_unique[' . $tables['users'] . '.' . $identity_column . ']');
 			// $this->form_validation->set_rules('email', $this->lang->line('create_user_validation_email_label'), 'trim|required|valid_email');
 		} else {
 			// $this->form_validation->set_rules('email', $this->lang->line('create_user_validation_email_label'), 'trim|valid_email|is_unique[' . $tables['users'] . '.email]');
 		}
-		// $this->form_validation->set_rules('phone', $this->lang->line('create_user_validation_phone_label'), 'trim|required');
+		
 		$this->form_validation->set_rules('company', $this->lang->line('create_user_validation_company_label'), 'trim');
 		$this->form_validation->set_rules('password', $this->lang->line('create_user_validation_password_label'), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|matches[password_confirm]');
 		$this->form_validation->set_rules('password_confirm', $this->lang->line('create_user_validation_password_confirm_label'), 'required');
@@ -492,11 +493,19 @@ class Auth extends CI_Controller
 			$additional_data = [
 				'first_name' => $this->input->post('first_name'),
 				'ap1' => $this->input->post('ap1'),
-				'ap2' => $this->input->post('ap2'),
+			    'ap2' => $this->input->post('ap2'),
 				'company' => $this->input->post('company'),
 				'phone' => $this->input->post('phone'),
 			];
 		}
+
+		// echo $identity."<br>";
+		// echo $password."<br>";
+		// echo $email."<br>";
+		// echo "<pre>";
+		// print_r ($additional_data);
+		// echo "</pre>";
+		// die();
 
 
 

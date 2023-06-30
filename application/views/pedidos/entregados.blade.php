@@ -67,7 +67,7 @@
 		
 	});
 
-	function Entregado(_this){
+	function Pendiente(_this){
 		
 
 		var idDet = atob($(_this).data('id'));
@@ -76,7 +76,7 @@
 
 		$.ajax({
 			type: 'POST',
-			url: URL+'Pedido/entregas',
+			url: URL+'Pedido/pendientes',
 			data: {id_detalle: idDet},
 			dataType: "json",
 			success: function(result) {
@@ -105,7 +105,7 @@
 						}
 					}).then(function() {
 						// CierraPopup();
-						$('#kt_datatable_entregas').DataTable().ajax.reload();
+						$('#kt_datatable_entregados').DataTable().ajax.reload();
 						
 					});
 
