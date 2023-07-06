@@ -81,6 +81,14 @@
                                     <span class="menu-text">Listado</span>
                                 </a>
                             </li>
+							<li class="menu-item" aria-haspopup="true">
+                                <a href="<?php echo site_url('auth/agregar_usuario');?>" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">Agregar</span>
+                                </a>
+                            </li>
                             <!-- <li class="menu-item" aria-haspopup="true">
                                 <a href="layout/themes/header-dark.html" class="menu-link">
                                     <i class="menu-bullet menu-bullet-dot">

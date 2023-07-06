@@ -261,7 +261,7 @@ var KTDatatablesExtensionButtons = function() {
 				}
 			},
 			ajax: {
-                "url": PATH + '/Entregas/getLstpedidos',
+                "url": HOST_URL + '/Entregas/getLstpedidos',
                 "type": 'GET'
             },
 			order:[0,'desc'],
@@ -363,7 +363,7 @@ var KTDatatablesExtensionButtons = function() {
 				}
 			},
 			ajax: {
-                "url": PATH + '/Entregas/getLstPedidosEntregados',
+                "url": HOST_URL + '/Entregas/getLstPedidosEntregados',
                 "type": 'GET'
             },
 			order:[0,'desc'],

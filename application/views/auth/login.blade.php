@@ -43,7 +43,24 @@
 		<!--begin::Content body-->
 		<div class="d-flex flex-column-fluid flex-center mt-30 mt-lg-0">
 			<!--begin::Signin-->
+			
 			<div class="login-form login-signin">
+				<?php 
+				if ($this->session->flashdata('message')) {
+					?>
+					<div class="alert alert-custom alert-light-info fade show mb-5" role="alert">
+						<div class="alert-icon"><i class="flaticon-warning"></i></div>
+						<div class="alert-text"><?php echo $this->session->flashdata('message');?></div>
+						<div class="alert-close">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="ki ki-close"></i></span>
+							</button>
+						</div>
+					</div>
+					<?php
+					# code...
+				}
+				?>
 				<div class="text-center mb-10 mb-lg-20">
 					<h3 class="font-size-h1">Entrar</h3>
 					<p class="text-muted font-weight-bold">Introduce tu usuario y nip</p>
@@ -152,6 +169,8 @@
 </div>
 <script>
 	let PATH = '<?php echo  site_url(); ?>';
+
+	
 </script>
 <!--end::Login-->
 @endsection

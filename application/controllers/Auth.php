@@ -580,6 +580,163 @@ class Auth extends CI_Controller
 			$this->_render_page('auth' . DIRECTORY_SEPARATOR . 'create_user', $this->data);*/
 		}
 	}
+
+	public function agregar_usuario()
+	{
+
+
+
+
+		$this->data['title'] = $this->lang->line('create_user_heading');
+		$this->data['Subtitle'] = $this->lang->line('create_user_subheading');
+
+		if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
+		{
+			redirect('auth', 'refresh');
+		}
+
+		$groups = $this->ion_auth->groups()->result_array();
+
+		$tables = $this->config->item('tables', 'ion_auth');
+		$identity_column = $this->config->item('identity', 'ion_auth');
+		$this->data['identity_column'] = $identity_column;
+
+
+		// validate form input
+		$this->form_validation->set_rules('first_name', $this->lang->line('create_user_validation_fname_label'), 'trim|required');
+		$this->form_validation->set_rules('ap1', $this->lang->line('create_user_validation_lname_label'), 'trim|required');
+		// $this->form_validation->set_rules('ap2', "Segundo Apellido", 'trim');
+		if ($identity_column !== 'email') {
+			// $this->form_validation->set_rules('phone', $this->lang->line('create_user_validation_phone_label'), 'trim|required');
+			 $this->form_validation->set_rules('identity', $this->lang->line('create_user_validation_phone_label'), 'trim|required|is_unique[' . $tables['users'] . '.' . $identity_column . ']');
+			// $this->form_validation->set_rules('email', $this->lang->line('create_user_validation_email_label'), 'trim|required|valid_email');
+		} else {
+			// $this->form_validation->set_rules('email', $this->lang->line('create_user_validation_email_label'), 'trim|valid_email|is_unique[' . $tables['users'] . '.email]');
+		}
+		
+		$this->form_validation->set_rules('company', $this->lang->line('create_user_validation_company_label'), 'trim');
+		$this->form_validation->set_rules('password', $this->lang->line('create_user_validation_password_label'), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|matches[password_confirm]');
+		$this->form_validation->set_rules('password_confirm', $this->lang->line('create_user_validation_password_confirm_label'), 'required');
+
+		if ($this->form_validation->run() === TRUE) {
+			$email = strtolower($this->input->post('email'));
+			$identity = ($identity_column === 'email') ? $email : $this->input->post('identity');
+			$password = $this->input->post('password');
+
+			$additional_data = [
+				'first_name' => $this->input->post('first_name'),
+				'ap1' => $this->input->post('ap1'),
+			    'ap2' => $this->input->post('ap2'),
+				'company' => $this->input->post('company'),
+				'phone' => $this->input->post('phone'),
+			];
+		}
+
+		
+
+		// echo $identity."<br>";
+		// echo $password."<br>";
+		// echo $email."<br>";
+		// echo "<pre>";
+		// print_r ($additional_data);
+		// echo "</pre>";
+		// die();
+
+
+
+		if ($this->form_validation->run() === TRUE && $id = $this->ion_auth->register($identity, $password, $email, $additional_data)) {
+			// check to see if we are creating the user
+			// redirect them back to the admin page
+			// echo '<pre>';
+			// print_r($id);
+			// echo '</pre>';
+			// die();
+
+			// Only allow updating groups if user is admin
+			if ($this->ion_auth->is_admin()) {
+				// Update the groups user belongs to
+				$this->ion_auth->remove_from_group('', $id);
+
+				$groupData = $this->input->post('groups');
+				if (isset($groupData) && !empty($groupData)) {
+					foreach ($groupData as $grp) {
+						$this->ion_auth->add_to_group($grp, $id);
+					}
+				}
+			}
+			$this->session->set_flashdata('message', $this->ion_auth->messages());
+			redirect("auth", 'refresh');
+
+			//Mando los datos al ajax para mostrar en la pantalla.
+			// $this->results['data'] = $respuesta;
+			// $this->results['mensaje'] = "Tu registro ha sido agregado con exito";
+			// echo json_encode($this->results);
+		} else {
+			// $this->results['estatus'] = 'error';
+			// $this->results['mensaje'] = "Surgio un problema en la comunicación de datos, intenta nuevamente";
+			// echo json_encode($this->results);
+
+			// display the create user form
+			// set the flash data error message if there is one
+			$this->data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
+
+			
+			$this->data['groups'] = $groups;
+			
+			$this->data['first_name'] = [
+				'name' => 'first_name',
+				'id' => 'first_name',
+				'type' => 'text',
+				'value' => $this->form_validation->set_value('first_name'),
+			];
+			$this->data['ap1'] = [
+				'name' => 'ap1',
+				'id' => 'ap1',
+				'type' => 'text',
+				'value' => $this->form_validation->set_value('ap1'),
+			];
+			// $this->data['identity'] = [
+			// 	'name' => 'identity',
+			// 	'id' => 'identity',
+			// 	'type' => 'text',
+			// 	'value' => $this->form_validation->set_value('identity'),
+			// ];
+			// $this->data['email'] = [
+			// 	'name' => 'email',
+			// 	'id' => 'email',
+			// 	'type' => 'text',
+			// 	'value' => $this->form_validation->set_value('email'),
+			// ];
+			$this->data['company'] = [
+				'name' => 'company',
+				'id' => 'company',
+				'type' => 'text',
+				'value' => $this->form_validation->set_value('company'),
+			];
+			$this->data['phone'] = [
+				'name' => 'identity',
+				'id' => 'identity',
+				'type' => 'text',
+				'value' => $this->form_validation->set_value('identity'),
+			];
+			$this->data['password'] = [
+				'name' => 'password',
+				'id' => 'password',
+				'type' => 'password',
+				'value' => $this->form_validation->set_value('password'),
+			];
+			$this->data['password_confirm'] = [
+				'name' => 'password_confirm',
+				'id' => 'password_confirm',
+				'type' => 'password',
+				'value' => $this->form_validation->set_value('password_confirm'),
+			];
+
+			// $this->_render_page('auth' . DIRECTORY_SEPARATOR . 'agregar_usuario', $this->data);
+
+			$this->blade->render('auth' . DIRECTORY_SEPARATOR . 'create_user', $this->data);
+		}
+	}
 	/**
 	 * Redirect a user checking if is admin
 	 */
