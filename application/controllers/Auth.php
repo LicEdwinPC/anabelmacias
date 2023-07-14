@@ -661,11 +661,14 @@ class Auth extends CI_Controller
 				if (isset($groupData) && !empty($groupData)) {
 					foreach ($groupData as $grp) {
 						$this->ion_auth->add_to_group($grp, $id);
+						// echo "Agrego";
 					}
 				}
 			}
+			// die();
+			
 			$this->session->set_flashdata('message', $this->ion_auth->messages());
-			redirect("auth", 'refresh');
+			redirect("auth/comensales", 'refresh');
 
 			//Mando los datos al ajax para mostrar en la pantalla.
 			// $this->results['data'] = $respuesta;
