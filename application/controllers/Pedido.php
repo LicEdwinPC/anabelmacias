@@ -67,7 +67,14 @@ class Pedido extends CI_Controller
 
 		];
 
-		if ($id_ma_pedido = $this->pedidos_model->agregar($dataMaPedido,$this->input->post('id'),$this->ion_auth->user()->row()->id)) 
+		if ($this->input->post('id_ma_pedido') && $this->input->post('id_ma_pedido') > 0) {
+			# code...
+			$id_ma_pedido = $this->input->post('id_ma_pedido');
+		}else{
+			$id_ma_pedido = $this->pedidos_model->agregar($dataMaPedido,$this->input->post('id'),$this->ion_auth->user()->row()->id);
+		}
+
+		if ($id_ma_pedido > 0) 
 		{
 			$i=0;
 			$y=0;
@@ -85,6 +92,7 @@ class Pedido extends CI_Controller
 				if ($this->de_pedidos_model->agregar($dataPedido)) {
 					# code...
 					$this->results['mensaje'] ="Tu pedido se registró con exito";
+					$this->results['id_ma_pedido'] = $id_ma_pedido;
 					//echo json_encode($this->results);
 				}else{
 					$this->results['estatus'] = 'error';
@@ -108,6 +116,7 @@ class Pedido extends CI_Controller
 				if ($this->de_pedidos_model->agregar($dataPedido)) {
 					# code...
 					$this->results['mensaje'] ="Tu pedido se registró con exito";
+					$this->results['id_ma_pedido'] = $id_ma_pedido;
 				}else{
 					$this->results['estatus'] = 'error';
 					$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";

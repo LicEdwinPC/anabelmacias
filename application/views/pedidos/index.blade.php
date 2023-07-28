@@ -135,12 +135,13 @@
 								<input type="number" min="1" max="10" value="1" name="cantidad_postre" id="cantidad_postre" data-tipo="2" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Cantidad de postre" autocomplete="off"/>
 								<span class="form-text text-muted">Ingresa el numero de postres para tu pedido.</span>
 							</div>
-							<input type="hidden" id="Codigo" name="Codigo" value="0">
+							<input type="hidden" id="codigo" name="codigo" value="0">
+							<input type="hidden" id="mapedido" name="mapedido" value="0">
 						</form>
 					</div>
 					<div class="modal-footer">
 						
-						<button type="button" class="btn btn-info text-uppercase font-weight-bolder px-15 py-3">Guardar</button>
+						<button type="button" id="BtnGuardarMas" class="btn btn-info text-uppercase font-weight-bolder px-15 py-3">Guardar</button>
 						<button type="button" class="btn btn-danger text-uppercase font-weight-bolder" data-dismiss="modal">Cancelar</button>
 						
 					</div>
@@ -162,6 +163,46 @@
 	var PATH = "<?php echo site_url();?>";
 
 	jQuery(document).ready(function() {
+
+		$("#BtnGuardarMas").click(function(){
+
+			let Numcomida = 0;
+			let Numpostre = 0;
+
+			let id_menu =  $('#codigo').val();
+			let ma_pedido =  $('#mapedido').val();
+
+			let registro = recuperarDatosFormulario(id_menu);
+
+			registro.push({
+				name: "id_ma_pedido",
+				value: ma_pedido
+			});
+
+			console.log(registro);
+
+
+			
+			if ($('#cantidad_comida').val() > 0) {
+				Numcomida = $('#cantidad_comida').val();
+
+				for (var i = 0; i < Numcomida; i++) {
+					console.log(Numcomida);
+					// guardaRegistro(registro);
+				}
+
+			}
+
+			if ($('#cantidad_postre').val() > 0) {
+				Numpostre = $('#cantidad_postre').val();
+				for (var i = 0; i < Numpostre; i++) {
+					console.log(Numpostre);
+					// guardaRegistro(registro);
+				}
+			}
+
+
+		});
 
 		$('.btnGuardaPedido').click(function() 
 		{
@@ -190,37 +231,21 @@
 				return false;
 			}else{
 
-				//Pregunto si quieren agregar mas platillos al pedido
-				swal.fire({
-				title: '¿Quiéres agregar mas platillos a tu pedido?',
-				icon: "question",
-				showCancelButton: true,
-				confirmButtonText: 'Si',
-				cancelButtonText: 'No',
-				}).then((result) => {
-
-				if (result.isConfirmed) {
-					//Mando el modal para agregar más.
-					MuestraModal(id_menu);
-					// Swal.fire('Saved!', '', 'success')
-				} 
-				});
 				
-				// guardaRegistro(registro);
+				
+				//guardaRegistro(registro);
 			}
 
             
         });
 
-		function MuestraModal(id_menu){
+		function MuestraModal(id_menu,id_ma_pedido){
 			// console.log(id_menu);
-			$("#Codigo").val(id_menu);
+			$("#codigo").val(id_menu);
+			$("#mapedido").val(id_ma_pedido);
 			$("#LblComida").text($('#chk_comida-'+id_menu).data('descripcion'));
 			$("#LblPostre").text($('#chk_postre-'+id_menu).data('descripcion'));
 			$("#modalTituloMenu").text($("#TituloMenu").text());
-
-			
-
 			$("#agregar_pedido").modal('show');
 
 		}
@@ -250,6 +275,7 @@
 
             return registro;
         }
+		
 
 		function guardaRegistro(registro){
 			$.ajax({
@@ -272,18 +298,41 @@
 							 KTUtil.scrollTop();
 						});
 					} else {
+
+						//Mandar el mensaje de agregar otro, para poder agarrar el id del ma_pedido y meter los nuevos.
+
+						//Pregunto si quieren agregar mas platillos al pedido
 						swal.fire({
-							text: result.mensaje,
-							icon: "success",
-							buttonsStyling: false,
-							confirmButtonText: "Ok, vamos!",
-							customClass: {
-								confirmButton: "btn font-weight-bold btn-light-primary"
-							}
-						}).then(function() {
-							// CierraPopup();
-							
+						title: '¿Quiéres agregar mas platillos a tu pedido?',
+						icon: "question",
+						showCancelButton: true,
+						confirmButtonText: 'Si',
+						cancelButtonText: 'No',
+						}).then((resultado) => {
+
+						if (resultado.isConfirmed) {
+							//Mando el modal para agregar más.
+							MuestraModal(id_menu,result.id_ma_pedido);
+							// Swal.fire('Saved!', '', 'success')
+						}else{
+							swal.fire({
+								text: result.mensaje,
+								icon: "success",
+								buttonsStyling: false,
+								confirmButtonText: "Ok, vamos!",
+								customClass: {
+									confirmButton: "btn font-weight-bold btn-light-primary"
+								}
+							}).then(function() {
+								// CierraPopup();
+								
+							});
+						} 
 						});
+
+						
+
+						
 
 					}
 				},
