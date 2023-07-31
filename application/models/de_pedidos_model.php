@@ -32,6 +32,11 @@ class de_pedidos_model extends CI_Model
         return $insert_id;
     }
 
+	public function addByPedido($dataContent = array()){
+		$insert_id = ($this->db->insert($this->tabla, $dataContent) == true) ? $this->db->insert_id() : false;
+		return $insert_id;
+	}
+
 	public function eliminar($id = 0){
 
 		if ($id != 0) {

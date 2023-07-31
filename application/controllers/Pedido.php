@@ -74,6 +74,11 @@ class Pedido extends CI_Controller
 			$id_ma_pedido = $this->pedidos_model->agregar($dataMaPedido,$this->input->post('id'),$this->ion_auth->user()->row()->id);
 		}
 
+		// echo '<pre>';
+		// print_r($this->input->post());
+		// echo '</pre>';
+
+
 		if ($id_ma_pedido > 0) 
 		{
 			$i=0;
@@ -133,6 +138,92 @@ class Pedido extends CI_Controller
 
 		echo json_encode($this->results);
 		
+	}
+
+	public function guardarCuantos(){
+		$this->load->model('pedidos_model');
+		$this->load->model('de_pedidos_model');
+
+		$id_ma_pedido =0;
+
+		if ($this->input->post('id_ma_pedido') && $this->input->post('id_ma_pedido') > 0) {
+			# code...
+			$id_ma_pedido = $this->input->post('id_ma_pedido');
+		}
+
+
+		if ($this->input->post('ncomidas') > 0) {
+			# code...
+			for ($i=0; $i < $this->input->post('ncomidas'); $i++) { 
+				# code...
+				if ($this->input->post('comida') > 0) {
+					# code...
+					$dataPedido = [
+						"id_ma_pedido" => $id_ma_pedido,
+						"id_detalle_menu"  => $this->input->post('comida'),
+						"FInsert" => utils::datetime(),
+						"UCreate" =>  $this->ion_auth->user()->row()->id
+			
+					];
+
+					// echo '<pre>';
+					// print_r($dataPedido);
+					// echo '</pre>';
+	
+	
+					if ($this->de_pedidos_model->addByPedido($dataPedido)) {
+						# code...
+						$this->results['mensaje'] ="Tu pedido se registró con exito";
+						$this->results['id_ma_pedido'] = $id_ma_pedido;
+						//echo json_encode($this->results);
+					}else{
+						$this->results['estatus'] = 'error';
+						$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
+					}
+				}else{
+	
+					$i=1;
+				}
+			}
+		}
+
+		if ($this->input->post('npostres') > 0) 
+		{
+			for ($i=0; $i < $this->input->post('npostres'); $i++) 
+			{ 
+	
+				if ($this->input->post('postre') > 0) 
+				{
+					# code...
+					$dataPedido = [
+						"id_ma_pedido" => $id_ma_pedido,
+						"id_detalle_menu"  => $this->input->post('postre'),
+						"FInsert" => utils::datetime(),
+						"UCreate" =>  $this->ion_auth->user()->row()->id
+			
+					];
+
+					// echo '<pre>';
+					// print_r($dataPedido);
+					// echo '</pre>';
+	
+					if ($this->de_pedidos_model->addByPedido($dataPedido)) 
+					{
+						# code...
+						$this->results['mensaje'] ="Tu pedido se registró con exito";
+						$this->results['id_ma_pedido'] = $id_ma_pedido;
+					}else{
+						$this->results['estatus'] = 'error';
+						$this->results['mensaje'] = "Surgio un error al ingresar tu pedido, intenta nuevamente";
+					}
+				}else{
+						$y=1;
+				}
+			}
+		}	
+		
+		echo json_encode($this->results);
+
 	}
 
 	public function concentrado(){

@@ -127,12 +127,12 @@
 							
 							<div class="form-group">
 								<label id="LblComida">Comida ()  <span class="text-danger">*</span></label>
-								<input type="number" min="1" max="10" value="1" name="cantidad_comida" id="cantidad_comida" data-tipo="1" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Cantidad de comida" autocomplete="off"/>
+								<input type="number" min="0" max="10" value="1" name="cantidad_comida" id="cantidad_comida" data-tipo="1" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Cantidad de comida" autocomplete="off"/>
 								<span class="form-text text-muted">Ingresa el numero de comidas para tu pedido</span>
 							</div>
 							<div class="form-group">
 								<label id="LblPostre">Postre <span class="text-danger">*</span></label>
-								<input type="number" min="1" max="10" value="1" name="cantidad_postre" id="cantidad_postre" data-tipo="2" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Cantidad de postre" autocomplete="off"/>
+								<input type="number" min="0" max="10" value="1" name="cantidad_postre" id="cantidad_postre" data-tipo="2" class="form-control form-control-solid h-auto py-5 px-6"  placeholder="Cantidad de postre" autocomplete="off"/>
 								<span class="form-text text-muted">Ingresa el numero de postres para tu pedido.</span>
 							</div>
 							<input type="hidden" id="codigo" name="codigo" value="0">
@@ -171,35 +171,30 @@
 
 			let id_menu =  $('#codigo').val();
 			let ma_pedido =  $('#mapedido').val();
-
+			
 			let registro = recuperarDatosFormulario(id_menu);
-
-			registro.push({
-				name: "id_ma_pedido",
-				value: ma_pedido
-			});
-
-			console.log(registro);
-
+			
+			registro.id_ma_pedido = ma_pedido;
 
 			
+		
 			if ($('#cantidad_comida').val() > 0) {
 				Numcomida = $('#cantidad_comida').val();
+				registro.ncomidas = Numcomida;
+				
 
-				for (var i = 0; i < Numcomida; i++) {
-					console.log(Numcomida);
-					// guardaRegistro(registro);
-				}
+				
 
 			}
 
 			if ($('#cantidad_postre').val() > 0) {
 				Numpostre = $('#cantidad_postre').val();
-				for (var i = 0; i < Numpostre; i++) {
-					console.log(Numpostre);
-					// guardaRegistro(registro);
-				}
+				registro.npostres = Numpostre;
+				
+				
 			}
+
+			guardaRegistroCuantos(registro);
 
 
 		});
@@ -230,17 +225,15 @@
 
 				return false;
 			}else{
-
-				
-				
-				//guardaRegistro(registro);
+				guardaRegistro(registro,0);
 			}
 
             
         });
 
-		function MuestraModal(id_menu,id_ma_pedido){
-			// console.log(id_menu);
+		function MuestraModal(id_menu,id_ma_pedido)
+		{
+			
 			$("#codigo").val(id_menu);
 			$("#mapedido").val(id_ma_pedido);
 			$("#LblComida").text($('#chk_comida-'+id_menu).data('descripcion'));
@@ -277,7 +270,9 @@
         }
 		
 
-		function guardaRegistro(registro){
+		function guardaRegistro(registro,bandera){
+
+			console.log(registro);
 			$.ajax({
 				type: 'POST',
 				url: PATH+'Pedido/guardar',
@@ -298,38 +293,49 @@
 							 KTUtil.scrollTop();
 						});
 					} else {
+						console.log(registro);
 
 						//Mandar el mensaje de agregar otro, para poder agarrar el id del ma_pedido y meter los nuevos.
-
-						//Pregunto si quieren agregar mas platillos al pedido
-						swal.fire({
-						title: '¿Quiéres agregar mas platillos a tu pedido?',
-						icon: "question",
-						showCancelButton: true,
-						confirmButtonText: 'Si',
-						cancelButtonText: 'No',
-						}).then((resultado) => {
-
-						if (resultado.isConfirmed) {
-							//Mando el modal para agregar más.
-							MuestraModal(id_menu,result.id_ma_pedido);
-							// Swal.fire('Saved!', '', 'success')
-						}else{
+						if (bandera != 1) 
+						{
+							//Pregunto si quieren agregar mas platillos al pedido
 							swal.fire({
-								text: result.mensaje,
-								icon: "success",
-								buttonsStyling: false,
-								confirmButtonText: "Ok, vamos!",
-								customClass: {
-									confirmButton: "btn font-weight-bold btn-light-primary"
-								}
-							}).then(function() {
-								// CierraPopup();
-								
-							});
-						} 
-						});
+							title: '¿Quiéres agregar mas platillos a tu pedido?',
+							icon: "question",
+							showCancelButton: true,
+							confirmButtonText: 'Si',
+							cancelButtonText: 'No',
+							}).then((resultado) => {
 
+								
+								if (resultado.isConfirmed) {
+									// console.log(result.id_ma_pedido);
+									//Mando el modal para agregar más.
+									MuestraModal(registro.id,result.id_ma_pedido);
+									// Swal.fire('Saved!', '', 'success')
+								}else{
+									swal.fire({
+										text: result.mensaje,
+										icon: "success",
+										buttonsStyling: false,
+										confirmButtonText: "Ok, vamos!",
+										customClass: {
+											confirmButton: "btn font-weight-bold btn-light-primary"
+										}
+									}).then(function() {
+										// CierraPopup();
+										
+									});
+								} 
+							});
+
+						}else{
+							// CierraPopup();
+							Swal.fire('Registro Guardado!', '', 'success');
+
+						}
+
+						
 						
 
 						
@@ -351,7 +357,70 @@
 				}
 			});
 		}
+
+
+		function guardaRegistroCuantos(registro,cuantos){
+			$.ajax({
+				type: 'POST',
+				url: PATH+'Pedido/guardarCuantos',
+				data: registro,
+				dataType: "json",
+				success: function(result) {
+					console.log(result);
+					if (result.estatus == 'error') {
+						swal.fire({
+							text: result.mensaje,
+							icon: "error",
+							buttonsStyling: false,
+							confirmButtonText: "Ok, vamos!",
+							customClass: {
+								confirmButton: "btn font-weight-bold btn-light-primary"
+							}
+						}).then(function() {
+							 KTUtil.scrollTop();
+						});
+					} else {
+
+						swal.fire({
+							text: result.mensaje,
+							icon: "success",
+							buttonsStyling: false,
+							confirmButtonText: "Ok, vamos!",
+							customClass: {
+								confirmButton: "btn font-weight-bold btn-light-primary"
+							}
+						}).then(function() {
+							 CierraPopup();
+							
+						});
+
+					}
+				},
+				error: function(result) {
+					swal.fire({
+						text: "Surgio un error al ingresar tu pedido, favor de volver a intentar",
+						icon: "error",
+						buttonsStyling: false,
+						confirmButtonText: "Ok, vamos!",
+						customClass: {
+							confirmButton: "btn font-weight-bold btn-light-primary"
+						}
+					}).then(function() {
+						 KTUtil.scrollTop();
+					});
+				}
+			});
+		}
+
+		function CierraPopup(){
+                $("#agregar_pedido").modal('hide');//ocultamos el modal
+                $('body').removeClass('modal-open');//eliminamos la clase del body para poder hacer scroll
+                $('.modal-backdrop').remove();//eliminamos el backdrop del modal
+        }
+		
     });
+
+	
 </script>
 
 
